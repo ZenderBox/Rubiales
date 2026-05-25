@@ -68,6 +68,10 @@ Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto 
 *(Anotar aquí cada vez que haya reunión con papá, llamada con proveedor, visita a finca, conversación con Duflo, etc. Formato: fecha — con quién — qué se habló — qué quedó pendiente.)*
 
 - **2026-05-03** — Revisión inicial de la carpeta de documentos. Se crearon Pendientes y Memorias. Próximo paso: cerrar revisión de papá del Setup Técnico.
+- **2026-05-25** — Sesión Juan ↔ Claude. Tres bloques de trabajo:
+  1. **Pendientes y Memorias estructurados** — 11 tareas activas de la semana + 3 cuellos de botella identificados (Cormacarena, Banco Agrario, ICA Mosquera).
+  2. **Investigación regulatoria ICA / free-range** — confirmado que NO está prohibido; ruta de certificación es la Resolución 16409 de 2024 (Bienestar Animal). Documentado en `04-regulatorio/ica/regulatorio-ica.md`.
+  3. **Sistema MiramarBox creado** — clon del patrón ZenderBox WMS: 7 módulos numerados, `00-Memorias/` por módulo, workflow branch+PR, comando `/guarda-finca` para cerrar sesiones. Repo en `github.com/ZenderBox/Rubiales` (provisional). PR #1 (estructura inicial) merged.
 
 ---
 

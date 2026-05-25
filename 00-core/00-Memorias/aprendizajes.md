@@ -34,3 +34,10 @@ Cosas que aprendimos sobre el terreno, sobre el papá, sobre los proveedores y s
 
 - Las muestras de plátano y patilla salen en 15 días (≈ 9 jun 2026) — usar ese hito como referencia para construir el roadmap completo hacia atrás.
 - El proyecto tiene 3 cuellos de botella simultáneos: capital (banco), agua (Cormacarena), ICA. Los tres pueden tramitarse en paralelo pero hay dependencias.
+
+## Sobre el sistema MiramarBox
+
+- El patrón ZenderBox WMS (módulos numerados + `00-Memorias/` + comandos `/guardar-*`) se traduce 1:1 a un proyecto agropecuario. No hace falta inventar arquitectura nueva.
+- El bootstrap de un repo nuevo en GitHub requiere un commit inicial en `main` para que se pueda abrir PR. Una vez sembrado, todo el resto va por branch + PR.
+- El comando `/guarda-finca` se modela como `/guardar` del WMS: detectar módulo → actualizar memorias → branch + commit + push + PR. Owner mergea. Nunca push directo a main.
+- Decisión arquitectónica clave: empezar con markdown plano + HTML estático. Postgres / n8n / WhatsApp solo cuando el manual duela (Fase F4-F5 del roadmap del sistema). Replicar la evolución por dolor que funcionó en ZenderBox.
