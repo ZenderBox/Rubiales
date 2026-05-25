@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "project": "MiramarBox",
+    "subtitle": "Proyecto Avícola Rubiales · Puerto Gaitán, Meta",
+    "lastUpdate": "2026-05-25",
+    "currentPhase": "F0 · Pre-arranque",
+    "nextMilestone": {
+      "label": "Muestras plátano y patilla",
+      "date": "2026-06-09",
+      "daysUntil": 15
+    }
+  },
+  "blockers": [
+    {
+      "id": "B1",
+      "title": "Cormacarena · permiso de agua",
+      "severity": "critical",
+      "owner": "Papá",
+      "status": "Viaje pendiente",
+      "note": "Sin agua no hay ICA. Sin ICA no hay proyecto."
+    },
+    {
+      "id": "B2",
+      "title": "Banco Agrario · reactivación",
+      "severity": "critical",
+      "owner": "Juan",
+      "status": "Declaraciones pendientes de escanear",
+      "note": "Bloquea aporte USD 10K desde Miami."
+    },
+    {
+      "id": "B3",
+      "title": "ICA Mosquera · correo formal",
+      "severity": "high",
+      "owner": "Juan",
+      "status": "Borrador pendiente",
+      "note": "Preguntar si emiten desde Mosquera o va Villavicencio."
+    }
+  ],
+  "phases": [
+    { "id": "F0", "label": "Pre-arranque",     "status": "in-progress", "weight": 1 },
+    { "id": "F1", "label": "Permisos",         "status": "pending",     "weight": 1 },
+    { "id": "F2", "label": "Capital",          "status": "pending",     "weight": 1 },
+    { "id": "F3", "label": "Construcción",     "status": "pending",     "weight": 1 },
+    { "id": "F4", "label": "Llegada aves",     "status": "pending",     "weight": 1 },
+    { "id": "F5", "label": "Primera postura",  "status": "pending",     "weight": 1 },
+    { "id": "F6", "label": "Venta Duflo",      "status": "pending",     "weight": 1 }
+  ],
+  "modules": [
+    {
+      "id": "00-core",
+      "label": "Core",
+      "status": "active",
+      "summary": "Sistema y memoria del proyecto en construcción.",
+      "openTasks": 3
+    },
+    {
+      "id": "01-galpon",
+      "label": "Galpón",
+      "status": "quoting",
+      "summary": "Papá cotizando con ingenieros locales (no Moreno Vargas).",
+      "openTasks": 1
+    },
+    {
+      "id": "02-platano",
+      "label": "Plátano",
+      "status": "quoting",
+      "summary": "Por contactar Agrosavia (Rodrigo Martínez) para cotización por tandas.",
+      "openTasks": 1
+    },
+    {
+      "id": "03-finanzas",
+      "label": "Finanzas",
+      "status": "blocked",
+      "summary": "Banco Agrario sin reactivar. Aporte USD 10K en espera.",
+      "openTasks": 3
+    },
+    {
+      "id": "04-regulatorio",
+      "label": "Regulatorio",
+      "status": "blocked",
+      "summary": "Cormacarena pendiente. ICA bloqueado por agua. Free-range confirmado legal.",
+      "openTasks": 2
+    },
+    {
+      "id": "05-comercial",
+      "label": "Comercial",
+      "status": "pending",
+      "summary": "Visita presencial a Duflo + correo de seguimiento.",
+      "openTasks": 1
+    },
+    {
+      "id": "06-proveedores",
+      "label": "Proveedores",
+      "status": "quoting",
+      "summary": "San Marino llamada pendiente. Colaves y Toscana por evaluar.",
+      "openTasks": 2
+    }
+  ],
+  "kpis": {
+    "production": {
+      "active": false,
+      "note": "Los KPIs de producción se activan cuando llegue el primer lote de aves."
+    },
+    "items": [
+      { "label": "Postura / día",     "value": "—", "unit": "huevos",  "status": "pending" },
+      { "label": "Mortalidad semanal","value": "—", "unit": "%",       "status": "pending" },
+      { "label": "Stock vivo",        "value": "—", "unit": "gallinas","status": "pending" },
+      { "label": "Ventas Duflo / mes","value": "—", "unit": "COP",     "status": "pending" }
+    ]
+  },
+  "activity": [
+    {
+      "date": "2026-05-25",
+      "title": "Dashboard v1 creado",
+      "author": "Juan + Claude",
+      "ref": "PR #3"
+    },
+    {
+      "date": "2026-05-25",
+      "title": "Cierre sesión setup · decisiones D07-D10",
+      "author": "Juan + Claude",
+      "ref": "PR #2"
+    },
+    {
+      "date": "2026-05-25",
+      "title": "Estructura inicial MiramarBox (7 módulos)",
+      "author": "Juan + Claude",
+      "ref": "PR #1"
+    },
+    {
+      "date": "2026-05-25",
+      "title": "Investigación regulatoria · ICA free-range Colombia",
+      "author": "Juan + Claude",
+      "ref": "Memoria"
+    },
+    {
+      "date": "2026-05-25",
+      "title": "Pendientes y memorias semana 25-may organizados",
+      "author": "Juan + Claude",
+      "ref": "Memoria"
+    },
+    {
+      "date": "2026-05-03",
+      "title": "Revisión inicial documentos proyecto (Finagro, Setup Técnico, Planos)",
+      "author": "Juan",
+      "ref": "—"
+    }
+  ]
+}
