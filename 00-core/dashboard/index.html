@@ -1,0 +1,463 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MiramarBox · Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      /* ZenderBox Design System tokens — heredados del WMS */
+      --zb-cyan:       #029ECB;
+      --zb-cyan-dark:  #007B9F;
+      --zb-cyan-soft:  rgba(2,158,203,.10);
+      --zb-navy:       #004B72;
+      --zb-lime:       #CCD32A;
+      --zb-lime-soft:  rgba(204,211,42,.18);
+      --zb-gradient:   linear-gradient(45deg, #029ECB 0%, #CCD32A 85%);
+
+      --zb-ink-900: #1F1F1F;
+      --zb-ink-700: #333333;
+      --zb-ink-500: #666666;
+      --zb-ink-300: #8A8A8A;
+      --zb-ink-200: #B8B8B8;
+      --zb-ink-100: #DBDBDB;
+      --zb-ink-50:  #F6F6F6;
+      --zb-paper:   #FFFFFF;
+
+      --zb-success:    #008C31;
+      --zb-success-bg: #F1F6F5;
+      --zb-error:      #F32735;
+      --zb-error-bg:   #F4E8E9;
+      --zb-warn:       #7A6A00;
+      --zb-warn-bg:    rgba(204,211,42,.18);
+
+      --zb-radius-sm: 8px;
+      --zb-radius-md: 10px;
+      --zb-radius-lg: 14px;
+      --zb-radius-pill: 99px;
+      --zb-shadow-sm: 0 2px 4px 0 rgba(39,39,39,.10);
+      --zb-shadow-md: 0 4px 12px 0 rgba(39,39,39,.08);
+      --zb-shadow-lg: 0 10px 30px 0 rgba(39,39,39,.10);
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', ui-sans-serif, system-ui, -apple-system, sans-serif;
+      background: var(--zb-ink-50);
+      color: var(--zb-ink-700);
+      font-size: 14px;
+      line-height: 1.5;
+      min-height: 100vh;
+    }
+    a { color: var(--zb-cyan); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Topbar */
+    .topbar {
+      background: var(--zb-paper);
+      border-bottom: 1px solid var(--zb-ink-100);
+      padding: 14px 28px;
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px;
+      position: sticky; top: 0; z-index: 50;
+    }
+    .topbar-logo {
+      font-size: 18px; font-weight: 800; color: var(--zb-ink-900);
+      letter-spacing: -0.01em;
+    }
+    .topbar-logo span { color: var(--zb-cyan); }
+    .topbar-meta {
+      display: flex; align-items: center; gap: 18px;
+      font-size: 12px; color: var(--zb-ink-500);
+    }
+    .topbar-meta strong { color: var(--zb-ink-900); font-weight: 700; }
+    .phase-chip {
+      background: var(--zb-cyan-soft);
+      color: var(--zb-cyan-dark);
+      padding: 4px 10px;
+      border-radius: var(--zb-radius-pill);
+      font-weight: 600; font-size: 12px;
+    }
+
+    /* Layout */
+    .wrap { max-width: 1280px; margin: 0 auto; padding: 24px 28px 60px; }
+    h2 {
+      font-size: 11px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--zb-ink-500);
+      margin: 0 0 12px;
+    }
+    .grid { display: grid; gap: 16px; }
+
+    /* Cards */
+    .card {
+      background: var(--zb-paper);
+      border: 1px solid var(--zb-ink-100);
+      border-radius: var(--zb-radius-md);
+      padding: 16px 18px;
+      box-shadow: var(--zb-shadow-sm);
+    }
+    .card-header {
+      display: flex; align-items: center; justify-content: space-between;
+      margin-bottom: 8px;
+    }
+    .card-title { font-size: 14px; font-weight: 700; color: var(--zb-ink-900); }
+    .card-body { font-size: 13px; color: var(--zb-ink-500); }
+
+    /* Blockers */
+    .blockers { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 900px) { .blockers { grid-template-columns: 1fr; } }
+    .blocker {
+      background: var(--zb-paper);
+      border: 1px solid var(--zb-error-bg);
+      border-left: 4px solid var(--zb-error);
+      border-radius: var(--zb-radius-md);
+      padding: 14px 16px;
+      box-shadow: var(--zb-shadow-sm);
+    }
+    .blocker.high { border-left-color: var(--zb-warn); border-color: var(--zb-warn-bg); }
+    .blocker-id {
+      font-size: 11px; font-weight: 700; color: var(--zb-error);
+      letter-spacing: 0.04em;
+    }
+    .blocker.high .blocker-id { color: var(--zb-warn); }
+    .blocker-title {
+      font-size: 14px; font-weight: 700; color: var(--zb-ink-900);
+      margin: 2px 0 6px;
+    }
+    .blocker-meta { font-size: 11px; color: var(--zb-ink-500); margin-bottom: 8px; }
+    .blocker-meta strong { color: var(--zb-ink-700); font-weight: 600; }
+    .blocker-note { font-size: 12px; color: var(--zb-ink-500); font-style: italic; }
+
+    /* Hero row */
+    .hero {
+      grid-template-columns: 2fr 1fr;
+      align-items: stretch;
+    }
+    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } }
+    .next-milestone {
+      background: var(--zb-gradient);
+      color: var(--zb-paper);
+      border-radius: var(--zb-radius-md);
+      padding: 18px 20px;
+      box-shadow: var(--zb-shadow-md);
+      display: flex; flex-direction: column; justify-content: center;
+    }
+    .next-milestone .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.08em; opacity: 0.9; }
+    .next-milestone .name { font-size: 18px; font-weight: 800; margin: 4px 0; }
+    .next-milestone .date { font-size: 13px; opacity: 0.95; }
+    .next-milestone .days {
+      margin-top: 8px;
+      display: inline-block;
+      background: rgba(255,255,255,.18);
+      padding: 4px 10px;
+      border-radius: var(--zb-radius-pill);
+      font-size: 12px; font-weight: 700;
+      align-self: flex-start;
+    }
+
+    /* Phases */
+    .phases-track { display: flex; gap: 6px; margin-top: 8px; }
+    .phase {
+      flex: 1;
+      background: var(--zb-ink-50);
+      border: 1px solid var(--zb-ink-100);
+      border-radius: var(--zb-radius-sm);
+      padding: 10px 8px;
+      text-align: center;
+    }
+    .phase.in-progress {
+      background: var(--zb-cyan-soft);
+      border-color: var(--zb-cyan);
+    }
+    .phase.done {
+      background: var(--zb-success-bg);
+      border-color: var(--zb-success);
+    }
+    .phase-id { font-size: 10px; font-weight: 700; color: var(--zb-ink-300); }
+    .phase.in-progress .phase-id { color: var(--zb-cyan-dark); }
+    .phase.done .phase-id { color: var(--zb-success); }
+    .phase-label { font-size: 11px; font-weight: 600; color: var(--zb-ink-700); margin-top: 2px; }
+
+    /* Modules grid */
+    .modules { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .module {
+      background: var(--zb-paper);
+      border: 1px solid var(--zb-ink-100);
+      border-radius: var(--zb-radius-md);
+      padding: 14px 16px;
+      box-shadow: var(--zb-shadow-sm);
+      transition: transform .08s ease, box-shadow .08s ease;
+    }
+    .module:hover { box-shadow: var(--zb-shadow-md); transform: translateY(-1px); }
+    .module-head { display: flex; align-items: center; justify-content: space-between; }
+    .module-id { font-size: 10px; font-weight: 700; color: var(--zb-ink-300); letter-spacing: 0.06em; }
+    .module-label { font-size: 15px; font-weight: 700; color: var(--zb-ink-900); margin: 2px 0 6px; }
+    .module-summary { font-size: 12px; color: var(--zb-ink-500); line-height: 1.45; min-height: 36px; }
+    .module-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 10px; }
+    .tasks-badge {
+      background: var(--zb-ink-50);
+      border: 1px solid var(--zb-ink-100);
+      border-radius: var(--zb-radius-pill);
+      padding: 3px 10px;
+      font-size: 11px; font-weight: 600; color: var(--zb-ink-700);
+    }
+
+    /* Status dot */
+    .status {
+      display: inline-flex; align-items: center; gap: 6px;
+      font-size: 11px; font-weight: 600;
+      padding: 3px 9px;
+      border-radius: var(--zb-radius-pill);
+    }
+    .status::before {
+      content: ""; width: 6px; height: 6px; border-radius: 50%; display: inline-block;
+    }
+    .status-active   { background: var(--zb-cyan-soft);     color: var(--zb-cyan-dark); }
+    .status-active::before   { background: var(--zb-cyan); }
+    .status-quoting  { background: var(--zb-warn-bg);       color: var(--zb-warn); }
+    .status-quoting::before  { background: var(--zb-warn); }
+    .status-blocked  { background: var(--zb-error-bg);      color: var(--zb-error); }
+    .status-blocked::before  { background: var(--zb-error); }
+    .status-pending  { background: var(--zb-ink-50);        color: var(--zb-ink-500); }
+    .status-pending::before  { background: var(--zb-ink-300); }
+    .status-done     { background: var(--zb-success-bg);    color: var(--zb-success); }
+    .status-done::before     { background: var(--zb-success); }
+
+    /* KPIs */
+    .kpis { grid-template-columns: repeat(4, 1fr); }
+    @media (max-width: 900px) { .kpis { grid-template-columns: repeat(2, 1fr); } }
+    .kpi {
+      background: var(--zb-paper);
+      border: 1px solid var(--zb-ink-100);
+      border-radius: var(--zb-radius-md);
+      padding: 14px 16px;
+      box-shadow: var(--zb-shadow-sm);
+    }
+    .kpi-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--zb-ink-500); }
+    .kpi-value { font-size: 26px; font-weight: 800; color: var(--zb-ink-900); margin-top: 4px; line-height: 1; }
+    .kpi-unit  { font-size: 11px; color: var(--zb-ink-300); margin-top: 4px; }
+    .kpis-note {
+      grid-column: 1 / -1;
+      font-size: 12px; color: var(--zb-ink-500);
+      background: var(--zb-warn-bg); color: var(--zb-warn);
+      padding: 10px 14px;
+      border-radius: var(--zb-radius-sm);
+      margin-bottom: 12px;
+    }
+
+    /* Activity */
+    .activity-list { display: flex; flex-direction: column; gap: 0; }
+    .activity-item {
+      display: grid;
+      grid-template-columns: 96px 1fr auto;
+      gap: 12px;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--zb-ink-100);
+      align-items: center;
+    }
+    .activity-item:last-child { border-bottom: 0; }
+    .activity-date { font-size: 12px; color: var(--zb-ink-500); font-variant-numeric: tabular-nums; }
+    .activity-title { font-size: 13px; color: var(--zb-ink-900); font-weight: 600; }
+    .activity-meta { font-size: 11px; color: var(--zb-ink-300); }
+    .activity-ref {
+      font-size: 11px; font-weight: 600;
+      background: var(--zb-cyan-soft); color: var(--zb-cyan-dark);
+      padding: 3px 9px; border-radius: var(--zb-radius-pill);
+      white-space: nowrap;
+    }
+
+    /* Section spacing */
+    section { margin-bottom: 28px; }
+
+    .footer-note {
+      margin-top: 32px;
+      font-size: 11px; color: var(--zb-ink-300); text-align: center;
+    }
+
+    /* Error state */
+    .error-state {
+      padding: 40px; text-align: center; color: var(--zb-error);
+      background: var(--zb-error-bg); border-radius: var(--zb-radius-md);
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-logo">Miramar<span>Box</span></div>
+    <div class="topbar-meta">
+      <span class="phase-chip" id="phase-chip">—</span>
+      <span>Actualizado: <strong id="last-update">—</strong></span>
+    </div>
+  </header>
+
+  <main class="wrap" id="root">
+    <!-- contenido renderizado por JS -->
+    <p style="color: var(--zb-ink-500);">Cargando…</p>
+  </main>
+
+  <p class="footer-note">
+    Editá <code>data.json</code> para actualizar este dashboard. La página recarga el contenido cada vez que se abre.
+  </p>
+
+  <script>
+    const fmtDate = (iso) => {
+      const d = new Date(iso + 'T00:00:00');
+      return d.toLocaleDateString('es-CO', { day: '2-digit', month: 'short', year: 'numeric' });
+    };
+
+    const escape = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+    function renderBlockers(blockers) {
+      return `
+        <section>
+          <h2>Bloqueadores críticos</h2>
+          <div class="grid blockers">
+            ${blockers.map(b => `
+              <div class="blocker ${b.severity === 'high' ? 'high' : ''}">
+                <div class="blocker-id">${escape(b.id)} · ${b.severity === 'critical' ? 'CRÍTICO' : 'ALTO'}</div>
+                <div class="blocker-title">${escape(b.title)}</div>
+                <div class="blocker-meta">
+                  <strong>${escape(b.owner)}</strong> · ${escape(b.status)}
+                </div>
+                <div class="blocker-note">${escape(b.note)}</div>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    function renderHero(meta, phases) {
+      const next = meta.nextMilestone;
+      return `
+        <section>
+          <div class="grid hero">
+            <div class="card">
+              <div class="card-header">
+                <span class="card-title">Roadmap del proyecto</span>
+                <span class="status status-active">${escape(meta.currentPhase)}</span>
+              </div>
+              <div class="phases-track">
+                ${phases.map(p => `
+                  <div class="phase ${p.status}">
+                    <div class="phase-id">${escape(p.id)}</div>
+                    <div class="phase-label">${escape(p.label)}</div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+            <div class="next-milestone">
+              <div class="label">Próximo hito</div>
+              <div class="name">${escape(next.label)}</div>
+              <div class="date">${fmtDate(next.date)}</div>
+              <span class="days">en ${next.daysUntil} días</span>
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    function renderModules(modules) {
+      return `
+        <section>
+          <h2>Módulos del proyecto</h2>
+          <div class="grid modules">
+            ${modules.map(m => `
+              <div class="module">
+                <div class="module-head">
+                  <span class="module-id">${escape(m.id)}</span>
+                  <span class="status status-${escape(m.status)}">${escape(m.status)}</span>
+                </div>
+                <div class="module-label">${escape(m.label)}</div>
+                <div class="module-summary">${escape(m.summary)}</div>
+                <div class="module-footer">
+                  <span class="tasks-badge">${m.openTasks} tareas abiertas</span>
+                </div>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    function renderKpis(kpis) {
+      const note = !kpis.production.active
+        ? `<div class="kpis-note">⚠ ${escape(kpis.production.note)}</div>`
+        : '';
+      return `
+        <section>
+          <h2>Indicadores de producción</h2>
+          <div class="grid kpis">
+            ${note}
+            ${kpis.items.map(k => `
+              <div class="kpi">
+                <div class="kpi-label">${escape(k.label)}</div>
+                <div class="kpi-value">${escape(k.value)}</div>
+                <div class="kpi-unit">${escape(k.unit)}</div>
+              </div>
+            `).join('')}
+          </div>
+        </section>
+      `;
+    }
+
+    function renderActivity(activity) {
+      return `
+        <section>
+          <h2>Última actividad</h2>
+          <div class="card">
+            <div class="activity-list">
+              ${activity.map(a => `
+                <div class="activity-item">
+                  <div class="activity-date">${fmtDate(a.date)}</div>
+                  <div>
+                    <div class="activity-title">${escape(a.title)}</div>
+                    <div class="activity-meta">${escape(a.author)}</div>
+                  </div>
+                  <div class="activity-ref">${escape(a.ref)}</div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    async function render() {
+      const root = document.getElementById('root');
+      try {
+        const res = await fetch('./data.json?t=' + Date.now());
+        if (!res.ok) throw new Error('No se pudo cargar data.json (' + res.status + ')');
+        const data = await res.json();
+
+        document.title = `${data.meta.project} · Dashboard`;
+        document.getElementById('last-update').textContent = fmtDate(data.meta.lastUpdate);
+        document.getElementById('phase-chip').textContent = data.meta.currentPhase;
+
+        root.innerHTML = [
+          renderBlockers(data.blockers),
+          renderHero(data.meta, data.phases),
+          renderModules(data.modules),
+          renderKpis(data.kpis),
+          renderActivity(data.activity)
+        ].join('');
+      } catch (err) {
+        root.innerHTML = `<div class="error-state">
+          <strong>Error cargando el dashboard</strong><br>
+          ${escape(err.message)}<br><br>
+          <small>Si estás abriendo este archivo directamente (file://), el navegador bloquea fetch().
+          Servilo con <code>python3 -m http.server</code> desde la carpeta <code>00-core/dashboard/</code>
+          o publicalo en GitHub Pages.</small>
+        </div>`;
+      }
+    }
+
+    render();
+  </script>
+</body>
+</html>
