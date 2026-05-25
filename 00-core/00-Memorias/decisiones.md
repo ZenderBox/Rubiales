@@ -34,6 +34,27 @@ Registro de decisiones tomadas, con fecha, contexto y razón. Para no re-discuti
 - **Por qué:** investigación regulatoria 2026-05-25 confirma que NO está prohibido. Ver `regulatorio-ica.md`.
 - **Sello a perseguir:** Resolución ICA 16409 de 2024 (Bienestar Animal) desde Fase 1.
 
+### D07 · Sistema de gestión del proyecto = MiramarBox (working name)
+- **Decisión:** clonar el patrón modular de ZenderBox WMS para gestionar el proyecto agropecuario.
+- **Nombre provisional:** MiramarBox (hereda nombre de la sociedad). Pendiente decisión final entre MiramarBox / FincaBox / CampoBox / otro.
+- **Repo:** `https://github.com/ZenderBox/Rubiales` (se renombra cuando se decida el nombre final).
+- **Por qué:** el patrón ZenderBox ya probó funcionar — disciplina de memorias, módulos numerados, comandos `/guardar-*`. Replicarlo evita inventar.
+- **Estructura:** 7 módulos numerados con `00-Memorias/` cada uno (ver `README.md`).
+
+### D08 · Workflow: branch + PR siempre, owner mergea
+- **Decisión:** ningún commit directo a `main`. Toda sesión de trabajo termina con `/guarda-finca` que crea branch + PR; Juan revisa y mergea.
+- **Por qué:** trazabilidad de cambios, control del owner, mismo flujo que ZenderBox.
+- **Implicación:** `/guarda-finca` nunca usa `git add .` ni hace merge.
+
+### D09 · Drive para pesados — pospuesto
+- **Decisión:** por ahora todo en git. No abrir Drive hasta que aparezca el primer archivo >10MB (video del galpón, foto hi-res, escaneo grande).
+- **Por qué:** los PDFs actuales (1-3 MB) y fotos WhatsApp (200 KB) caben sin friction en git. Drive agrega un punto más de gestión que no necesitamos todavía.
+- **Cuando aparezca:** crear carpeta `MiramarBox/` en Drive y dejar `LINKS.md` por módulo apuntando.
+
+### D10 · DOCX duplicados se mantienen en 00-core/editables/
+- **Decisión:** los `.docx` (Plan Maestro, Setup Técnico, Anexo Planos, Hoja Visita) viven en `00-core/editables/`. Los `.pdf` viven en sus módulos respectivos.
+- **Por qué:** los DOCX sirven para seguir editando; los PDF son para compartir. Separarlos evita confundir cuál es la fuente de verdad.
+
 ---
 
 ## Decisiones del documento Plan Maestro (pre-existentes)
