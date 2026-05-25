@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MiramarBox · Dashboard</title>
+  <title>Zender Ranch · Dashboard</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -288,7 +288,7 @@
 </head>
 <body>
   <header class="topbar">
-    <div class="topbar-logo">Miramar<span>Box</span></div>
+    <div class="topbar-logo" id="brand-logo">—</div>
     <div class="topbar-meta">
       <span class="phase-chip" id="phase-chip">—</span>
       <span>Actualizado: <strong id="last-update">—</strong></span>
@@ -436,6 +436,10 @@
         const data = await res.json();
 
         document.title = `${data.meta.project} · Dashboard`;
+        const brand = data.meta.brand || { prefix: data.meta.project, accent: '', separator: '' };
+        const sep = brand.separator || '';
+        document.getElementById('brand-logo').innerHTML =
+          `${escape(brand.prefix)}${brand.accent ? `${escape(sep)}<span>${escape(brand.accent)}</span>` : ''}`;
         document.getElementById('last-update').textContent = fmtDate(data.meta.lastUpdate);
         document.getElementById('phase-chip').textContent = data.meta.currentPhase;
 
