@@ -59,10 +59,17 @@
 
 ## Equipo interno
 
-### Sociedad Agropecuaria Miramar — Jaime Acuña e Hijos
+### Sociedad Agropecuaria Miramar Jaime Acuña e Hijos S en C
+- **NIT:** 900.798.798-8
+- **Matrícula mercantil:** 02526088 · Cámara de Comercio de Bogotá
+- **Email registrado en Cámara:** `JAIMEHA13@HOTMAIL.COM`
+- **Dirección fiscal:** Cra 7 #12B-84, Oficina 904, Bogotá D.C.
+- Datos legales completos en `datos-sociedad.md`.
+
+Socios y roles:
 - Juan Acuña — 64% — Estratega / Finanzas (en Miami)
 - Alejandro Acuña — 33%
-- Jaime Acuña (papá) — Gestor y Representante Legal — operación en campo
+- **Jaime Acuña Ocampo** (papá) — Socio gestor / Representante Legal — C.C. 17.310.188 — operación en campo
 
 ### Contadora
 - Pendiente: registrar nombre y datos de contacto.
