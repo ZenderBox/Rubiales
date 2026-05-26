@@ -1,6 +1,7 @@
 {
   "meta": {
-    "project": "MiramarBox",
+    "project": "Zender Ranch",
+    "brand": { "prefix": "Zender", "accent": "Ranch", "separator": " " },
     "subtitle": "Proyecto Avícola Rubiales · Puerto Gaitán, Meta",
     "lastUpdate": "2026-05-25",
     "currentPhase": "F0 · Pre-arranque",
