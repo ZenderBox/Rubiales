@@ -72,6 +72,13 @@ Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto 
   1. **Pendientes y Memorias estructurados** — 11 tareas activas de la semana + 3 cuellos de botella identificados (Cormacarena, Banco Agrario, ICA Mosquera).
   2. **Investigación regulatoria ICA / free-range** — confirmado que NO está prohibido; ruta de certificación es la Resolución 16409 de 2024 (Bienestar Animal). Documentado en `04-regulatorio/ica/regulatorio-ica.md`.
   3. **Sistema MiramarBox creado** — clon del patrón ZenderBox WMS: 7 módulos numerados, `00-Memorias/` por módulo, workflow branch+PR, comando `/guarda-finca` para cerrar sesiones. Repo en `github.com/ZenderBox/Rubiales` (provisional). PR #1 (estructura inicial) merged.
+- **2026-05-26** — Sesión Juan ↔ Claude. Hitos:
+  1. **Datos legales sociedad extraídos** — NIT 900.798.798-8, matrícula 02526088. Hallazgo crítico: matrícula vencida desde abril 2024.
+  2. **Predios identificados** — El Trueno (991 ha, vereda Rubiales, a nombre del tío William Iván, embargado por Cesia Martinez ~$160.9M COP + Seguros Bolívar 2017) + La Realidad (posesión, sesión dedicada pendiente). Plan Maestro decía 2.000 ha — error histórico, son 991.
+  3. **Incidente legal Cesia Martinez registrado** — conflicto familiar largo, caso en Corte Constitucional. Bloquea Fase 2 con Finagro; Fase 1 viable bajo comodato.
+  4. **Correo ICA enviado** — consulta exploratoria a Mosquera/Tibaitatá (territorialidad + Resolución 16409). Esperando respuesta.
+  5. **Correo Duflo enviado** — warm follow-up a José Munera (Gerente Operaciones · `jose.munera@duflosas.com`) presentando el proyecto y solicitando reunión formal en 2 semanas. Decisión de no exponer Finagro ni embargo en el correo.
+  6. **Dashboard actualizado** — 4 bloqueadores activos (B0 matrícula, B1 Cormacarena, B2 banco, B3 ICA stand-by → resuelto, ahora active). Predios documentados en `00-core/00-Memorias/predios.md`. Incidente Cesia en `00-core/07-Incidentes/2026-05-25_conflicto-legal-cesia-martinez.md`.
 
 ---
 

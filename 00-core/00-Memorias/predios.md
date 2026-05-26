@@ -9,7 +9,8 @@ Resumen ejecutivo de los predios involucrados en el proyecto avícola. Detalle l
 | **Matrícula inmobiliaria** | 234-11845 |
 | **ORIP** | Puerto López |
 | **Municipio** | Puerto Gaitán, Meta |
-| **Vereda** | RUBIALES |
+| **Vereda (cert. tradición)** | RUBIALES |
+| **Vereda (análisis de suelo 2026)** | SANTA HELENA · ⚠️ discrepancia por confirmar con papá |
 | **Código catastral** | 505680002000000010211000000000 |
 | **Área** | **991 ha + 3.607 m²** (no 2.000 ha como decía el Plan Maestro original) |
 | **Origen** | Adjudicación de baldíos INCORA — Resolución 0399 del 24/06/1997 |
@@ -74,6 +75,8 @@ Cesia abandonó sus 2 fincas por 15+ años. Papá entró en quiebra; sus fincas 
 
 - `04-regulatorio/predios/el-trueno/234-11845-cert-tradicion-sept-2020.pdf`
 - `04-regulatorio/predios/el-trueno/embargo-cesia-liquidacion-credito.pdf`
+- `04-regulatorio/predios/el-trueno/analisis-suelos/informe-62057-fertilidad-completo-2026-05-04.pdf` · fertilidad completa, 0-20 cm, altura 208 msnm, topografía plana
+- `04-regulatorio/predios/el-trueno/analisis-suelos/recomendacion-LQAS26-003464-2026-05-05.pdf`
 - `04-regulatorio/predios/la-realidad/234-11846-cert-tradicion-sept-2020.pdf`
 - `03-finanzas/contadora/declaraciones-renta/impuesto predial, balances y declaracion de renta 2020,2019 y 2018.pdf`
 

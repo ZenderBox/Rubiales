@@ -101,9 +101,9 @@
     {
       "id": "05-comercial",
       "label": "Comercial",
-      "status": "pending",
-      "summary": "Visita presencial a Duflo + correo de seguimiento.",
-      "openTasks": 1
+      "status": "active",
+      "summary": "Correo Duflo enviado · esperando agenda de reunión formal.",
+      "openTasks": 2
     },
     {
       "id": "06-proveedores",
@@ -126,6 +126,18 @@
     ]
   },
   "activity": [
+    {
+      "date": "2026-05-26",
+      "title": "Correo Duflo enviado · solicitud reunión formal",
+      "author": "Juan",
+      "ref": "PR #6"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Correo ICA Mosquera enviado · consulta exploratoria",
+      "author": "Juan",
+      "ref": "PR #6"
+    },
     {
       "date": "2026-05-26",
       "title": "Predios identificados: El Trueno (991 ha, embargado) + La Realidad (posesión)",

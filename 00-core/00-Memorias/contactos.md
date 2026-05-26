@@ -41,10 +41,12 @@
 
 ## Cliente
 
-### Duflo
+### Duflo S.A.S.
 - Comprador confirmado: compra TODO lo que se produzca (184.000 huevos/mes + plátano + pollo).
-- Pendiente: visita presencial → correo formal de seguimiento (T05).
-- Pregunta a explorar: ¿conocen ingenieros civiles de confianza en la zona?
+- **Contacto principal:** José Munera Benedetti · Gerente de Operaciones · `jose.munera@duflosas.com`
+- **Estado relación:** visita presencial completada · José Munera dijo verbalmente "compro todo lo que tengan".
+- **Correo de seguimiento (presentación + reunión formal):** enviado el 2026-05-26 — ver `05-comercial/duflo/correo-presentacion-2026-05-26.md`.
+- Pregunta a explorar en la reunión: ¿conocen ingenieros civiles de confianza en la zona? (alternativa a Moreno Vargas).
 
 ## Construcción
 
