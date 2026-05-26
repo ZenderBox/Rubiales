@@ -37,6 +37,16 @@ A continuación, un resumen del proyecto para su referencia:
 | 2 — Cobertura (2027-2028) | 7.000 | ≈ 5.800 cubetas de huevo |
 | 3 — Expansión (2028+) | 10.000+ | ≈ 8.300 cubetas de huevo |
 
+**Productos complementarios disponibles desde el predio.**
+Conforme conversamos durante la visita, además del huevo, las 991 hectáreas del predio nos permiten suministrar de forma escalonada:
+
+- **Plátano Dominico Hartón** — 8 ha iniciales integradas con las aves; expansión modular según demanda.
+- **Patilla** — en ciclos rotativos, alineados al calendario agrícola del Llano.
+- **Ganado en pie** (levante / engorde) — una fracción del predio se mantiene en producción ganadera, susceptible de ampliarse según la demanda de Duflo.
+
+**Ventaja logística.**
+Un punto que estimamos especialmente relevante para Duflo: el predio se encuentra a aproximadamente **una (1) hora del punto de entrega**, frente a las **ocho a diez horas de tránsito** desde las zonas proveedoras tradicionales (Bogotá y aledañas). Esta diferencia se traduce en (i) menor envejecimiento del producto en ruta, (ii) reducción del costo logístico operativo y (iii) mayor flexibilidad en la frecuencia de entrega. Para productos como carne y plátano —cuyo deterioro empieza en la cosecha y se acelera con el transporte— esta proximidad representa una ventaja estructural difícil de igualar por proveedores ubicados fuera del Llano.
+
 En esta etapa del proyecto, agradeceríamos sostener una **reunión formal** con usted (presencial en sus oficinas o por videollamada, según le sea más conveniente) con tres objetivos:
 
 1. Confirmar formalmente el interés comercial de Duflo S.A.S. en el suministro continuo.
@@ -75,6 +85,9 @@ Tel: 320 862 7545
 - **Cifras corregidas:** 991 ha (no 2.000 ha como decía el Plan Maestro original). Cubetas calculadas con base en ~30 huevos/cubeta y postura del 85% para ISA Brown.
 - **Tabla de fases concisa** — un solo bloque visual que se escanea en 5 segundos.
 - **Cierra pidiendo reunión en 2 semanas** — plazo concreto, no abierto.
+- **Productos complementarios mencionados sin compromiso de volumen.** Plátano, patilla y ganado en pie quedan listados como "disponibles" — significa "podemos, hablemos en la reunión", no obliga a cifras.
+- **Ventaja logística (1h vs 8-10h) explícita como cierre comercial del cuerpo.** Es el verdadero hook estructural — la razón por la que Duflo nos prefiere sobre cualquier proveedor de Bogotá / Llanos altos. Reduce envejecimiento, costo logístico y aumenta flexibilidad de entrega.
+- **NO se menciona Medellín ni el matadero específico.** Esa es info de Duflo (dicha durante la visita); referenciarla puede sonar invasivo. "Punto de entrega que usted mencionó" es elegante.
 
 ## Placeholders pendientes antes de enviar
 
