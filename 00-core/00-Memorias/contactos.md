@@ -44,8 +44,11 @@
 ### Duflo S.A.S.
 - Comprador confirmado: compra TODO lo que se produzca (184.000 huevos/mes + plátano + pollo).
 - **Contacto principal:** José Munera Benedetti · Gerente de Operaciones · `jose.munera@duflosas.com`
-- **Estado relación:** visita presencial completada · José Munera dijo verbalmente "compro todo lo que tengan".
-- **Correo de seguimiento (presentación + reunión formal):** enviado el 2026-05-26 — ver `05-comercial/duflo/correo-presentacion-2026-05-26.md`.
+- **WhatsApp de José:** Juan lo tiene en su celular (no documentado aquí por ahora).
+- **Historial de contacto:**
+  - **2026-04-30** — Visita presencial en oficinas Duflo. Asistieron papá (Jaime) y Juan. José los recibió y manifestó verbalmente que compra el total de la producción.
+  - **2026-04-30** — Juan envió WhatsApp a José agradeciendo la visita.
+  - **2026-05-26** — Correo formal de seguimiento enviado (presentación + solicitud de reunión formal). Ver `05-comercial/duflo/correo-presentacion-2026-05-26.md`.
 - Pregunta a explorar en la reunión: ¿conocen ingenieros civiles de confianza en la zona? (alternativa a Moreno Vargas).
 
 ## Construcción

@@ -2,7 +2,7 @@
 
 > Estado: **LISTO PARA ENVIAR** — solo falta correo remitente de Juan.
 >
-> Tipo: warm follow-up · NO presentación fría. La visita presencial ya ocurrió, José Munera dijo verbalmente "compro todo lo que tengan".
+> Tipo: warm follow-up · NO presentación fría. La visita presencial ocurrió el **30 de abril de 2026** en oficinas de Duflo S.A.S. Estuvieron papá Jaime y Juan; José Munera manifestó verbalmente que compra el total de la producción. Juan envió WhatsApp el mismo día agradeciendo la visita. Este correo es el seguimiento formal.
 
 ## Metadata
 
@@ -19,9 +19,9 @@ Estimado José,
 
 Reciba un cordial saludo de mi parte y la familia Acuña.
 
-Le escribo para retomar el contacto luego de la visita que mi padre Jaime Acuña sostuvo con usted en las oficinas de Duflo S.A.S., donde manifestó interés en absorber el total de la producción del proyecto avícola free-range que estamos estructurando en nuestra finca **"El Trueno"** (vereda Rubiales, municipio de Puerto Gaitán, Meta · 991 ha).
+Le escribo para dar continuidad formal a nuestra visita del pasado **30 de abril**, en la cual mi padre Jaime Acuña y yo tuvimos el gusto de ser recibidos por usted en las oficinas de Duflo S.A.S., y donde manifestó su interés en absorber el total de la producción del proyecto avícola free-range que estamos estructurando en nuestra finca **"El Trueno"** (vereda Rubiales, municipio de Puerto Gaitán, Meta · 991 ha).
 
-Mi nombre es **Juan Acuña**, socio mayoritario de la **Sociedad Agropecuaria Miramar Jaime Acuña e Hijos S en C** (NIT 900.798.798-8). Lidero la planeación estratégica y la estructura financiera del proyecto desde Miami; mi padre coordina la operación en campo y es el Representante Legal de la sociedad.
+Como **socio mayoritario** de la **Sociedad Agropecuaria Miramar Jaime Acuña e Hijos S en C** (NIT 900.798.798-8), lidero la planeación estratégica y la estructura financiera del proyecto desde Miami, mientras mi padre coordina la operación en campo como Representante Legal de la sociedad.
 
 A continuación, un resumen del proyecto para su referencia:
 

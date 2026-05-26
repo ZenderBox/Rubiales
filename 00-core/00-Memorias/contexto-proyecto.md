@@ -67,6 +67,7 @@ Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto 
 
 *(Anotar aquí cada vez que haya reunión con papá, llamada con proveedor, visita a finca, conversación con Duflo, etc. Formato: fecha — con quién — qué se habló — qué quedó pendiente.)*
 
+- **2026-04-30** — Visita presencial a Duflo S.A.S. Asistieron papá (Jaime) y Juan. Atendió José Munera Benedetti (Gerente de Operaciones). José manifestó verbalmente que compra el total de la producción. Mismo día, Juan envió WhatsApp agradeciendo la visita.
 - **2026-05-03** — Revisión inicial de la carpeta de documentos. Se crearon Pendientes y Memorias. Próximo paso: cerrar revisión de papá del Setup Técnico.
 - **2026-05-25** — Sesión Juan ↔ Claude. Tres bloques de trabajo:
   1. **Pendientes y Memorias estructurados** — 11 tareas activas de la semana + 3 cuellos de botella identificados (Cormacarena, Banco Agrario, ICA Mosquera).
