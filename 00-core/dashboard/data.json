@@ -38,11 +38,11 @@
     },
     {
       "id": "B2",
-      "title": "Banco Agrario · reactivación",
-      "severity": "critical",
+      "title": "Banco Agrario · esperando respuesta",
+      "severity": "high",
       "owner": "Juan",
-      "status": "Declaraciones pendientes de escanear",
-      "note": "Bloquea aporte USD 10K desde Miami. Requiere también matrícula vigente (B0)."
+      "status": "Docs 2018-2020 enviadas 26-may · riesgo de rechazo por antigüedad",
+      "note": "Si rechazan → T18 urgente (declaraciones faltantes 2021-2025 con contadora)."
     },
     {
       "id": "B3",
@@ -87,9 +87,9 @@
     {
       "id": "03-finanzas",
       "label": "Finanzas",
-      "status": "blocked",
-      "summary": "Banco Agrario sin reactivar. Aporte USD 10K en espera.",
-      "openTasks": 3
+      "status": "active",
+      "summary": "Docs enviadas al banco 26-may · esperando respuesta. Declaraciones 2021-2025 pendientes con contadora.",
+      "openTasks": 4
     },
     {
       "id": "04-regulatorio",
@@ -128,7 +128,13 @@
   "activity": [
     {
       "date": "2026-05-26",
-      "title": "Correo Duflo enviado · solicitud reunión formal",
+      "title": "Banco Agrario · declaraciones 2018-2020 + EEFF enviados (esperando respuesta)",
+      "author": "Juan",
+      "ref": "PR #6"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Correo Duflo enviado desde juan.acuna@zenderbox.com · solicitud reunión formal",
       "author": "Juan",
       "ref": "PR #6"
     },

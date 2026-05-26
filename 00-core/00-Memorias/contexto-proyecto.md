@@ -78,8 +78,9 @@ Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto 
   2. **Predios identificados** — El Trueno (991 ha, vereda Rubiales, a nombre del tío William Iván, embargado por Cesia Martinez ~$160.9M COP + Seguros Bolívar 2017) + La Realidad (posesión, sesión dedicada pendiente). Plan Maestro decía 2.000 ha — error histórico, son 991.
   3. **Incidente legal Cesia Martinez registrado** — conflicto familiar largo, caso en Corte Constitucional. Bloquea Fase 2 con Finagro; Fase 1 viable bajo comodato.
   4. **Correo ICA enviado** — consulta exploratoria a Mosquera/Tibaitatá (territorialidad + Resolución 16409). Esperando respuesta.
-  5. **Correo Duflo enviado** — warm follow-up a José Munera (Gerente Operaciones · `jose.munera@duflosas.com`) presentando el proyecto y solicitando reunión formal en 2 semanas. Decisión de no exponer Finagro ni embargo en el correo.
-  6. **Dashboard actualizado** — 4 bloqueadores activos (B0 matrícula, B1 Cormacarena, B2 banco, B3 ICA stand-by → resuelto, ahora active). Predios documentados en `00-core/00-Memorias/predios.md`. Incidente Cesia en `00-core/07-Incidentes/2026-05-25_conflicto-legal-cesia-martinez.md`.
+  5. **Correo Duflo enviado** — warm follow-up a José Munera (Gerente Operaciones · `jose.munera@duflosas.com`) presentando el proyecto y solicitando reunión formal en 2 semanas. Decisión de no exponer Finagro ni embargo en el correo. Enviado desde `juan.acuna@zenderbox.com` para reforzar credibilidad (el correo menciona el rol de CEO de ZenderBox).
+  6. **Banco Agrario · primer envío de documentos** — Juan envió declaraciones de renta 2018-2020 + estado financiero (lo que pidió papá) al banco para reactivar la cuenta. ⚠️ Riesgo: las declaraciones son antiguas. Si rechazan, hay que activar T18 (declaraciones 2021-2025 con contadora).
+  7. **Dashboard actualizado** — 4 bloqueadores activos (B0 matrícula crítico, B1 Cormacarena, B2 banco esperando respuesta, B3 ICA resuelto-enviado). Predios documentados en `00-core/00-Memorias/predios.md`. Incidente Cesia en `00-core/07-Incidentes/2026-05-25_conflicto-legal-cesia-martinez.md`.
 
 ---
 
