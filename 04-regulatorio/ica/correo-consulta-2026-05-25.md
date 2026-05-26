@@ -1,8 +1,6 @@
 # Correo consulta — ICA Mosquera (Tibaitatá)
 
-> Estado: **STAND-BY** hasta que se renueve la matrícula mercantil (ver T15).
->
-> Razón: mandar un correo formal a ICA citando un NIT con matrícula vencida expone un flanco — si ICA verifica (lo hacen) y ve que la sociedad está en mora, bajan la prioridad del caso o piden subsanar antes de seguir.
+> Estado: **LISTO PARA ENVIAR** — decisión del owner 2026-05-25: enviar igual ya que se trata de consulta exploratoria, no trámite formal. Para preguntas previas, ICA típicamente no verifica matrícula. (La renovación se mantiene como tarea T15 prioritaria por Banco Agrario y Finagro).
 
 ## Metadata
 
@@ -21,7 +19,7 @@ Gerencia Seccional Cundinamarca — ICA Tibaitatá / Mosquera
 
 Cordial saludo.
 
-Mi nombre es **Juan Acuña**, socio mayoritario de la **Sociedad Agropecuaria Miramar Jaime Acuña e Hijos S en C** (NIT 900.798.798-8), proyecto avícola de gallinas ponedoras en sistema free-range con cultivo integrado de plátano Dominico Hartón, ubicado en el predio Rubiales (vereda <pendiente confirmar>), municipio de **Puerto Gaitán, Meta**.
+Mi nombre es **Juan Acuña**, socio mayoritario de la **Sociedad Agropecuaria Miramar Jaime Acuña e Hijos S en C** (NIT 900.798.798-8), proyecto avícola de gallinas ponedoras en sistema free-range con cultivo integrado de plátano Dominico Hartón, ubicado en el predio rural **"El Trueno"** (matrícula inmobiliaria 234-11845, ORIP Puerto López · cabida aproximada 991 ha), **vereda Rubiales, municipio de Puerto Gaitán, Meta**.
 
 El proyecto se ejecuta bajo la gerencia y representación legal de mi padre, **Jaime Acuña Ocampo** (C.C. 17.310.188 · socio gestor), quien previamente sostuvo conversación verbal con su despacho y nos indicó la conveniencia de formalizar la consulta por este medio.
 
@@ -57,11 +55,16 @@ Tel: `<celular-papá-pendiente>`
 
 ## Placeholders pendientes antes de enviar
 
-- [ ] Nombre exacto de la vereda del predio en Puerto Gaitán
+- [x] ~~Nombre exacto de la vereda~~ → vereda **Rubiales** (extraído del cert. de tradición 234-11845)
+- [x] ~~Predio~~ → **El Trueno**, matrícula 234-11845, 991 ha
 - [ ] Correo de Juan (remitente)
 - [ ] Celular de Juan
 - [ ] Celular de papá
 - [ ] (Opcional) Correo de Alejandro para CC
+
+## Nota sobre titularidad del predio (no se menciona en el correo)
+
+El predio "El Trueno" está actualmente a nombre del tío de Juan (William Iván Acuña Ocampo) y bajo embargo. Para Fase 1 piloto, el proyecto operará bajo comodato del tío. Esto no se menciona en la consulta exploratoria a ICA — si ICA pregunta por la titularidad en una etapa formal posterior, se aborda con el documento de comodato. Ver `00-core/07-Incidentes/2026-05-25_conflicto-legal-cesia-martinez.md`.
 
 ## Decisión tomada en el borrador
 
