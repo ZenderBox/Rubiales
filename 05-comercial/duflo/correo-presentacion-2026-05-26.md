@@ -23,7 +23,7 @@ Le escribo para dar continuidad formal a nuestra visita del pasado **30 de abril
 
 Tras dicha visita —y motivados por la cercanía del predio al punto de entrega y por las características del terreno— hemos avanzado en la estructuración formal de un proyecto avícola free-range con integración agrícola, que hoy ponemos a su consideración. El predio en cuestión es la finca **"El Trueno"** (vereda Rubiales, municipio de Puerto Gaitán, Meta · 991 ha).
 
-Como **socio mayoritario** de la **Sociedad Agropecuaria Miramar Jaime Acuña e Hijos S en C** (NIT 900.798.798-8), lidero la planeación estratégica y la estructura financiera del proyecto desde Miami, mientras mi padre coordina la operación en campo como Representante Legal de la sociedad.
+Como **socio mayoritario** de la **Sociedad Agropecuaria Miramar Jaime Acuña e Hijos S en C** (NIT 900.798.798-8), y a su vez CEO de **ZenderBox / ZenderHub** —operación de logística internacional con presencia en Colombia y patente de innovación tecnológica vigente—, lidero la planeación estratégica, operativa y financiera del proyecto desde Miami, mientras mi padre coordina la operación en campo como Representante Legal de la sociedad. La experiencia operacional acumulada en ZenderBox la trasladamos a este proyecto en términos de planeación, control de costos y disciplina de ejecución.
 
 A continuación, un resumen del proyecto para su referencia:
 
