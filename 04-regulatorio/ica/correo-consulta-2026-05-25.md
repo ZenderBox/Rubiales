@@ -41,25 +41,25 @@ Cordialmente,
 Socio mayoritario
 Sociedad Agropecuaria Miramar Jaime Acuña e Hijos S en C
 NIT 900.798.798-8
-Email: `<correo-pendiente>`
-Tel: `<celular-Juan-pendiente>`
+Email: `⟨TU CORREO⟩`
+Tel: +1 786 585 6806
 
 — En copia —
 **Jaime Acuña Ocampo**
 Socio gestor / Representante Legal
 C.C. 17.310.188
 Email: JAIMEHA13@HOTMAIL.COM
-Tel: `<celular-papá-pendiente>`
+Tel: 320 862 7545
 
 ---
 
 ## Placeholders pendientes antes de enviar
 
-- [x] ~~Nombre exacto de la vereda~~ → vereda **Rubiales** (extraído del cert. de tradición 234-11845)
+- [x] ~~Nombre exacto de la vereda~~ → vereda **Rubiales**
 - [x] ~~Predio~~ → **El Trueno**, matrícula 234-11845, 991 ha
-- [ ] Correo de Juan (remitente)
-- [ ] Celular de Juan
-- [ ] Celular de papá
+- [x] ~~Celular Juan~~ → +1 786 585 6806
+- [x] ~~Celular papá~~ → 320 862 7545
+- [ ] Correo de Juan (remitente) — Juan lo completa al enviar
 - [ ] (Opcional) Correo de Alejandro para CC
 
 ## Nota sobre titularidad del predio (no se menciona en el correo)
