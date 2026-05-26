@@ -3,7 +3,7 @@
     "project": "Zender Ranch",
     "brand": { "prefix": "Zender", "accent": "Ranch", "separator": " " },
     "subtitle": "Proyecto Avícola Rubiales · Puerto Gaitán, Meta",
-    "lastUpdate": "2026-05-25",
+    "lastUpdate": "2026-05-26",
     "currentPhase": "F0 · Pre-arranque",
     "nextMilestone": {
       "label": "Muestras plátano y patilla",
@@ -12,6 +12,14 @@
     }
   },
   "blockers": [
+    {
+      "id": "B-1",
+      "title": "Predio El Trueno · embargado y no en nombre propio",
+      "severity": "critical",
+      "owner": "Familia",
+      "status": "Embargo Cesia $160.9M + embargo Seguros Bolívar 2017",
+      "note": "Predio a nombre del tío William Iván. Fase 1 viable bajo comodato. Fase 2/Finagro inviable sin título limpio. Ver 07-Incidentes/."
+    },
     {
       "id": "B0",
       "title": "Matrícula mercantil vencida (Cámara de Comercio)",
@@ -38,11 +46,11 @@
     },
     {
       "id": "B3",
-      "title": "ICA Mosquera · correo en stand-by",
+      "title": "ICA Mosquera · correo listo para enviar",
       "severity": "high",
       "owner": "Juan",
-      "status": "Borrador listo · esperando renovación matrícula",
-      "note": "No mandar con NIT en mora. Borrador completo en 04-regulatorio/ica/."
+      "status": "Datos completos · pendiente Juan complete correo + celulares",
+      "note": "Decisión: enviar consulta exploratoria sin esperar renovación. Vereda Rubiales, matrícula 234-11845, 991 ha confirmadas."
     }
   ],
   "phases": [
@@ -118,6 +126,24 @@
     ]
   },
   "activity": [
+    {
+      "date": "2026-05-26",
+      "title": "Predios identificados: El Trueno (991 ha, embargado) + La Realidad (posesión)",
+      "author": "Juan + Claude",
+      "ref": "PR #5"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Incidente legal Cesia Martinez registrado · liquidación $160.9M",
+      "author": "Juan + Claude",
+      "ref": "PR #5"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Correo ICA actualizado con datos definitivos del predio · LISTO",
+      "author": "Juan + Claude",
+      "ref": "PR #5"
+    },
     {
       "date": "2026-05-25",
       "title": "Datos legales sociedad extraídos + matrícula vencida detectada",
