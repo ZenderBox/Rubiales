@@ -13,6 +13,14 @@
   },
   "blockers": [
     {
+      "id": "B0",
+      "title": "Matrícula mercantil vencida (Cámara de Comercio)",
+      "severity": "critical",
+      "owner": "Papá",
+      "status": "Renovar 2025 + 2026 + multas por mora",
+      "note": "Última renovación abril 2024. Bloquea Banco Agrario, ICA, Cormacarena, Finagro."
+    },
+    {
       "id": "B1",
       "title": "Cormacarena · permiso de agua",
       "severity": "critical",
@@ -26,15 +34,15 @@
       "severity": "critical",
       "owner": "Juan",
       "status": "Declaraciones pendientes de escanear",
-      "note": "Bloquea aporte USD 10K desde Miami."
+      "note": "Bloquea aporte USD 10K desde Miami. Requiere también matrícula vigente (B0)."
     },
     {
       "id": "B3",
-      "title": "ICA Mosquera · correo formal",
+      "title": "ICA Mosquera · correo en stand-by",
       "severity": "high",
       "owner": "Juan",
-      "status": "Borrador pendiente",
-      "note": "Preguntar si emiten desde Mosquera o va Villavicencio."
+      "status": "Borrador listo · esperando renovación matrícula",
+      "note": "No mandar con NIT en mora. Borrador completo en 04-regulatorio/ica/."
     }
   ],
   "phases": [
@@ -79,8 +87,8 @@
       "id": "04-regulatorio",
       "label": "Regulatorio",
       "status": "blocked",
-      "summary": "Cormacarena pendiente. ICA bloqueado por agua. Free-range confirmado legal.",
-      "openTasks": 2
+      "summary": "Matrícula Cámara vencida. Cormacarena pendiente. ICA en stand-by.",
+      "openTasks": 3
     },
     {
       "id": "05-comercial",
@@ -110,6 +118,24 @@
     ]
   },
   "activity": [
+    {
+      "date": "2026-05-25",
+      "title": "Datos legales sociedad extraídos + matrícula vencida detectada",
+      "author": "Juan + Claude",
+      "ref": "PR #5"
+    },
+    {
+      "date": "2026-05-25",
+      "title": "Borrador correo ICA listo (stand-by por matrícula)",
+      "author": "Juan + Claude",
+      "ref": "PR #5"
+    },
+    {
+      "date": "2026-05-25",
+      "title": "Dashboard renombrado a Zender Ranch (provisional)",
+      "author": "Juan + Claude",
+      "ref": "PR #4"
+    },
     {
       "date": "2026-05-25",
       "title": "Dashboard v1 creado",

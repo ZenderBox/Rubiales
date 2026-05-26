@@ -109,8 +109,8 @@
     .card-body { font-size: 13px; color: var(--zb-ink-500); }
 
     /* Blockers */
-    .blockers { grid-template-columns: repeat(3, 1fr); }
-    @media (max-width: 900px) { .blockers { grid-template-columns: 1fr; } }
+    .blockers { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    @media (max-width: 600px) { .blockers { grid-template-columns: 1fr; } }
     .blocker {
       background: var(--zb-paper);
       border: 1px solid var(--zb-error-bg);
