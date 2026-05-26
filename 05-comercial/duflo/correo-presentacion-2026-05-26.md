@@ -19,7 +19,7 @@ Estimado José,
 
 Reciba un cordial saludo de mi parte y la familia Acuña.
 
-Le escribo para dar continuidad formal a nuestra visita del pasado **30 de abril**, en la cual mi padre Jaime Acuña y yo tuvimos el gusto de ser recibidos por usted en las oficinas de Duflo S.A.S. En aquella conversación les manifestamos el interés de explorar una relación de proveeduría desde nuestra finca en el Llano, y usted nos compartió a grandes rasgos la magnitud y diversidad de las compras que Duflo realiza, así como las zonas de origen actuales de sus proveedores.
+Le escribo para dar continuidad formal a nuestra visita del pasado **30 de abril**, en la cual mi padre Jaime Acuña y yo tuvimos el gusto de ser recibidos por usted en las oficinas de Duflo S.A.S. En aquella conversación les manifestamos el interés de explorar una relación de proveeduría desde nuestra finca en el Llano, y usted nos compartió a grandes rasgos la magnitud y diversidad de las compras que Duflo realiza.
 
 Tras dicha visita —y motivados por la cercanía del predio al punto de entrega y por las características del terreno— hemos avanzado en la estructuración formal de un proyecto avícola free-range con integración agrícola, que hoy ponemos a su consideración. El predio en cuestión es la finca **"El Trueno"** (vereda Rubiales, municipio de Puerto Gaitán, Meta · 991 ha).
 
@@ -46,8 +46,8 @@ Conforme conversamos durante la visita, además del huevo, las 991 hectáreas de
 - **Patilla** — en ciclos rotativos, alineados al calendario agrícola del Llano.
 - **Ganado en pie** (levante / engorde) — una fracción del predio se mantiene en producción ganadera, susceptible de ampliarse según la demanda de Duflo.
 
-**Ventaja logística.**
-Un punto que estimamos especialmente relevante para Duflo: el predio se encuentra a aproximadamente **una (1) hora del punto de entrega**, frente a las **ocho a diez horas de tránsito** desde las zonas proveedoras tradicionales (Bogotá y aledañas). Esta diferencia se traduce en (i) menor envejecimiento del producto en ruta, (ii) reducción del costo logístico operativo y (iii) mayor flexibilidad en la frecuencia de entrega. Para productos como carne y plátano —cuyo deterioro empieza en la cosecha y se acelera con el transporte— esta proximidad representa una ventaja estructural difícil de igualar por proveedores ubicados fuera del Llano.
+**Ventaja de proximidad.**
+El predio se encuentra a aproximadamente **una (1) hora del punto de entrega**, lo cual nos permite ofrecer entregas con menor envejecimiento en ruta, mayor flexibilidad en la frecuencia y un costo logístico ajustado. Factores que son especialmente sensibles para productos perecederos como huevo, plátano y carne fresca.
 
 En esta etapa, agradeceríamos sostener una **reunión formal** con usted (presencial en sus oficinas o por videollamada, según le sea más conveniente) con tres objetivos:
 
