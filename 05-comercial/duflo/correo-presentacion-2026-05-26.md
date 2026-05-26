@@ -2,7 +2,7 @@
 
 > Estado: **LISTO PARA ENVIAR** — solo falta correo remitente de Juan.
 >
-> Tipo: warm follow-up · NO presentación fría. La visita presencial ocurrió el **30 de abril de 2026** en oficinas de Duflo S.A.S. Estuvieron papá Jaime y Juan; José Munera manifestó verbalmente que compra el total de la producción. Juan envió WhatsApp el mismo día agradeciendo la visita. Este correo es el seguimiento formal.
+> Tipo: warm follow-up · NO presentación fría. La visita ocurrió el **30 de abril de 2026** en oficinas de Duflo S.A.S. Estuvieron papá Jaime y Juan. El pitch nuestro fue: "tenemos una finca en la zona, ¿hay posibilidad de trabajar con ustedes?" José Munera respondió compartiéndonos a grandes rasgos las necesidades de abastecimiento de Duflo (huevos, plátano, patilla, carne) y el origen actual de sus proveedores (Bogotá y aledañas). **No hubo compromiso formal de compra** — esa es la lectura comercial nuestra, no una promesa de José. Juan envió WhatsApp el mismo día agradeciendo la visita. Este correo es el seguimiento formal estructurado.
 
 ## Metadata
 
@@ -19,7 +19,9 @@ Estimado José,
 
 Reciba un cordial saludo de mi parte y la familia Acuña.
 
-Le escribo para dar continuidad formal a nuestra visita del pasado **30 de abril**, en la cual mi padre Jaime Acuña y yo tuvimos el gusto de ser recibidos por usted en las oficinas de Duflo S.A.S., y donde manifestó su interés en absorber el total de la producción del proyecto avícola free-range que estamos estructurando en nuestra finca **"El Trueno"** (vereda Rubiales, municipio de Puerto Gaitán, Meta · 991 ha).
+Le escribo para dar continuidad formal a nuestra visita del pasado **30 de abril**, en la cual mi padre Jaime Acuña y yo tuvimos el gusto de ser recibidos por usted en las oficinas de Duflo S.A.S. En aquella conversación les manifestamos el interés de explorar una relación de proveeduría desde nuestra finca en el Llano, y usted nos compartió a grandes rasgos la magnitud y diversidad de las compras que Duflo realiza, así como las zonas de origen actuales de sus proveedores.
+
+Tras dicha visita —y motivados por la cercanía del predio al punto de entrega y por las características del terreno— hemos avanzado en la estructuración formal de un proyecto avícola free-range con integración agrícola, que hoy ponemos a su consideración. El predio en cuestión es la finca **"El Trueno"** (vereda Rubiales, municipio de Puerto Gaitán, Meta · 991 ha).
 
 Como **socio mayoritario** de la **Sociedad Agropecuaria Miramar Jaime Acuña e Hijos S en C** (NIT 900.798.798-8), lidero la planeación estratégica y la estructura financiera del proyecto desde Miami, mientras mi padre coordina la operación en campo como Representante Legal de la sociedad.
 
@@ -47,17 +49,17 @@ Conforme conversamos durante la visita, además del huevo, las 991 hectáreas de
 **Ventaja logística.**
 Un punto que estimamos especialmente relevante para Duflo: el predio se encuentra a aproximadamente **una (1) hora del punto de entrega**, frente a las **ocho a diez horas de tránsito** desde las zonas proveedoras tradicionales (Bogotá y aledañas). Esta diferencia se traduce en (i) menor envejecimiento del producto en ruta, (ii) reducción del costo logístico operativo y (iii) mayor flexibilidad en la frecuencia de entrega. Para productos como carne y plátano —cuyo deterioro empieza en la cosecha y se acelera con el transporte— esta proximidad representa una ventaja estructural difícil de igualar por proveedores ubicados fuera del Llano.
 
-En esta etapa del proyecto, agradeceríamos sostener una **reunión formal** con usted (presencial en sus oficinas o por videollamada, según le sea más conveniente) con tres objetivos:
+En esta etapa, agradeceríamos sostener una **reunión formal** con usted (presencial en sus oficinas o por videollamada, según le sea más conveniente) con tres objetivos:
 
-1. Confirmar formalmente el interés comercial de Duflo S.A.S. en el suministro continuo.
-2. Conversar sobre términos preliminares: precio referencia por cubeta, volúmenes mínimos y máximos por fase, frecuencia de entrega, especificaciones de calidad y empaque, y plazos de pago.
-3. Alinear nuestro cronograma de arranque con las necesidades de inventario de Duflo.
+1. Evaluar de forma conjunta el potencial de una relación de proveeduría estable entre la sociedad y Duflo S.A.S.
+2. Conocer los criterios y exigencias de calidad, empaque, frecuencia de entrega y condiciones comerciales que Duflo aplica a sus proveedores, así como rangos de referencia de precio.
+3. Alinear nuestro cronograma de arranque con las necesidades de abastecimiento de Duflo.
 
 Con gusto podemos compartir en dicha reunión el documento técnico completo del proyecto (planos del galpón, sistemas de agua y eléctrico, plan agronómico del plátano), si fuese de interés para su equipo de planeación.
 
 Quedo atento a su disponibilidad para agendar durante las próximas dos semanas.
 
-Agradezco nuevamente la receptividad mostrada durante la visita y la confianza depositada en el proyecto.
+Agradezco nuevamente la receptividad mostrada durante la visita y la disposición a explorar esta posibilidad.
 
 Cordialmente,
 
