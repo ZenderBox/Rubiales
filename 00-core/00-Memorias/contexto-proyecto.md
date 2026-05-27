@@ -67,11 +67,20 @@ Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto 
 
 *(Anotar aquí cada vez que haya reunión con papá, llamada con proveedor, visita a finca, conversación con Duflo, etc. Formato: fecha — con quién — qué se habló — qué quedó pendiente.)*
 
+- **2026-04-30** — Visita presencial a Duflo S.A.S. Asistieron papá (Jaime) y Juan. Atendió José Munera Benedetti (Gerente de Operaciones). El pitch fue exploratorio: "tenemos finca en la zona, queremos ser proveedores". José compartió a grandes rasgos qué compra Duflo (huevos, plátano, patilla, carne) y de dónde lo trae actualmente (Bogotá y aledañas, 8-10 h de tránsito). **No hubo compromiso formal de compra** — la lectura nuestra es que por costo y logística Duflo nos preferiría si tenemos producción consistente. Esa lectura es la razón por la que estructuramos el proyecto. Mismo día, Juan envió WhatsApp agradeciendo la visita.
 - **2026-05-03** — Revisión inicial de la carpeta de documentos. Se crearon Pendientes y Memorias. Próximo paso: cerrar revisión de papá del Setup Técnico.
 - **2026-05-25** — Sesión Juan ↔ Claude. Tres bloques de trabajo:
   1. **Pendientes y Memorias estructurados** — 11 tareas activas de la semana + 3 cuellos de botella identificados (Cormacarena, Banco Agrario, ICA Mosquera).
   2. **Investigación regulatoria ICA / free-range** — confirmado que NO está prohibido; ruta de certificación es la Resolución 16409 de 2024 (Bienestar Animal). Documentado en `04-regulatorio/ica/regulatorio-ica.md`.
   3. **Sistema MiramarBox creado** — clon del patrón ZenderBox WMS: 7 módulos numerados, `00-Memorias/` por módulo, workflow branch+PR, comando `/guarda-finca` para cerrar sesiones. Repo en `github.com/ZenderBox/Rubiales` (provisional). PR #1 (estructura inicial) merged.
+- **2026-05-26** — Sesión Juan ↔ Claude. Hitos:
+  1. **Datos legales sociedad extraídos** — NIT 900.798.798-8, matrícula 02526088. Hallazgo crítico: matrícula vencida desde abril 2024.
+  2. **Predios identificados** — El Trueno (991 ha, vereda Rubiales, a nombre del tío William Iván, embargado por Cesia Martinez ~$160.9M COP + Seguros Bolívar 2017) + La Realidad (posesión, sesión dedicada pendiente). Plan Maestro decía 2.000 ha — error histórico, son 991.
+  3. **Incidente legal Cesia Martinez registrado** — conflicto familiar largo, caso en Corte Constitucional. Bloquea Fase 2 con Finagro; Fase 1 viable bajo comodato.
+  4. **Correo ICA enviado** — consulta exploratoria a Mosquera/Tibaitatá (territorialidad + Resolución 16409). Esperando respuesta.
+  5. **Correo Duflo enviado** — warm follow-up a José Munera (Gerente Operaciones · `jose.munera@duflosas.com`) presentando el proyecto y solicitando reunión formal en 2 semanas. Decisión de no exponer Finagro ni embargo en el correo. Enviado desde `juan.acuna@zenderbox.com` para reforzar credibilidad (el correo menciona el rol de CEO de ZenderBox).
+  6. **Banco Agrario · primer envío de documentos** — Juan envió declaraciones de renta 2018-2020 + estado financiero (lo que pidió papá) al banco para reactivar la cuenta. ⚠️ Riesgo: las declaraciones son antiguas. Si rechazan, hay que activar T18 (declaraciones 2021-2025 con contadora).
+  7. **Dashboard actualizado** — 4 bloqueadores activos (B0 matrícula crítico, B1 Cormacarena, B2 banco esperando respuesta, B3 ICA resuelto-enviado). Predios documentados en `00-core/00-Memorias/predios.md`. Incidente Cesia en `00-core/07-Incidentes/2026-05-25_conflicto-legal-cesia-martinez.md`.
 
 ---
 

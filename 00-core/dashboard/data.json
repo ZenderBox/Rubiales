@@ -3,7 +3,7 @@
     "project": "Zender Ranch",
     "brand": { "prefix": "Zender", "accent": "Ranch", "separator": " " },
     "subtitle": "Proyecto Avícola Rubiales · Puerto Gaitán, Meta",
-    "lastUpdate": "2026-05-25",
+    "lastUpdate": "2026-05-26",
     "currentPhase": "F0 · Pre-arranque",
     "nextMilestone": {
       "label": "Muestras plátano y patilla",
@@ -12,6 +12,14 @@
     }
   },
   "blockers": [
+    {
+      "id": "B-1",
+      "title": "Predio El Trueno · embargado y no en nombre propio",
+      "severity": "critical",
+      "owner": "Familia",
+      "status": "Embargo Cesia $160.9M + embargo Seguros Bolívar 2017",
+      "note": "Predio a nombre del tío William Iván. Fase 1 viable bajo comodato. Fase 2/Finagro inviable sin título limpio. Ver 07-Incidentes/."
+    },
     {
       "id": "B0",
       "title": "Matrícula mercantil vencida (Cámara de Comercio)",
@@ -30,19 +38,19 @@
     },
     {
       "id": "B2",
-      "title": "Banco Agrario · reactivación",
-      "severity": "critical",
+      "title": "Banco Agrario · esperando respuesta",
+      "severity": "high",
       "owner": "Juan",
-      "status": "Declaraciones pendientes de escanear",
-      "note": "Bloquea aporte USD 10K desde Miami. Requiere también matrícula vigente (B0)."
+      "status": "Docs 2018-2020 enviadas 26-may · riesgo de rechazo por antigüedad",
+      "note": "Si rechazan → T18 urgente (declaraciones faltantes 2021-2025 con contadora)."
     },
     {
       "id": "B3",
-      "title": "ICA Mosquera · correo en stand-by",
+      "title": "ICA Mosquera · correo listo para enviar",
       "severity": "high",
       "owner": "Juan",
-      "status": "Borrador listo · esperando renovación matrícula",
-      "note": "No mandar con NIT en mora. Borrador completo en 04-regulatorio/ica/."
+      "status": "Datos completos · pendiente Juan complete correo + celulares",
+      "note": "Decisión: enviar consulta exploratoria sin esperar renovación. Vereda Rubiales, matrícula 234-11845, 991 ha confirmadas."
     }
   ],
   "phases": [
@@ -79,9 +87,9 @@
     {
       "id": "03-finanzas",
       "label": "Finanzas",
-      "status": "blocked",
-      "summary": "Banco Agrario sin reactivar. Aporte USD 10K en espera.",
-      "openTasks": 3
+      "status": "active",
+      "summary": "Docs enviadas al banco 26-may · esperando respuesta. Declaraciones 2021-2025 pendientes con contadora.",
+      "openTasks": 4
     },
     {
       "id": "04-regulatorio",
@@ -93,9 +101,9 @@
     {
       "id": "05-comercial",
       "label": "Comercial",
-      "status": "pending",
-      "summary": "Visita presencial a Duflo + correo de seguimiento.",
-      "openTasks": 1
+      "status": "active",
+      "summary": "Correo Duflo enviado · esperando agenda de reunión formal.",
+      "openTasks": 2
     },
     {
       "id": "06-proveedores",
@@ -118,6 +126,42 @@
     ]
   },
   "activity": [
+    {
+      "date": "2026-05-26",
+      "title": "Banco Agrario · declaraciones 2018-2020 + EEFF enviados (esperando respuesta)",
+      "author": "Juan",
+      "ref": "PR #6"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Correo Duflo enviado desde juan.acuna@zenderbox.com · solicitud reunión formal",
+      "author": "Juan",
+      "ref": "PR #6"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Correo ICA Mosquera enviado · consulta exploratoria",
+      "author": "Juan",
+      "ref": "PR #6"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Predios identificados: El Trueno (991 ha, embargado) + La Realidad (posesión)",
+      "author": "Juan + Claude",
+      "ref": "PR #5"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Incidente legal Cesia Martinez registrado · liquidación $160.9M",
+      "author": "Juan + Claude",
+      "ref": "PR #5"
+    },
+    {
+      "date": "2026-05-26",
+      "title": "Correo ICA actualizado con datos definitivos del predio · LISTO",
+      "author": "Juan + Claude",
+      "ref": "PR #5"
+    },
     {
       "date": "2026-05-25",
       "title": "Datos legales sociedad extraídos + matrícula vencida detectada",

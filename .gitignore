@@ -14,10 +14,11 @@
 _pesados/
 
 # Documentos personales / sensibles — nunca subir
-**/declaraciones-renta/
+# (NOTA: declaraciones de renta de la SOCIEDAD sí van al repo. Solo se bloquean las PERSONALES.)
 **/cedulas/
-*-cedula.*
-*-renta.*
+**/*cedula*
+**/*-personal.*
+**/*personal-*
 .env
 .env.*
 *.key
