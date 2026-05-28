@@ -35,6 +35,25 @@ Cosas que aprendimos sobre el terreno, sobre el papá, sobre los proveedores y s
 - Las muestras de plátano y patilla salen en 15 días (≈ 9 jun 2026) — usar ese hito como referencia para construir el roadmap completo hacia atrás.
 - El proyecto tiene 3 cuellos de botella simultáneos: capital (banco), agua (Cormacarena), ICA. Los tres pueden tramitarse en paralelo pero hay dependencias.
 
+## Sobre el workflow de PRs (regla crítica)
+
+**Problema observado en 2 ocasiones (PR #5 y PR #6):** se mergeó un PR mientras Claude estaba pusheando commits adicionales a la misma branch. Resultado: los commits posteriores quedaron huérfanos (en la branch pero no en main), y hubo que recuperarlos con un PR de fix (#7 y antes).
+
+**Regla operativa de ahora en adelante:**
+- Claude debe terminar TODOS los pushes a una branch ANTES de avisar al owner.
+- Claude debe decir explícitamente "PR #X listo · podés mergear" al owner.
+- El owner NO mergea hasta esa señal.
+- Si después del merge hace falta agregar algo, va en una branch nueva — no en la branch ya mergeada.
+
+Este patrón es propio de un flujo solo/colaborativo (un dev + un revisor). Sin esta disciplina los commits se pierden silenciosamente.
+
+## Sobre Cloudflare Pages
+
+- El UI nuevo de Cloudflare mezcla Workers y Pages — el flujo de "Crear aplicación" puede empujar al de Workers en vez de Pages. Para forzar Pages: link de abajo "¿Busca implementar Pages? Comenzar".
+- Para repo en organización GitHub (no cuenta personal): al autorizar la app de Cloudflare en GitHub, seleccionar **la organización** (no la cuenta personal). Si seleccionás cuenta personal, no ve los repos de la org.
+- **Build output directory** es el campo crítico para proyectos no-en-root. Para nuestro repo: `00-core/dashboard`.
+- **Production branch** debe ser `main`, no la branch inicial del repo (suele cargarse el default que ve primero — en nuestro caso fue `setup/initial-structure`, que estaba vacía).
+
 ## Sobre el sistema MiramarBox
 
 - El patrón ZenderBox WMS (módulos numerados + `00-Memorias/` + comandos `/guardar-*`) se traduce 1:1 a un proyecto agropecuario. No hace falta inventar arquitectura nueva.
