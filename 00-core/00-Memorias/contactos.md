@@ -30,10 +30,23 @@
 - Líneas: ISA Brown, Shaver Black
 - ⚠️ Vende pollitas de **1 día**, no de 16 semanas. Hay que preguntar si tienen levante hasta semana 16 o aliado.
 
-### SAN MARINO
-- Misma zona (Girón) — visitar mismo viaje que Colaves.
-- Papá va a llamar al vendedor para cotizar.
-- **Pendiente:** pedirle a papá el contacto del vendedor y guardarlo acá.
+### SAN MARINO ⭐ PROVEEDOR SELECCIONADO 2026-05-27
+- **Empresa:** Agroavícola San Marino · Genética Avícola
+- **Web:** www.sanmarino.com.co
+- **Planta de entrega:** Villa Claudia, **Cumaral, Meta** (~4-5 h del predio)
+- **Raza ofrecida:** **Babcock Brown** (Hendrix Genetics)
+- **Producto:** pollas de **16 semanas**
+- **Precio:** **$26.500/polla** (negociable, hay rebaja)
+- **Lotes disponibles 10.000 pollas cada uno:**
+  - 15 de julio 2026
+  - 15 de agosto 2026
+  - **15 de septiembre 2026** ← lote target nuestro
+- **Flexibilidad:** vende solo la cantidad que necesitemos del lote
+- **Servicios extra:** coordinan camión especializado + canastas plásticas
+- **Salud / vacunación:** plan vacunal completo provisto en doc (día 1 a semana 15). **NO se hacen responsables de cumplimiento sanitario post-entrega** — desde sem 16 es responsabilidad del productor.
+- **Recomendación de fuente:** la esposa del tío de Cristian (esposo de Paula).
+- **Pendiente:** pedirle a papá el contacto directo del vendedor de San Marino y guardarlo acá.
+- **Documentos:** plan vacunal en repo · `01-galpon/referencias/Babcock-guia-producto-completa-San-Marino.pdf`
 
 ### TOSCANA
 - Solo por llamada / WhatsApp — **NO acepta visitas**.
@@ -61,6 +74,35 @@
 ### Constructor galpón (pendiente identificar nombre)
 - Papá ya empezó a cotizar con un ingeniero de la zona.
 - **Pendiente:** pedirle a papá el nombre y datos del contacto.
+
+## Alimento / concentrado
+
+### Italcol — bodega de despacho en Cáqueza (Cundinamarca)
+- **Estado:** referido el 2026-05-27 por la esposa del tío de Cristian (misma fuente que recomendó Babcock + San Marino).
+- **Producto:** concentrado para ponedoras (presumiblemente línea Italcol Postura).
+- **Crédito:** **30 días** (golden ticket — capital de trabajo cubierto).
+- **A validar (T21):**
+  - ¿Es distribuidor oficial Italcol o intermediario?
+  - ¿Crédito requiere garantía/codeudor/aval?
+  - Precio por kg confirmado
+  - ¿Entregan en finca (Puerto Gaitán) o hay que recoger en Cáqueza?
+  - Costo logístico Cáqueza → Puerto Gaitán (~5-6 h)
+- **Anclaje financiero:**
+  - 2.000 gallinas × 114 g/día = 228 kg/día = 6.84 ton/mes
+  - A ~$2.300/kg = ~$15.7M COP/mes en alimento
+  - Crédito 30d significa NO necesitar este capital en caja antes de empezar a vender huevos
+
+## Veterinarios
+
+### Tío William Iván Acuña Ocampo
+- Hermano de papá, propietario actual de El Trueno (predio del proyecto).
+- C.C. 79.291.042
+- Ofreció ayudar con el plan vacunal post-entrega.
+- **Pendiente:** confirmar disponibilidad operativa real (frecuencia de visitas, tarifa, etc.).
+
+### Veterinario alternativo (pendiente)
+- Pedir recomendación a San Marino — típicamente conocen veterinarios de zona que ya manejan sus líneas.
+- **Estrategia:** 2 opciones para no depender de una sola (T22).
 
 ## Equipo interno
 

@@ -250,6 +250,103 @@
       margin-bottom: 12px;
     }
 
+    /* Timeline (cronograma) */
+    .timeline { display: flex; flex-direction: column; gap: 0; position: relative; }
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 18px; top: 8px; bottom: 8px;
+      width: 2px;
+      background: var(--zb-ink-100);
+    }
+    .timeline-item {
+      display: grid;
+      grid-template-columns: 38px 110px 1fr auto;
+      gap: 14px;
+      padding: 12px 0;
+      align-items: start;
+      position: relative;
+    }
+    .timeline-dot {
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      border: 3px solid var(--zb-paper);
+      background: var(--zb-ink-200);
+      box-shadow: 0 0 0 1px var(--zb-ink-100);
+      margin: 4px 0 0 10px;
+      flex-shrink: 0;
+      z-index: 1;
+    }
+    .timeline-item.done .timeline-dot      { background: var(--zb-success);  box-shadow: 0 0 0 1px var(--zb-success); }
+    .timeline-item.in-progress .timeline-dot { background: var(--zb-cyan);    box-shadow: 0 0 0 1px var(--zb-cyan); animation: pulse 2s ease infinite; }
+    .timeline-item.pending .timeline-dot   { background: var(--zb-paper);    box-shadow: 0 0 0 2px var(--zb-ink-200); }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.25); }
+    }
+    .timeline-date {
+      font-size: 11px; font-weight: 600;
+      color: var(--zb-ink-500);
+      font-variant-numeric: tabular-nums;
+      padding-top: 2px;
+    }
+    .timeline-item.done .timeline-date  { color: var(--zb-success); }
+    .timeline-item.in-progress .timeline-date { color: var(--zb-cyan-dark); font-weight: 700; }
+    .timeline-content { min-width: 0; }
+    .timeline-label   { font-size: 13px; font-weight: 600; color: var(--zb-ink-900); line-height: 1.4; }
+    .timeline-item.done .timeline-label    { color: var(--zb-ink-500); text-decoration: line-through; text-decoration-color: var(--zb-ink-300); }
+    .timeline-note { font-size: 11px; color: var(--zb-ink-500); margin-top: 3px; line-height: 1.4; }
+    .timeline-owner {
+      font-size: 10px; font-weight: 700;
+      background: var(--zb-ink-50);
+      color: var(--zb-ink-700);
+      padding: 3px 8px;
+      border-radius: var(--zb-radius-pill);
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+    }
+
+    /* Quotes (cotizaciones) */
+    .quotes-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+    .quotes-table th {
+      text-align: left;
+      font-size: 10px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--zb-ink-500);
+      padding: 8px 10px;
+      border-bottom: 1px solid var(--zb-ink-100);
+    }
+    .quotes-table td {
+      padding: 10px;
+      border-bottom: 1px solid var(--zb-ink-50);
+      vertical-align: top;
+    }
+    .quotes-table tr:hover td { background: var(--zb-ink-50); }
+    .quotes-category {
+      font-size: 10px; font-weight: 700; letter-spacing: 0.04em;
+      color: var(--zb-cyan-dark);
+      text-transform: uppercase;
+    }
+    .quotes-item { font-weight: 600; color: var(--zb-ink-900); }
+    .quotes-vendor { color: var(--zb-ink-500); font-size: 11px; margin-top: 2px; }
+    .quotes-note   { color: var(--zb-ink-500); font-size: 11px; margin-top: 2px; font-style: italic; }
+    .quotes-value  { font-weight: 700; color: var(--zb-ink-900); font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .quotes-value-empty { color: var(--zb-ink-300); }
+
+    /* Status badges para cronograma y cotizaciones */
+    .status-quote-requested   { background: var(--zb-warn-bg);    color: var(--zb-warn); }
+    .status-quote-requested::before   { background: var(--zb-warn); }
+    .status-quote-received    { background: var(--zb-success-bg); color: var(--zb-success); }
+    .status-quote-received::before    { background: var(--zb-success); }
+    .status-quote-to-request  { background: var(--zb-ink-50);     color: var(--zb-ink-500); }
+    .status-quote-to-request::before  { background: var(--zb-ink-300); }
+    .status-quote-included    { background: var(--zb-cyan-soft);  color: var(--zb-cyan-dark); }
+    .status-quote-included::before    { background: var(--zb-cyan); }
+
     /* Activity */
     .activity-list { display: flex; flex-direction: column; gap: 0; }
     .activity-item {
@@ -406,6 +503,69 @@
       `;
     }
 
+    function renderTimeline(timeline) {
+      if (!timeline || !timeline.length) return '';
+      return `
+        <section>
+          <h2>Cronograma del proyecto</h2>
+          <div class="card">
+            <div class="timeline">
+              ${timeline.map(t => `
+                <div class="timeline-item ${escape(t.status)}">
+                  <div class="timeline-dot"></div>
+                  <div class="timeline-date">${fmtDate(t.date)}</div>
+                  <div class="timeline-content">
+                    <div class="timeline-label">${escape(t.label)}</div>
+                    ${t.note ? `<div class="timeline-note">${escape(t.note)}</div>` : ''}
+                  </div>
+                  <div class="timeline-owner">${escape(t.owner)}</div>
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    function renderQuotes(quotes) {
+      if (!quotes || !quotes.length) return '';
+      const fmtMoney = (v, cur) => {
+        if (v == null) return '<span class="quotes-value-empty">—</span>';
+        return `${new Intl.NumberFormat('es-CO').format(v)} <small style="font-weight:500;color:var(--zb-ink-500)">${escape(cur)}</small>`;
+      };
+      return `
+        <section>
+          <h2>Cotizaciones</h2>
+          <div class="card" style="padding: 4px 8px;">
+            <table class="quotes-table">
+              <thead>
+                <tr>
+                  <th style="width: 110px;">Categoría</th>
+                  <th>Ítem · Proveedor</th>
+                  <th style="width: 130px;">Estado</th>
+                  <th style="width: 140px; text-align: right;">Valor</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${quotes.map(q => `
+                  <tr>
+                    <td><div class="quotes-category">${escape(q.category)}</div></td>
+                    <td>
+                      <div class="quotes-item">${escape(q.item)}</div>
+                      <div class="quotes-vendor">${escape(q.vendor)}</div>
+                      ${q.note ? `<div class="quotes-note">${escape(q.note)}</div>` : ''}
+                    </td>
+                    <td><span class="status status-quote-${escape(q.status)}">${escape(q.status)}</span></td>
+                    <td style="text-align: right;"><div class="quotes-value">${fmtMoney(q.value, q.currency)}</div></td>
+                  </tr>
+                `).join('')}
+              </tbody>
+            </table>
+          </div>
+        </section>
+      `;
+    }
+
     function renderActivity(activity) {
       return `
         <section>
@@ -446,6 +606,8 @@
         root.innerHTML = [
           renderBlockers(data.blockers),
           renderHero(data.meta, data.phases),
+          renderTimeline(data.timeline),
+          renderQuotes(data.quotes),
           renderModules(data.modules),
           renderKpis(data.kpis),
           renderActivity(data.activity)
