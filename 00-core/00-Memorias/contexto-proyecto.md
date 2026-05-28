@@ -82,6 +82,13 @@ Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto 
   6. **Banco Agrario · primer envío de documentos** — Juan envió declaraciones de renta 2018-2020 + estado financiero (lo que pidió papá) al banco para reactivar la cuenta. ⚠️ Riesgo: las declaraciones son antiguas. Si rechazan, hay que activar T18 (declaraciones 2021-2025 con contadora).
   7. **Dashboard actualizado** — 4 bloqueadores activos (B0 matrícula crítico, B1 Cormacarena, B2 banco esperando respuesta, B3 ICA resuelto-enviado). Predios documentados en `00-core/00-Memorias/predios.md`. Incidente Cesia en `00-core/07-Incidentes/2026-05-25_conflicto-legal-cesia-martinez.md`.
 
+- **2026-05-28** — Sesión Juan ↔ Claude. Hitos:
+  1. **Dashboard publicado en Cloudflare Pages** · URL pública: `https://rubiales.pages.dev`. Auto-deploy on merge configurado. Compartido con papá.
+  2. **Rebrand del proyecto a "Miramar"** (provisional · ya no Zender Ranch). Decisión final del nombre todavía abierta pero converge hacia el nombre real de la sociedad.
+  3. **Bloqueador B4 nuevo** · Declaraciones de renta faltantes 2021-2025. Papá confirma viernes qué dice la contadora. Estimado $1.5M-$4M COP + posibles sanciones DIAN.
+  4. **Cronograma de plátano completado** · 8 hitos del ciclo (P01 muestras 9-jun → P08 producción constante 9 ton/mes en jun-2028). 4 tandas escalonadas de siembra (sep/oct/nov/dic 2026) para producción rotativa.
+  5. **4 cotizaciones nuevas en dashboard** · Q09 transporte plántulas · Q10 mano de obra siembra · Q11 riego complementario · Q12 declaraciones renta atrasadas.
+
 ---
 
 *Este archivo es la memoria viva del proyecto. Actualizar después de cada hito, conversación importante o decisión.*

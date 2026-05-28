@@ -1,9 +1,9 @@
 {
   "meta": {
-    "project": "Zender Ranch",
-    "brand": { "prefix": "Zender", "accent": "Ranch", "separator": " " },
+    "project": "Miramar",
+    "brand": { "prefix": "Mira", "accent": "mar", "separator": "" },
     "subtitle": "Proyecto Avícola Rubiales · Puerto Gaitán, Meta",
-    "lastUpdate": "2026-05-27",
+    "lastUpdate": "2026-05-28",
     "currentPhase": "F0 · Pre-arranque",
     "nextMilestone": {
       "label": "Llegada de pollas Babcock · San Marino",
@@ -51,6 +51,14 @@
       "owner": "Juan",
       "status": "Enviado 26-may · esperando respuesta",
       "note": "Consulta exploratoria por territorialidad (Mosquera vs Villavicencio) + viabilidad free-range bajo Resolución 16409."
+    },
+    {
+      "id": "B4",
+      "title": "Declaraciones de renta · faltan 2021-2025",
+      "severity": "critical",
+      "owner": "Juan + Contadora",
+      "status": "Papá da razón el viernes (qué dice contadora)",
+      "note": "Banco recibió 2018-2020 el 26-may. Si rechazan, hay que presentar 5 años faltantes. Costo estimado: $1.5M-$4M COP en honorarios + posibles sanciones DIAN."
     }
   ],
   "phases": [
@@ -133,7 +141,15 @@
     { "id": "M17", "date": "2026-09-01", "label": "Contratar veterinario · plan vacunal post-sem-16",        "status": "pending",     "owner": "AM",       "note": "Recomendación San Marino + Tío William Acuña — tener 2 opciones." },
     { "id": "M18", "date": "2026-09-15", "label": "🐔 Llegada pollas Babcock 16 semanas (Cumaral → predio)", "status": "pending",     "owner": "PA",       "note": "Camión especializado coordinado con San Marino." },
     { "id": "M19", "date": "2026-10-01", "label": "Pollas en adaptación · ajuste alimentación + iluminación","status": "pending",     "owner": "PA",       "note": "Semanas 17-20 transición a postura." },
-    { "id": "M20", "date": "2027-01-15", "label": "🥚 Primera postura comercial · arranque ventas a Duflo",  "status": "pending",     "owner": "AM",       "note": "Pico de postura 96% esperado para semana 30-35." }
+    { "id": "M20", "date": "2027-01-15", "label": "🥚 Primera postura comercial · arranque ventas a Duflo",  "status": "pending",     "owner": "AM",       "note": "Pico de postura 96% esperado para semana 30-35." },
+    { "id": "P01", "date": "2026-06-09", "label": "🍌 Muestras plátano y patilla recibidas",                  "status": "pending",     "owner": "PA",       "note": "Papá confirma fecha exacta. Validación del producto antes de pedir tandas grandes." },
+    { "id": "P02", "date": "2026-08-15", "label": "Pedido primera tanda plántulas (Agrosavia)",               "status": "pending",     "owner": "JU",       "note": "~2.222 plántulas (8.888 ÷ 4 tandas). Validar precio in vitro vs colino." },
+    { "id": "P03", "date": "2026-09-15", "label": "🌱 Siembra primera tanda · 2 ha (potrero 1)",              "status": "pending",     "owner": "PA",       "note": "Marco siembra Dominico Hartón. Coincide con llegada de aves." },
+    { "id": "P04", "date": "2026-10-15", "label": "🌱 Siembra segunda tanda · 2 ha (potrero 2)",              "status": "pending",     "owner": "PA",       "note": "Tanda escalonada para producción constante." },
+    { "id": "P05", "date": "2026-11-15", "label": "🌱 Siembra tercera tanda · 2 ha (potrero 3)",              "status": "pending",     "owner": "PA",       "note": "Tercera tanda escalonada." },
+    { "id": "P06", "date": "2026-12-15", "label": "🌱 Siembra cuarta tanda · 2 ha (potrero 4)",               "status": "pending",     "owner": "PA",       "note": "Cuatro potreros completos · ciclo de rotación armado con aves." },
+    { "id": "P07", "date": "2027-09-15", "label": "🍌 Primera cosecha plátano · primer racimo del lote 1",    "status": "pending",     "owner": "PA",       "note": "~12 meses post-siembra. Validación de productividad real del lote." },
+    { "id": "P08", "date": "2028-06-15", "label": "🍌 Producción constante plátano · 9 ton/mes",              "status": "pending",     "owner": "PA",       "note": "Las 4 tandas en cosecha rotativa cubren producción mensual continua." }
   ],
   "quotes": [
     { "id": "Q01", "category": "Galpón",      "item": "Construcción galpón capacidad 2.000 aves",  "vendor": "Ingenieros locales (papá cotizando)", "status": "requested",  "value": null, "currency": "COP", "note": "Esperando respuesta. Ver T20." },
@@ -143,7 +159,11 @@
     { "id": "Q05", "category": "Alimento",    "item": "Concentrado postura Italcol",               "vendor": "Bodega Italcol Cáqueza",               "status": "to-request", "value": null, "currency": "COP", "note": "Crédito 30 días reportado. Validar oficial vs intermediario." },
     { "id": "Q06", "category": "Plántulas",   "item": "Plátano Dominico Hartón · plántulas in vitro o colinos", "vendor": "Agrosavia · Rodrigo Martínez",  "status": "to-request", "value": null, "currency": "COP", "note": "8.888 unidades por tandas. Email: ramartinez@agrosavia.co" },
     { "id": "Q07", "category": "Veterinario", "item": "Plan vacunal post-sem-16 + visitas regulares","vendor": "Por definir (San Marino + Tío William)", "status": "to-request", "value": null, "currency": "COP", "note": "2 opciones a comparar." },
-    { "id": "Q08", "category": "Transporte",  "item": "Camión especializado pollas Cumaral → predio","vendor": "Coordinado por San Marino",            "status": "included",   "value": null, "currency": "COP", "note": "San Marino lo coordina + canastas plásticas." }
+    { "id": "Q08", "category": "Transporte",  "item": "Camión especializado pollas Cumaral → predio","vendor": "Coordinado por San Marino",            "status": "included",   "value": null, "currency": "COP", "note": "San Marino lo coordina + canastas plásticas." },
+    { "id": "Q09", "category": "Plátano",     "item": "Transporte plántulas Dominico Hartón al predio","vendor": "Por definir",                          "status": "to-request", "value": null, "currency": "COP", "note": "Coordinación con Agrosavia. Cuatro tandas escalonadas." },
+    { "id": "Q10", "category": "Plátano",     "item": "Mano de obra siembra 8 ha (4 potreros)",     "vendor": "Por definir (zona Puerto Gaitán)",     "status": "to-request", "value": null, "currency": "COP", "note": "Marco siembra Dominico Hartón. Posible cuadrilla local." },
+    { "id": "Q11", "category": "Plátano",     "item": "Sistema de riego complementario (época seca)","vendor": "Por definir",                          "status": "to-request", "value": null, "currency": "COP", "note": "Llano tiene 4 meses secos. Validar necesidad real con agrónomo." },
+    { "id": "Q12", "category": "Contadora",   "item": "Declaraciones renta faltantes 2021-2025",     "vendor": "Contadora (papá pregunta viernes)",    "status": "to-request", "value": null, "currency": "COP", "note": "Estimado: $1.5M-$4M COP en honorarios + posibles sanciones DIAN. Ver B4." }
   ],
   "kpis": {
     "production": {
@@ -158,6 +178,18 @@
     ]
   },
   "activity": [
+    {
+      "date": "2026-05-28",
+      "title": "Rebrand a Miramar · ciclo plátano (8 hitos P01-P08) + cotizaciones · B4 declaraciones",
+      "author": "Juan + Claude",
+      "ref": "PR #8"
+    },
+    {
+      "date": "2026-05-28",
+      "title": "Dashboard publicado en rubiales.pages.dev · Cloudflare Pages auto-deploy",
+      "author": "Juan + Claude",
+      "ref": "PR #7"
+    },
     {
       "date": "2026-05-27",
       "title": "Decisiones D11-D15: Babcock + San Marino + lote 15-sep + plan vacunal",
