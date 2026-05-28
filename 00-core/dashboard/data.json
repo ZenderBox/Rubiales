@@ -3,12 +3,12 @@
     "project": "Zender Ranch",
     "brand": { "prefix": "Zender", "accent": "Ranch", "separator": " " },
     "subtitle": "Proyecto Avícola Rubiales · Puerto Gaitán, Meta",
-    "lastUpdate": "2026-05-26",
+    "lastUpdate": "2026-05-27",
     "currentPhase": "F0 · Pre-arranque",
     "nextMilestone": {
-      "label": "Muestras plátano y patilla",
-      "date": "2026-06-09",
-      "daysUntil": 15
+      "label": "Llegada de pollas Babcock · San Marino",
+      "date": "2026-09-15",
+      "daysUntil": 111
     }
   },
   "blockers": [
@@ -46,11 +46,11 @@
     },
     {
       "id": "B3",
-      "title": "ICA Mosquera · correo listo para enviar",
+      "title": "ICA Mosquera · consulta enviada",
       "severity": "high",
       "owner": "Juan",
-      "status": "Datos completos · pendiente Juan complete correo + celulares",
-      "note": "Decisión: enviar consulta exploratoria sin esperar renovación. Vereda Rubiales, matrícula 234-11845, 991 ha confirmadas."
+      "status": "Enviado 26-may · esperando respuesta",
+      "note": "Consulta exploratoria por territorialidad (Mosquera vs Villavicencio) + viabilidad free-range bajo Resolución 16409."
     }
   ],
   "phases": [
@@ -108,10 +108,42 @@
     {
       "id": "06-proveedores",
       "label": "Proveedores",
-      "status": "quoting",
-      "summary": "San Marino llamada pendiente. Colaves y Toscana por evaluar.",
-      "openTasks": 2
+      "status": "active",
+      "summary": "San Marino seleccionado (Babcock, $26.5K, lote 15-sep). Italcol Cáqueza por validar.",
+      "openTasks": 3
     }
+  ],
+  "timeline": [
+    { "id": "M01", "date": "2026-04-30", "label": "Visita presencial a Duflo (Cumaral)",                     "status": "done",        "owner": "JU + PA",  "note": "José Munera, Gerente Operaciones. Pitch: ¿podemos ser proveedores?" },
+    { "id": "M02", "date": "2026-05-25", "label": "Setup MiramarBox + memorias + dashboard v1",              "status": "done",        "owner": "JU",       "note": "Repo, módulos, decisiones documentadas." },
+    { "id": "M03", "date": "2026-05-26", "label": "Correo formal a Duflo enviado",                           "status": "done",        "owner": "JU",       "note": "Solicitud de reunión formal." },
+    { "id": "M04", "date": "2026-05-26", "label": "Correo formal a ICA Mosquera enviado",                    "status": "done",        "owner": "JU",       "note": "Consulta exploratoria sobre territorialidad + Resolución 16409." },
+    { "id": "M05", "date": "2026-05-26", "label": "Banco Agrario · primer envío de documentos",              "status": "done",        "owner": "JU",       "note": "Declaraciones 2018-2020 + EEFF. Esperando respuesta del banco." },
+    { "id": "M06", "date": "2026-05-27", "label": "Decisión raza Babcock Brown + proveedor San Marino",      "status": "done",        "owner": "AM",       "note": "Lote target: 15 de septiembre 2026 (Cumaral, Meta)." },
+    { "id": "M07", "date": "2026-06-15", "label": "Renovar matrícula mercantil Cámara de Comercio",          "status": "pending",     "owner": "PA",       "note": "Bloqueador crítico para Banco Agrario, Finagro y trámites formales ICA." },
+    { "id": "M08", "date": "2026-06-15", "label": "Viaje papá a Cormacarena · iniciar trámite permiso agua", "status": "pending",     "owner": "PA",       "note": "Sin agua no hay ICA. Sin ICA no hay proyecto." },
+    { "id": "M09", "date": "2026-06-30", "label": "Cotizaciones galpón recibidas (3 capacidades: 2K/3K/5K)", "status": "pending",     "owner": "PA",       "note": "Ingenieros locales. Decidir capacidad Fase 1 con cifras reales." },
+    { "id": "M10", "date": "2026-06-30", "label": "Decisión final · cantidad de aves Fase 1",                "status": "pending",     "owner": "JU + PA",  "note": "Entre 2.000 y 5.000 según cotización galpón." },
+    { "id": "M11", "date": "2026-07-05", "label": "Reservar lote 15-sep con San Marino",                     "status": "pending",     "owner": "PA",       "note": "Confirmar cantidad y abonar señal si aplica." },
+    { "id": "M12", "date": "2026-07-10", "label": "Iniciar construcción del galpón",                         "status": "pending",     "owner": "PA",       "note": "Maestro de obra + materiales. ~6-8 semanas de obra." },
+    { "id": "M13", "date": "2026-07-15", "label": "Validar Italcol Cáqueza · crédito 30 días confirmado",    "status": "pending",     "owner": "PA",       "note": "Distribuidor oficial o intermediario. Precio, entrega, condiciones." },
+    { "id": "M14", "date": "2026-07-20", "label": "Cotización plántulas Agrosavia · Rodrigo Martínez",       "status": "pending",     "owner": "JU",       "note": "8.888 unidades por tandas para producción constante." },
+    { "id": "M15", "date": "2026-08-15", "label": "ICA · registro sanitario predio avícola iniciado",        "status": "pending",     "owner": "JU + PA",  "note": "Depende de respuesta del correo de mayo y avance Cormacarena." },
+    { "id": "M16", "date": "2026-08-31", "label": "Galpón terminado · pruebas sistemas (agua, luz)",         "status": "pending",     "owner": "PA",       "note": "Cama puesta, bebederos nipple, comederos, sanitización." },
+    { "id": "M17", "date": "2026-09-01", "label": "Contratar veterinario · plan vacunal post-sem-16",        "status": "pending",     "owner": "AM",       "note": "Recomendación San Marino + Tío William Acuña — tener 2 opciones." },
+    { "id": "M18", "date": "2026-09-15", "label": "🐔 Llegada pollas Babcock 16 semanas (Cumaral → predio)", "status": "pending",     "owner": "PA",       "note": "Camión especializado coordinado con San Marino." },
+    { "id": "M19", "date": "2026-10-01", "label": "Pollas en adaptación · ajuste alimentación + iluminación","status": "pending",     "owner": "PA",       "note": "Semanas 17-20 transición a postura." },
+    { "id": "M20", "date": "2027-01-15", "label": "🥚 Primera postura comercial · arranque ventas a Duflo",  "status": "pending",     "owner": "AM",       "note": "Pico de postura 96% esperado para semana 30-35." }
+  ],
+  "quotes": [
+    { "id": "Q01", "category": "Galpón",      "item": "Construcción galpón capacidad 2.000 aves",  "vendor": "Ingenieros locales (papá cotizando)", "status": "requested",  "value": null, "currency": "COP", "note": "Esperando respuesta. Ver T20." },
+    { "id": "Q02", "category": "Galpón",      "item": "Construcción galpón capacidad 3.000 aves",  "vendor": "Ingenieros locales (papá cotizando)", "status": "requested",  "value": null, "currency": "COP", "note": "Esperando respuesta. Ver T20." },
+    { "id": "Q03", "category": "Galpón",      "item": "Construcción galpón capacidad 5.000 aves",  "vendor": "Ingenieros locales (papá cotizando)", "status": "requested",  "value": null, "currency": "COP", "note": "Esperando respuesta. Ver T20." },
+    { "id": "Q04", "category": "Aves",        "item": "Pollas Babcock Brown 16 semanas",           "vendor": "San Marino (Cumaral)",                 "status": "received",   "value": 26500, "currency": "COP", "note": "Precio por unidad. Negociable según volumen. Lote 15-sep 2026." },
+    { "id": "Q05", "category": "Alimento",    "item": "Concentrado postura Italcol",               "vendor": "Bodega Italcol Cáqueza",               "status": "to-request", "value": null, "currency": "COP", "note": "Crédito 30 días reportado. Validar oficial vs intermediario." },
+    { "id": "Q06", "category": "Plántulas",   "item": "Plátano Dominico Hartón · plántulas in vitro o colinos", "vendor": "Agrosavia · Rodrigo Martínez",  "status": "to-request", "value": null, "currency": "COP", "note": "8.888 unidades por tandas. Email: ramartinez@agrosavia.co" },
+    { "id": "Q07", "category": "Veterinario", "item": "Plan vacunal post-sem-16 + visitas regulares","vendor": "Por definir (San Marino + Tío William)", "status": "to-request", "value": null, "currency": "COP", "note": "2 opciones a comparar." },
+    { "id": "Q08", "category": "Transporte",  "item": "Camión especializado pollas Cumaral → predio","vendor": "Coordinado por San Marino",            "status": "included",   "value": null, "currency": "COP", "note": "San Marino lo coordina + canastas plásticas." }
   ],
   "kpis": {
     "production": {
@@ -126,6 +158,18 @@
     ]
   },
   "activity": [
+    {
+      "date": "2026-05-27",
+      "title": "Decisiones D11-D15: Babcock + San Marino + lote 15-sep + plan vacunal",
+      "author": "Juan + Claude",
+      "ref": "PR #6"
+    },
+    {
+      "date": "2026-05-27",
+      "title": "Cronograma de 20 hitos + 8 cotizaciones agregadas al dashboard",
+      "author": "Juan + Claude",
+      "ref": "PR #6"
+    },
     {
       "date": "2026-05-26",
       "title": "Banco Agrario · declaraciones 2018-2020 + EEFF enviados (esperando respuesta)",

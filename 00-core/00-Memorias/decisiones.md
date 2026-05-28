@@ -55,6 +55,52 @@ Registro de decisiones tomadas, con fecha, contexto y razón. Para no re-discuti
 - **Decisión:** los `.docx` (Plan Maestro, Setup Técnico, Anexo Planos, Hoja Visita) viven en `00-core/editables/`. Los `.pdf` viven en sus módulos respectivos.
 - **Por qué:** los DOCX sirven para seguir editando; los PDF son para compartir. Separarlos evita confundir cuál es la fuente de verdad.
 
+## 2026-05-27
+
+### D11 · Raza definitiva · Babcock Brown
+- **Decisión:** la raza para Fase 1 es **Babcock Brown** (Hendrix Genetics, distribuida por San Marino en Colombia).
+- **Por qué:**
+  - Evidencia familiar real: lote actual del papá en semana 40, no se ha enfermado una sola vez.
+  - Comparativo: lotes anteriores de Hy-Line se enfermaron 2 veces a edades similares.
+  - Babcock está oficialmente diseñada para climas cálidos tropicales — Puerto Gaitán 28-30°C.
+  - Métricas oficiales casi idénticas a ISA/Hy-Line (viabilidad 94%, pico 96%, huevo 63.8g, 417 huevos/gallina alojada).
+- **Alternativas descartadas:** ISA Brown, Hy-Line Brown (las 3 son Hendrix; sin diferencia significativa en tabla, sí en rusticidad operativa local).
+- **Implicación:** **el Plan Maestro debe actualizarse** (decía ISA/Hy-Line). El correo a ICA y Duflo mencionan "ISA Brown o Hy-Line Brown" — aceptable porque el correo dice "línea X o Y", deja apertura. Documentos comerciales y técnicos futuros: Babcock Brown.
+
+### D12 · Proveedor de pollas · San Marino (Cumaral, Meta)
+- **Decisión:** San Marino es el proveedor de pollas de 16 semanas. Sede de entrega: Cumaral, Meta — planta Villa Claudia.
+- **Por qué:**
+  - Único proveedor que ofrece pollas de 16 semanas (Colaves vende de 1 día; no nos sirve sin levante).
+  - Ubicación crítica: ~4-5 h al predio (Puerto Gaitán). Vs Girón (12+ h) implica menos estrés post-traslado y menor mortalidad.
+  - Precio competitivo $26.500/polla, con margen de rebaja.
+  - Lotes mensuales recurrentes (15 de cada mes: jul, ago, sep) — flexibilidad de cantidad.
+  - Servicios complementarios: ayudan con camión especializado + canastas plásticas.
+  - Plan vacunal completo provisto (14 aplicaciones, día 1 a semana 15) — buena referencia técnica.
+- **Alternativas descartadas:** Colaves (1 día, no 16 sem), Toscana (no acepta visitas).
+- **Implicación:** **NOTA importante** — San Marino dice expresamente "no se hace responsable del cumplimiento del protocolo sanitario". Después de semana 16 las aves son responsabilidad nuestra → necesitamos veterinario en sitio o programa de visitas (T22).
+
+### D13 · Lote target · 15 de septiembre 2026
+- **Decisión:** apuntar al lote del **15 de septiembre 2026** de San Marino. Descartado 15-jul y 15-ago.
+- **Por qué:**
+  - 15-jul (7 sem desde 27-may): heroico. Galpón (6-8 sem) + Cormacarena + ICA bioseguridad + sistemas + sanitización + adaptación = imposible.
+  - 15-ago (10 sem): ajustado pero realista. Riesgo medio.
+  - **15-sep (14 sem): holgado.** Permite margen para bloqueadores que aún no resolvemos (Cormacarena, banco, matrícula).
+- **Implicación:** primera postura comercial estimada para **enero-febrero 2027** (semanas 20-25 de las aves). Cuando José Munera (Duflo) responda, podemos darle fecha concreta de arranque.
+
+### D14 · Capacidad Fase 1 · TBD entre 2.000 y 5.000
+- **Decisión:** **rango abierto** entre 2.000 (plan original) y 5.000. La decisión final depende de cotización del galpón (T20: cotizar 3 escenarios — 2K, 3K, 5K).
+- **Por qué:**
+  - 2.000 = plan original conservador (USD 10K Juan alcanza).
+  - 5.000 = mejor amortización de costos fijos del galpón (terreno, agua, electricidad, vacunación cubren más aves).
+  - San Marino ofrece flexibilidad: vende del lote 10K "lo que necesitemos".
+  - Galpón más grande = más capital pero mejor unit economics.
+- **Implicación:** T20 mide cotización 2K/3K/5K antes de pedir el lote a San Marino. Decisión final antes de finales de junio 2026 (para tener 10 sem de construcción).
+
+### D15 · Plan vacunal · usar como referencia el de San Marino
+- **Decisión:** adoptar el plan vacunal de San Marino (14 aplicaciones, día 1 a semana 15) como base, **a aplicar desde semana 16 en adelante por veterinario contratado** (las vacunas pre-semana 16 las aplica San Marino en su planta).
+- **Por qué:** cubre todas las enfermedades críticas para zona Llanos (Newcastle, Marek, Bronquitis, Gumboro, Salmonella, Coriza, Pasterella, Viruela). La Triple Oleosa de semana 15 (ND+BI+EDS) ya estaría aplicada al recibir las pollas.
+- **Implicación:** verificar al recibir las aves cuáles vacunas vienen aplicadas (certificado del lote) — si alguna falta, T22 veterinario la aplica antes de postura.
+
 ---
 
 ## Decisiones del documento Plan Maestro (pre-existentes)
