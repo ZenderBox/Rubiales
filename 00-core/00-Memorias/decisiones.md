@@ -101,6 +101,25 @@ Registro de decisiones tomadas, con fecha, contexto y razón. Para no re-discuti
 - **Por qué:** cubre todas las enfermedades críticas para zona Llanos (Newcastle, Marek, Bronquitis, Gumboro, Salmonella, Coriza, Pasterella, Viruela). La Triple Oleosa de semana 15 (ND+BI+EDS) ya estaría aplicada al recibir las pollas.
 - **Implicación:** verificar al recibir las aves cuáles vacunas vienen aplicadas (certificado del lote) — si alguna falta, T22 veterinario la aplica antes de postura.
 
+## 2026-05-28
+
+### D16 · Dashboard publicado en Cloudflare Pages
+- **Decisión:** dashboard del proyecto vive en `https://rubiales.pages.dev` (Cloudflare Pages, plan free).
+- **Por qué:** repo GitHub privado no permite GitHub Pages gratis. Cloudflare Pages sí soporta repos privados y auto-redeploya en cada push a `main`. URL no indexada (solo quien tiene el link la ve).
+- **Setup:** cuenta Cloudflare `Juan.acuna@zenderbox.com`, app GitHub instalada en org ZenderBox con acceso solo a `Rubiales`. Branch de producción: `main`. Build output directory: `00-core/dashboard`.
+- **Implicación:** cualquier merge a main = dashboard se actualiza para papá automáticamente. Cero infraestructura propia. Para Fase 2 (auth con magic link / dominio propio) — ver T24/T25 cuando registremos `agropecuariamiramar.co`.
+
+### D17 · Rebrand provisional a "Miramar"
+- **Decisión:** el brand del dashboard pasa de "Zender Ranch" a **"Miramar"** (prefix "Mira" + accent "mar", sin separador).
+- **Por qué:** "Miramar" es el nombre legal de la sociedad y la identidad que llevamos a Duflo/ICA. Mantener brand interno = brand externo evita confusiones de marca.
+- **Pendiente:** la decisión final del nombre del proyecto (MiramarBox / Miramar / otro) sigue abierta para cuando se registre dominio. Ver T12.
+
+### D18 · Estrategia plátano · 4 tandas escalonadas
+- **Decisión:** las 8 ha de plátano Dominico Hartón se siembran en **4 tandas mensuales** (sep, oct, nov, dic 2026), una por potrero de 2 ha.
+- **Por qué:** sembrar las 8 ha el mismo día = cosechar las 8 ha el mismo mes = un mes con mucha producción, los demás cero. Escalonar = cosechar continuamente = producción constante 9 ton/mes.
+- **Cronograma:** P03-P06 (siembra) → P07 primera cosecha sep-2027 → P08 producción constante jun-2028.
+- **Pendiente validar con agrónomo:** marco de siembra exacto (4×3m o 3×3m), riego complementario en seca, mano de obra local con experiencia plátano.
+
 ---
 
 ## Decisiones del documento Plan Maestro (pre-existentes)
