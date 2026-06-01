@@ -120,6 +120,20 @@ Registro de decisiones tomadas, con fecha, contexto y razón. Para no re-discuti
 - **Cronograma:** P03-P06 (siembra) → P07 primera cosecha sep-2027 → P08 producción constante jun-2028.
 - **Pendiente validar con agrónomo:** marco de siembra exacto (4×3m o 3×3m), riego complementario en seca, mano de obra local con experiencia plátano.
 
+## 2026-06-01
+
+### D19 · Stack técnico de Miramar · n8n+Postgres+EC2 separado en cuenta AWS de ZenderHub
+- **Decisión:** replicar el stack del WMS (Ubuntu + Postgres + n8n + nginx) pero en una **instancia EC2 dedicada a Miramar dentro de la cuenta AWS de ZenderHub** (no ZenderBox, no compartida).
+- **Por qué:** reusa el conocimiento operacional ya pago de Juan, separa negocios para compliance/sucesión, Postgres > SQLite para crecer, n8n permite flows visuales sin escribir backend custom.
+- **Alternativas descartadas:** (1) Cloudflare puro · curva nueva y D1 limita queries; (2) Stack idéntico compartido con WMS · acoplaba contabilidades y operaciones.
+- **Implicación:** $20/mes de infraestructura (vs $0-5 de Cloudflare) que se justifican porque este es el sistema operacional de la familia para 10 años. ADR completa: `00-core/06-Decisiones/0001-stack-tecnico-miramar-2026-06-01.md`.
+
+### D20 · F0 completada · servidor Miramar arriba
+- **Decisión operativa:** terminar F0 con el dashboard estático corriendo sobre el server propio antes de meter dinámica (F1).
+- **Resultado:** EC2 `miramar-n8n` (us-east-2 · `18.226.86.66`) corriendo Postgres 16 + Docker + n8n + nginx. Dashboard sirve `http://18.226.86.66/`. Cloudflare Pages (`rubiales.pages.dev`) sigue activa de respaldo hasta tener DNS + SSL nuevo.
+- **Detalles operacionales:** ver `00-core/00-Memorias/servidor-miramar.md`. Credenciales en 1Password vault Miramar.
+- **Implicación:** F0 cierra cuando esté DNS subdominio + SSL. F1 (DB schema + API) arranca después.
+
 ---
 
 ## Decisiones del documento Plan Maestro (pre-existentes)
