@@ -47,6 +47,15 @@ Cosas que aprendimos sobre el terreno, sobre el papá, sobre los proveedores y s
 
 Este patrón es propio de un flujo solo/colaborativo (un dev + un revisor). Sin esta disciplina los commits se pierden silenciosamente.
 
+## Sobre AWS / EC2 (setup del servidor Miramar · 2026-06-01)
+
+- **Las "checkboxes" de HTTP/HTTPS en el wizard de Launch Instance no siempre crean la regla en el Security Group**, aunque visualmente aparezcan listadas como "Allow HTTP/HTTPS traffic from the internet". Hay que **verificar siempre el Security Group después del launch** y agregar manualmente las reglas inbound si faltan. Síntoma: el nginx responde localmente (`curl 127.0.0.1` → 200) pero NO desde afuera (`curl <ip-publica>` → timeout).
+- En `t3.micro` (1 GB RAM) **es obligatorio configurar swap** antes de instalar Postgres + Docker + n8n + nginx. 2 GB de swap es suficiente. Sin esto, OOM kills sin diagnóstico claro.
+- **UFW viene inactivo por default** en Ubuntu 24.04 — no es bloqueante hasta que lo activás. Pero conviene activarlo igual con las reglas explícitas (22/80/443) por defensa en profundidad.
+- **SSH source debe ser "My IP" (no "Anywhere")** desde el primer minuto. Si la IP de Juan cambia (cambio de red, viaje), se actualiza en 30 seg desde la consola de Security Groups.
+- Patrón consistente para keys: vivir en `~/Documents/ZenderBox/key/` (junto a `zenderhub-key.pem`, `zenderbox-key-n8n.pem`) — NO en `~/.ssh/` que es lo "estándar Linux" pero rompe el patrón local de Juan.
+- Para Postgres host + Docker container que se conecta al host: el container ve al host en `172.17.0.1` (bridge default de Docker). Hay que abrir `listen_addresses = '*'` en `postgresql.conf` y permitir `172.17.0.0/16` con `scram-sha-256` en `pg_hba.conf`. Tradeoff aceptado vs poner Postgres también en Docker (más portable pero menos performant en el mismo host).
+
 ## Sobre Cloudflare Pages
 
 - El UI nuevo de Cloudflare mezcla Workers y Pages — el flujo de "Crear aplicación" puede empujar al de Workers en vez de Pages. Para forzar Pages: link de abajo "¿Busca implementar Pages? Comenzar".

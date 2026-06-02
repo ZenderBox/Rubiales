@@ -88,6 +88,13 @@ Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto 
   3. **Bloqueador B4 nuevo** · Declaraciones de renta faltantes 2021-2025. Papá confirma viernes qué dice la contadora. Estimado $1.5M-$4M COP + posibles sanciones DIAN.
   4. **Cronograma de plátano completado** · 8 hitos del ciclo (P01 muestras 9-jun → P08 producción constante 9 ton/mes en jun-2028). 4 tandas escalonadas de siembra (sep/oct/nov/dic 2026) para producción rotativa.
   5. **4 cotizaciones nuevas en dashboard** · Q09 transporte plántulas · Q10 mano de obra siembra · Q11 riego complementario · Q12 declaraciones renta atrasadas.
+- **2026-06-01** — Sesión Juan ↔ Claude. Decisión grande: **se levanta servidor propio para Miramar**. Hitos:
+  1. **Decisión D19 · Stack n8n+Postgres+EC2 separado** (cuenta AWS de ZenderHub, NO Cloudflare puro). Razón: reusar el conocimiento operacional de Juan + separar negocios para compliance.
+  2. **F0 ejecutada hoy** · EC2 `miramar-n8n` levantada (us-east-2 · `18.226.86.66`). Stack instalado: Ubuntu 24.04, Postgres 16 (DB `miramar` + `n8n_db`), Docker + n8n container con Postgres backend, nginx sirviendo dashboard. Swap 2GB, UFW + Security Group AWS configurados.
+  3. **Dashboard del servidor propio responde** · `http://18.226.86.66/` muestra el mismo dashboard que `rubiales.pages.dev`. Cloudflare Pages sigue activo de respaldo hasta tener DNS+SSL nuevo.
+  4. **Key SSH guardada** · `~/Documents/ZenderBox/key/miramar-key.pem` + backup en 1Password vault Miramar.
+  5. **Detalles operacionales documentados** · `00-core/00-Memorias/servidor-miramar.md` + ADR completa en `00-core/06-Decisiones/0001-stack-tecnico-miramar-2026-06-01.md`.
+  6. **Aprendizajes nuevos registrados** · checkbox HTTP/HTTPS en wizard EC2 no siempre aplica al Security Group · swap obligatorio en t3.micro · Postgres host ↔ Docker container vía `172.17.0.1`.
 
 ---
 
