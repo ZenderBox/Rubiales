@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <title>Miramar · Tareas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    /* ===============================================
+       Vista de Tareas · diseñada para papá (72 años)
+       - Tipografía base 22px
+       - Botones grandes (60-66px)
+       - Alto contraste
+       - Lenguaje cálido
+       =============================================== */
+    :root {
+      --zb-cyan:       #029ECB;
+      --zb-cyan-dark:  #007B9F;
+      --zb-cyan-soft:  rgba(2,158,203,.12);
+      --zb-navy:       #004B72;
+      --zb-lime:       #CCD32A;
+      --zb-gradient:   linear-gradient(45deg, #029ECB 0%, #CCD32A 85%);
+
+      --ink-900: #0F0F0F;
+      --ink-700: #2A2A2A;
+      --ink-500: #555555;
+      --ink-300: #8A8A8A;
+      --ink-100: #DBDBDB;
+      --ink-50:  #F4F6F8;
+      --paper:   #FFFFFF;
+
+      --success:    #007830;
+      --success-bg: #E6F3EC;
+      --warn:       #B5870C;
+      --warn-bg:    #FCF3E0;
+      --danger:     #C81E2A;
+      --danger-bg:  #FAE6E8;
+
+      --radius-md: 14px;
+      --radius-lg: 18px;
+      --radius-pill: 99px;
+      --shadow-card: 0 2px 8px rgba(15,15,15,.06);
+      --shadow-button: 0 2px 4px rgba(15,15,15,.10);
+    }
+
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html { font-size: 16px; }
+    body {
+      margin: 0;
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: var(--ink-50);
+      color: var(--ink-900);
+      font-size: 1.4rem;
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .wrap { max-width: 720px; margin: 0 auto; padding: 28px 20px 80px; }
+
+    header { margin-bottom: 32px; }
+    .greet {
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--ink-900);
+      letter-spacing: -0.01em;
+      margin: 0 0 6px;
+    }
+    .date { font-size: 1.25rem; color: var(--ink-500); margin: 0; }
+
+    .banner {
+      background: var(--zb-gradient);
+      color: var(--paper);
+      padding: 18px 22px;
+      border-radius: var(--radius-lg);
+      margin-bottom: 32px;
+      font-size: 1.15rem;
+      line-height: 1.5;
+    }
+    .banner strong { font-size: 1.25rem; }
+    .banner small { display: block; margin-top: 4px; opacity: 0.92; font-size: 1rem; }
+
+    .section-title {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--ink-500);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin: 32px 0 16px;
+    }
+    .section-title .count {
+      color: var(--zb-cyan-dark);
+      margin-left: 6px;
+    }
+
+    /* Task card */
+    .task {
+      background: var(--paper);
+      border: 1px solid var(--ink-100);
+      border-radius: var(--radius-lg);
+      padding: 22px 22px 20px;
+      margin-bottom: 18px;
+      box-shadow: var(--shadow-card);
+      transition: opacity .25s ease;
+    }
+    .task.sent { opacity: 0.65; }
+
+    .task-head {
+      display: flex;
+      align-items: baseline;
+      gap: 10px;
+      margin-bottom: 6px;
+    }
+    .task-id {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--zb-cyan-dark);
+      letter-spacing: 0.04em;
+    }
+    .task-pill {
+      font-size: 0.85rem;
+      font-weight: 700;
+      padding: 3px 9px;
+      border-radius: var(--radius-pill);
+      letter-spacing: 0.02em;
+    }
+    .task-pill.critical { background: var(--danger-bg); color: var(--danger); }
+    .task-pill.high     { background: var(--warn-bg);   color: var(--warn); }
+    .task-pill.normal   { background: var(--ink-50);    color: var(--ink-500); }
+
+    .task-title {
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--ink-900);
+      line-height: 1.3;
+      margin: 0 0 10px;
+    }
+    .task-desc {
+      font-size: 1.2rem;
+      color: var(--ink-500);
+      line-height: 1.5;
+      margin: 0 0 18px;
+    }
+
+    /* Botones */
+    .actions {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: 1fr;
+    }
+    @media (min-width: 560px) {
+      .actions { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 60px;
+      padding: 14px 18px;
+      font-size: 1.2rem;
+      font-weight: 700;
+      font-family: inherit;
+      border-radius: var(--radius-md);
+      border: 2px solid var(--ink-100);
+      background: var(--paper);
+      color: var(--ink-900);
+      cursor: pointer;
+      box-shadow: var(--shadow-button);
+      transition: transform .08s ease;
+    }
+    .btn:active { transform: scale(0.98); }
+    .btn .icon { font-size: 1.4em; line-height: 1; }
+
+    .btn-done  { background: var(--success-bg); border-color: var(--success); color: var(--success); }
+    .btn-note  { background: var(--zb-cyan-soft); border-color: var(--zb-cyan); color: var(--zb-cyan-dark); }
+    .btn-photo { background: var(--warn-bg); border-color: var(--warn); color: var(--warn); }
+
+    /* Form expandido */
+    .task.open .actions { margin-bottom: 18px; }
+    .form-area {
+      display: none;
+      margin-top: 8px;
+      padding-top: 20px;
+      border-top: 2px dashed var(--ink-100);
+    }
+    .task.open .form-area { display: block; }
+
+    .form-area label {
+      display: block;
+      font-size: 1.15rem;
+      font-weight: 600;
+      color: var(--ink-700);
+      margin-bottom: 10px;
+    }
+    .form-area textarea {
+      width: 100%;
+      min-height: 140px;
+      font-family: inherit;
+      font-size: 1.25rem;
+      line-height: 1.55;
+      color: var(--ink-900);
+      padding: 16px 18px;
+      border: 2px solid var(--ink-100);
+      border-radius: var(--radius-md);
+      background: var(--paper);
+      resize: vertical;
+    }
+    .form-area textarea:focus {
+      outline: none;
+      border-color: var(--zb-cyan);
+      box-shadow: 0 0 0 4px var(--zb-cyan-soft);
+    }
+
+    .photo-add {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 60px;
+      padding: 14px 22px;
+      margin-top: 14px;
+      background: var(--warn-bg);
+      color: var(--warn);
+      border: 2px dashed var(--warn);
+      border-radius: var(--radius-md);
+      font-size: 1.15rem;
+      font-weight: 700;
+      cursor: pointer;
+    }
+    .photo-add input { display: none; }
+    .photo-preview {
+      margin-top: 12px;
+      max-width: 100%;
+      max-height: 280px;
+      border-radius: var(--radius-md);
+      display: none;
+    }
+
+    .submit {
+      width: 100%;
+      margin-top: 22px;
+      min-height: 66px;
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: var(--paper);
+      background: var(--zb-gradient);
+      border: none;
+      border-radius: var(--radius-md);
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(2,158,203,.30);
+      transition: transform .08s ease;
+    }
+    .submit:active { transform: scale(0.99); }
+    .submit:disabled {
+      background: var(--ink-300);
+      box-shadow: none;
+      cursor: not-allowed;
+    }
+
+    /* Estado enviado */
+    .sent-banner {
+      display: none;
+      margin-top: 16px;
+      padding: 16px 18px;
+      background: var(--success-bg);
+      border: 2px solid var(--success);
+      border-radius: var(--radius-md);
+      color: var(--success);
+      font-size: 1.2rem;
+      font-weight: 700;
+      text-align: center;
+    }
+    .task.sent .sent-banner { display: block; }
+    .task.sent .actions, .task.sent .form-area { display: none; }
+
+    /* Estado de carga + errores */
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: var(--ink-500);
+      font-size: 1.2rem;
+    }
+    .error-msg {
+      background: var(--danger-bg);
+      color: var(--danger);
+      border: 2px solid var(--danger);
+      border-radius: var(--radius-md);
+      padding: 14px 16px;
+      margin-top: 14px;
+      font-size: 1.1rem;
+      display: none;
+    }
+    .task.has-error .error-msg { display: block; }
+
+    /* Pie */
+    footer {
+      margin-top: 50px;
+      padding-top: 24px;
+      border-top: 1px solid var(--ink-100);
+      text-align: center;
+      color: var(--ink-300);
+      font-size: 1.05rem;
+    }
+    footer strong { color: var(--ink-500); font-weight: 700; }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+
+    <header>
+      <h1 class="greet" id="greeting">Hola 👋</h1>
+      <p class="date" id="today"></p>
+    </header>
+
+    <div class="banner">
+      <strong>📋 Tareas para esta semana</strong>
+      <small>Cuando termines algo o quieras dejar una nota, toca uno de los botones grandes en la tarea.</small>
+    </div>
+
+    <div class="section-title">Pendientes <span class="count" id="task-count"></span></div>
+
+    <div id="tasks-container">
+      <div class="loading">Cargando tus tareas…</div>
+    </div>
+
+    <footer>
+      <p>👨‍🌾 <strong>Miramar</strong> · Cuando envíes algo, Juan lo revisa y te confirma.</p>
+    </footer>
+
+  </main>
+
+  <script>
+    // ============================================================
+    // tareas.html · lógica
+    // ============================================================
+    const API_BASE = '/api';
+    const DATA_URL = '/data.json';
+
+    // Token actual del usuario (mantiene el ?k= de la URL en el form)
+    const URL_PARAMS = new URLSearchParams(window.location.search);
+    const TOKEN = URL_PARAMS.get('k') || '';
+
+    // Fecha de hoy en español
+    const fmtDate = new Intl.DateTimeFormat('es-CO', {
+      weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'
+    });
+    document.getElementById('today').textContent = fmtDate.format(new Date());
+
+    // Saludo según hora
+    const h = new Date().getHours();
+    const saludo = h < 12 ? 'Buenos días' : h < 19 ? 'Buenas tardes' : 'Buenas noches';
+    document.getElementById('greeting').textContent = `${saludo} 👋`;
+
+    // Escape HTML
+    const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+    // ============================================================
+    // Cargar tareas
+    // ============================================================
+    async function loadTasks() {
+      try {
+        const res = await fetch(DATA_URL + '?t=' + Date.now());
+        if (!res.ok) throw new Error('No se pudo cargar las tareas');
+        const data = await res.json();
+
+        // Filtro: tareas con owner PA o AM, status != done
+        const tasks = (data.tasks || []).filter(t =>
+          (t.owner === 'PA' || t.owner === 'AM') &&
+          t.status !== 'done'
+        );
+
+        // Ordenar por prioridad
+        const order = { critical: 0, high: 1, normal: 2 };
+        tasks.sort((a, b) => (order[a.priority] || 9) - (order[b.priority] || 9));
+
+        document.getElementById('task-count').textContent = `(${tasks.length})`;
+        renderTasks(tasks);
+      } catch (err) {
+        document.getElementById('tasks-container').innerHTML = `
+          <div class="error-msg" style="display:block">
+            Hubo un problema cargando tus tareas. Probá refrescar la página.
+          </div>`;
+      }
+    }
+
+    function renderTasks(tasks) {
+      const container = document.getElementById('tasks-container');
+      if (tasks.length === 0) {
+        container.innerHTML = '<p style="text-align:center;color:var(--ink-500);font-size:1.2rem;padding:30px">No hay tareas pendientes ahora mismo. 🎉</p>';
+        return;
+      }
+      container.innerHTML = tasks.map(t => `
+        <article class="task" data-task="${esc(t.id)}">
+          <div class="task-head">
+            <span class="task-id">${esc(t.id)}</span>
+            <span class="task-pill ${esc(t.priority || 'normal')}">${priorityLabel(t.priority)}</span>
+          </div>
+          <h2 class="task-title">${esc(t.title)}</h2>
+          <p class="task-desc">${esc(t.description || '')}</p>
+          <div class="actions">
+            <button class="btn btn-done" data-type="done"><span class="icon">✓</span> Lo hice</button>
+            <button class="btn btn-note" data-type="note"><span class="icon">✎</span> Anotar algo</button>
+            <button class="btn btn-photo" data-type="photo"><span class="icon">📷</span> Tomar foto</button>
+          </div>
+          <div class="form-area">
+            <label>Escribí acá lo que quieras contarle a Juan:</label>
+            <textarea placeholder="Por ejemplo: hablé con la doctora García en Cormacarena…"></textarea>
+            <label class="photo-add">
+              <span class="icon">📷</span> <span class="photo-label">Agregar foto</span>
+              <input type="file" accept="image/*" capture="environment">
+            </label>
+            <img class="photo-preview" alt="Vista previa">
+            <button class="submit" data-action="submit">Enviar a Juan</button>
+            <div class="error-msg"></div>
+          </div>
+          <div class="sent-banner">✅ Listo · Juan lo va a ver hoy</div>
+        </article>
+      `).join('');
+      attachHandlers();
+    }
+
+    function priorityLabel(p) {
+      return p === 'critical' ? 'URGENTE' : p === 'high' ? 'IMPORTANTE' : 'NORMAL';
+    }
+
+    function attachHandlers() {
+      document.querySelectorAll('.task').forEach(card => {
+        const buttons = card.querySelectorAll('.actions .btn');
+        buttons.forEach(b => b.addEventListener('click', () => {
+          card.classList.add('open');
+          card.dataset.updateType = b.dataset.type;
+          // Si es 'photo', focus en el botón de agregar foto
+          if (b.dataset.type === 'photo') {
+            card.querySelector('.photo-add input').click();
+          } else if (b.dataset.type === 'note') {
+            card.querySelector('textarea').focus();
+          }
+        }));
+
+        // Preview de foto
+        const photoInput = card.querySelector('.photo-add input');
+        const photoPreview = card.querySelector('.photo-preview');
+        const photoLabel = card.querySelector('.photo-label');
+        photoInput.addEventListener('change', () => {
+          const file = photoInput.files[0];
+          if (file) {
+            photoPreview.src = URL.createObjectURL(file);
+            photoPreview.style.display = 'block';
+            photoLabel.textContent = 'Cambiar foto';
+            card.classList.add('open');
+          }
+        });
+
+        // Submit
+        const submitBtn = card.querySelector('[data-action=submit]');
+        submitBtn.addEventListener('click', () => handleSubmit(card));
+      });
+    }
+
+    async function handleSubmit(card) {
+      const taskId = card.dataset.task;
+      const note = card.querySelector('textarea').value.trim();
+      const photo = card.querySelector('.photo-add input').files[0];
+      const errorBox = card.querySelector('.error-msg');
+      const submitBtn = card.querySelector('[data-action=submit]');
+
+      // Decidir update_type
+      let updateType = card.dataset.updateType || 'note';
+      if (photo) updateType = 'photo';
+      else if (!note) updateType = 'done';
+
+      // Validación mínima
+      if (updateType === 'note' && !note) {
+        errorBox.textContent = 'Escribí algo antes de enviar.';
+        card.classList.add('has-error');
+        return;
+      }
+
+      card.classList.remove('has-error');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Enviando…';
+
+      try {
+        const formData = new FormData();
+        formData.append('task_id', taskId);
+        formData.append('update_type', updateType);
+        formData.append('note', note);
+        formData.append('submitter', 'papa');
+        if (photo) formData.append('photo', photo);
+
+        const url = API_BASE + '/update' + (TOKEN ? `?k=${encodeURIComponent(TOKEN)}` : '');
+        const res = await fetch(url, { method: 'POST', body: formData });
+        const data = await res.json();
+
+        if (!res.ok || !data.ok) {
+          throw new Error(data.detail || data.error || 'Error desconocido');
+        }
+
+        // Éxito
+        card.classList.remove('open');
+        card.classList.add('sent');
+        // Scroll suave al banner verde
+        setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
+
+      } catch (err) {
+        errorBox.textContent = `Hubo un problema: ${err.message}. Probá de nuevo en un momento.`;
+        card.classList.add('has-error');
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Enviar a Juan';
+      }
+    }
+
+    // ============================================================
+    // Iniciar
+    // ============================================================
+    loadTasks();
+  </script>
+</body>
+</html>

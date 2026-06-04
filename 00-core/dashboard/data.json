@@ -177,6 +177,80 @@
       { "label": "Ventas Duflo / mes","value": "—", "unit": "COP",     "status": "pending" }
     ]
   },
+  "tasks": [
+    {
+      "id": "T10",
+      "title": "Permiso de agua · Cormacarena",
+      "description": "Viaje a Cormacarena para iniciar el trámite del permiso de agua. Sin agua no hay ICA, y sin ICA no hay proyecto.",
+      "owner": "PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T15",
+      "title": "Renovar matrícula mercantil · Cámara de Comercio",
+      "description": "Pendiente renovar la matrícula de la sociedad para 2025 y 2026. Se puede hacer por internet en ccb.org.co o presencial en la oficina de Bogotá (Cra 7 #12B-84, Of 904).",
+      "owner": "PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T08",
+      "title": "Cotizar constructor del galpón",
+      "description": "Cotizar la construcción del galpón con ingenieros de la zona (no Moreno Vargas). Recordá que la cotización va para 3 tamaños: 2.000, 3.000 y 5.000 gallinas (ver T20).",
+      "owner": "PA",
+      "priority": "high",
+      "status": "in-progress",
+      "module": "01-galpon"
+    },
+    {
+      "id": "T20",
+      "title": "Cotizar galpón en 3 capacidades · 2K / 3K / 5K",
+      "description": "Recibir la cotización del galpón para tres capacidades distintas: 2.000, 3.000 y 5.000 gallinas. Comparar costo por ave para decidir el tamaño final de la Fase 1.",
+      "owner": "PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "01-galpon"
+    },
+    {
+      "id": "T11",
+      "title": "Contacto del vendedor de San Marino",
+      "description": "Pasarme el contacto directo (nombre y celular) del vendedor de San Marino en Cumaral. Ya tenemos seleccionado el proveedor — solo falta el dato del vendedor para confirmar el pedido.",
+      "owner": "PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "06-proveedores"
+    },
+    {
+      "id": "T21",
+      "title": "Validar Italcol Cáqueza · crédito 30 días",
+      "description": "Confirmar con la bodega de Italcol en Cáqueza: si son distribuidor oficial o intermediario, si el crédito a 30 días requiere aval, precio por kg y si entregan en finca o hay que recoger.",
+      "owner": "PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "06-proveedores"
+    },
+    {
+      "id": "T22",
+      "title": "Veterinario para plan vacunal",
+      "description": "Conseguir 2 opciones de veterinario para aplicar el plan vacunal desde semana 16: el tío William Iván ya ofreció, y pedirle a San Marino una segunda recomendación. Tener 2 opciones para no depender de una sola.",
+      "owner": "AM",
+      "priority": "normal",
+      "status": "pending",
+      "module": "06-proveedores"
+    },
+    {
+      "id": "T23",
+      "title": "Reservar lote del 15 de septiembre · San Marino",
+      "description": "Una vez confirmada la cantidad final (depende de T20), llamar al vendedor de San Marino y reservar el lote del 15 de septiembre. Confirmar precio (negociable desde $26.500), abonar señal si la piden, y coordinar el camión.",
+      "owner": "PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "06-proveedores"
+    }
+  ],
   "activity": [
     {
       "date": "2026-05-28",
