@@ -83,7 +83,81 @@
       font-weight: 600; font-size: 12px;
     }
 
-    /* Layout */
+    /* Layout · sidebar + content */
+    .app-shell {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      min-height: 100vh;
+    }
+    .sidebar {
+      background: var(--zb-paper);
+      border-right: 1px solid var(--zb-ink-100);
+      padding: 24px 16px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .sidebar-brand {
+      font-size: 22px; font-weight: 800; color: var(--zb-ink-900);
+      letter-spacing: -0.01em; padding: 8px 12px 24px;
+    }
+    .sidebar-brand span { color: var(--zb-cyan); }
+    .sidebar-section-title {
+      font-size: 10px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--zb-ink-300);
+      padding: 16px 12px 8px;
+    }
+    .nav-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 14px;
+      border-radius: var(--zb-radius-md);
+      color: var(--zb-ink-700);
+      font-size: 15px; font-weight: 600;
+      text-decoration: none;
+      transition: background .12s ease, color .12s ease;
+      min-height: 48px;
+    }
+    .nav-item:hover { background: var(--zb-ink-50); text-decoration: none; }
+    .nav-item.active {
+      background: var(--zb-cyan-soft);
+      color: var(--zb-cyan-dark);
+    }
+    .nav-item .nav-icon { font-size: 18px; line-height: 1; flex-shrink: 0; }
+    .nav-item .nav-label { flex: 1; }
+    .nav-item .nav-badge {
+      font-size: 10px; font-weight: 700;
+      background: var(--zb-ink-100); color: var(--zb-ink-500);
+      padding: 2px 7px; border-radius: var(--zb-radius-pill);
+    }
+    .nav-item.active .nav-badge { background: var(--zb-cyan); color: var(--zb-paper); }
+    .nav-item.coming-soon { opacity: 0.55; cursor: default; }
+    .nav-item.coming-soon:hover { background: transparent; }
+
+    /* Mobile: sidebar se vuelve tab strip horizontal arriba */
+    @media (max-width: 768px) {
+      .app-shell { grid-template-columns: 1fr; }
+      .sidebar {
+        position: sticky; top: 0; height: auto;
+        border-right: none; border-bottom: 1px solid var(--zb-ink-100);
+        padding: 12px 8px; flex-direction: row;
+        gap: 6px; overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        z-index: 50;
+      }
+      .sidebar-brand { display: none; }
+      .sidebar-section-title { display: none; }
+      .nav-item {
+        flex-shrink: 0; min-width: max-content;
+        padding: 10px 14px; font-size: 14px;
+      }
+    }
+
+    /* Topbar dentro del content (oculto en desktop, visible en mobile dentro de sidebar) */
     .wrap { max-width: 1280px; margin: 0 auto; padding: 24px 28px 60px; }
     h2 {
       font-size: 11px; font-weight: 700;
@@ -384,22 +458,59 @@
   </style>
 </head>
 <body>
-  <header class="topbar">
-    <div class="topbar-logo" id="brand-logo">—</div>
-    <div class="topbar-meta">
-      <span class="phase-chip" id="phase-chip">—</span>
-      <span>Actualizado: <strong id="last-update">—</strong></span>
+  <div class="app-shell">
+
+    <!-- ====================== SIDEBAR ====================== -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">Mira<span>mar</span></div>
+
+      <div class="sidebar-section-title">Navegación</div>
+
+      <a href="/" class="nav-item active" data-route="/">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Resumen</span>
+      </a>
+      <a href="/tareas.html" class="nav-item" data-route="/tareas">
+        <span class="nav-icon">✅</span>
+        <span class="nav-label">Tareas</span>
+      </a>
+      <span class="nav-item coming-soon">
+        <span class="nav-icon">⏳</span>
+        <span class="nav-label">Aprobaciones</span>
+        <span class="nav-badge">pronto</span>
+      </span>
+      <span class="nav-item coming-soon">
+        <span class="nav-icon">📅</span>
+        <span class="nav-label">Cronograma</span>
+        <span class="nav-badge">pronto</span>
+      </span>
+      <span class="nav-item coming-soon">
+        <span class="nav-icon">💰</span>
+        <span class="nav-label">Cotizaciones</span>
+        <span class="nav-badge">pronto</span>
+      </span>
+    </aside>
+
+    <!-- ====================== CONTENT ====================== -->
+    <div>
+      <header class="topbar">
+        <div class="topbar-logo" id="brand-logo">—</div>
+        <div class="topbar-meta">
+          <span class="phase-chip" id="phase-chip">—</span>
+          <span>Actualizado: <strong id="last-update">—</strong></span>
+        </div>
+      </header>
+
+      <main class="wrap" id="root">
+        <p style="color: var(--zb-ink-500);">Cargando…</p>
+      </main>
+
+      <p class="footer-note">
+        Editá <code>data.json</code> para actualizar este dashboard. La página recarga el contenido cada vez que se abre.
+      </p>
     </div>
-  </header>
 
-  <main class="wrap" id="root">
-    <!-- contenido renderizado por JS -->
-    <p style="color: var(--zb-ink-500);">Cargando…</p>
-  </main>
-
-  <p class="footer-note">
-    Editá <code>data.json</code> para actualizar este dashboard. La página recarga el contenido cada vez que se abre.
-  </p>
+  </div>
 
   <script>
     const fmtDate = (iso) => {
