@@ -120,6 +120,26 @@ Registro de decisiones tomadas, con fecha, contexto y razón. Para no re-discuti
 - **Cronograma:** P03-P06 (siembra) → P07 primera cosecha sep-2027 → P08 producción constante jun-2028.
 - **Pendiente validar con agrónomo:** marco de siembra exacto (4×3m o 3×3m), riego complementario en seca, mano de obra local con experiencia plátano.
 
+## 2026-06-05
+
+### D21 · Estrategia legal Cesia · pelear inteligentemente con vista a negociar
+- **Decisión:** seguir adelante con la pelea legal pero con objetivo claro de negociar, no de ganar a toda costa.
+- **Objetivo cuantificado:** pagar entre $150-180M (vs $300M que pide Cesia · vs $160.9M oficial).
+- **Vías a usar en paralelo:**
+  1. Denuncia penal ante Fiscalía contra Agustín Mesa Corzo (con el auto 15-mar-2024 como prueba reina)
+  2. Queja ante Defensoría del Pueblo
+  3. Esperar revisión eventual Corte Constitucional (1% probabilidad)
+  4. Mantener canal abierto a negociación
+- **Plazo límite mental:** 12-15 meses (hasta ago/sep 2027). Si no hay avance, considerar pagar y cerrar.
+- **Presupuesto sugerido para defensa:** $20-30M COP.
+- **Por qué:** hay un auto judicial firme del 15-mar-2024 que reconoció manipulación documental por el abogado contrario · es un activo legal que no se puede dejar sin explotar. La denuncia penal puede forzar negociación.
+- **Implicación:** Fase 1 piloto sigue viable bajo comodato del tío. Fase 2 (Finagro) sigue bloqueada hasta resolver. Transferir predio a Juan también bloqueado.
+
+### D22 · Cloudflare Pages DEPRECADO · servidor EC2 es fuente única
+- **Decisión:** el dashboard ya no se sirve desde Cloudflare Pages (`rubiales.pages.dev`). La fuente única es `https://miramar.shopenvia.com` (EC2 + nginx + Postgres + Flask).
+- **Por qué:** servidor propio tiene auth token, backend (módulo Tareas + Documentos + Legal), Postgres con datos reales. Cloudflare Pages era el MVP, ya cumplió su rol.
+- **Acción opcional pendiente:** borrar el proyecto `rubiales` en Cloudflare Pages (no urgente, puede quedar como respaldo histórico).
+
 ## 2026-06-01
 
 ### D19 · Stack técnico de Miramar · n8n+Postgres+EC2 separado en cuenta AWS de ZenderHub
