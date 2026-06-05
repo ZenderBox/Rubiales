@@ -106,6 +106,19 @@ Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto 
   7. **Módulo Legal creado** (`/legal.html`) con objetivo, métricas, timeline, opciones tácticas, probabilidades, personas, plazo.
   8. **T26 y T27 nuevas:** definir estrategia con Leonardo + verificar embargo Seguros Bolívar 2017.
 
+- **2026-06-05 (tarde)** — Segunda mitad de la sesión. Hitos:
+  1. **Módulo Arrancar creado** (`/arrancar.html`) · vista operativa con countdown al 15-sep, 3 blindajes, checklists, cronograma reverso, riesgos.
+  2. **D23 · Pivot estratégico:** Juan rechaza galpón modular ("enterrar proyecto"). Nueva estrategia: pagar lo MENOS posible a Cesia usando paquete completo de defensa como leverage. El dinero ahorrado entra al proyecto.
+  3. **D24 · Galpón modular descartado** · Fase 1 se demora 4-6 meses pero queda todo prolijo.
+  4. **Paquete de defensa completo construido** · 4 borradores estructurales en `paquete-defensa/`:
+     - 1-denuncia-penal.md (Fiscalía · Arts. 286/289/453 CP)
+     - 2-queja-defensoria-del-pueblo.md
+     - 3-memorial-corte-constitucional.md (hechos sobrevinientes)
+     - 4-carta-acercamiento-negociacion.md (LA PIEZA CLAVE · si funciona, evita radicar las 3 anteriores)
+  5. **T29 reescrita** como "paquete completo de defensa legal" (in-progress).
+  6. **T30 reescrita** como "estrategia financiera para pago Cesia" (fuentes + plazo).
+  7. Presupuesto defensa: $17-28M COP · ROI estimado 1:6.
+
 ---
 
 *Este archivo es la memoria viva del proyecto. Actualizar después de cada hito, conversación importante o decisión.*

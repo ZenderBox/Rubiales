@@ -120,6 +120,26 @@ Registro de decisiones tomadas, con fecha, contexto y razón. Para no re-discuti
 - **Cronograma:** P03-P06 (siembra) → P07 primera cosecha sep-2027 → P08 producción constante jun-2028.
 - **Pendiente validar con agrónomo:** marco de siembra exacto (4×3m o 3×3m), riego complementario en seca, mano de obra local con experiencia plátano.
 
+## 2026-06-05 (tarde)
+
+### D23 · Estrategia pivot · paquete completo de defensa como leverage para pagar lo MENOS posible a Cesia
+- **Decisión:** abandonar la idea de "galpón modular blindado" como defensa contra el embargo. En su lugar, **construir el paquete completo de defensa legal (4 documentos) y usarlo como leverage de negociación** para forzar a Cesia a aceptar el monto más bajo posible.
+- **Por qué:** Juan rechazó la idea del galpón modular ("es enterrar el proyecto"). Su estrategia: pagar para liberar el embargo, hacer todo prolijo, y enfocar el dinero ahorrado en el proyecto. La mejor forma de pagar lo menos es tener máximo leverage.
+- **Implicación:** el predio sí se libera (vía pago, no vía pelea infinita). Se habilita Finagro para Fase 2. Se transfiere a nombre de Juan. Todo limpio.
+- **Mecánica:**
+  1. Construir 4 documentos (denuncia penal, queja Defensoría, memorial Corte Constitucional, carta acercamiento)
+  2. La carta #4 se envía PRIMERO a Agustín Mesa Corzo con propuesta concreta y plazo de 15 días
+  3. Si acepta → escritura pública, pago, fin
+  4. Si no acepta → radicar paquete (1, 2, 3) en serie → 3-6 meses presión → renegociar
+- **Documentos:** los 4 borradores estructurales viven en `04-regulatorio/predios/el-trueno/proceso-legal/paquete-defensa/`. Leonardo aporta el legal craft final.
+- **Presupuesto defensa:** $17-28M COP en honorarios.
+- **ROI estimado:** 1:6 (si bajamos de $300M a $150M ahorramos $150M con inversión de $25M).
+
+### D24 · Galpón modular DESCARTADO
+- **Decisión:** NO construir galpón modular metálico desarmable como blindaje al embargo.
+- **Por qué:** se invierte mucho dinero y queda una estructura precaria. Mejor pagar Cesia y construir galpón fijo de calidad sobre tierra limpia.
+- **Implicación:** Fase 1 piloto se DEMORA hasta resolver el embargo (probable Q4 2026 / Q1 2027 en vez de sep-2026). Diferencia de 4-6 meses justifica todo prolijo.
+
 ## 2026-06-05
 
 ### D21 · Estrategia legal Cesia · pelear inteligentemente con vista a negociar
