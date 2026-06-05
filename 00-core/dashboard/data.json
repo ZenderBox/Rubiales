@@ -293,6 +293,15 @@
       "priority": "normal",
       "status": "pending",
       "module": "04-regulatorio"
+    },
+    {
+      "id": "T41",
+      "title": "Reunión Leonardo · póliza caución judicial Art. 590 CGP",
+      "description": "Confirmar con Leonardo opción de póliza de seguro de cumplimiento judicial (Art. 590 CGP) para levantar el embargo del Trueno. 8 preguntas clave: (1) si es esa la figura que mencionó, (2) monto exigido por el juez, (3) aseguradora recomendada (Sura/Liberty/Confianza/Solidaria), (4) contragarantía típica para $190M, (5) si se puede ANTES o solo DESPUÉS del fallo Corte Constitucional, (6) honorarios estructuración, (7) riesgo de rechazo por insuficiente, (8) alternativas con menor contragarantía. Análisis completo en 04-regulatorio/predios/el-trueno/proceso-legal/cauciones-y-polizas-analisis.md",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
     }
   ],
   "activity": [
