@@ -409,6 +409,15 @@
       "priority": "high",
       "status": "pending",
       "module": "04-regulatorio"
+    },
+    {
+      "id": "T40",
+      "title": "Pedir a tío William Iván documentos para empezar a documentar todo",
+      "description": "El tío William Iván es el titular registrado de El Trueno y conoce la historia de las 4 fincas. Pedirle TODO lo que tenga: (1) escritura original El Trueno, (2) cualquier copia del poder que papá dio a Cesia, (3) recibos prediales históricos (si tiene), (4) fotos antiguas del predio con las mejoras (casa, cercas), (5) facturas o recibos de compras de plantas eléctricas, solares, motos, piscina (los bienes que después se quedó Cesia), (6) cualquier testimonio escrito de personas que conocen la historia (mayordomos, vecinos), (7) comunicaciones históricas con Cesia o con Agustín Mesa Corzo. Todo lo que aporte papá + tío sirve para Frente A y Frente B.",
+      "owner": "JU + PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
     }
   ],
   "activity": [

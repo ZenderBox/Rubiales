@@ -120,6 +120,33 @@ Registro de decisiones tomadas, con fecha, contexto y razón. Para no re-discuti
 - **Cronograma:** P03-P06 (siembra) → P07 primera cosecha sep-2027 → P08 producción constante jun-2028.
 - **Pendiente validar con agrónomo:** marco de siembra exacto (4×3m o 3×3m), riego complementario en seca, mano de obra local con experiencia plátano.
 
+## 2026-06-05 (noche)
+
+### D25 · Dos frentes legales paralelos · Trueno (negociación a la baja) + Realidad (recuperación)
+- **Decisión:** abrir un segundo frente legal para recuperar La Realidad de Omar Perez, en paralelo a la negociación de El Trueno con Cesia.
+- **Por qué:** llamada con papá reveló dos cosas críticas:
+  1. Cesia pagó SUS dos fincas (no éramos socios igualitarios) y papá las cuidó 15 años · su demanda actual es por "daños y perjuicios" alegados.
+  2. Cesia transfirió La Realidad a Omar Perez usando un poder de papá vencido / extralimitado (16 años de inactividad).
+- **Frente A (El Trueno):** seguir con paquete defensa. Monto corregido $150M (no $300M). Objetivo $40-90M con compensaciones documentadas.
+- **Frente B (La Realidad):** investigación en silencio (T35-T37) mientras se negocia Trueno. Acción principal: reivindicatoria + prescripción adquisitiva (probabilidad 70-85%).
+- **Coordinación:** investigación B en silencio → si Cesia acepta carta A → pagamos Trueno → radicamos La Realidad. Si Cesia rechaza A → radicamos ambos en simultáneo (máxima presión).
+- **Implicación:** si recuperamos La Realidad, queda predio libre para Finagro Fase 2 (sin depender de liberar el embargo de Trueno).
+
+### D26 · Historia real de las 4 fincas (corregida)
+- **Decisión documental:** corregir la narrativa interna y externa. NO éramos "socios igualitarios" con Cesia.
+- **Versión real:**
+  - Cesia pagó sus 2 fincas (La Romería, La Milagrosa)
+  - Cesia se fue a Canadá 15 años, papá las cuidó
+  - Cesia volvió, recuperó sus fincas + demandó por daños y perjuicios
+  - Papá hizo mejoras ($83M+) y pagó prediales 2000-2011 sobre las fincas que cuidó
+  - La Realidad: era de papá, dio poder a Cesia por ganado, ella la transfirió a Omar Perez 16 años después
+- **Implicación:** esta versión sustenta:
+  - Mejor argumento moral y legal en la defensa
+  - Acción reivindicatoria sobre La Realidad
+  - Compensaciones en la negociación con Cesia (Trueno)
+  - Posible denuncia separada por hurto de bienes muebles
+- **Documentación:** `00-core/00-Memorias/predios.md` actualizado · `04-regulatorio/predios/la-realidad/recuperacion/` (carpeta nueva) · `04-regulatorio/predios/el-trueno/proceso-legal/paquete-defensa/0-elementos-defensa-papa-2026-06-05.md` (nuevo).
+
 ## 2026-06-05 (tarde)
 
 ### D23 · Estrategia pivot · paquete completo de defensa como leverage para pagar lo MENOS posible a Cesia

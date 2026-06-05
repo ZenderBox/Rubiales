@@ -119,6 +119,18 @@ Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto 
   6. **T30 reescrita** como "estrategia financiera para pago Cesia" (fuentes + plazo).
   7. Presupuesto defensa: $17-28M COP · ROI estimado 1:6.
 
+- **2026-06-05 (noche)** — Llamada con papá revela información que cambia toda la estrategia legal. Hitos:
+  1. **Historia real corregida** (D26): no éramos socios igualitarios con Cesia. Ella pagó sus 2 fincas, se fue a Canadá 15 años, papá las cuidó, ella volvió y demandó por daños.
+  2. **Monto corregido**: Cesia pide $150M (no $300M).
+  3. **Bienes retenidos por Cesia** documentados: piscina, moto, planta Leaster, planta importada por Juan de USA, 2 plantas solares.
+  4. **Mejoras no contabilizadas** de papá: $83M+ (casa + cercas + obras) hace 25 años.
+  5. **Pagos prediales 2000-2011** de papá: GUYO tiene los recibos (T31 crítico).
+  6. **Frente B abierto** (D25): La Realidad fue transferida a OMAR PEREZ usando un poder vencido. Acción reivindicatoria + prescripción adquisitiva (probabilidad 70-85%).
+  7. **8 nuevas tareas** (T31-T34 elementos Frente A + T35-T39 Frente B + T40 documentos del tío).
+  8. **B-2 nuevo bloqueador**: La Realidad por recuperar.
+  9. **Paquete recuperación** creado en `04-regulatorio/predios/la-realidad/recuperacion/` con README + plan investigación.
+  10. **legal.html** ampliado con sección completa Frente B.
+
 ---
 
 *Este archivo es la memoria viva del proyecto. Actualizar después de cada hito, conversación importante o decisión.*

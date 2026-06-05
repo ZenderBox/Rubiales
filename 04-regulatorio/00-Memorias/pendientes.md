@@ -3,9 +3,10 @@
 > Pendientes específicos del módulo. Los pendientes globales semanales viven en `00-core/Pendientes/`.
 
 ## En curso
-- **Paquete de defensa Cesia · 4 borradores listos en `predios/el-trueno/proceso-legal/paquete-defensa/`** — pendiente revisión Leonardo + cierre de monto carta #4.
+- **Frente A · El Trueno** · paquete defensa de 4 borradores en `predios/el-trueno/proceso-legal/paquete-defensa/` — pendiente revisión Leonardo + cierre de monto carta #4. Monto corregido: Cesia pide $150M (no $300M). Objetivo $40-90M con compensaciones documentadas.
+- **Frente B · La Realidad** · investigación en silencio en `predios/la-realidad/recuperacion/` — pendiente reunir 4 piezas (cert tradición, escritura Omar Perez, poder original, investigación Omar Perez).
 - B5 · Impuesto predial El Trueno $72.9M · plazo 30/06/2026.
-- T15 (matrícula Cámara) y T10 (Cormacarena) siguen siendo críticos para arrancar Fase 1.
+- T15 (matrícula Cámara) y T10 (Cormacarena) siguen críticos para Fase 1.
 
 ## Próximos pasos
 - [ ] T29 · Paquete defensa completo → reunión Leonardo + cerrar monto carta #4 + radicar
