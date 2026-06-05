@@ -305,21 +305,21 @@
     },
     {
       "id": "T29",
-      "title": "Galpón modular metálico (no fijo) en cotizaciones",
-      "description": "Pedir a los ingenieros que cotizan T20 que incluyan opción modular metálica desarmable, no solo concreto fijo. Galpón fijo = inmueble por adhesión = se queda con el predio si Cesia ejecuta. Modular = bien mueble = se puede mover. Más caro pero blindado.",
-      "owner": "PA",
-      "priority": "high",
-      "status": "pending",
-      "module": "01-galpon"
+      "title": "Paquete completo de defensa legal · 4 documentos para máximo leverage ⚠️ CRÍTICO",
+      "description": "Construir los 4 documentos del paquete de defensa con Leonardo: (1) Denuncia penal contra Agustín Mesa Corzo por falsedad documental + fraude procesal · (2) Queja Defensoría del Pueblo por vulneración debido proceso de William Iván · (3) Memorial Corte Constitucional con hechos sobrevinientes · (4) Carta de acercamiento de negociación a Cesia con advertencia clara. Objetivo: usar el paquete completo radicado como leverage para forzar negociación a la baja. Cada peso ahorrado = más capital al proyecto.",
+      "owner": "JU + Leonardo",
+      "priority": "critical",
+      "status": "in-progress",
+      "module": "04-regulatorio"
     },
     {
       "id": "T30",
-      "title": "Borrador denuncia penal · backlog (después de arranque)",
-      "description": "Preparar la denuncia penal contra Agustín Mesa Corzo por falsedad documental + fraude procesal (Arts. 286/289/453 CP). Prueba reina: auto del 15-mar-2024. Anexos: 5 PDFs ya archivados. Leonardo aporta el legal craft. Decisión 2026-06-05: pasa a backlog después de arrancar Fase 1 piloto.",
+      "title": "Estrategia financiera para pago Cesia · fuentes y plazos",
+      "description": "Definir fuentes de fondos para cubrir el pago a Cesia (objetivo $80-150M post-negociación). Opciones: préstamo personal Juan, aporte Alejandro (33%), crédito comercial no-Finagro, préstamo familiar, pago en cuotas a Cesia. Calcular: cuánto en cuánto plazo. Decisión condicionada al monto final negociado.",
       "owner": "JU",
-      "priority": "normal",
+      "priority": "high",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "03-finanzas"
     }
   ],
   "activity": [
