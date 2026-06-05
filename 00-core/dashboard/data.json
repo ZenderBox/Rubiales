@@ -293,9 +293,48 @@
       "priority": "normal",
       "status": "pending",
       "module": "04-regulatorio"
+    },
+    {
+      "id": "T28",
+      "title": "Comodato registrado · tío William → Sociedad Miramar ⚠️ CRÍTICO",
+      "description": "Sin este contrato registrado en notaría (no verbal, no papel suelto), si Cesia ejecuta el embargo perdemos toda la inversión del galpón. El comodato pasa los frutos del predio a la sociedad y rompe el argumento 'frutos del demandado'. Coordinar con Leonardo: redacción + firma + registro en notaría con fecha cierta. ANTES de iniciar construcción.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T29",
+      "title": "Galpón modular metálico (no fijo) en cotizaciones",
+      "description": "Pedir a los ingenieros que cotizan T20 que incluyan opción modular metálica desarmable, no solo concreto fijo. Galpón fijo = inmueble por adhesión = se queda con el predio si Cesia ejecuta. Modular = bien mueble = se puede mover. Más caro pero blindado.",
+      "owner": "PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "01-galpon"
+    },
+    {
+      "id": "T30",
+      "title": "Borrador denuncia penal · backlog (después de arranque)",
+      "description": "Preparar la denuncia penal contra Agustín Mesa Corzo por falsedad documental + fraude procesal (Arts. 286/289/453 CP). Prueba reina: auto del 15-mar-2024. Anexos: 5 PDFs ya archivados. Leonardo aporta el legal craft. Decisión 2026-06-05: pasa a backlog después de arrancar Fase 1 piloto.",
+      "owner": "JU",
+      "priority": "normal",
+      "status": "pending",
+      "module": "04-regulatorio"
     }
   ],
   "activity": [
+    {
+      "date": "2026-06-05",
+      "title": "Módulo Arrancar creado · blindajes legales · cronograma reverso al 15-sep",
+      "author": "Juan + Claude",
+      "ref": "PR #13"
+    },
+    {
+      "date": "2026-06-05",
+      "title": "T28 (comodato), T29 (galpón modular), T30 (denuncia penal backlog) creadas",
+      "author": "Juan + Claude",
+      "ref": "PR #13"
+    },
     {
       "date": "2026-06-05",
       "title": "Análisis legal completo · 5 PDFs de tutela leídos · estrategia denuncia penal + Defensoría",
