@@ -72,11 +72,23 @@ A la fecha de la presente comunicación, mis poderdantes tienen preparado y list
 
 Estas actuaciones se sustentan, en todos los casos, en la prueba reina del auto del 15 de marzo de 2024 ya citado, en los autos posteriores que lo mantuvieron, y en el material documental adicional que se ha venido recaudando.
 
-### III. Propuesta de transacción
+### III. Antecedente · Contraprestaciones recíprocas no contabilizadas
+
+Antes de presentar la propuesta, es necesario recordar que mis poderdantes han venido honrando, durante años, obligaciones y aportes que NO han sido considerados en los procesos judiciales:
+
+1. **Pago de impuesto predial unificado** de los predios objeto del litigio durante los años **2000 a 2011** (once años consecutivos), cuyos comprobantes obran en poder de tercero identificable y serán aportados en debida forma.
+
+2. **Mejoras y construcciones** realizadas por el señor Jaime Humberto Acuña Ocampo sobre los predios, incluyendo la **vivienda principal** de la finca y obras de **cercado y adecuación** por valor aproximado superior a los **OCHENTA Y TRES MILLONES DE PESOS** ($83.000.000), en pesos de hace veinticinco (25) años — debidamente indexados, una suma significativamente mayor.
+
+3. **Bienes muebles** propiedad de mis poderdantes que se encontraban en los predios al momento de la entrega material y de los cuales no se rindió cuenta, incluyendo: piscina, motocicleta, planta eléctrica marca Leaster, planta eléctrica importada desde Estados Unidos por el señor Juan Acuña, y dos (2) plantas solares.
+
+Estas circunstancias deberían, en justicia y equidad, ser objeto de **compensación bilateral** en cualquier arreglo definitivo.
+
+### IV. Propuesta de transacción
 
 Antes de iniciar las radicaciones anteriores — que entendemos podrían generar mayores costos económicos, profesionales y reputacionales para todas las partes —, mis poderdantes me han instruido para **proponer formalmente** la siguiente salida transaccional:
 
-> [LEONARDO: definir el monto exacto y el plazo de acuerdo a lo que Juan decida con base en el análisis financiero T30. Sugerencias de redacción a continuación]
+> [LEONARDO: definir el monto exacto y el plazo. Recomendación basada en compensaciones: ofrecer $40-60M en 3-6 meses. Si rechazan, subir a $80M.]
 
 **Propuesta:**
 
@@ -88,7 +100,7 @@ Mis poderdantes están dispuestos a pagar a sus poderdantes la suma de **_______
 4. **Confidencialidad recíproca** sobre los términos de la transacción.
 5. Formalización mediante **escritura pública de transacción** ante notario.
 
-Esta propuesta se realiza con base en el cálculo de monto neto liquidado al **30 de abril de 2026** ($160.869.272), con un descuento razonable que refleje el riesgo procesal mutuo, los costos de tiempo de ambas partes y la conveniencia de cerrar este capítulo de manera definitiva.
+Esta propuesta se realiza considerando: (i) el monto neto liquidado judicialmente al **30 de abril de 2026** ($160.869.272), (ii) el monto que sus poderdantes han manifestado extrajudicialmente ($150.000.000), (iii) las **contraprestaciones recíprocas no contabilizadas** descritas en el numeral III anterior, (iv) el riesgo procesal mutuo, (v) los costos de tiempo de ambas partes, y (vi) la conveniencia de cerrar este capítulo de manera definitiva.
 
 ### IV. Plazo de respuesta
 
@@ -115,15 +127,19 @@ Cel. 300 403 2687 · hernandez229abogado@gmail.com
 
 ## Notas estratégicas (para Juan + Leonardo · no van en la carta)
 
-### Sobre el monto a ofrecer
+### Sobre el monto a ofrecer (ACTUALIZADO 2026-06-05 post-llamada con papá)
+
+Con la nueva información (Cesia pide $150M no $300M; existencia de compensaciones por mejoras, bienes robados, impuestos prediales):
 
 | Escenario | Monto a ofrecer | Probabilidad aceptación |
 |---|---|---|
-| Conservador | $80-100M COP en 12 meses | 30% |
-| **Realista (recomendado)** | **$110-130M COP en 6 meses** | **55%** |
-| Generoso | $150-160M COP en 3 meses | 75% |
+| **Agresivo (recomendado por compensaciones)** | **$40-60M COP en 3 meses** | **35-45%** |
+| Realista | $70-90M COP en 6 meses | 60% |
+| Conservador (techo) | $100-120M COP en 6 meses | 80% |
 
-El monto recomendado depende del **análisis financiero T30**: cuánto Juan puede levantar realísticamente y en cuánto tiempo.
+Estrategia: **ofrecer agresivo primero** ($40-60M), si rechazan subir gradualmente a realista, máximo techo conservador. La diferencia con la posición inicial de Cesia ($150M) es justificable por las compensaciones documentadas.
+
+El monto final depende del **análisis financiero T30**: cuánto Juan puede levantar realísticamente y en cuánto tiempo.
 
 ### Sobre el tono
 

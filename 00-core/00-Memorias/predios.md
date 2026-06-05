@@ -69,32 +69,82 @@ Recibo oficial de la Alcaldía de Puerto Gaitán (No. 26010310020237, emitido 03
 - Para Fase 2+ (Finagro $200M, escalar a 7.000-10.000 aves): inviable sin título limpio en nombre de Juan o de la sociedad.
 - **Bloqueador B-1 del proyecto:** desbloquear título antes de Fase 2.
 
-## La Realidad · POSESIÓN (no titulada · sesión dedicada pendiente)
+## La Realidad · POR RECUPERAR · transferida indebidamente a OMAR PEREZ
 
 | Campo | Valor |
 |---|---|
 | Matrícula inmobiliaria | 234-11846 |
 | ORIP | Puerto López |
 | Municipio | Puerto Gaitán, Meta |
-| Vereda | Rubiales (vecino a El Trueno) |
-| Titular registrado en algún momento | Jaime Humberto Acuña Ocampo (papá) — C.C. 17.310.188 |
-| Estado | La familia tiene posesión, no titulada actualmente |
-| Anotación 9 (2019) | Involucra Municipio de Puerto Gaitán (¿impuesto predial?) — pendiente analizar |
+| Vereda | Rubiales / Santa Helena (vecino a El Trueno) |
+| Titular original | **Jaime Humberto Acuña Ocampo** (papá) — C.C. 17.310.188 |
+| **Titular registrado HOY** | **OMAR PEREZ** (a confirmar con cert. tradición actualizado · T35) |
+| Estado posesión | Papá afirma posesión continua desde el inicio (pagó prediales 2000-2011, hizo casa + cercas + obras, vive el predio) |
+| **Cómo se perdió** | Papá había dado a **Cesia Martínez** un poder para hacer escrituras (en contexto de relación de ganado). **16 años después**, Cesia usó ese poder y transfirió La Realidad a OMAR PEREZ. |
+
+### Estrategia de recuperación (Frente B)
+
+Documentación completa en `04-regulatorio/predios/la-realidad/recuperacion/`:
+
+- `README.md` · estrategia general + plan por fases
+- `1-plan-investigacion.md` · 4 piezas a reunir antes de cualquier acción
+
+### Acciones legales posibles (por orden de probabilidad)
+
+| Acción | Probabilidad | Cuándo aplica |
+|---|---|---|
+| Reivindicatoria + prescripción adquisitiva | 70-85% | Posesión de papá demostrable (prediales + mejoras + testimonios) |
+| Simulación absoluta (Art. 1766 CC) | 75-85% | Si Omar Perez es testaferro de Cesia |
+| Nulidad por extralimitación mandato | 70-80% | Si el poder original era limitado al ganado |
+| Falsedad documental (Arts. 286/289 CP) | 60-75% | Si la escritura tiene vicios de fecha o firma |
+| Acción Pauliana (Art. 2491 CC) | 50-65% | Si la transferencia fue para defraudar |
+
+### Coordinación con Frente A
+
+**INVESTIGAR La Realidad en silencio mientras se negocia Trueno.** Si Cesia acepta carta → pagamos Trueno → radicamos La Realidad después. Si Cesia rechaza → radicamos AMBOS frentes en simultáneo para máxima presión.
 
 **Para sesión dedicada:** entender si recuperar la titulación es viable, qué pasos legales requiere y cuánto cuesta. La familia ya perdió posesión legal en algún punto (firmas presuntamente falsificadas en juzgado) y el caso está en Corte Constitucional.
 
-## Contexto histórico (4 fincas)
+## Contexto histórico (4 fincas) · CORREGIDO 2026-06-05 con llamada a papá
 
-Papá y Cesia Martinez fueron socios. Compraron 4 fincas vecinas en vereda Rubiales:
+**Versión real (no éramos socios igualitarios):**
 
-| Finca | Comprador original |
-|---|---|
-| La Romería | Cesia Martinez |
-| La Milagrosa | Cesia Martinez |
-| La Realidad | Papá (Jaime) |
-| El Trueno | Papá / William Iván (hermano) |
+| Finca | Propietario original | Estado actual |
+|---|---|---|
+| La Romería | Cesia Martínez (compra propia) | Cesia la recuperó · perdida |
+| La Milagrosa | Cesia Martínez (compra propia) | Cesia la recuperó · perdida |
+| **La Realidad** | **Papá** (Jaime) | Transferida indebidamente a Omar Perez · A RECUPERAR (Frente B) |
+| **El Trueno** | **Tío William Iván** (hermano de papá) | Embargado por Cesia · negociar pago (Frente A) |
 
-Cesia abandonó sus 2 fincas por 15+ años. Papá entró en quiebra; sus fincas quedaron a merced del mayordomo. Cesia y su hermana volvieron a reclamar (presuntamente con firmas falsificadas en juzgado), recuperaron sus 2 fincas, y demandaron a la familia Acuña argumentando usufructo sin pago de regalías. De ahí el embargo sobre El Trueno por ~$160M.
+### Lo que pasó cronológicamente
+
+1. **Cesia pagó sus 2 fincas** (La Romería, La Milagrosa) — eran legítimamente suyas.
+2. **Cesia se fue a Canadá ~15 años** dejando sus 2 fincas abandonadas.
+3. **Papá administró/cuidó las fincas de Cesia** durante ese tiempo, haciendo mejoras (casa, cercas, obras por $83M+ en pesos de hace 25 años) y pagando impuestos prediales 2000-2011 (recibos los tiene GUYO · T31).
+4. **Cesia regresó** y reclamó. Recuperó sus 2 fincas + **demandó a la familia Acuña por daños y perjuicios** (alegando aprovechamiento sin pago). De ahí el proceso ejecutivo y el embargo sobre El Trueno.
+5. **En paralelo:** papá había dado a Cesia un poder para hacer escrituras en el contexto de una **relación de ganado**. **16 años después**, Cesia usó ese poder y **transfirió La Realidad a OMAR PEREZ** (persona externa).
+6. **Hoy:** papá afirma posesión continua de La Realidad. El Trueno está embargado. Las dos fincas de Cesia se perdieron.
+
+### Bienes muebles retenidos por Cesia (T32 · a documentar)
+
+Cuando Cesia recuperó las fincas, quedaron en ellas (y no se devolvieron):
+
+- Piscina
+- Motocicleta
+- Planta eléctrica marca Leaster
+- Planta eléctrica importada por Juan desde USA
+- 2 plantas solares
+
+Base para denuncia separada (T34) + compensación en negociación Frente A.
+
+### Inversiones de papá no contabilizadas (T33)
+
+- Casa de la finca · construida hace 25 años
+- $50M COP en cercas (en pesos de hace 25 años · indexar)
+- $33M COP en obras (en pesos de hace 25 años · indexar)
+- 11 años de impuestos prediales (T31)
+
+Sin facturas. Probar con testimonios, fotos, avalúo pericial, declaraciones extrajuicio.
 
 ## Documentos en el repo
 

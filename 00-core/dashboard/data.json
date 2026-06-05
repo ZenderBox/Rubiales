@@ -14,11 +14,19 @@
   "blockers": [
     {
       "id": "B-1",
-      "title": "Predio El Trueno · embargado + 2 tutelas perdidas",
+      "title": "Predio El Trueno · embargado · negociación con compensaciones",
       "severity": "critical",
       "owner": "Familia + Abogado",
-      "status": "Cesia pide $300M · objetivo negociar a $150-180M · denuncia penal en evaluación",
-      "note": "Embargo oficial $160.9M. 2 tutelas negadas (dic-2025, feb-2026). En Corte Constitucional + estrategia con denuncia penal (auto 15-mar-2024 declaró falsedad documental probada). Fase 1 piloto viable bajo comodato del tío. Fase 2 con Finagro bloqueada. Ver /legal.html."
+      "status": "Cesia pide $150M (oficial $160.9M) · objetivo: $40-90M con compensaciones documentadas",
+      "note": "Embargo oficial $160.9M. 2 tutelas negadas. Papá confirma: pagó prediales 2000-2011 (Guyo tiene recibos), hizo casa+cercas+obras ($83M+), Cesia retuvo bienes muebles (piscina/motos/plantas). Estos elementos cambian la negociación: en vez de pagar el monto, compensar contracuenta. Paquete defensa listo. Ver /legal.html."
+    },
+    {
+      "id": "B-2",
+      "title": "Predio La Realidad · transferido indebidamente a Omar Perez (Frente B)",
+      "severity": "high",
+      "owner": "Familia + Abogado",
+      "status": "Investigación en silencio · 4 piezas a reunir antes de decidir acción",
+      "note": "Papá había dado a Cesia un poder para escrituras (relación de ganado). 16 años después Cesia transfirió La Realidad (mat. 234-11846) a OMAR PEREZ. Vicios potenciales: extralimitación mandato, caducidad, simulación si Omar es testaferro, falsedad. Posesión continua de papá (prediales + mejoras) habilita reivindicatoria + prescripción adquisitiva. Ver paquete `04-regulatorio/predios/la-realidad/recuperacion/`."
     },
     {
       "id": "B0",
@@ -315,14 +323,113 @@
     {
       "id": "T30",
       "title": "Estrategia financiera para pago Cesia · fuentes y plazos",
-      "description": "Definir fuentes de fondos para cubrir el pago a Cesia (objetivo $80-150M post-negociación). Opciones: préstamo personal Juan, aporte Alejandro (33%), crédito comercial no-Finagro, préstamo familiar, pago en cuotas a Cesia. Calcular: cuánto en cuánto plazo. Decisión condicionada al monto final negociado.",
+      "description": "Definir fuentes de fondos para cubrir el pago a Cesia (con compensaciones documentadas el objetivo baja a $40-90M post-negociación). Opciones: préstamo personal Juan, aporte Alejandro (33%), crédito comercial no-Finagro, préstamo familiar, pago en cuotas a Cesia. Calcular: cuánto en cuánto plazo.",
       "owner": "JU",
       "priority": "high",
       "status": "pending",
       "module": "03-finanzas"
+    },
+    {
+      "id": "T31",
+      "title": "Recuperar recibos de impuesto predial 2000-2011 que tiene GUYO ⭐ CRÍTICO PROBATORIO",
+      "description": "Papá pagó los impuestos prediales de las fincas durante 11 años (2000-2011). Los recibos los tiene una persona llamada GUYO. Recuperar los originales o copias certificadas. Esto es ORO probatorio: demuestra posesión pacífica con ánimo de propietario por 11 años, lo cual: (1) refuerza la denuncia penal contra Agustín Mesa Corzo, (2) abre puerta a prescripción adquisitiva extraordinaria (Ley 791/2002), (3) justifica descuento mayor en la negociación.",
+      "owner": "PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T32",
+      "title": "Lista detallada de bienes muebles retenidos por Cesia",
+      "description": "Documentar cada bien con: descripción, marca, modelo, valor estimado, cuándo se compró, dónde estaba, cuándo desapareció. Conocidos: piscina, motocicleta, planta eléctrica Leaster, planta eléctrica importada por Juan desde USA, 2 plantas solares. Buscar facturas, fotos, testimonios. Base para denuncia penal separada y compensación en negociación.",
+      "owner": "JU + PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T33",
+      "title": "Documentar mejoras de papá en la finca · casa + cercas + obras",
+      "description": "Papá invirtió ~$83M COP hace 25 años (casa + $50M cercas + $33M obras). No hay facturas. Probar con: (1) testimonios de vecinos/mayordomos/trabajadores, (2) fotos antes/después, (3) avalúo pericial de las construcciones existentes para estimar antigüedad y costo, (4) declaraciones extrajuicio ante notario. Base para compensación en negociación.",
+      "owner": "PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T34",
+      "title": "Evaluar denuncia penal SEPARADA contra Cesia por hurto de bienes muebles",
+      "description": "Independiente de la denuncia contra Agustín Mesa Corzo. Esta es contra Cesia y su familia directamente, por hurto agravado de los bienes muebles (piscina, motos, plantas eléctricas y solares). Requiere T32 (lista documentada). Crea presión adicional sobre Cesia y argumento de compensación.",
+      "owner": "JU + Leonardo",
+      "priority": "normal",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T35",
+      "title": "Certificado de tradición ACTUALIZADO matrícula 234-11846 (La Realidad) ⭐ FRENTE B base",
+      "description": "Solicitar online en supernotariado.gov.co (~$15K COP) o en ORIP Puerto López. Necesario para confirmar: (1) que La Realidad está hoy a nombre de OMAR PEREZ, (2) fecha exacta de la transferencia, (3) notaría y número de la escritura, (4) valor declarado (suele ser bajo en simulaciones), (5) si ha habido transferencias subsecuentes, (6) gravámenes actuales. Es la BASE de todo el análisis del Frente B.",
+      "owner": "JU + PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T36",
+      "title": "Investigar a OMAR PEREZ · ¿comprador real o testaferro de Cesia?",
+      "description": "Con la cédula de la escritura (T35) averiguar: ubicación, profesión, otros bienes a su nombre (en múltiples ORIPs · señal de testaferro), vínculos con Cesia/familia, ¿vive o conoce La Realidad? Determinar si la acción principal es por simulación (testaferro) o reivindicatoria contra tercero de buena fe. Costo: $50-200K en consultas privadas.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T37",
+      "title": "Recuperar copia del PODER original que papá le dio a Cesia",
+      "description": "Sin este documento no se puede atacar la transferencia a Omar Perez. Preguntas a papá: ¿qué año aproximado? ¿escritura pública o privado? ¿en qué notaría? ¿qué términos exactos? Si fue por escritura pública, solicitar a la notaría correspondiente. Si privado, investigar quién lo conserva. Alternativa: el poder DEBE haberse protocolizado en la escritura de Cesia a Omar Perez (T35-bis).",
+      "owner": "PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T38",
+      "title": "Estructurar acción reivindicatoria + prescripción adquisitiva La Realidad",
+      "description": "Una vez completadas T35-T37, Leonardo analiza vicios concretos y estructura la demanda. Acción principal: reivindicatoria (Art. 946 CC) + prescripción adquisitiva extraordinaria (Art. 2532 CC y Ley 791/2002 · 10 años posesión papá probada con T31). Acción accesoria: nulidad de la escritura por extralimitación del mandato. Posible denuncia penal por falsedad (depende de los vicios).",
+      "owner": "JU + Leonardo",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T39",
+      "title": "Decisión de orden táctico · Trueno primero vs Realidad primero vs simultáneo",
+      "description": "Definir el orden de las acciones legales. Si Cesia acepta carta de Trueno → pagamos Trueno → radicamos La Realidad después. Si Cesia rechaza Trueno → radicamos AMBOS frentes en simultáneo para máxima presión. La investigación del Frente B (T35-T37) puede correr en SILENCIO mientras se negocia Trueno.",
+      "owner": "JU + Leonardo",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
     }
   ],
   "activity": [
+    {
+      "date": "2026-06-05",
+      "title": "Frente B abierto · La Realidad por recuperar de Omar Perez · paquete recuperacion",
+      "author": "Juan + Claude",
+      "ref": "PR #13"
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Historia real corregida con papá: Cesia pagó SUS fincas, papá las cuidó 15 años, demanda por daños y perjuicios",
+      "author": "Juan + Claude",
+      "ref": "PR #13"
+    },
+    {
+      "date": "2026-06-05",
+      "title": "T35-T39 nuevas (Frente B La Realidad) + B-2 nuevo bloqueador",
+      "author": "Juan + Claude",
+      "ref": "PR #13"
+    },
     {
       "date": "2026-06-05",
       "title": "Módulo Arrancar creado · blindajes legales · cronograma reverso al 15-sep",
