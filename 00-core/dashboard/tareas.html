@@ -45,6 +45,80 @@
       --shadow-button: 0 2px 4px rgba(15,15,15,.10);
     }
 
+    /* ========== Sidebar (compartido con index) ========== */
+    .app-shell {
+      display: grid;
+      grid-template-columns: 240px 1fr;
+      min-height: 100vh;
+    }
+    .sidebar {
+      background: var(--paper);
+      border-right: 1px solid var(--ink-100);
+      padding: 24px 16px;
+      position: sticky;
+      top: 0;
+      height: 100vh;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+      font-size: 1rem;
+    }
+    .sidebar-brand {
+      font-size: 22px; font-weight: 800; color: var(--ink-900);
+      letter-spacing: -0.01em; padding: 8px 12px 24px;
+    }
+    .sidebar-brand span { color: var(--zb-cyan); }
+    .sidebar-section-title {
+      font-size: 10px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--ink-300);
+      padding: 16px 12px 8px;
+    }
+    .nav-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 14px;
+      border-radius: var(--radius-md);
+      color: var(--ink-700);
+      font-size: 15px; font-weight: 600;
+      text-decoration: none;
+      transition: background .12s ease, color .12s ease;
+      min-height: 48px;
+    }
+    .nav-item:hover { background: var(--ink-50); }
+    .nav-item.active {
+      background: var(--zb-cyan-soft);
+      color: var(--zb-cyan-dark);
+    }
+    .nav-item .nav-icon { font-size: 18px; line-height: 1; flex-shrink: 0; }
+    .nav-item .nav-label { flex: 1; }
+    .nav-item .nav-badge {
+      font-size: 10px; font-weight: 700;
+      background: var(--ink-100); color: var(--ink-500);
+      padding: 2px 7px; border-radius: var(--radius-pill);
+    }
+    .nav-item.active .nav-badge { background: var(--zb-cyan); color: var(--paper); }
+    .nav-item.coming-soon { opacity: 0.55; cursor: default; }
+    .nav-item.coming-soon:hover { background: transparent; }
+
+    @media (max-width: 768px) {
+      .app-shell { grid-template-columns: 1fr; }
+      .sidebar {
+        position: sticky; top: 0; height: auto;
+        border-right: none; border-bottom: 1px solid var(--ink-100);
+        padding: 12px 8px; flex-direction: row;
+        gap: 6px; overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        z-index: 50;
+      }
+      .sidebar-brand { display: none; }
+      .sidebar-section-title { display: none; }
+      .nav-item {
+        flex-shrink: 0; min-width: max-content;
+        padding: 10px 14px; font-size: 14px;
+      }
+    }
+
     * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
     html { font-size: 16px; }
     body {
@@ -308,6 +382,40 @@
   </style>
 </head>
 <body>
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <div class="sidebar-brand">Mira<span>mar</span></div>
+      <div class="sidebar-section-title">Navegación</div>
+      <a href="/" class="nav-item">
+        <span class="nav-icon">🏠</span>
+        <span class="nav-label">Resumen</span>
+      </a>
+      <a href="/tareas.html" class="nav-item active">
+        <span class="nav-icon">✅</span>
+        <span class="nav-label">Tareas</span>
+      </a>
+      <a href="/documentos.html" class="nav-item">
+        <span class="nav-icon">📄</span>
+        <span class="nav-label">Documentos</span>
+      </a>
+      <span class="nav-item coming-soon">
+        <span class="nav-icon">⏳</span>
+        <span class="nav-label">Aprobaciones</span>
+        <span class="nav-badge">pronto</span>
+      </span>
+      <span class="nav-item coming-soon">
+        <span class="nav-icon">📅</span>
+        <span class="nav-label">Cronograma</span>
+        <span class="nav-badge">pronto</span>
+      </span>
+      <span class="nav-item coming-soon">
+        <span class="nav-icon">💰</span>
+        <span class="nav-label">Cotizaciones</span>
+        <span class="nav-badge">pronto</span>
+      </span>
+    </aside>
+
   <main class="wrap">
 
     <header>
@@ -331,6 +439,8 @@
     </footer>
 
   </main>
+
+  </div><!-- /app-shell -->
 
   <script>
     // ============================================================

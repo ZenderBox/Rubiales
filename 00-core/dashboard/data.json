@@ -59,6 +59,14 @@
       "owner": "Juan + Contadora",
       "status": "Papá da razón el viernes (qué dice contadora)",
       "note": "Banco recibió 2018-2020 el 26-may. Si rechazan, hay que presentar 5 años faltantes. Costo estimado: $1.5M-$4M COP en honorarios + posibles sanciones DIAN."
+    },
+    {
+      "id": "B5",
+      "title": "Impuesto predial El Trueno · 8 años impagos",
+      "severity": "critical",
+      "owner": "Familia",
+      "status": "Plazo de pago: 30/06/2026 · $72.9M COP",
+      "note": "Alcaldía Puerto Gaitán emitió recibo 26010310020237 el 3-jun-2026 por 2018-2026 acumulados. Si no se paga, riesgo de embargo municipal sobre el predio. Ver predios.md."
     }
   ],
   "phases": [
@@ -249,6 +257,24 @@
       "priority": "high",
       "status": "pending",
       "module": "06-proveedores"
+    },
+    {
+      "id": "T24",
+      "title": "Consultar discrepancia de área del predio El Trueno",
+      "description": "El certificado de tradición INCORA dice 991 ha, pero el catastro de la Alcaldía Puerto Gaitán dice 607 ha. Diferencia de ~384 ha. Hay que averiguar: ¿hubo segregación de algún lote? ¿error catastral? ¿adquisición parcial? Hablar con la Oficina de Registro de Puerto López o con un agrimensor.",
+      "owner": "PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T25",
+      "title": "Pagar impuesto predial El Trueno · $72.9M antes del 30/06/2026",
+      "description": "Recibo 26010310020237 emitido por la Alcaldía de Puerto Gaitán acumula deuda predial 2018-2026 por $72.909.000 COP. Plazo: 30 de junio 2026. Si no se paga, riesgo de embargo municipal. Decidir: pagar completo · negociar plan de pagos · pelear avalúo. Hablar con la Tesorería de la Alcaldía.",
+      "owner": "AM",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
     }
   ],
   "activity": [
