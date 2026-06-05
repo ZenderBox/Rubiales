@@ -92,6 +92,21 @@
   - A ~$2.300/kg = ~$15.7M COP/mes en alimento
   - Crédito 30d significa NO necesitar este capital en caja antes de empezar a vender huevos
 
+## Abogados
+
+### Leonardo Andrés Hernández Motta — Nuestro abogado
+- **Caso:** proceso Cesia Martinez vs Acuña Ocampo · El Trueno
+- **Dirección:** Cra 7 No. 12 B-84, Oficina 904, Bogotá D.C.
+- **Celular:** 300 403 2687
+- **Email:** hernandez229abogado@gmail.com
+- **Nota:** misma dirección que la registrada de la Sociedad Agropecuaria Miramar en Cámara de Comercio · probable proximidad operativa familiar.
+- **Historial:** lleva el caso desde octubre 2023. Logró el incidente de nulidad por falsedad (auto 15-mar-2024). Presentó la tutela y la impugnación (negadas). Ahora en Corte Constitucional.
+
+### Agustín Mesa Corzo — Abogado de Cesia (contrario)
+- Apoderado de Cesia María y María del Carmen Martinez Palacios
+- ⚠️ **Manipulación documental judicialmente reconocida** (auto Juzgado Primero Promiscuo del Circuito de Puerto López, 15-mar-2024)
+- Posible objetivo de denuncia penal por falsedad documental + fraude procesal (Arts. 286/289/453 CP)
+
 ## Veterinarios
 
 ### Tío William Iván Acuña Ocampo

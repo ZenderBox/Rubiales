@@ -96,6 +96,16 @@ Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto 
   5. **Detalles operacionales documentados** · `00-core/00-Memorias/servidor-miramar.md` + ADR completa en `00-core/06-Decisiones/0001-stack-tecnico-miramar-2026-06-01.md`.
   6. **Aprendizajes nuevos registrados** · checkbox HTTP/HTTPS en wizard EC2 no siempre aplica al Security Group · swap obligatorio en t3.micro · Postgres host ↔ Docker container vía `172.17.0.1`.
 
+- **2026-06-05** — Sesión Juan ↔ Claude. Sesión legal grande. Hitos:
+  1. **PDF impuesto predial** (subido por papá) reveló: vereda confirmada Santa Helena, área corregida 607 ha (no 991), deuda predial $72.9M (B5).
+  2. **Módulo Documentos creado** (backend Flask + Postgres + frontend con upload + categorías).
+  3. **Juan subió 5 PDFs legales** vía el módulo (tutela completa: acción, sentencia 1ra, impugnación, sentencia 2da, ratificación).
+  4. **Lectura completa del expediente** reveló: auto 15-mar-2024 del Juzgado declaró **probada la manipulación documental** del abogado contrario Agustín Mesa Corzo. Las 2 tutelas se perdieron pero la falsedad ya está reconocida judicialmente.
+  5. **D21 · Estrategia legal aprobada:** denuncia penal + Defensoría + Corte Constitucional + canal de negociación. Objetivo: pagar $150-180M (vs $300M pedido). Plazo: 12-15 meses.
+  6. **D22 · Cloudflare Pages deprecado** · `miramar.shopenvia.com` es fuente única.
+  7. **Módulo Legal creado** (`/legal.html`) con objetivo, métricas, timeline, opciones tácticas, probabilidades, personas, plazo.
+  8. **T26 y T27 nuevas:** definir estrategia con Leonardo + verificar embargo Seguros Bolívar 2017.
+
 ---
 
 *Este archivo es la memoria viva del proyecto. Actualizar después de cada hito, conversación importante o decisión.*

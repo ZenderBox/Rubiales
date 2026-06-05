@@ -14,11 +14,11 @@
   "blockers": [
     {
       "id": "B-1",
-      "title": "Predio El Trueno · embargado y no en nombre propio",
+      "title": "Predio El Trueno · embargado + 2 tutelas perdidas",
       "severity": "critical",
-      "owner": "Familia",
-      "status": "Embargo Cesia $160.9M + embargo Seguros Bolívar 2017",
-      "note": "Predio a nombre del tío William Iván. Fase 1 viable bajo comodato. Fase 2/Finagro inviable sin título limpio. Ver 07-Incidentes/."
+      "owner": "Familia + Abogado",
+      "status": "Cesia pide $300M · objetivo negociar a $150-180M · denuncia penal en evaluación",
+      "note": "Embargo oficial $160.9M. 2 tutelas negadas (dic-2025, feb-2026). En Corte Constitucional + estrategia con denuncia penal (auto 15-mar-2024 declaró falsedad documental probada). Fase 1 piloto viable bajo comodato del tío. Fase 2 con Finagro bloqueada. Ver /legal.html."
     },
     {
       "id": "B0",
@@ -275,9 +275,39 @@
       "priority": "critical",
       "status": "pending",
       "module": "04-regulatorio"
+    },
+    {
+      "id": "T26",
+      "title": "Definir estrategia legal con Leonardo · denuncia penal + Defensoría",
+      "description": "Reunión con el abogado Leonardo Hernández Motta para: (1) revisar estado del expediente en Corte Constitucional, (2) cotizar honorarios para preparar denuncia penal contra Agustín Mesa Corzo usando el auto del 15-mar-2024 como prueba reina, (3) preparar queja ante Defensoría del Pueblo. Plazo límite mental para toda la pelea: 12-15 meses (hasta ago-sep 2027).",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T27",
+      "title": "Verificar estado embargo Seguros Bolívar 2017",
+      "description": "Anotación 6 del cert. de tradición 234-11845 muestra embargo de Seguros Comerciales Bolívar S.A. del 2017 (Juzgado 13 Civil Bogotá, oficio 1489-2017). Hay que averiguar si ya se pagó, si sigue vigente, o si hay deuda pendiente. Probable que necesitemos abogado.",
+      "owner": "JU",
+      "priority": "normal",
+      "status": "pending",
+      "module": "04-regulatorio"
     }
   ],
   "activity": [
+    {
+      "date": "2026-06-05",
+      "title": "Análisis legal completo · 5 PDFs de tutela leídos · estrategia denuncia penal + Defensoría",
+      "author": "Juan + Claude",
+      "ref": "PR #13"
+    },
+    {
+      "date": "2026-06-05",
+      "title": "Módulo Legal creado · /legal.html con objetivo, métricas, timeline, opciones tácticas",
+      "author": "Juan + Claude",
+      "ref": "PR #13"
+    },
     {
       "date": "2026-05-28",
       "title": "Rebrand a Miramar · ciclo plátano (8 hitos P01-P08) + cotizaciones · B4 declaraciones",

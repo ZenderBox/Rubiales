@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <title>Miramar · Legal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --zb-cyan:       #029ECB;
+      --zb-cyan-dark:  #007B9F;
+      --zb-cyan-soft:  rgba(2,158,203,.12);
+      --zb-lime:       #CCD32A;
+      --zb-gradient:   linear-gradient(45deg, #029ECB 0%, #CCD32A 85%);
+
+      --ink-900: #0F0F0F;
+      --ink-700: #2A2A2A;
+      --ink-500: #555555;
+      --ink-300: #8A8A8A;
+      --ink-100: #DBDBDB;
+      --ink-50:  #F4F6F8;
+      --paper:   #FFFFFF;
+
+      --success:    #007830;
+      --success-bg: #E6F3EC;
+      --warn:       #B5870C;
+      --warn-bg:    #FCF3E0;
+      --danger:     #C81E2A;
+      --danger-bg:  #FAE6E8;
+
+      --radius-md: 14px;
+      --radius-lg: 18px;
+      --radius-pill: 99px;
+      --shadow-card: 0 2px 8px rgba(15,15,15,.06);
+    }
+
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: var(--ink-50);
+      color: var(--ink-900);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
+    /* Sidebar */
+    .app-shell { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
+    .sidebar {
+      background: var(--paper); border-right: 1px solid var(--ink-100);
+      padding: 24px 16px; position: sticky; top: 0; height: 100vh; overflow-y: auto;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .sidebar-brand {
+      font-size: 22px; font-weight: 800; color: var(--ink-900);
+      letter-spacing: -0.01em; padding: 8px 12px 24px;
+    }
+    .sidebar-brand span { color: var(--zb-cyan); }
+    .sidebar-section-title {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--ink-300); padding: 16px 12px 8px;
+    }
+    .nav-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 14px; border-radius: var(--radius-md);
+      color: var(--ink-700); font-size: 15px; font-weight: 600;
+      text-decoration: none; transition: background .12s ease; min-height: 48px;
+    }
+    .nav-item:hover { background: var(--ink-50); }
+    .nav-item.active { background: var(--zb-cyan-soft); color: var(--zb-cyan-dark); }
+    .nav-item .nav-icon { font-size: 18px; line-height: 1; flex-shrink: 0; }
+    .nav-item .nav-label { flex: 1; }
+    .nav-item .nav-badge {
+      font-size: 10px; font-weight: 700; background: var(--ink-100); color: var(--ink-500);
+      padding: 2px 7px; border-radius: var(--radius-pill);
+    }
+    .nav-item.active .nav-badge { background: var(--zb-cyan); color: var(--paper); }
+    .nav-item.coming-soon { opacity: 0.55; cursor: default; }
+    .nav-item.coming-soon:hover { background: transparent; }
+    @media (max-width: 768px) {
+      .app-shell { grid-template-columns: 1fr; }
+      .sidebar {
+        position: sticky; top: 0; height: auto; border-right: none;
+        border-bottom: 1px solid var(--ink-100); padding: 12px 8px;
+        flex-direction: row; gap: 6px; overflow-x: auto; z-index: 50;
+      }
+      .sidebar-brand, .sidebar-section-title { display: none; }
+      .nav-item { flex-shrink: 0; min-width: max-content; padding: 10px 14px; font-size: 14px; }
+    }
+
+    /* Main */
+    .main { padding: 28px 28px 60px; max-width: 1100px; }
+    @media (max-width: 768px) { .main { padding: 20px 16px 60px; } }
+
+    h1 { font-size: 32px; font-weight: 800; margin: 0 0 6px; color: var(--ink-900); letter-spacing: -0.01em; }
+    .subtitle { color: var(--ink-500); font-size: 16px; margin: 0 0 32px; }
+
+    h2 {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--ink-500); margin: 36px 0 14px;
+    }
+
+    /* Bloque de objetivo */
+    .objective {
+      background: var(--zb-gradient); color: var(--paper);
+      border-radius: var(--radius-lg); padding: 24px 26px;
+      margin-bottom: 32px;
+    }
+    .objective-label {
+      font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em;
+      opacity: 0.9; margin-bottom: 6px;
+    }
+    .objective-text { font-size: 20px; font-weight: 800; line-height: 1.35; }
+
+    /* Métricas grid */
+    .metrics {
+      display: grid; gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-bottom: 12px;
+    }
+    .metric {
+      background: var(--paper); border: 1px solid var(--ink-100);
+      border-radius: var(--radius-lg); padding: 18px 20px;
+      box-shadow: var(--shadow-card);
+    }
+    .metric .label {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.06em; color: var(--ink-500); margin-bottom: 6px;
+    }
+    .metric .value {
+      font-size: 22px; font-weight: 800; color: var(--ink-900);
+      letter-spacing: -0.01em; line-height: 1.1;
+    }
+    .metric .delta { font-size: 12px; color: var(--ink-500); margin-top: 4px; }
+    .metric.danger .value { color: var(--danger); }
+    .metric.warn .value { color: var(--warn); }
+    .metric.success .value { color: var(--success); }
+
+    /* Bloque de impacto */
+    .impact-table {
+      background: var(--paper); border: 1px solid var(--ink-100);
+      border-radius: var(--radius-lg); overflow: hidden;
+      box-shadow: var(--shadow-card);
+    }
+    .impact-row {
+      display: grid; grid-template-columns: 1fr 110px; gap: 16px;
+      padding: 16px 20px; border-bottom: 1px solid var(--ink-100);
+      align-items: center;
+    }
+    .impact-row:last-child { border-bottom: none; }
+    .impact-phase { font-weight: 700; color: var(--ink-900); }
+    .impact-why { font-size: 13px; color: var(--ink-500); margin-top: 4px; }
+    .impact-status {
+      font-size: 12px; font-weight: 700; text-align: center;
+      padding: 8px 12px; border-radius: var(--radius-pill);
+    }
+    .impact-status.ok { background: var(--success-bg); color: var(--success); }
+    .impact-status.block { background: var(--danger-bg); color: var(--danger); }
+
+    /* Timeline */
+    .timeline { display: flex; flex-direction: column; position: relative; }
+    .timeline::before {
+      content: ""; position: absolute; left: 14px; top: 8px; bottom: 8px;
+      width: 2px; background: var(--ink-100);
+    }
+    .tl-item {
+      display: grid; grid-template-columns: 34px 100px 1fr; gap: 14px;
+      padding: 10px 0; align-items: start; position: relative;
+    }
+    .tl-dot {
+      width: 14px; height: 14px; border-radius: 50%;
+      border: 3px solid var(--paper);
+      background: var(--ink-200); box-shadow: 0 0 0 1px var(--ink-100);
+      margin: 4px 0 0 7px; flex-shrink: 0; z-index: 1;
+    }
+    .tl-item.win .tl-dot { background: var(--success); box-shadow: 0 0 0 1px var(--success); }
+    .tl-item.loss .tl-dot { background: var(--danger); box-shadow: 0 0 0 1px var(--danger); }
+    .tl-item.current .tl-dot {
+      background: var(--zb-cyan); box-shadow: 0 0 0 1px var(--zb-cyan);
+      animation: pulse 2s ease infinite;
+    }
+    @keyframes pulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.25); } }
+    .tl-date {
+      font-size: 12px; font-weight: 600; color: var(--ink-500);
+      font-variant-numeric: tabular-nums; padding-top: 2px;
+    }
+    .tl-item.win .tl-date  { color: var(--success); font-weight: 700; }
+    .tl-item.loss .tl-date { color: var(--danger);  font-weight: 700; }
+    .tl-content { min-width: 0; }
+    .tl-label { font-size: 14px; font-weight: 700; color: var(--ink-900); line-height: 1.35; }
+    .tl-note  { font-size: 12px; color: var(--ink-500); margin-top: 4px; line-height: 1.5; }
+
+    /* Opciones tácticas */
+    .options { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .option {
+      background: var(--paper); border: 1px solid var(--ink-100);
+      border-radius: var(--radius-lg); padding: 20px 22px;
+      box-shadow: var(--shadow-card);
+    }
+    .option-name { font-size: 16px; font-weight: 700; color: var(--ink-900); margin: 0 0 6px; display: flex; align-items: center; gap: 8px; }
+    .option-cost { font-size: 12px; color: var(--ink-500); margin: 0 0 12px; }
+    .option-desc { font-size: 14px; color: var(--ink-700); line-height: 1.5; }
+    .option-power {
+      display: inline-block; margin-top: 12px;
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      padding: 4px 10px; border-radius: var(--radius-pill);
+    }
+    .option-power.strong { background: var(--success-bg); color: var(--success); }
+    .option-power.medium { background: var(--warn-bg); color: var(--warn); }
+    .option-power.weak   { background: var(--ink-50); color: var(--ink-500); }
+
+    /* Cards de personas */
+    .people { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .person {
+      background: var(--paper); border: 1px solid var(--ink-100);
+      border-radius: var(--radius-lg); padding: 20px 22px;
+      box-shadow: var(--shadow-card);
+    }
+    .person.them { border-left: 4px solid var(--danger); }
+    .person.us   { border-left: 4px solid var(--success); }
+    .person-role {
+      font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--ink-500); margin-bottom: 4px;
+    }
+    .person-name { font-size: 17px; font-weight: 800; color: var(--ink-900); margin: 0 0 8px; }
+    .person-detail { font-size: 13px; color: var(--ink-700); line-height: 1.5; }
+    .person-detail a { color: var(--zb-cyan-dark); }
+    .person-warn {
+      margin-top: 10px; padding: 8px 12px;
+      background: var(--danger-bg); color: var(--danger);
+      border-radius: var(--radius-md); font-size: 12px; font-weight: 700;
+    }
+
+    /* Probabilidades */
+    .probs { background: var(--paper); border: 1px solid var(--ink-100); border-radius: var(--radius-lg); padding: 18px 20px; }
+    .prob-row { display: flex; align-items: center; gap: 12px; padding: 8px 0; }
+    .prob-label { flex: 1; font-size: 14px; color: var(--ink-700); }
+    .prob-bar {
+      flex: 0 0 200px; height: 10px; background: var(--ink-50); border-radius: var(--radius-pill); overflow: hidden;
+    }
+    .prob-fill { height: 100%; background: var(--zb-cyan); }
+    .prob-fill.good { background: var(--success); }
+    .prob-fill.bad  { background: var(--danger); }
+    .prob-value { flex: 0 0 50px; text-align: right; font-weight: 700; color: var(--ink-900); font-size: 14px; }
+
+    /* Docs link */
+    .docs-list { display: flex; flex-direction: column; gap: 8px; }
+    .doc-link {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 16px; background: var(--paper);
+      border: 1px solid var(--ink-100); border-radius: var(--radius-md);
+      color: var(--ink-700); text-decoration: none; transition: background .1s ease;
+      font-size: 14px;
+    }
+    .doc-link:hover { background: var(--ink-50); }
+    .doc-link .icon { font-size: 18px; }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+
+    <!-- ========== SIDEBAR ========== -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">Mira<span>mar</span></div>
+      <div class="sidebar-section-title">Navegación</div>
+      <a href="/" class="nav-item"><span class="nav-icon">🏠</span><span class="nav-label">Resumen</span></a>
+      <a href="/tareas.html" class="nav-item"><span class="nav-icon">✅</span><span class="nav-label">Tareas</span></a>
+      <a href="/documentos.html" class="nav-item"><span class="nav-icon">📄</span><span class="nav-label">Documentos</span></a>
+      <a href="/legal.html" class="nav-item active"><span class="nav-icon">⚖️</span><span class="nav-label">Legal</span></a>
+      <span class="nav-item coming-soon"><span class="nav-icon">⏳</span><span class="nav-label">Aprobaciones</span><span class="nav-badge">pronto</span></span>
+      <span class="nav-item coming-soon"><span class="nav-icon">📅</span><span class="nav-label">Cronograma</span><span class="nav-badge">pronto</span></span>
+      <span class="nav-item coming-soon"><span class="nav-icon">💰</span><span class="nav-label">Cotizaciones</span><span class="nav-badge">pronto</span></span>
+    </aside>
+
+    <!-- ========== CONTENT ========== -->
+    <main class="main">
+      <h1>⚖️ Frente Legal</h1>
+      <p class="subtitle">Estado del conflicto con Cesia Martínez · El Trueno · embargo + tutelas</p>
+
+      <!-- OBJETIVO ESTRATÉGICO -->
+      <div class="objective">
+        <div class="objective-label">Objetivo estratégico</div>
+        <div class="objective-text">Pagar la menor cantidad de dinero posible en el menor tiempo posible.</div>
+      </div>
+
+      <!-- MÉTRICAS -->
+      <h2>Monto en disputa</h2>
+      <div class="metrics">
+        <div class="metric danger">
+          <div class="label">Pedido extrajudicial (Cesia)</div>
+          <div class="value">$300M</div>
+          <div class="delta">Sin negociación · capital 2 fincas</div>
+        </div>
+        <div class="metric warn">
+          <div class="label">Embargo oficial liquidado</div>
+          <div class="value">$160.9M</div>
+          <div class="delta">Al 30-abr-2026 · crece ~$500K/mes</div>
+        </div>
+        <div class="metric success">
+          <div class="label">Objetivo de negociación</div>
+          <div class="value">$150-180M</div>
+          <div class="delta">~40-50% de descuento sobre lo pedido</div>
+        </div>
+        <div class="metric">
+          <div class="label">Diferencia que inflan</div>
+          <div class="value">~$140M</div>
+          <div class="delta">Sobre el monto oficial</div>
+        </div>
+      </div>
+
+      <!-- IMPACTO EN EL PROYECTO -->
+      <h2>¿Bloquea el proyecto avícola?</h2>
+      <div class="impact-table">
+        <div class="impact-row">
+          <div>
+            <div class="impact-phase">Fase 0 · Pre-arranque (hoy)</div>
+            <div class="impact-why">Permisos, cotizaciones, planeación. No requiere título del predio.</div>
+          </div>
+          <div class="impact-status ok">✓ NO</div>
+        </div>
+        <div class="impact-row">
+          <div>
+            <div class="impact-phase">Fase 1 · Piloto 2.000 gallinas con USD 10K</div>
+            <div class="impact-why">Viable bajo comodato del tío William Iván al sobrino Juan. El embargo no impide ceder uso.</div>
+          </div>
+          <div class="impact-status ok">✓ NO</div>
+        </div>
+        <div class="impact-row">
+          <div>
+            <div class="impact-phase">Fase 2 · Finagro $200M + escalar 7K-10K aves</div>
+            <div class="impact-why">El banco no presta sobre tierra embargada. Hay que resolver el conflicto antes.</div>
+          </div>
+          <div class="impact-status block">🔴 SÍ</div>
+        </div>
+        <div class="impact-row">
+          <div>
+            <div class="impact-phase">Transferir el predio a nombre de Juan</div>
+            <div class="impact-why">No se puede transferir tierra con embargo activo.</div>
+          </div>
+          <div class="impact-status block">🔴 SÍ</div>
+        </div>
+      </div>
+
+      <!-- TIMELINE -->
+      <h2>Línea de tiempo del proceso</h2>
+      <div class="timeline">
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2012</div><div class="tl-content"><div class="tl-label">Procesos reivindicatorios iniciados</div><div class="tl-note">Cesia y María del Carmen demandan sobre La Romería y La Milagrosa.</div></div></div>
+        <div class="tl-item loss"><div class="tl-dot"></div><div class="tl-date">28 sep 2018</div><div class="tl-content"><div class="tl-label">Fallo en contra de los Acuña</div><div class="tl-note">Entrega de inmuebles + condenas ~$150M. Su abogado renuncia durante el proceso.</div></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">7 may 2019</div><div class="tl-content"><div class="tl-label">Entrega material de los predios</div></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">2020</div><div class="tl-content"><div class="tl-label">Cesia inicia proceso ejecutivo</div><div class="tl-note">Abogado Agustín Mesa Corzo.</div></div></div>
+        <div class="tl-item"><div class="tl-dot"></div><div class="tl-date">Oct 2023</div><div class="tl-content"><div class="tl-label">Leonardo H. Motta se notifica + interpone nulidad por falsedad</div></div></div>
+        <div class="tl-item win"><div class="tl-dot"></div><div class="tl-date">15 mar 2024</div><div class="tl-content"><div class="tl-label">🎯 Juzgado declara probada falsedad documental</div><div class="tl-note"><strong>"Las demandantes y su apoderado Agustín Mesa Corzo incurrieron en manipulación de documentos"</strong>. Nulidad parcial (solo Jaime).</div></div></div>
+        <div class="tl-item loss"><div class="tl-dot"></div><div class="tl-date">11 dic 2025</div><div class="tl-content"><div class="tl-label">Tutela 1ra instancia · DECLARADA IMPROCEDENTE</div><div class="tl-note">Corte Suprema · Sala Civil. Mag. Francisco Ternera Barrios.</div></div></div>
+        <div class="tl-item loss"><div class="tl-dot"></div><div class="tl-date">18 feb 2026</div><div class="tl-content"><div class="tl-label">Tutela 2da instancia · NEGADA</div><div class="tl-note">Corte Suprema · Sala Laboral. Mag. Omar Ángel Mejía Amador.</div></div></div>
+        <div class="tl-item current"><div class="tl-dot"></div><div class="tl-date">HOY</div><div class="tl-content"><div class="tl-label">Expediente en Corte Constitucional + estrategia con denuncia penal</div><div class="tl-note">~1% de tutelas son revisadas · munición fuerte: falsedad ya probada en 2024.</div></div></div>
+      </div>
+
+      <!-- OPCIONES TÁCTICAS -->
+      <h2>Opciones tácticas en juego</h2>
+      <div class="options">
+        <div class="option">
+          <h3 class="option-name">🛡️ Defensoría del Pueblo</h3>
+          <div class="option-cost">Costo: GRATIS · Tiempo: 1-3 meses</div>
+          <p class="option-desc">Queja por vulneración al debido proceso. Recomendaciones no vinculantes pero suman peso reputacional. Útil sobre todo si se argumenta vulneración a William Iván.</p>
+          <span class="option-power medium">PODER MEDIO</span>
+        </div>
+        <div class="option">
+          <h3 class="option-name">🚨 Fiscalía · Denuncia penal</h3>
+          <div class="option-cost">Costo: $5-15M honorarios · Tiempo: 6-12 meses</div>
+          <p class="option-desc">Contra Agustín Mesa Corzo por falsedad documental + fraude procesal. <strong>El auto del 15-mar-2024 es prueba reina</strong>. Puede causar prejudicialidad, presionar negociación, dar peso a Corte Constitucional.</p>
+          <span class="option-power strong">PODER FUERTE</span>
+        </div>
+        <div class="option">
+          <h3 class="option-name">⚖️ Corte Constitucional</h3>
+          <div class="option-cost">Costo: 0 (ya radicado) · Tiempo: 6-24 meses</div>
+          <p class="option-desc">Revisión eventual. ~1% de aceptación. Probabilidad aumenta si hay hechos sobrevinientes (denuncia penal en curso).</p>
+          <span class="option-power weak">PODER BAJO</span>
+        </div>
+        <div class="option">
+          <h3 class="option-name">🤝 Negociación directa</h3>
+          <div class="option-cost">Costo: el monto que se acepte</div>
+          <p class="option-desc">Apuntar a $150-180M en vez de $300M. Mantener canal abierto en paralelo a la pelea. La pelea sube el costo para Cesia y baja el monto que aceptan.</p>
+          <span class="option-power strong">PODER FUERTE</span>
+        </div>
+      </div>
+
+      <!-- PROBABILIDADES -->
+      <h2>Probabilidades estimadas (no son ciencia exacta)</h2>
+      <div class="probs">
+        <div class="prob-row">
+          <div class="prob-label">Reversión TOTAL del embargo (no pagar nada)</div>
+          <div class="prob-bar"><div class="prob-fill good" style="width: 12%"></div></div>
+          <div class="prob-value">10-15%</div>
+        </div>
+        <div class="prob-row">
+          <div class="prob-label">Negociación BAJADA significativa ($150-180M)</div>
+          <div class="prob-bar"><div class="prob-fill good" style="width: 55%"></div></div>
+          <div class="prob-value">50-60%</div>
+        </div>
+        <div class="prob-row">
+          <div class="prob-label">Quedar igual (pelear, no mejorar)</div>
+          <div class="prob-bar"><div class="prob-fill" style="width: 27%"></div></div>
+          <div class="prob-value">25-30%</div>
+        </div>
+        <div class="prob-row">
+          <div class="prob-label">Peor (perder + costos legales)</div>
+          <div class="prob-bar"><div class="prob-fill bad" style="width: 7%"></div></div>
+          <div class="prob-value">5-10%</div>
+        </div>
+      </div>
+
+      <!-- PERSONAS -->
+      <h2>Personas clave</h2>
+      <div class="people">
+        <div class="person us">
+          <div class="person-role">Nuestro abogado</div>
+          <h3 class="person-name">Leonardo Andrés Hernández Motta</h3>
+          <p class="person-detail">
+            Cra 7 No. 12 B-84, Of 904, Bogotá D.C.<br>
+            Cel: <a href="tel:+573004032687">300 403 2687</a><br>
+            <a href="mailto:hernandez229abogado@gmail.com">hernandez229abogado@gmail.com</a>
+          </p>
+        </div>
+        <div class="person them">
+          <div class="person-role">Abogado contrario (Cesia)</div>
+          <h3 class="person-name">Agustín Mesa Corzo</h3>
+          <p class="person-detail">Apoderado de Cesia María y María del Carmen Martínez Palacios.</p>
+          <div class="person-warn">⚠️ Manipulación documental judicialmente reconocida (auto 15-mar-2024)</div>
+        </div>
+      </div>
+
+      <!-- DOCUMENTOS -->
+      <h2>Documentos del expediente</h2>
+      <div class="docs-list">
+        <div class="doc-link"><span class="icon">📄</span> Acción de Tutela original (oct 2025)</div>
+        <div class="doc-link"><span class="icon">❌</span> Sentencia 1ra instancia · Improcedente (11 dic 2025)</div>
+        <div class="doc-link"><span class="icon">📄</span> Impugnación de la tutela (ene 2026)</div>
+        <div class="doc-link"><span class="icon">❌</span> Sentencia 2da instancia · Negada (18 feb 2026)</div>
+        <div class="doc-link"><span class="icon">📄</span> Ratificación impugnación (mar 2026)</div>
+        <div class="doc-link"><span class="icon">📕</span> Cert. tradición El Trueno (mat. 234-11845)</div>
+        <div class="doc-link"><span class="icon">📕</span> Embargo Cesia · liquidación crédito $160.9M</div>
+        <div class="doc-link"><span class="icon">📕</span> Recibo impuesto predial 2018-2026 $72.9M</div>
+      </div>
+      <p style="font-size: 13px; color: var(--ink-500); margin-top: 12px;">
+        Todos los documentos están subidos al módulo <a href="/documentos.html" style="color: var(--zb-cyan-dark); font-weight: 700;">📄 Documentos</a> · categoría "predio".
+      </p>
+
+      <!-- PLAZO -->
+      <h2>Plazo límite mental</h2>
+      <div class="metric warn" style="max-width: 360px;">
+        <div class="label">Si no hay avance hasta…</div>
+        <div class="value">Ago/Sep 2027</div>
+        <div class="delta">12-15 meses desde hoy · considerar pagar y cerrar</div>
+      </div>
+
+    </main>
+  </div>
+
+  <script>
+    // Cookie-token tag (consistente con otras páginas)
+    const TOKEN = new URLSearchParams(location.search).get('k') || '';
+  </script>
+</body>
+</html>
