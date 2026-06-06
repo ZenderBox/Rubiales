@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-  <title>Miramar · Póliza de caución</title>
+  <title>Miramar · Paquete de defensa</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -41,29 +41,61 @@
       font-size: 17px;
       line-height: 1.6;
     }
+
     .top-bar {
-      background: var(--paper); border-bottom: 1px solid var(--ink-100);
-      padding: 14px 20px; position: sticky; top: 0; z-index: 10;
+      background: var(--paper);
+      border-bottom: 1px solid var(--ink-100);
+      padding: 14px 20px;
+      position: sticky; top: 0; z-index: 10;
       display: flex; align-items: center; gap: 14px;
     }
     .back-link {
-      color: var(--zb-cyan-dark); text-decoration: none; font-weight: 700;
-      font-size: 15px; display: inline-flex; align-items: center; gap: 6px;
-      padding: 8px 12px; border-radius: var(--radius-md);
+      color: var(--zb-cyan-dark);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 15px;
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 8px 12px;
+      border-radius: var(--radius-md);
     }
     .back-link:hover { background: var(--zb-cyan-soft); }
-    .top-title { font-weight: 800; font-size: 16px; color: var(--ink-700); flex: 1; }
+    .top-title {
+      font-weight: 800;
+      font-size: 16px;
+      color: var(--ink-700);
+      flex: 1;
+    }
 
-    .doc-picker { max-width: 900px; margin: 28px auto; padding: 0 20px; }
-    .doc-picker h1 { font-size: 28px; font-weight: 800; margin: 0 0 8px; }
-    .doc-picker .sub { color: var(--ink-500); margin: 0 0 24px; }
+    .doc-picker {
+      max-width: 900px;
+      margin: 28px auto;
+      padding: 0 20px;
+    }
+    .doc-picker h1 {
+      font-size: 28px;
+      font-weight: 800;
+      margin: 0 0 8px;
+    }
+    .doc-picker .sub {
+      color: var(--ink-500);
+      margin: 0 0 24px;
+    }
     .doc-card {
-      display: block; background: var(--paper); border: 1px solid var(--ink-100);
-      border-radius: var(--radius-lg); padding: 18px 22px; box-shadow: var(--shadow-card);
-      text-decoration: none; color: var(--ink-900); margin-bottom: 14px;
+      display: block;
+      background: var(--paper);
+      border: 1px solid var(--ink-100);
+      border-radius: var(--radius-lg);
+      padding: 18px 22px;
+      box-shadow: var(--shadow-card);
+      text-decoration: none;
+      color: var(--ink-900);
+      margin-bottom: 14px;
       transition: transform .12s ease, box-shadow .12s ease;
     }
-    .doc-card:hover { transform: translateY(-2px); box-shadow: 0 4px 14px rgba(15,15,15,.08); }
+    .doc-card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 14px rgba(15,15,15,.08);
+    }
     .doc-card .chips { display: flex; gap: 8px; margin-bottom: 8px; flex-wrap: wrap; }
     .chip { font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: var(--radius-pill); }
     .chip.cyan { background: var(--zb-cyan-soft); color: var(--zb-cyan-dark); }
@@ -74,10 +106,17 @@
     .doc-card h3 { margin: 4px 0 6px; font-size: 18px; font-weight: 800; }
     .doc-card p { margin: 0; color: var(--ink-500); font-size: 14px; }
 
-    .doc-viewer { max-width: 820px; margin: 28px auto; padding: 0 20px 80px; }
+    .doc-viewer {
+      max-width: 820px;
+      margin: 28px auto;
+      padding: 0 20px 80px;
+    }
     .doc-content {
-      background: var(--paper); border: 1px solid var(--ink-100);
-      border-radius: var(--radius-lg); padding: 32px 36px; box-shadow: var(--shadow-card);
+      background: var(--paper);
+      border: 1px solid var(--ink-100);
+      border-radius: var(--radius-lg);
+      padding: 32px 36px;
+      box-shadow: var(--shadow-card);
     }
     .doc-content h1 { font-size: 26px; font-weight: 800; margin: 0 0 16px; color: var(--ink-900); }
     .doc-content h2 { font-size: 19px; font-weight: 800; margin: 30px 0 10px; color: var(--ink-900); border-bottom: 1px solid var(--ink-100); padding-bottom: 6px; }
@@ -86,27 +125,64 @@
     .doc-content ul, .doc-content ol { padding-left: 22px; margin: 8px 0 14px; }
     .doc-content li { margin-bottom: 4px; color: var(--ink-700); }
     .doc-content strong { color: var(--ink-900); }
-    .doc-content code { background: var(--ink-50); padding: 2px 6px; border-radius: 4px; font-size: 14px; color: var(--danger); }
-    .doc-content pre { background: var(--ink-50); padding: 14px 16px; border-radius: var(--radius-md); overflow-x: auto; font-size: 14px; }
+    .doc-content code {
+      background: var(--ink-50);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-size: 14px;
+      color: var(--danger);
+    }
+    .doc-content pre {
+      background: var(--ink-50);
+      padding: 14px 16px;
+      border-radius: var(--radius-md);
+      overflow-x: auto;
+      font-size: 14px;
+    }
     .doc-content pre code { background: transparent; padding: 0; color: var(--ink-700); }
     .doc-content blockquote {
-      border-left: 4px solid var(--zb-cyan); padding: 8px 16px; margin: 14px 0;
-      background: var(--zb-cyan-soft); border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      border-left: 4px solid var(--zb-cyan);
+      padding: 8px 16px;
+      margin: 14px 0;
+      background: var(--zb-cyan-soft);
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
     }
     .doc-content blockquote p:last-child { margin-bottom: 0; }
-    .doc-content table { width: 100%; border-collapse: collapse; margin: 12px 0 18px; font-size: 14px; }
-    .doc-content th, .doc-content td { padding: 10px 12px; border: 1px solid var(--ink-100); text-align: left; }
+    .doc-content table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 18px;
+      font-size: 14px;
+    }
+    .doc-content th, .doc-content td {
+      padding: 10px 12px;
+      border: 1px solid var(--ink-100);
+      text-align: left;
+    }
     .doc-content th { background: var(--ink-50); font-weight: 700; }
     .doc-content hr { border: none; border-top: 1px solid var(--ink-100); margin: 24px 0; }
     .doc-content a { color: var(--zb-cyan-dark); }
-    .loading, .error { text-align: center; padding: 60px 20px; color: var(--ink-500); }
+
+    .loading, .error {
+      text-align: center;
+      padding: 60px 20px;
+      color: var(--ink-500);
+    }
     .error { color: var(--danger); }
+
     .print-btn {
-      background: var(--zb-cyan); color: var(--paper); border: none;
-      padding: 10px 18px; border-radius: var(--radius-md); font-weight: 700;
-      font-size: 14px; cursor: pointer; font-family: inherit;
+      background: var(--zb-cyan);
+      color: var(--paper);
+      border: none;
+      padding: 10px 18px;
+      border-radius: var(--radius-md);
+      font-weight: 700;
+      font-size: 14px;
+      cursor: pointer;
+      font-family: inherit;
     }
     .print-btn:hover { background: var(--zb-cyan-dark); }
+
     @media print {
       .top-bar, .print-btn { display: none; }
       body { background: white; }
@@ -117,68 +193,64 @@
 <body>
   <div class="top-bar">
     <a href="/legal.html" class="back-link">← Volver a Legal</a>
-    <div class="top-title" id="topTitle">Póliza de caución</div>
+    <div class="top-title" id="topTitle">Paquete de defensa</div>
     <button class="print-btn" onclick="window.print()" id="printBtn" style="display:none;">🖨️ Imprimir / PDF</button>
   </div>
 
   <div id="picker" class="doc-picker" style="display:none;">
-    <h1>🛡️ Póliza de caución judicial · Art. 590 CGP</h1>
-    <p class="sub">Plan completo para levantar el embargo del Trueno. 6 documentos.</p>
+    <h1>📦 Paquete de defensa · Trueno</h1>
+    <p class="sub">5 documentos del paquete legal. Elegí cuál querés leer.</p>
 
-    <a href="?doc=plan-maestro" class="doc-card" style="border: 2px solid var(--zb-cyan);">
+    <a href="?doc=carta" class="doc-card">
       <div class="chips">
-        <span class="chip cyan">⚡ PLAN MAESTRO</span>
-        <span class="chip success">ACTUALIZADO 2026-06-06</span>
+        <span class="chip cyan">PASO 1</span>
+        <span class="chip success">PIEZA CLAVE</span>
       </div>
-      <h3>🎯 Plan maestro · Estrategia completa</h3>
-      <p>El orden actualizado: póliza primero → carta después con póliza en mano. Escenarios y costos esperados.</p>
+      <h3>✉️ Carta de acercamiento a Agustín Mesa</h3>
+      <p>Oferta de transacción con plazo 15 días. Si Cesia acepta, no se radica nada más.</p>
+    </a>
+
+    <a href="?doc=denuncia" class="doc-card">
+      <div class="chips">
+        <span class="chip danger">PASO 2 · si rechaza</span>
+        <span class="chip danger">ARMA FUERTE</span>
+      </div>
+      <h3>⚖️ Denuncia penal contra Agustín Mesa</h3>
+      <p>Fiscalía · falsedad ideológica + fraude procesal (pena 6-12 años).</p>
+    </a>
+
+    <a href="?doc=defensoria" class="doc-card">
+      <div class="chips">
+        <span class="chip warn">PASO 2 · paralelo</span>
+        <span class="chip gray">GRATIS</span>
+      </div>
+      <h3>🛡️ Queja Defensoría del Pueblo</h3>
+      <p>Vulneración debido proceso de William Iván. Suma peso reputacional.</p>
+    </a>
+
+    <a href="?doc=corte" class="doc-card">
+      <div class="chips">
+        <span class="chip warn">PASO 3</span>
+        <span class="chip gray">~1% éxito</span>
+      </div>
+      <h3>📜 Memorial Corte Constitucional</h3>
+      <p>Hechos sobrevinientes para Sala de Selección de Tutelas.</p>
+    </a>
+
+    <a href="?doc=elementos" class="doc-card">
+      <div class="chips">
+        <span class="chip gray">INTERNO</span>
+      </div>
+      <h3>🆕 Elementos de defensa de papá</h3>
+      <p>Insumos de la llamada del 5-jun-2026. Bienes retenidos + mejoras + prediales.</p>
     </a>
 
     <a href="?doc=readme" class="doc-card">
-      <div class="chips"><span class="chip cyan">EMPEZAR AQUÍ</span></div>
-      <h3>📋 README · Por qué es la pieza más importante</h3>
-      <p>Overview, estrategia 3 cotizaciones, números y tareas activas.</p>
-    </a>
-
-    <a href="?doc=corredores" class="doc-card">
       <div class="chips">
-        <span class="chip cyan">PASO 1</span>
-        <span class="chip success">3 PROPUESTAS</span>
+        <span class="chip cyan">MAPA</span>
       </div>
-      <h3>🏢 Los 3 corredores a cotizar</h3>
-      <p>Contacto Leonardo + Delima Marsh + Correcol. Con contactos y mensaje base listo para enviar.</p>
-    </a>
-
-    <a href="?doc=documentacion" class="doc-card">
-      <div class="chips">
-        <span class="chip warn">CHECKLIST</span>
-      </div>
-      <h3>📄 Documentación requerida</h3>
-      <p>Todo lo que aseguradora y corredor van a pedir. Lista exhaustiva por responsable.</p>
-    </a>
-
-    <a href="?doc=plan-semana" class="doc-card">
-      <div class="chips">
-        <span class="chip danger">ESTA SEMANA</span>
-      </div>
-      <h3>🗓️ Plan día por día · 8-12 jun 2026</h3>
-      <p>Cronograma con owners. Llamada Leonardo lunes, cotizaciones martes, reunión decisión viernes.</p>
-    </a>
-
-    <a href="?doc=bloqueadores" class="doc-card">
-      <div class="chips">
-        <span class="chip danger">CRÍTICO</span>
-      </div>
-      <h3>⛔ Los 2 bloqueadores reales</h3>
-      <p>T15 (Cámara) + B4 (declaraciones) bloquean Plan A. Detalle del Plan B si no se resuelven.</p>
-    </a>
-
-    <a href="?doc=tomador" class="doc-card">
-      <div class="chips">
-        <span class="chip warn">DECISIÓN</span>
-      </div>
-      <h3>👤 ¿Quién es el tomador?</h3>
-      <p>Sociedad / papá / Juan / tío. 4 opciones evaluadas + recomendación + preguntas para Leonardo.</p>
+      <h3>📋 README · Estrategia general</h3>
+      <p>Cómo se combinan los 4 documentos. Orden de uso y presupuesto.</p>
     </a>
   </div>
 
@@ -190,13 +262,12 @@
 
   <script>
     const DOCS = {
-      'plan-maestro': { file: 'plan-maestro-estrategia.md', title: 'Plan maestro · Estrategia completa' },
-      readme:        { file: 'README.md',                  title: 'README · Estrategia general' },
-      corredores:    { file: '1-corredores-cotizar.md',    title: 'Los 3 corredores a cotizar' },
-      documentacion: { file: '2-documentacion-requerida.md', title: 'Documentación requerida' },
-      'plan-semana': { file: '3-plan-semana.md',           title: 'Plan de acción · semana 8-12 jun' },
-      bloqueadores:  { file: '4-bloqueadores.md',          title: 'Los 2 bloqueadores reales' },
-      tomador:       { file: '5-decisiones-tomador.md',    title: 'Decisión · quién es el tomador' }
+      readme:     { file: 'README.md',                              title: 'README · Estrategia general' },
+      elementos:  { file: '0-elementos-defensa-papa-2026-06-05.md', title: 'Elementos de defensa de papá' },
+      denuncia:   { file: '1-denuncia-penal.md',                    title: 'Denuncia penal' },
+      defensoria: { file: '2-queja-defensoria-del-pueblo.md',       title: 'Queja Defensoría del Pueblo' },
+      corte:      { file: '3-memorial-corte-constitucional.md',     title: 'Memorial Corte Constitucional' },
+      carta:      { file: '4-carta-acercamiento-negociacion.md',    title: 'Carta de acercamiento' }
     };
 
     const params = new URLSearchParams(location.search);
@@ -209,7 +280,7 @@
       document.getElementById('viewer').style.display = 'block';
       document.getElementById('topTitle').textContent = doc.title;
       document.getElementById('printBtn').style.display = 'inline-block';
-      fetch('/poliza-docs/' + doc.file)
+      fetch('/legal-docs/' + doc.file)
         .then(r => r.ok ? r.text() : Promise.reject(r.status))
         .then(md => {
           document.getElementById('docContent').innerHTML = marked.parse(md);
