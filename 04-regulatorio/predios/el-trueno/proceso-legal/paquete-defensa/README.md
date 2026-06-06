@@ -46,17 +46,15 @@ FASE 3 · Cesia decide
 
 Ver `../plan-maestro-estrategia.md` para el plan completo.
 
-## Presupuesto estimado
+## Presupuesto estimado (sin honorarios)
 
 | Concepto | Estimado |
 |---|---|
-| Honorarios Leonardo · estructuración carta + paquete | $5-8M |
-| Honorarios Leonardo · radicación + seguimiento | $5-10M |
 | Gastos administrativos (notaría, copias certificadas) | $1-2M |
 | Eventual póliza de caución Art. 590 CGP (T41) | $4-8M/año |
-| **TOTAL estimado año 1** | **$15-28M** |
+| **TOTAL estimado año 1** | **$5-10M** + honorarios aparte |
 
-vs **lo que Cesia pide ($150-300M sin negociación)** = ROI estimado 1:6 a 1:10.
+vs **lo que Cesia REALMENTE pide (~$100M COP — capital de las dos fincas según perito)** = ROI estimado 1:10 a 1:20.
 
 ## Reglas
 
