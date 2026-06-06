@@ -296,12 +296,48 @@
     },
     {
       "id": "T41",
-      "title": "Reunión Leonardo · póliza caución judicial Art. 590 CGP",
-      "description": "Confirmar con Leonardo opción de póliza de seguro de cumplimiento judicial (Art. 590 CGP) para levantar el embargo del Trueno. 8 preguntas clave: (1) si es esa la figura que mencionó, (2) monto exigido por el juez, (3) aseguradora recomendada (Sura/Liberty/Confianza/Solidaria), (4) contragarantía típica para $190M, (5) si se puede ANTES o solo DESPUÉS del fallo Corte Constitucional, (6) honorarios estructuración, (7) riesgo de rechazo por insuficiente, (8) alternativas con menor contragarantía. Análisis completo en 04-regulatorio/predios/el-trueno/proceso-legal/cauciones-y-polizas-analisis.md",
+      "title": "Lunes 8-jun · Llamada Leonardo · contacto corredor + carta del caso",
+      "description": "Llamar a Leonardo (Cel. 300 403 2687) con agenda: (1) pedir contacto del corredor que mencionó, (2) pedir carta de presentación del caso firmada para los 3 corredores, (3) confirmar Art. 590 CGP, (4) confirmar monto que pediría el juez (~$190M), (5) recibir paquete documental procesal comprimido, (6) acordar reunión viernes 12-jun para decidir. Detalle en /poliza-caucion.html?doc=plan-semana",
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
       "module": "04-regulatorio"
+    },
+    {
+      "id": "T42",
+      "title": "Martes 9-jun · Enviar 3 cotizaciones a corredores",
+      "description": "Enviar mensaje base (copy/paste de /poliza-caucion.html?doc=corredores) a: (1) Contacto Leonardo, (2) Delima Marsh - info.colombia@marsh.com / (601) 327 5000, (3) Correcol - servicioalcliente@correcol.com / (601) 313 9300. Por la tarde, llamada de seguimiento a Delima Marsh y Correcol para 'ponerle voz' al correo.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T43",
+      "title": "Miércoles 10-jun · Cert tradición Trueno + recibos prediales con Guyo",
+      "description": "Juan saca cert tradición ACTUALIZADO del Trueno online supernotariado.gov.co (~$15K). Papá recoge recibos prediales 2000-2011 con Guyo. Papá identifica OTRO predio sin gravámenes que pueda servir como contragarantía hipotecaria.",
+      "owner": "JU+PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T44",
+      "title": "Viernes 12-jun · Reunión decisión Juan+papá+Leonardo",
+      "description": "Reunión de 60-90 min con agenda: (1) revisar las 3 cotizaciones, (2) decidir TOMADOR (sociedad / papá / Juan / tío) - ver /poliza-caucion.html?doc=tomador, (3) decidir CONTRAGARANTÍA (pagaré / hipoteca / depósito / híbrido), (4) decidir CORREDOR ganador, (5) decidir orden táctico vs carta a Cesia, (6) plan próxima semana.",
+      "owner": "JU+PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T45",
+      "title": "EN PARALELO · Mover T15 (Cámara) y B4 (declaraciones renta)",
+      "description": "BLOQUEADORES de la póliza si se quiere ir Plan A (tomador sociedad). Papá llama lunes a contadora: estado real de Cámara de Comercio y declaraciones de renta 2021-2025 atrasadas. Si T15 y B4 toman >2 meses, Plan B: papá tomador persona natural. Decisión jueves 11-jun al cierre del día.",
+      "owner": "PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "03-finanzas"
     }
   ],
   "activity": [
