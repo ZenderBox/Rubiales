@@ -395,6 +395,10 @@
         <span class="nav-icon">✅</span>
         <span class="nav-label">Tareas</span>
       </a>
+      <a href="/ideas.html" class="nav-item">
+        <span class="nav-icon">💡</span>
+        <span class="nav-label">Ideas</span>
+      </a>
       <a href="/documentos.html" class="nav-item">
         <span class="nav-icon">📄</span>
         <span class="nav-label">Documentos</span>
@@ -476,17 +480,32 @@
     // ============================================================
     async function loadTasks() {
       try {
-        const res = await fetch(DATA_URL + '?t=' + Date.now());
-        if (!res.ok) throw new Error('No se pudo cargar las tareas');
-        const data = await res.json();
+        // Cargar tareas + updates pendientes en paralelo
+        const [dataRes, pendingRes] = await Promise.all([
+          fetch(DATA_URL + '?t=' + Date.now()),
+          fetch('/api/pending?t=' + Date.now()).catch(() => null)
+        ]);
+        if (!dataRes.ok) throw new Error('No se pudo cargar las tareas');
+        const data = await dataRes.json();
 
-        // Filtro: tareas con owner PA o AM, status != done
-        const tasks = (data.tasks || []).filter(t =>
-          (t.owner === 'PA' || t.owner === 'AM') &&
-          t.status !== 'done'
-        );
+        // Construir set de task_ids que YA fueron marcadas como hechas vía /api/update
+        const doneFromAPI = new Set();
+        if (pendingRes && pendingRes.ok) {
+          const pendingData = await pendingRes.json();
+          (pendingData.updates || []).forEach(u => {
+            if (u.update_type === 'done') doneFromAPI.add(u.task_id);
+          });
+        }
 
-        // Ordenar por prioridad
+        // Filtro: tareas para papá (PA, AM, JU+PA) · no done en JSON ni en API
+        const tasks = (data.tasks || []).filter(t => {
+          const owner = t.owner || '';
+          const ownerMatch = owner === 'PA' || owner === 'AM' ||
+                             owner.includes('PA') || owner.includes('AM');
+          return ownerMatch && t.status !== 'done' && !doneFromAPI.has(t.id);
+        });
+
+        // Ordenar por prioridad y luego por orden de aparición (mantener orden de JSON)
         const order = { critical: 0, high: 1, normal: 2 };
         tasks.sort((a, b) => (order[a.priority] || 9) - (order[b.priority] || 9));
 
