@@ -187,27 +187,81 @@
   },
   "tasks": [
     {
-      "id": "T15",
-      "title": "Renovar matrícula mercantil · Cámara de Comercio",
-      "description": "BLOQUEADOR PÓLIZA · Sin esto, la aseguradora NO emite póliza a nombre de Miramar. Renovar online ccb.org.co o presencial Bogotá (Cra 7 #12B-84, Of 904). Confirmar si hay multas acumuladas.",
-      "owner": "PA",
+      "id": "T41",
+      "title": "🔥 PASO 1 · Llamar a Leonardo (Cel. 300 403 2687)",
+      "description": "Pedirle: (1) el contacto del corredor de seguros que mencionó, (2) carta de presentación del caso firmada para los corredores, (3) confirmar Art. 590 CGP es la figura legal, (4) confirmar monto que pediría el juez (~$200M), (5) que mande paquete documental procesal comprimido, (6) agendar reunión próximo viernes para decidir. Ver detalle en /poliza-caucion.html?doc=plan-semana",
+      "owner": "JU",
       "priority": "critical",
       "status": "pending",
       "module": "04-regulatorio"
     },
     {
-      "id": "T24",
-      "title": "Consultar discrepancia de área del predio El Trueno",
-      "description": "El certificado de tradición INCORA dice 991 ha, pero el catastro de la Alcaldía Puerto Gaitán dice 607 ha. Diferencia de ~384 ha. Hay que averiguar: ¿hubo segregación de algún lote? ¿error catastral? ¿adquisición parcial? Hablar con la Oficina de Registro de Puerto López o con un agrimensor.",
+      "id": "T42",
+      "title": "🔥 PASO 2 · Pedir 3 cotizaciones de póliza",
+      "description": "Enviar mensaje base (copy/paste de /poliza-caucion.html?doc=corredores) a: (1) Contacto del corredor que pasó Leonardo, (2) Delima Marsh · info.colombia@marsh.com · (601) 327 5000, (3) Correcol · servicioalcliente@correcol.com · (601) 313 9300. Por la tarde, llamar a Delima Marsh y Correcol para reforzar el correo.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T44",
+      "title": "🔥 PASO 3 · Reunión decisión póliza · Juan+papá+Leonardo",
+      "description": "60-90 min. Agenda: (1) revisar las 3 cotizaciones, (2) decidir TOMADOR (sociedad / papá / Juan / tío) — ver /poliza-caucion.html?doc=tomador, (3) decidir CONTRAGARANTÍA (pagaré / hipoteca / depósito / híbrido), (4) decidir CORREDOR ganador, (5) decidir orden táctico vs carta a Mesa Corzo, (6) plan siguiente semana.",
+      "owner": "JU+PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T43",
+      "title": "🔥 Sacar cert. tradición ACTUALIZADO del Trueno",
+      "description": "Online en supernotariado.gov.co (~$15.000 COP). Matrícula 234-11845. Es uno de los documentos que va a pedir la aseguradora.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T45",
+      "title": "🔥 EN PARALELO · Mover B4 (declaraciones de renta)",
+      "description": "BLOQUEADOR PÓLIZA. Papá llama contadora: estado real de declaraciones renta 2021-2025 atrasadas. Si toma >2 meses, Plan B: papá tomador persona natural. Decisión antes de la reunión del viernes. (Nota: T15 Cámara YA está hecho ✅)",
+      "owner": "PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "03-finanzas"
+    },
+    {
+      "id": "T47",
+      "title": "❓ Confirmar con Leonardo · alcance de la nulidad parcial 15-mar-2024",
+      "description": "Solo UNA finca fue liquidada en el ejecutivo. La OTRA tuvo NULIDAD PARCIAL (auto 15-mar-2024). Mesa exige extrajudicialmente el capital de las DOS fincas ($50.24M c/u según perito = ~$100.48M total). PREGUNTA CLAVE: ¿la nulidad blinda contra cobro de la 2da finca o solo libera a Jaime sobre una? Define si rechazamos la pretensión sobre la 2da finca.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T48",
+      "title": "💰 Valorar bienes y mejoras que Cesia RETUVO",
+      "description": "Inventario detallado con valoración monetaria de TODO lo que Cesia se quedó al recibir las fincas: (1) BIENES MUEBLES: piscina, moto, planta eléctrica Leaster, planta eléctrica importada USA, 2 solares. (2) MEJORAS hechas por papá en 15 años: cercados perimetrales, adecuación potreros, galpón antiguo, pozo profundo + bomba, casa habitación. Buscar facturas, fotos antes/después, testimonios. Estimación inicial: $51-91M bienes + $85-135M mejoras. Esto es la CONTRACUENTA en la negociación.",
       "owner": "PA",
       "priority": "high",
       "status": "pending",
       "module": "04-regulatorio"
     },
     {
+      "id": "T49",
+      "title": "💰 Pedir al tío William los recibos prediales de las fincas de Cesia",
+      "description": "Mientras Cesia estuvo 15 años en Canadá, papá (y posiblemente el tío William) pagó los impuestos prediales de las 2 fincas de ella (La Romería 234-11843 y La Milagrosa 234-11844). Pedirle al tío TODOS los recibos prediales 2000-2011 que tenga. Es plata que se sumó a la contracuenta en la negociación con Mesa Corzo. Estimación: $8-15M nominales → $25-45M actualizados con IPC.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
       "id": "T25",
-      "title": "Pagar impuesto predial El Trueno · $72.9M antes del 30/06/2026",
-      "description": "Recibo 26010310020237 emitido por la Alcaldía de Puerto Gaitán acumula deuda predial 2018-2026 por $72.909.000 COP. Plazo: 30 de junio 2026. Si no se paga, riesgo de embargo municipal. Decidir: pagar completo · negociar plan de pagos · pelear avalúo. Hablar con la Tesorería de la Alcaldía.",
+      "title": "💰 Pagar predial Trueno · $72.9M antes del 30/06/2026",
+      "description": "Recibo 26010310020237 (Alcaldía Puerto Gaitán) acumula deuda predial 2018-2026 por $72.909.000 COP. Plazo: 30 junio 2026. Si no se paga, riesgo de embargo municipal. Decidir: pagar completo · negociar plan pagos · pelear avalúo. Hablar con Tesorería de la Alcaldía.",
       "owner": "AM",
       "priority": "critical",
       "status": "pending",
@@ -215,8 +269,8 @@
     },
     {
       "id": "T26",
-      "title": "Definir estrategia legal con Leonardo · denuncia penal + Defensoría",
-      "description": "Reunión con el abogado Leonardo Hernández Motta para: (1) revisar estado del expediente en Corte Constitucional, (2) preparar denuncia penal contra Agustín Mesa Corzo usando el auto del 15-mar-2024 como prueba reina, (3) preparar queja ante Defensoría del Pueblo, (4) confirmar monto real que pide Cesia ($50.24M perito × 2 fincas?). Plazo límite mental: 12-15 meses.",
+      "title": "Reunión Leonardo · revisar paquete defensa completo",
+      "description": "Despues de tener las 3 cotizaciones de póliza, revisar con Leonardo: (1) borradores del paquete defensa (carta, denuncia penal, queja Defensoría, memorial Corte Const.), (2) estado expediente Corte Constitucional, (3) orden táctico definitivo. Ver borradores en /paquete-defensa.html",
       "owner": "JU",
       "priority": "high",
       "status": "pending",
@@ -225,74 +279,38 @@
     {
       "id": "T27",
       "title": "Verificar estado embargo Seguros Bolívar 2017",
-      "description": "Anotación 6 del cert. de tradición 234-11845 muestra embargo de Seguros Comerciales Bolívar S.A. del 2017 (Juzgado 13 Civil Bogotá, oficio 1489-2017). Hay que averiguar si ya se pagó, si sigue vigente, o si hay deuda pendiente. Probable que necesitemos abogado.",
+      "description": "Anotación 6 del cert. de tradición 234-11845: embargo Seguros Comerciales Bolívar S.A. del 2017 (Juzgado 13 Civil Bogotá, oficio 1489-2017). Averiguar si ya se pagó, sigue vigente, o hay deuda pendiente. Bloqueador para transferencia a la sociedad.",
       "owner": "JU",
       "priority": "normal",
       "status": "pending",
       "module": "04-regulatorio"
     },
     {
-      "id": "T41",
-      "title": "Lunes 8-jun · Llamada Leonardo · contacto corredor + carta del caso",
-      "description": "Llamar a Leonardo (Cel. 300 403 2687) con agenda: (1) pedir contacto del corredor que mencionó, (2) pedir carta de presentación del caso firmada para los 3 corredores, (3) confirmar Art. 590 CGP, (4) confirmar monto que pediría el juez (~$190M), (5) recibir paquete documental procesal comprimido, (6) acordar reunión viernes 12-jun para decidir. Detalle en /poliza-caucion.html?doc=plan-semana",
-      "owner": "JU",
-      "priority": "critical",
+      "id": "T24",
+      "title": "Consultar discrepancia de área del Trueno",
+      "description": "Cert. tradición INCORA dice 991 ha, catastro Alcaldía Puerto Gaitán dice 607 ha. Diferencia ~384 ha. ¿Hubo segregación? ¿Error catastral? ¿Adquisición parcial? Hablar con Oficina de Registro de Puerto López o agrimensor. (No urgente · puede esperar al cierre legal)",
+      "owner": "PA",
+      "priority": "normal",
       "status": "pending",
       "module": "04-regulatorio"
     },
     {
-      "id": "T42",
-      "title": "Martes 9-jun · Enviar 3 cotizaciones a corredores",
-      "description": "Enviar mensaje base (copy/paste de /poliza-caucion.html?doc=corredores) a: (1) Contacto Leonardo, (2) Delima Marsh - info.colombia@marsh.com / (601) 327 5000, (3) Correcol - servicioalcliente@correcol.com / (601) 313 9300. Por la tarde, llamada de seguimiento a Delima Marsh y Correcol para 'ponerle voz' al correo.",
-      "owner": "JU",
-      "priority": "critical",
-      "status": "pending",
-      "module": "04-regulatorio"
-    },
-    {
-      "id": "T43",
-      "title": "Miércoles 10-jun · Cert tradición Trueno + recibos prediales con Guyo",
-      "description": "Juan saca cert tradición ACTUALIZADO del Trueno online supernotariado.gov.co (~$15K). Papá recoge recibos prediales 2000-2011 con Guyo. Papá identifica OTRO predio sin gravámenes que pueda servir como contragarantía hipotecaria.",
-      "owner": "JU+PA",
-      "priority": "high",
-      "status": "pending",
-      "module": "04-regulatorio"
-    },
-    {
-      "id": "T44",
-      "title": "Viernes 12-jun · Reunión decisión Juan+papá+Leonardo",
-      "description": "Reunión de 60-90 min con agenda: (1) revisar las 3 cotizaciones, (2) decidir TOMADOR (sociedad / papá / Juan / tío) - ver /poliza-caucion.html?doc=tomador, (3) decidir CONTRAGARANTÍA (pagaré / hipoteca / depósito / híbrido), (4) decidir CORREDOR ganador, (5) decidir orden táctico vs carta a Cesia, (6) plan próxima semana.",
-      "owner": "JU+PA",
-      "priority": "critical",
-      "status": "pending",
-      "module": "04-regulatorio"
-    },
-    {
-      "id": "T45",
-      "title": "EN PARALELO · Mover T15 (Cámara) y B4 (declaraciones renta)",
-      "description": "BLOQUEADORES de la póliza si se quiere ir Plan A (tomador sociedad). Papá llama lunes a contadora: estado real de Cámara de Comercio y declaraciones de renta 2021-2025 atrasadas. Si T15 y B4 toman >2 meses, Plan B: papá tomador persona natural. Decisión jueves 11-jun al cierre del día.",
+      "id": "T15",
+      "title": "✅ Renovar matrícula mercantil · Cámara de Comercio",
+      "description": "HECHA por papá. Sociedad al día en Cámara de Comercio. Desbloquea el camino para que la póliza pueda emitirse a nombre de Miramar (Plan A del tomador).",
       "owner": "PA",
       "priority": "critical",
-      "status": "pending",
-      "module": "03-finanzas"
+      "status": "done",
+      "module": "04-regulatorio"
     },
     {
       "id": "T46",
-      "title": "BUG · Tareas marcadas como completas reaparecen al refrescar",
-      "description": "Cuando papá marca una tarea como hecho, al recargar la página vuelve a aparecer. Probable causa: /api/update escribe a Postgres pero el frontend lee de /data.json estático. Fix: que tareas.html lea de /api/pending (DB-backed) en vez de /data.json. Investigar webhook.py y tareas.html.",
+      "title": "🐛 BUG · Tareas marcadas como hechas reaparecen al refrescar",
+      "description": "Cuando papá marca una tarea como hecho, al recargar la página vuelve a aparecer. Causa: /api/update escribe a Postgres pero el frontend lee de /data.json estático. Fix: que tareas.html lea de /api/pending (DB-backed) en vez de /data.json. Lo arreglo después de cerrar la parte legal.",
       "owner": "JU",
-      "priority": "high",
+      "priority": "normal",
       "status": "pending",
       "module": "00-core"
-    },
-    {
-      "id": "T47",
-      "title": "Confirmar con Leonardo · alcance de la nulidad parcial 15-mar-2024",
-      "description": "Información clave de papá (2da llamada): solo UNA finca fue liquidada en el ejecutivo. La OTRA tuvo NULIDAD PARCIAL (auto 15-mar-2024). Pero el abogado Mesa Corzo exige extrajudicialmente el capital de las DOS fincas ($50.24M c/u según perito no oficial = ~$100.48M total). Confirmar con Leonardo: ¿la nulidad afecta solo a Jaime sobre una finca o también blinda contra cobro de la otra? Esto define si rechazamos la pretensión sobre la 2da finca o transamos sobre ambas.",
-      "owner": "JU",
-      "priority": "critical",
-      "status": "pending",
-      "module": "04-regulatorio"
     }
   ],
   "activity": [
