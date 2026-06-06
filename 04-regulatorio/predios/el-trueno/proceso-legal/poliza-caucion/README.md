@@ -1,7 +1,11 @@
 # Póliza de caución judicial · Art. 590 CGP
 
-> **Bloqueador #1 del proyecto.** Sin esta póliza, no hay forma de levantar el embargo del Trueno → no hay Finagro → no hay Fase 2.
+> **🥇 PASO 1 ABSOLUTO del plan.** Sin esta póliza, no hay forma de levantar el embargo del Trueno → no hay Finagro → no hay Fase 2.
+> **Y además:** sin póliza emitida, la carta a Mesa Corzo es bluff (probabilidad aceptación 35%). Con póliza emitida en mano, la carta tiene fuerza real (probabilidad ~55%).
+>
 > Estado: en cotización (semana 2026-06-08)
+>
+> Ver `../plan-maestro-estrategia.md` para el orden global actualizado.
 
 ## ¿Por qué es la pieza más importante?
 
