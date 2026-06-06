@@ -59,17 +59,33 @@ Si tenemos la póliza ANTES de la carta:
 
 ## 💰 Lo que REALMENTE pide el abogado de Cesia
 
-**Actualización 2026-06-06 · información de papá:**
+**Actualización 2026-06-06 · información de papá (segunda llamada):**
 
-- **Oficial liquidación embargo:** $160.9M COP (con intereses + costas + sanciones)
-- **Lo que REALMENTE pide el abogado de Cesia:** "el capital de las dos fincas"
-- **Cálculo del perito (NO oficial del juzgado):** ~$50.24M por finca × 2 = **~$100.48M COP total**
+### El punto clave: solo se liquidó UNA finca
 
-**Diferencia:** $160.9M oficiales vs $100.48M de lo que pide realmente = **$60.4M de aire** (intereses + costas + lo que sea).
+- En el proceso ejecutivo, **solo UNA finca fue efectivamente liquidada** (el embargo oficial $160.9M es sobre esa una).
+- **La OTRA finca tuvo nulidad parcial** (el auto del 15-mar-2024 declaró probado el incidente de nulidad por falsedad en la notificación).
+- Pero el **abogado Agustín Mesa Corzo sigue exigiendo el CAPITAL de las DOS fincas** — pretende cobrar tanto la liquidada como la que tuvo nulidad.
 
-→ **Implicación crítica:** el techo realista de negociación NO es $150-300M como pensábamos. Es **$100.48M**, y el piso podría ser mucho menos.
+### Las cifras
 
-> ⚠️ **A verificar con Leonardo:** confirmar si el cálculo de $50.24M es por finca (total $100.48M) o el total combinado (total $50.24M).
+| Concepto | Valor |
+|---|---|
+| Embargo oficial liquidado (1 finca) | $160.9M (con intereses + costas + sanciones inflados) |
+| Cálculo perito NO oficial · capital por finca | $50.24M |
+| **Lo que Mesa exige extrajudicial** | **~$100.48M** ($50.24M × 2 fincas) |
+
+### La negociación tiene 2 capas
+
+1. **Capa procesal:** los $160.9M oficiales del embargo son sobre UNA finca. Hay aire ahí (~$60M+ entre capital nominal $50.24M y liquidación oficial $160.9M).
+2. **Capa extrajudicial:** Mesa pide adicionalmente el capital de la OTRA finca (la que tuvo nulidad). Esa pretensión es DÉBIL legalmente — la nulidad probada le quita base.
+
+→ **Implicación estratégica:**
+   - Podemos **discutir solo la finca liquidada** (techo $50.24M de capital nominal)
+   - La otra finca, con nulidad, se podría dejar fuera del acuerdo o pagar muy poco como gesto de cierre
+   - **Carta a Mesa puede ofrecer $20-40M** sobre la finca liquidada · NO reconocer la pretensión sobre la finca con nulidad
+
+> ⚠️ **A confirmar con Leonardo:** validar la lectura — ¿la nulidad parcial del 15-mar-2024 afecta solo a Jaime sobre una finca, o también afecta la cobrabilidad de la otra finca? Esto define si podemos rechazar el cobro de la segunda.
 
 ---
 
