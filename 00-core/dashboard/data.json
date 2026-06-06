@@ -17,7 +17,7 @@
       "title": "Predio El Trueno · embargado + 2 tutelas perdidas",
       "severity": "critical",
       "owner": "Familia + Abogado",
-      "status": "Cesia pide $300M · objetivo negociar a $150-180M · denuncia penal en evaluación",
+      "status": "Embargo oficial $160.9M · lo real que pide el abogado ~$100M · objetivo negociar $20-40M con póliza en mano",
       "note": "Embargo oficial $160.9M. 2 tutelas negadas (dic-2025, feb-2026). En Corte Constitucional + estrategia con denuncia penal (auto 15-mar-2024 declaró falsedad documental probada). Fase 1 piloto viable bajo comodato del tío. Fase 2 con Finagro bloqueada. Ver /legal.html."
     },
     {
@@ -187,76 +187,13 @@
   },
   "tasks": [
     {
-      "id": "T10",
-      "title": "Permiso de agua · Cormacarena",
-      "description": "Viaje a Cormacarena para iniciar el trámite del permiso de agua. Sin agua no hay ICA, y sin ICA no hay proyecto.",
-      "owner": "PA",
-      "priority": "critical",
-      "status": "pending",
-      "module": "04-regulatorio"
-    },
-    {
       "id": "T15",
       "title": "Renovar matrícula mercantil · Cámara de Comercio",
-      "description": "Pendiente renovar la matrícula de la sociedad para 2025 y 2026. Se puede hacer por internet en ccb.org.co o presencial en la oficina de Bogotá (Cra 7 #12B-84, Of 904).",
+      "description": "BLOQUEADOR PÓLIZA · Sin esto, la aseguradora NO emite póliza a nombre de Miramar. Renovar online ccb.org.co o presencial Bogotá (Cra 7 #12B-84, Of 904). Confirmar si hay multas acumuladas.",
       "owner": "PA",
       "priority": "critical",
       "status": "pending",
       "module": "04-regulatorio"
-    },
-    {
-      "id": "T08",
-      "title": "Cotizar constructor del galpón",
-      "description": "Cotizar la construcción del galpón con ingenieros de la zona (no Moreno Vargas). Recordá que la cotización va para 3 tamaños: 2.000, 3.000 y 5.000 gallinas (ver T20).",
-      "owner": "PA",
-      "priority": "high",
-      "status": "in-progress",
-      "module": "01-galpon"
-    },
-    {
-      "id": "T20",
-      "title": "Cotizar galpón en 3 capacidades · 2K / 3K / 5K",
-      "description": "Recibir la cotización del galpón para tres capacidades distintas: 2.000, 3.000 y 5.000 gallinas. Comparar costo por ave para decidir el tamaño final de la Fase 1.",
-      "owner": "PA",
-      "priority": "high",
-      "status": "pending",
-      "module": "01-galpon"
-    },
-    {
-      "id": "T11",
-      "title": "Contacto del vendedor de San Marino",
-      "description": "Pasarme el contacto directo (nombre y celular) del vendedor de San Marino en Cumaral. Ya tenemos seleccionado el proveedor — solo falta el dato del vendedor para confirmar el pedido.",
-      "owner": "PA",
-      "priority": "high",
-      "status": "pending",
-      "module": "06-proveedores"
-    },
-    {
-      "id": "T21",
-      "title": "Validar Italcol Cáqueza · crédito 30 días",
-      "description": "Confirmar con la bodega de Italcol en Cáqueza: si son distribuidor oficial o intermediario, si el crédito a 30 días requiere aval, precio por kg y si entregan en finca o hay que recoger.",
-      "owner": "PA",
-      "priority": "high",
-      "status": "pending",
-      "module": "06-proveedores"
-    },
-    {
-      "id": "T22",
-      "title": "Veterinario para plan vacunal",
-      "description": "Conseguir 2 opciones de veterinario para aplicar el plan vacunal desde semana 16: el tío William Iván ya ofreció, y pedirle a San Marino una segunda recomendación. Tener 2 opciones para no depender de una sola.",
-      "owner": "AM",
-      "priority": "normal",
-      "status": "pending",
-      "module": "06-proveedores"
-    },
-    {
-      "id": "T23",
-      "title": "Reservar lote del 15 de septiembre · San Marino",
-      "description": "Una vez confirmada la cantidad final (depende de T20), llamar al vendedor de San Marino y reservar el lote del 15 de septiembre. Confirmar precio (negociable desde $26.500), abonar señal si la piden, y coordinar el camión.",
-      "owner": "PA",
-      "priority": "high",
-      "status": "pending",
-      "module": "06-proveedores"
     },
     {
       "id": "T24",
@@ -279,7 +216,7 @@
     {
       "id": "T26",
       "title": "Definir estrategia legal con Leonardo · denuncia penal + Defensoría",
-      "description": "Reunión con el abogado Leonardo Hernández Motta para: (1) revisar estado del expediente en Corte Constitucional, (2) cotizar honorarios para preparar denuncia penal contra Agustín Mesa Corzo usando el auto del 15-mar-2024 como prueba reina, (3) preparar queja ante Defensoría del Pueblo. Plazo límite mental para toda la pelea: 12-15 meses (hasta ago-sep 2027).",
+      "description": "Reunión con el abogado Leonardo Hernández Motta para: (1) revisar estado del expediente en Corte Constitucional, (2) preparar denuncia penal contra Agustín Mesa Corzo usando el auto del 15-mar-2024 como prueba reina, (3) preparar queja ante Defensoría del Pueblo, (4) confirmar monto real que pide Cesia ($50.24M perito × 2 fincas?). Plazo límite mental: 12-15 meses.",
       "owner": "JU",
       "priority": "high",
       "status": "pending",
@@ -338,6 +275,24 @@
       "priority": "critical",
       "status": "pending",
       "module": "03-finanzas"
+    },
+    {
+      "id": "T46",
+      "title": "BUG · Tareas marcadas como completas reaparecen al refrescar",
+      "description": "Cuando papá marca una tarea como hecho, al recargar la página vuelve a aparecer. Probable causa: /api/update escribe a Postgres pero el frontend lee de /data.json estático. Fix: que tareas.html lea de /api/pending (DB-backed) en vez de /data.json. Investigar webhook.py y tareas.html.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "00-core"
+    },
+    {
+      "id": "T47",
+      "title": "Confirmar con Leonardo · ¿$50.24M es por finca o total?",
+      "description": "Papá dijo que el abogado de Cesia pide 'el capital de las dos fincas' según perito no oficial: $50.240.000. Confirmar con Leonardo: ¿esos $50.24M son POR finca (total $100.48M) o el TOTAL combinado de las dos? Esto define el techo real de negociación.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
     }
   ],
   "activity": [

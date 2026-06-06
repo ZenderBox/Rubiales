@@ -8,7 +8,7 @@
 
 ## 🎯 El plan en una frase
 
-> **Conseguir la póliza en silencio. Luego, con póliza en mano (sin radicarla aún al juez), enviar carta a Mesa Corzo ofreciendo cerrar por $40-60M. Si acepta → cerramos. Si rechaza → radicamos todo simultáneamente.**
+> **Conseguir la póliza en silencio. Luego, con póliza en mano (sin radicarla aún al juez), enviar carta a Mesa Corzo ofreciendo cerrar por $20-40M (lo real que pide es ~$100M, no $150-300M como pensábamos). Si acepta → cerramos. Si rechaza → radicamos todo simultáneamente.**
 
 ---
 
@@ -57,47 +57,61 @@ Si tenemos la póliza ANTES de la carta:
 
 ---
 
+## 💰 Lo que REALMENTE pide el abogado de Cesia
+
+**Actualización 2026-06-06 · información de papá:**
+
+- **Oficial liquidación embargo:** $160.9M COP (con intereses + costas + sanciones)
+- **Lo que REALMENTE pide el abogado de Cesia:** "el capital de las dos fincas"
+- **Cálculo del perito (NO oficial del juzgado):** ~$50.24M por finca × 2 = **~$100.48M COP total**
+
+**Diferencia:** $160.9M oficiales vs $100.48M de lo que pide realmente = **$60.4M de aire** (intereses + costas + lo que sea).
+
+→ **Implicación crítica:** el techo realista de negociación NO es $150-300M como pensábamos. Es **$100.48M**, y el piso podría ser mucho menos.
+
+> ⚠️ **A verificar con Leonardo:** confirmar si el cálculo de $50.24M es por finca (total $100.48M) o el total combinado (total $50.24M).
+
+---
+
 ## 📊 Escenarios y costos esperados
+
+> Nota: estos escenarios NO incluyen honorarios del abogado. Esos se manejan aparte.
 
 ### Escenario IDEAL · Ganamos el pleito (probabilidad ~15%)
 | Concepto | Valor |
 |---|---|
 | Primas póliza año 1-2 | $8-16M |
-| Honorarios Leonardo total | $10-20M |
 | Pago a Cesia | **$0** |
-| Predial atrasado | $72.9M |
-| **TOTAL** | **$91-109M** |
+| Predial atrasado Trueno | $72.9M |
+| **TOTAL** | **$80-89M** |
 
-### Escenario REALISTA · Cesia acepta carta ($40-60M)
+### Escenario REALISTA · Cesia acepta carta ($20-40M)
 | Concepto | Valor |
 |---|---|
 | Primas póliza emitida pero no usada | $4-8M |
-| Honorarios Leonardo | $5-10M |
-| Pago a Cesia | $40-60M |
-| Predial atrasado | $72.9M |
-| **TOTAL** | **$122-151M** |
+| Pago a Cesia | $20-40M |
+| Predial atrasado Trueno | $72.9M |
+| **TOTAL** | **$96-120M** |
 
 ### Escenario AGRESIVO · Pelear hasta el final, no pagar nada (~5%)
 | Concepto | Valor |
 |---|---|
 | Primas póliza año 1-3 | $12-24M |
-| Honorarios Leonardo (pleito largo) | $20-40M |
 | Pago a Cesia | **$0** (si ganamos todo) |
-| Predial atrasado | $72.9M |
-| **TOTAL si ganamos** | **$105-137M** |
-| **TOTAL si perdemos al final** | **~$280-340M** |
+| Predial atrasado Trueno | $72.9M |
+| **TOTAL si ganamos** | **$85-97M** |
+| **TOTAL si perdemos al final** | **~$185-197M** |
 
 ### Escenario MALO · Cesia rechaza Y perdemos pleito (probabilidad ~25%)
 | Concepto | Valor |
 |---|---|
 | Primas póliza año 1-2 | $8-16M |
-| Honorarios Leonardo total | $15-30M |
-| Aseguradora paga a Cesia $190M | — |
-| **Nosotros pagamos a aseguradora** | $190M |
-| Predial atrasado | $72.9M |
-| **TOTAL** | **~$286-309M** |
+| Aseguradora paga a Cesia $200M | — |
+| **Nosotros pagamos a aseguradora** | $200M |
+| Predial atrasado Trueno | $72.9M |
+| **TOTAL** | **~$280-289M** |
 
-→ **Conclusión:** la diferencia entre escenario IDEAL ($91-109M) y MALO ($286-309M) es **~$200M**. La probabilidad real del MALO es ~25%. El **valor esperado de la apuesta** sigue siendo claramente mejor que pagar $150-300M hoy a Cesia.
+→ **Conclusión:** la diferencia entre escenario IDEAL ($80-89M) y MALO ($280-289M) es **~$200M**. La probabilidad real del MALO es ~25%. El **valor esperado de la apuesta** sigue siendo claramente mejor que pagar $100M+ hoy a Cesia (o peor, los $160.9M oficiales).
 
 ---
 
@@ -107,7 +121,7 @@ Después de tener las 3 cotizaciones (semana del 8-jun) decidir:
 
 ### Opción 1 · Plan realista (recomendado por defecto)
 - Conseguir póliza ✅
-- Mandar carta ofreciendo $40-60M
+- Mandar carta ofreciendo $20-40M (techo $50M)
 - Si acepta → cerrar
 - Si rechaza → pelear
 
@@ -135,7 +149,7 @@ Después de tener las 3 cotizaciones (semana del 8-jun) decidir:
 | 5-6 (6-17 jul) | Póliza emitida en mano | + $4-8M prima año 1 |
 | 6 (~17 jul) | **DECISIÓN:** mandar carta o no | — |
 | 7-8 (20-31 jul) | (Si carta) plazo 15 días para Cesia | — |
-| 9-10 | Si rechaza: radicar póliza al juez + paquete defensa | + $5-10M honorarios Leonardo |
+| 9-10 | Si rechaza: radicar póliza al juez + paquete defensa | — |
 | 11-14 | Juez decide + levantamiento + inscripción | + $1-2M registros |
 | 15-16 | Pagar predial + transferir a sociedad | + $72.9M predial + $3-5M notaría |
 | **17+** | Predio operativo en Miramar · Finagro | Listo para Fase 2 |
