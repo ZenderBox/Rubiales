@@ -4,6 +4,8 @@
 >
 > **Logística:** Juan tiene empresa de logística propia US ↔ CO → traer todo desde Miami sin restricción de viaje.
 >
+> **Compras:** TODAS en Amazon US con cuenta business · Tax Exemption activa → -7% sales tax (~$155 USD = ~$620K COP de ahorro adicional).
+>
 > **Fecha:** 2026-06-07
 
 ---

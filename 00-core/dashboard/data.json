@@ -314,8 +314,8 @@
     },
     {
       "id": "T58",
-      "title": "🇺🇸 Comprar en Miami esta semana (Juan trae en maleta)",
-      "description": "Lista (~USD 680 · cabe en franquicia DIAN $2.000): (1) Raspberry Pi 5 8GB + microSD 128GB + case + power $130, (2) 2× Ubiquiti LiteBeam 5AC Gen2 $198, (3) 2× Ubiquiti ETH-SP-G2 surge protectors $50, (4) 30m cable CAT6 outdoor UV $45, (5) 1× Reolink Argus 4 Pro (battery+solar) $150, (6) 1× Reolink E1 Pro (cámara prueba) $45, (7) adaptadores PoE injectors + RJ45 $40. Best Buy o Amazon Prime 1-2 días entrega.",
+      "title": "🇺🇸 Comprar Etapa 1 en Amazon (cuenta business · TAX EXEMPT)",
+      "description": "TODO en Amazon US con cuenta business Tax Exempt activa (-7% Florida sales tax). Lista maleta (~USD 658 · cabe en franquicia DIAN $2.000): (1) Raspberry Pi 5 8GB kit completo $130, (2) 2× Ubiquiti LiteBeam 5AC Gen2 $198, (3) 2× Ubiquiti ETH-SP-G2 $50, (4) 30m cable CAT6 outdoor $45, (5) 1× Reolink Argus 4 Pro $150, (6) 1× Reolink E1 Pro $45, (7) adaptadores $40. Verificar checkout: Tax = $0.00.",
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
@@ -332,8 +332,8 @@
     },
     {
       "id": "T60",
-      "title": "📦 ETAPA 2 · Pedir CCTV + sensores + NVR en Amazon (Miami)",
-      "description": "Lista para enviar por empresa logística propia US→CO (~USD $1.565). Incluye: 6× Reolink RLC-510A PoE ($360), 1× Argus 4 Pro adicional ($150), 1× NVR Reolink RLN8-410 con switch PoE 8p ($260), 2× TP-Link EAP outdoor ($160), 1× UPS APC 1500VA galpón ($200), 1× switch PoE TP-Link 8p ($70), 3× Shelly H&T ($75), 2× Shelly Plug ($40), 1× Shelly Flood ($40), cables y accesorios ($210). Detalle completo: 07-tecnologia/lista-compras-completa.md",
+      "title": "📦 ETAPA 2 · Pedir CCTV + sensores en Amazon (cuenta business · TAX EXEMPT)",
+      "description": "TODO en Amazon US con cuenta business Tax Exempt (-7% Florida sales tax). Lista para enviar por empresa logística (~USD $1.565): 6× Reolink RLC-510A PoE ($360), 1× Argus 4 Pro ($150), 1× NVR Reolink RLN8-410 ($260), 2× TP-Link EAP outdoor ($160), 1× UPS APC 1500VA galpón ($200), switch PoE 8p ($70), sensores Shelly ($155), cables y accesorios ($210). Detalle: 07-tecnologia/lista-compras-completa.md",
       "owner": "JU",
       "priority": "high",
       "status": "pending",

@@ -17,6 +17,12 @@ Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto 
 - **Tiempos típicos:** 5-10 días.
 - **Aplicable a futuras compras del proyecto** sin restricción de viajes personales.
 
+**Bonus · Amazon Tax Exemption:**
+- Juan tiene **Amazon Tax Exemption** vinculado a su empresa (sales tax exempt en Florida).
+- Ahorra ~7% en todas las compras de Amazon US (FL state sales tax).
+- Para el proyecto IoT: ahorro ~$155 USD adicionales (~$620K COP) sobre el total ~$2.220 USD.
+- **Regla:** comprar SIEMPRE con la cuenta business de Amazon que tiene la exención activa, no con cuenta personal.
+
 ---
 
 ## Contexto base del proyecto

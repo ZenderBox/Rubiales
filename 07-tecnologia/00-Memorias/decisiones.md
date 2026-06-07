@@ -35,6 +35,11 @@
 - **Decisión:** no traer Ubiquiti LiteBeam ahora. Solo cuando arranque el galpón.
 - **Por qué:** ahorra ~\$1.6M COP de hardware que no se usaría hasta Fase B. Si en el viaje del viernes papá identifica un escenario donde ya conviene (ej. galpón arranca pronto), se compra después.
 
+### D10 · Comprar TODO en Amazon US con Tax Exemption · cuenta business
+- **Decisión:** todas las compras Miami se hacen en Amazon US con la cuenta business de Juan que tiene Tax Exemption activa.
+- **Por qué:** ahorra 7% de sales tax Florida sobre cada compra. Sobre el total proyecto ($2.220 USD) son ~$155 USD = ~$620K COP adicionales de ahorro.
+- **Reglas:** (a) usar cuenta Amazon Business con cert tax exempt vinculado, (b) NO usar cuenta personal, (c) verificar al checkout que diga "Tax: $0.00".
+
 ### D09 · Aprovechar empresa de logística propia · adelantar CCTV galpón completo
 - **Decisión:** comprar TODO el hardware del proyecto IoT (Etapa 1 maleta + Etapa 2 envío logística) en USA, dejar listo en Colombia ANTES de que arranque la obra del galpón.
 - **Por qué:** Juan tiene empresa de logística propia US ↔ CO → costo de envío bajo. Hardware tech en Colombia tiene markup 50-100% vs USA. Aún con IVA 19% el ahorro es ~$5-7M COP en el proyecto completo.

@@ -26,4 +26,8 @@
 
 ## Historial
 - 2026-06-07 — Módulo creado · deep-research Starlink (PR #27).
-- 2026-06-07 — Decisión D05: Etapa 1 en casa principal · Etapa 2 con enlace 500m cuando galpón. D06: NO comprar Ubiquiti ahora.
+- 2026-06-07 — D05/D06: Etapa 1 casa principal · Etapa 2 enlace 500m.
+- 2026-06-07 — D07: Plan Lite + Falabella · cobertura Puerto Gaitán confirmada.
+- 2026-06-07 — D08: Juan viaja con papá viernes · compras divididas Colombia + Miami.
+- 2026-06-07 — D09: Adelantar Etapa 2 (CCTV galpón completo) por empresa logística Juan US→CO.
+- 2026-06-07 — D10: TODO en Amazon US con cuenta business Tax Exempt (-7% sales tax).
