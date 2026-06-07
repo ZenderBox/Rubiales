@@ -1,13 +1,51 @@
-/* Sidebar mobile · hamburger + drawer overlay
- * Auto-injecta:
- *  - Botón hamburger fijo arriba a la izquierda (mobile + desktop colapsado)
- *  - CSS para colapsar el sidebar en mobile (oculto por default) y mostrarlo como drawer
- *  - Botón "minimizar" en el sidebar para desktop (240px → solo iconos 64px)
+/* Sidebar único · fuente de verdad central
+ * - Reescribe el contenido del <aside class="sidebar"> con el menú canónico
+ * - Marca como .active el item correspondiente a la URL actual
+ * - Inyecta hamburger mobile + collapse desktop
  *
- * Uso: incluir <script src="/sidebar-mobile.js" defer></script> en cualquier página con .sidebar
+ * Para agregar/quitar/reordenar items: editá NAV_ITEMS y COMING_SOON acá.
+ * El cambio se ve en TODAS las páginas al recargar.
+ *
+ * Uso: <script src="/sidebar-mobile.js" defer></script> en cualquier página con <aside class="sidebar"></aside>
  */
 (function () {
   const COLLAPSED_KEY = 'miramar_sidebar_collapsed';
+
+  // === ÚNICA FUENTE DE VERDAD del sidebar ===
+  const NAV_ITEMS = [
+    { href: '/',                icon: '🏠', label: 'Resumen' },
+    { href: '/tareas.html',     icon: '✅', label: 'Tareas' },
+    { href: '/ideas.html',      icon: '💡', label: 'Ideas' },
+    { href: '/documentos.html', icon: '📄', label: 'Documentos' },
+    { href: '/legal.html',      icon: '⚖️', label: 'Legal' },
+    { href: '/arrancar.html',   icon: '🚀', label: 'Arrancar' },
+  ];
+  const COMING_SOON = [
+    { icon: '⏳', label: 'Aprobaciones' },
+    { icon: '📅', label: 'Cronograma' },
+    { icon: '💰', label: 'Cotizaciones' },
+  ];
+
+  function rebuildSidebar() {
+    const sidebar = document.querySelector('.sidebar');
+    if (!sidebar) return;
+    const currentPath = window.location.pathname;
+    const isActive = (href) => {
+      if (href === '/') return currentPath === '/' || currentPath === '' || currentPath === '/index.html';
+      return currentPath === href;
+    };
+    let html = '<div class="sidebar-brand">Mira<span>mar</span></div>';
+    html += '<div class="sidebar-section-title">Navegación</div>';
+    NAV_ITEMS.forEach(item => {
+      const cls = isActive(item.href) ? 'nav-item active' : 'nav-item';
+      html += `<a href="${item.href}" class="${cls}"><span class="nav-icon">${item.icon}</span><span class="nav-label">${item.label}</span></a>`;
+    });
+    html += '<div class="sidebar-section-title">Pronto</div>';
+    COMING_SOON.forEach(item => {
+      html += `<span class="nav-item coming-soon"><span class="nav-icon">${item.icon}</span><span class="nav-label">${item.label}</span><span class="nav-badge">pronto</span></span>`;
+    });
+    sidebar.innerHTML = html;
+  }
 
   function injectStyles() {
     if (document.getElementById('sidebar-mobile-styles')) return;
@@ -211,6 +249,7 @@
 
   function init() {
     if (!document.querySelector('.sidebar')) return;
+    rebuildSidebar();   // ← reescribe el menú con la fuente única de verdad
     injectStyles();
     injectHamburger();
     injectCollapseBtn();
