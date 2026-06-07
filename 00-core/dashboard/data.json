@@ -331,6 +331,42 @@
       "module": "07-tecnologia"
     },
     {
+      "id": "T60",
+      "title": "📦 ETAPA 2 · Pedir CCTV + sensores + NVR en Amazon (Miami)",
+      "description": "Lista para enviar por empresa logística propia US→CO (~USD $1.565). Incluye: 6× Reolink RLC-510A PoE ($360), 1× Argus 4 Pro adicional ($150), 1× NVR Reolink RLN8-410 con switch PoE 8p ($260), 2× TP-Link EAP outdoor ($160), 1× UPS APC 1500VA galpón ($200), 1× switch PoE TP-Link 8p ($70), 3× Shelly H&T ($75), 2× Shelly Plug ($40), 1× Shelly Flood ($40), cables y accesorios ($210). Detalle completo: 07-tecnologia/lista-compras-completa.md",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T61",
+      "title": "🚚 Coordinar envío logística US→Colombia (Etapa 2)",
+      "description": "Con su empresa de logística, coordinar el envío del hardware Etapa 2 (~$1.565 USD) a Colombia. Destino: bodega papá en Bogotá o directo a la finca. Tiempo estimado: 5-10 días. IVA 19% + arancel 0-15% según partida (mayor parte tech ~0%). Mantener bajo retail Colombia.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T62",
+      "title": "🎥 Configurar NVR Reolink remoto (cuando llegue)",
+      "description": "Cuando el hardware Etapa 2 llegue a Colombia, papá puede mandar fotos del kit. Juan configura NVR remoto: agregar las 6 cámaras PoE al NVR + setup grabación 24/7 + acceso remoto via Tailscale. Probar acceso desde Miami antes de mandar al galpón.",
+      "owner": "JU",
+      "priority": "normal",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T63",
+      "title": "📋 Documentar instalación galpón (para el encargado de obra)",
+      "description": "Crear instructivo paso-a-paso con FOTOS para que el encargado de la obra del galpón instale las cámaras + sensores + LiteBeam cuando esté la estructura. Incluye: dónde va cada cámara, ruta de cableado PoE al rack del NVR, montaje LiteBeam, conexión eléctrica al UPS. Subir a 07-tecnologia/manual-instalacion-galpon.md cuando esté.",
+      "owner": "JU",
+      "priority": "normal",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
       "id": "T48",
       "title": "💰 Valorar bienes y mejoras que Cesia RETUVO",
       "description": "Inventario detallado con valoración monetaria de TODO lo que Cesia se quedó al recibir las fincas: (1) BIENES MUEBLES: piscina, moto, planta eléctrica Leaster, planta eléctrica importada USA, 2 solares. (2) MEJORAS hechas por papá en 15 años: cercados perimetrales, adecuación potreros, galpón antiguo, pozo profundo + bomba, casa habitación. Buscar facturas, fotos antes/después, testimonios. Estimación inicial: $51-91M bienes + $85-135M mejoras. Esto es la CONTRACUENTA en la negociación.",

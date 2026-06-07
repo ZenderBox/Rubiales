@@ -35,6 +35,12 @@
 - **Decisión:** no traer Ubiquiti LiteBeam ahora. Solo cuando arranque el galpón.
 - **Por qué:** ahorra ~\$1.6M COP de hardware que no se usaría hasta Fase B. Si en el viaje del viernes papá identifica un escenario donde ya conviene (ej. galpón arranca pronto), se compra después.
 
+### D09 · Aprovechar empresa de logística propia · adelantar CCTV galpón completo
+- **Decisión:** comprar TODO el hardware del proyecto IoT (Etapa 1 maleta + Etapa 2 envío logística) en USA, dejar listo en Colombia ANTES de que arranque la obra del galpón.
+- **Por qué:** Juan tiene empresa de logística propia US ↔ CO → costo de envío bajo. Hardware tech en Colombia tiene markup 50-100% vs USA. Aún con IVA 19% el ahorro es ~$5-7M COP en el proyecto completo.
+- **Alcance:** Etapa 2 incluye: 7 cámaras (4 galpón + 2 casa + 1 perímetro solar), 1 NVR Reolink RLN8-410, 2 access points outdoor, switch PoE, 2 UPS, sensores Shelly (H&T, Plug, Flood), cables y monturas. Total Etapa 2: ~USD 1.565.
+- **Resultado:** cuando arranque la obra del galpón, el encargado solo INSTALA hardware ya en sitio. Toda la configuración técnica se hace remota desde Miami via Tailscale.
+
 ### D08 · Juan viaja con papá el viernes · compras divididas Colombia + Miami
 - **Decisión:** Juan viaja a Colombia esta semana y va con papá el viernes a la finca → aprovechar para traer hardware desde Miami (~USD 680 = ~$2.7M COP en mercancía).
 - **Implicación clave:** Etapa 2 (enlace 500m) se adelanta al primer viaje. La finca queda completamente IoT-ready desde el viernes 12-jun en vez de esperar meses.
