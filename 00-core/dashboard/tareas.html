@@ -478,9 +478,11 @@
     // ============================================================
     // Cargar tareas
     // ============================================================
+    // Cache global de updates por task_id (notes + fotos)
+    let UPDATES_BY_TASK = {};
+
     async function loadTasks() {
       try {
-        // Cargar tareas + updates pendientes en paralelo
         const [dataRes, pendingRes] = await Promise.all([
           fetch(DATA_URL + '?t=' + Date.now()),
           fetch('/api/pending?t=' + Date.now()).catch(() => null)
@@ -488,16 +490,27 @@
         if (!dataRes.ok) throw new Error('No se pudo cargar las tareas');
         const data = await dataRes.json();
 
-        // Construir set de task_ids que YA fueron marcadas como hechas vía /api/update
+        // Procesar updates: agrupar por task_id, detectar dones
         const doneFromAPI = new Set();
+        UPDATES_BY_TASK = {};
         if (pendingRes && pendingRes.ok) {
           const pendingData = await pendingRes.json();
           (pendingData.updates || []).forEach(u => {
-            if (u.update_type === 'done') doneFromAPI.add(u.task_id);
+            if (u.update_type === 'done') {
+              doneFromAPI.add(u.task_id);
+            } else {
+              // Es nota o foto · guardar como comentario
+              if (!UPDATES_BY_TASK[u.task_id]) UPDATES_BY_TASK[u.task_id] = [];
+              UPDATES_BY_TASK[u.task_id].push(u);
+            }
           });
+          // Ordenar cada lista cronológicamente
+          Object.values(UPDATES_BY_TASK).forEach(arr =>
+            arr.sort((a, b) => new Date(a.submitted_at) - new Date(b.submitted_at))
+          );
         }
 
-        // Filtro: tareas para papá (PA, AM, JU+PA) · no done en JSON ni en API
+        // Filtro: tareas para papá (PA, AM, JU+PA) · no done
         const tasks = (data.tasks || []).filter(t => {
           const owner = t.owner || '';
           const ownerMatch = owner === 'PA' || owner === 'AM' ||
@@ -505,7 +518,6 @@
           return ownerMatch && t.status !== 'done' && !doneFromAPI.has(t.id);
         });
 
-        // Ordenar por prioridad y luego por orden de aparición (mantener orden de JSON)
         const order = { critical: 0, high: 1, normal: 2 };
         tasks.sort((a, b) => (order[a.priority] || 9) - (order[b.priority] || 9));
 
@@ -519,102 +531,142 @@
       }
     }
 
-    function renderTasks(tasks) {
-      const container = document.getElementById('tasks-container');
-      if (tasks.length === 0) {
-        container.innerHTML = '<p style="text-align:center;color:var(--ink-500);font-size:1.2rem;padding:30px">No hay tareas pendientes ahora mismo. 🎉</p>';
-        return;
-      }
-      container.innerHTML = tasks.map(t => `
-        <article class="task" data-task="${esc(t.id)}">
-          <div class="task-head">
-            <span class="task-id">${esc(t.id)}</span>
-            <span class="task-pill ${esc(t.priority || 'normal')}">${priorityLabel(t.priority)}</span>
-          </div>
-          <h2 class="task-title">${esc(t.title)}</h2>
-          <p class="task-desc">${esc(t.description || '')}</p>
-          <div class="actions">
-            <button class="btn btn-done" data-type="done"><span class="icon">✓</span> Lo hice</button>
-            <button class="btn btn-note" data-type="note"><span class="icon">✎</span> Anotar algo</button>
-            <button class="btn btn-photo" data-type="photo"><span class="icon">📷</span> Tomar foto</button>
-          </div>
-          <div class="form-area">
-            <label>Escribí acá lo que quieras contarle a Juan:</label>
-            <textarea placeholder="Por ejemplo: hablé con la doctora García en Cormacarena…"></textarea>
-            <label class="photo-add">
-              <span class="icon">📷</span> <span class="photo-label">Agregar foto</span>
-              <input type="file" accept="image/*" capture="environment">
-            </label>
-            <img class="photo-preview" alt="Vista previa">
-            <button class="submit" data-action="submit">Enviar a Juan</button>
-            <div class="error-msg"></div>
-          </div>
-          <div class="sent-banner">✅ Listo · Juan lo va a ver hoy</div>
-        </article>
-      `).join('');
-      attachHandlers();
+    function fmtDate(iso) {
+      if (!iso) return '';
+      const d = new Date(iso);
+      return d.toLocaleDateString('es-CO', { day: '2-digit', month: 'short', hour: '2-digit', minute: '2-digit' });
     }
 
     function priorityLabel(p) {
       return p === 'critical' ? 'URGENTE' : p === 'high' ? 'IMPORTANTE' : 'NORMAL';
     }
 
+    function renderTasks(tasks) {
+      const container = document.getElementById('tasks-container');
+      if (tasks.length === 0) {
+        container.innerHTML = '<p style="text-align:center;color:var(--ink-500);font-size:1.2rem;padding:30px">No hay tareas pendientes ahora mismo. 🎉</p>';
+        return;
+      }
+      container.innerHTML = tasks.map(t => {
+        const updates = UPDATES_BY_TASK[t.id] || [];
+        const cmtBadge = updates.length > 0
+          ? `<span class="task-pill" style="background:var(--ink-50); color:var(--ink-700)">💬 ${updates.length}</span>`
+          : '';
+        return `
+        <article class="task" data-task="${esc(t.id)}">
+          <div class="task-summary" data-act="toggle">
+            <div class="task-head">
+              <span class="task-id">${esc(t.id)}</span>
+              <span class="task-pill ${esc(t.priority || 'normal')}">${priorityLabel(t.priority)}</span>
+              ${cmtBadge}
+            </div>
+            <h2 class="task-title">${esc(t.title)}</h2>
+            <p class="task-desc">${esc(t.description || '')}</p>
+            <div style="margin-top:10px; font-size:14px; font-weight:700; color:var(--zb-cyan-dark)">👇 Click para ver / enviar comentarios o fotos</div>
+          </div>
+
+          <div class="task-detail" style="display:none; margin-top:16px; padding-top:16px; border-top:1px solid var(--ink-100);">
+
+            ${updates.length > 0 ? `
+              <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:var(--ink-500); margin-bottom:10px">📜 Comentarios anteriores</div>
+              ${updates.map(u => `
+                <div style="background:var(--ink-50); border-left:3px solid var(--zb-cyan); padding:10px 14px; border-radius:0 var(--radius-md) var(--radius-md) 0; margin-bottom:8px">
+                  <div style="font-size:11px; color:var(--ink-500); margin-bottom:4px">${esc(u.submitter || 'papá')} · ${fmtDate(u.submitted_at)}</div>
+                  ${u.note ? `<div style="font-size:14px; color:var(--ink-700); white-space:pre-wrap">${esc(u.note)}</div>` : ''}
+                  ${u.photo_path ? `<img src="${u.photo_path}${TOKEN ? '?k=' + encodeURIComponent(TOKEN) : ''}" style="margin-top:8px; max-width:100%; border-radius:8px; max-height:220px; display:block" alt="foto"/>` : ''}
+                </div>
+              `).join('')}
+            ` : ''}
+
+            <div style="background:var(--ink-50); padding:14px; border-radius:var(--radius-md); margin-top:12px">
+              <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:var(--ink-500); margin-bottom:8px">➕ Agregar comentario o foto</div>
+              <textarea data-cmt placeholder="Escribí algo para Juan..." style="width:100%; padding:12px 14px; border:1px solid var(--ink-100); border-radius:var(--radius-md); font-size:16px; font-family:inherit; background:var(--paper); min-height:80px; resize:vertical;"></textarea>
+              <div style="margin-top:8px">
+                <input type="file" data-photo accept="image/*" capture="environment" style="width:100%; font-size:14px"/>
+              </div>
+              <img data-preview style="display:none; margin-top:8px; max-width:100%; border-radius:8px; max-height:200px"/>
+            </div>
+
+            <div style="display:grid; gap:10px; margin-top:14px; grid-template-columns:1fr 1fr">
+              <button class="btn btn-done" data-act="done" style="min-height:60px; padding:14px; border:2px solid var(--success); background:var(--success-bg); color:var(--success); font-size:16px; font-weight:800; border-radius:var(--radius-md); cursor:pointer; font-family:inherit">
+                ✓ Lo hice<br><span style="font-size:11px; font-weight:600; opacity:0.85">cierra la tarea</span>
+              </button>
+              <button class="btn btn-note" data-act="note" style="min-height:60px; padding:14px; border:2px solid var(--zb-cyan); background:var(--zb-cyan-soft); color:var(--zb-cyan-dark); font-size:16px; font-weight:800; border-radius:var(--radius-md); cursor:pointer; font-family:inherit">
+                📨 Enviar a Juan<br><span style="font-size:11px; font-weight:600; opacity:0.85">la tarea sigue abierta</span>
+              </button>
+            </div>
+
+            <div class="error-msg" style="margin-top:10px; color:var(--danger); font-size:14px; display:none"></div>
+          </div>
+
+          <div class="sent-banner" style="display:none; margin-top:14px; padding:14px; background:var(--success-bg); color:var(--success); border-radius:var(--radius-md); font-weight:700; text-align:center">✅ Listo · Juan lo va a ver hoy</div>
+        </article>
+        `;
+      }).join('');
+      attachHandlers();
+    }
+
     function attachHandlers() {
       document.querySelectorAll('.task').forEach(card => {
-        const buttons = card.querySelectorAll('.actions .btn');
-        buttons.forEach(b => b.addEventListener('click', () => {
-          card.classList.add('open');
-          card.dataset.updateType = b.dataset.type;
-          // Si es 'photo', focus en el botón de agregar foto
-          if (b.dataset.type === 'photo') {
-            card.querySelector('.photo-add input').click();
-          } else if (b.dataset.type === 'note') {
-            card.querySelector('textarea').focus();
-          }
-        }));
+        // Toggle expand
+        card.querySelector('[data-act="toggle"]').addEventListener('click', () => {
+          const detail = card.querySelector('.task-detail');
+          const open = detail.style.display !== 'none';
+          detail.style.display = open ? 'none' : 'block';
+        });
 
-        // Preview de foto
-        const photoInput = card.querySelector('.photo-add input');
-        const photoPreview = card.querySelector('.photo-preview');
-        const photoLabel = card.querySelector('.photo-label');
+        // Preview foto
+        const photoInput = card.querySelector('[data-photo]');
+        const preview = card.querySelector('[data-preview]');
         photoInput.addEventListener('change', () => {
-          const file = photoInput.files[0];
-          if (file) {
-            photoPreview.src = URL.createObjectURL(file);
-            photoPreview.style.display = 'block';
-            photoLabel.textContent = 'Cambiar foto';
-            card.classList.add('open');
+          const f = photoInput.files[0];
+          if (f) {
+            preview.src = URL.createObjectURL(f);
+            preview.style.display = 'block';
+          } else {
+            preview.style.display = 'none';
           }
         });
 
-        // Submit
-        const submitBtn = card.querySelector('[data-action=submit]');
-        submitBtn.addEventListener('click', () => handleSubmit(card));
+        // Done button
+        card.querySelector('[data-act="done"]').addEventListener('click', () =>
+          handleSubmit(card, 'done')
+        );
+
+        // Note button (enviar a Juan, no cierra)
+        card.querySelector('[data-act="note"]').addEventListener('click', () =>
+          handleSubmit(card, 'note-or-photo')
+        );
       });
     }
 
-    async function handleSubmit(card) {
+    async function handleSubmit(card, action) {
       const taskId = card.dataset.task;
-      const note = card.querySelector('textarea').value.trim();
-      const photo = card.querySelector('.photo-add input').files[0];
+      const note = card.querySelector('[data-cmt]').value.trim();
+      const photo = card.querySelector('[data-photo]').files[0];
       const errorBox = card.querySelector('.error-msg');
-      const submitBtn = card.querySelector('[data-action=submit]');
+      const btns = card.querySelectorAll('.btn-done, .btn-note');
 
-      // Decidir update_type
-      let updateType = card.dataset.updateType || 'note';
-      if (photo) updateType = 'photo';
-      else if (!note) updateType = 'done';
+      errorBox.style.display = 'none';
 
-      // Validación mínima
-      if (updateType === 'note' && !note) {
-        errorBox.textContent = 'Escribí algo antes de enviar.';
-        card.classList.add('has-error');
-        return;
+      // Decidir update_type según action
+      let updateType;
+      if (action === 'done') {
+        updateType = 'done';
+      } else {
+        // action === 'note-or-photo'
+        if (photo) updateType = 'photo';
+        else if (note) updateType = 'note';
+        else {
+          errorBox.textContent = 'Escribí algo o adjuntá una foto antes de enviar.';
+          errorBox.style.display = 'block';
+          return;
+        }
       }
 
-      card.classList.remove('has-error');
-      submitBtn.disabled = true;
-      submitBtn.textContent = 'Enviando…';
+      btns.forEach(b => b.disabled = true);
+      const origText = card.querySelector(`[data-act="${action === 'done' ? 'done' : 'note'}"]`).innerHTML;
+      card.querySelector(`[data-act="${action === 'done' ? 'done' : 'note'}"]`).innerHTML = 'Enviando…';
 
       try {
         const formData = new FormData();
@@ -627,22 +679,28 @@
         const url = API_BASE + '/update' + (TOKEN ? `?k=${encodeURIComponent(TOKEN)}` : '');
         const res = await fetch(url, { method: 'POST', body: formData });
         const data = await res.json();
+        if (!res.ok || !data.ok) throw new Error(data.detail || data.error || 'Error');
 
-        if (!res.ok || !data.ok) {
-          throw new Error(data.detail || data.error || 'Error desconocido');
+        if (action === 'done') {
+          // Animar y recargar (la tarea desaparece del listado)
+          card.querySelector('.task-detail').style.display = 'none';
+          card.querySelector('.sent-banner').style.display = 'block';
+          card.querySelector('.sent-banner').textContent = '✅ Tarea completada · Juan ya lo recibió';
+          setTimeout(loadTasks, 1500);
+        } else {
+          // Note: recargar la lista para mostrar el nuevo comentario
+          card.querySelector('.sent-banner').style.display = 'block';
+          card.querySelector('.sent-banner').textContent = '✅ Comentario enviado · la tarea sigue abierta';
+          setTimeout(() => {
+            card.querySelector('.sent-banner').style.display = 'none';
+            loadTasks();
+          }, 1500);
         }
-
-        // Éxito
-        card.classList.remove('open');
-        card.classList.add('sent');
-        // Scroll suave al banner verde
-        setTimeout(() => card.scrollIntoView({ behavior: 'smooth', block: 'center' }), 100);
-
       } catch (err) {
-        errorBox.textContent = `Hubo un problema: ${err.message}. Probá de nuevo en un momento.`;
-        card.classList.add('has-error');
-        submitBtn.disabled = false;
-        submitBtn.textContent = 'Enviar a Juan';
+        errorBox.textContent = `Hubo un problema: ${err.message}. Probá de nuevo.`;
+        errorBox.style.display = 'block';
+        btns.forEach(b => b.disabled = false);
+        card.querySelector(`[data-act="${action === 'done' ? 'done' : 'note'}"]`).innerHTML = origText;
       }
     }
 
