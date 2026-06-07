@@ -408,5 +408,98 @@ def update_idea(idea_id):
         return jsonify({"error": "db_error", "detail": str(exc)}), 500
 
 
+# ============================================================
+# Ideas · Comentarios y edición
+# ============================================================
+@app.route("/api/ideas/<int:idea_id>/comments", methods=["GET"])
+def list_idea_comments(idea_id):
+    try:
+        conn = db()
+        with conn, conn.cursor() as cur:
+            cur.execute(
+                "SELECT id, body, submitter, photo_path, created_at "
+                "FROM idea_comments WHERE idea_id = %s ORDER BY created_at ASC",
+                (idea_id,),
+            )
+            rows = [
+                {
+                    "id": r[0], "body": r[1], "submitter": r[2],
+                    "photo_path": r[3],
+                    "created_at": r[4].isoformat() if r[4] else None,
+                }
+                for r in cur.fetchall()
+            ]
+        conn.close()
+        return jsonify({"comments": rows})
+    except Exception as exc:
+        return jsonify({"error": "db_error", "detail": str(exc)}), 500
+
+
+@app.route("/api/ideas/<int:idea_id>/comments", methods=["POST"])
+def add_idea_comment(idea_id):
+    body = (request.form.get("body") or "").strip()
+    submitter = (request.form.get("submitter") or "papa").strip()[:50]
+    if not body and not request.files.get("photo"):
+        return jsonify({"error": "body_or_photo_required"}), 400
+
+    photo_path = None
+    photo = request.files.get("photo")
+    if photo and photo.filename:
+        ext = Path(photo.filename).suffix.lower()
+        if ext in ALLOWED_PHOTO_EXT:
+            ts = datetime.utcnow().strftime("%Y%m%d-%H%M%S")
+            fname = f"idea-cmt-{ts}-{uuid.uuid4().hex[:8]}{ext}"
+            full = PHOTOS_DIR / fname
+            photo.save(str(full))
+            os.chmod(str(full), 0o644)
+            photo_path = f"/photos/{fname}"
+
+    try:
+        conn = db()
+        with conn, conn.cursor() as cur:
+            # Verificar que existe la idea
+            cur.execute("SELECT 1 FROM ideas WHERE id = %s", (idea_id,))
+            if not cur.fetchone():
+                conn.close()
+                return jsonify({"error": "idea_not_found"}), 404
+            cur.execute(
+                "INSERT INTO idea_comments (idea_id, body, submitter, photo_path) "
+                "VALUES (%s, %s, %s, %s) RETURNING id",
+                (idea_id, body or "", submitter, photo_path),
+            )
+            new_id = cur.fetchone()[0]
+            # Touch updated_at de la idea
+            cur.execute("UPDATE ideas SET updated_at = NOW() WHERE id = %s", (idea_id,))
+        conn.close()
+        return jsonify({"ok": True, "id": new_id})
+    except Exception as exc:
+        return jsonify({"error": "db_error", "detail": str(exc)}), 500
+
+
+@app.route("/api/ideas/<int:idea_id>/edit", methods=["POST"])
+def edit_idea(idea_id):
+    """Editar título / body / categoría de una idea."""
+    title = (request.form.get("title") or "").strip()
+    body = (request.form.get("body") or "").strip()
+    category = (request.form.get("category") or "").strip().lower()
+    if not title:
+        return jsonify({"error": "title_required"}), 400
+    try:
+        conn = db()
+        with conn, conn.cursor() as cur:
+            cur.execute(
+                "UPDATE ideas SET title = %s, body = %s, category = COALESCE(NULLIF(%s, ''), category), updated_at = NOW() "
+                "WHERE id = %s",
+                (title, body or None, category, idea_id),
+            )
+            updated = cur.rowcount
+        conn.close()
+        if updated == 0:
+            return jsonify({"error": "not_found"}), 404
+        return jsonify({"ok": True})
+    except Exception as exc:
+        return jsonify({"error": "db_error", "detail": str(exc)}), 500
+
+
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=5050, debug=False)

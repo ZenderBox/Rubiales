@@ -297,10 +297,10 @@
     {
       "id": "T15",
       "title": "✅ Renovar matrícula mercantil · Cámara de Comercio",
-      "description": "HECHA por papá. Sociedad al día en Cámara de Comercio. Desbloquea el camino para que la póliza pueda emitirse a nombre de Miramar (Plan A del tomador).",
+      "description": "Papá YA la hizo. Esta tarea queda en el dashboard para que papá pruebe marcarla como hecha y verifique que NO vuelva a aparecer al refrescar (fix del bug). Importancia: sin Cámara al día la aseguradora NO emite la póliza a nombre de Miramar.",
       "owner": "PA",
       "priority": "critical",
-      "status": "done",
+      "status": "pending",
       "module": "04-regulatorio"
     },
     {
