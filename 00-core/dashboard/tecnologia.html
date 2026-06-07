@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <title>Miramar · Tecnología / IoT</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --zb-cyan: #029ECB;
+      --zb-cyan-dark: #007B9F;
+      --zb-cyan-soft: rgba(2,158,203,.12);
+      --zb-lime: #CCD32A;
+      --zb-gradient: linear-gradient(45deg, #029ECB 0%, #CCD32A 85%);
+      --ink-900: #0F0F0F;
+      --ink-700: #2A2A2A;
+      --ink-500: #555555;
+      --ink-300: #8A8A8A;
+      --ink-100: #DBDBDB;
+      --ink-50: #F4F6F8;
+      --paper: #FFFFFF;
+      --danger: #C81E2A;
+      --danger-bg: #FAE6E8;
+      --warn: #B5870C;
+      --warn-bg: #FCF3E0;
+      --success: #007830;
+      --success-bg: #E6F3EC;
+      --radius-md: 14px;
+      --radius-lg: 18px;
+      --radius-pill: 99px;
+      --shadow-card: 0 2px 8px rgba(15,15,15,.06);
+    }
+    * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      background: var(--ink-50);
+      color: var(--ink-900);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+    .app-shell { display: grid; grid-template-columns: 240px 1fr; min-height: 100vh; }
+    .sidebar {
+      background: var(--paper); border-right: 1px solid var(--ink-100);
+      padding: 24px 16px; position: sticky; top: 0; height: 100vh; overflow-y: auto;
+      display: flex; flex-direction: column; gap: 4px;
+    }
+    .sidebar-brand { font-size: 22px; font-weight: 800; padding: 8px 12px 24px; letter-spacing: -0.01em; }
+    .sidebar-brand span { color: var(--zb-cyan); }
+    .sidebar-section-title {
+      font-size: 10px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--ink-300); padding: 16px 12px 8px;
+    }
+    .nav-item {
+      display: flex; align-items: center; gap: 12px;
+      padding: 12px 14px; border-radius: var(--radius-md);
+      color: var(--ink-700); font-size: 15px; font-weight: 600;
+      text-decoration: none; transition: background .12s ease; min-height: 48px;
+    }
+    .nav-item:hover { background: var(--ink-50); }
+    .nav-item.active { background: var(--zb-cyan-soft); color: var(--zb-cyan-dark); }
+    .nav-item .nav-icon { font-size: 18px; line-height: 1; flex-shrink: 0; }
+    .nav-item .nav-label { flex: 1; }
+    .nav-item .nav-badge {
+      font-size: 10px; font-weight: 700; background: var(--ink-100); color: var(--ink-500);
+      padding: 2px 7px; border-radius: var(--radius-pill);
+    }
+    .nav-item.coming-soon { opacity: 0.55; cursor: default; }
+    .nav-item.coming-soon:hover { background: transparent; }
+
+    .main { padding: 28px 28px 60px; max-width: 1100px; }
+    @media (max-width: 768px) { .main { padding: 20px 16px 60px; } }
+
+    h1 { font-size: 32px; font-weight: 800; margin: 0 0 6px; letter-spacing: -0.01em; }
+    .subtitle { color: var(--ink-500); font-size: 16px; margin: 0 0 32px; }
+    h2 {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--ink-500); margin: 36px 0 14px;
+    }
+
+    .hero {
+      background: var(--zb-gradient); color: var(--paper);
+      border-radius: var(--radius-lg); padding: 24px 26px;
+      margin-bottom: 32px;
+    }
+    .hero-label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; opacity: 0.9; margin-bottom: 6px; }
+    .hero-text { font-size: 20px; font-weight: 800; line-height: 1.35; }
+
+    .metrics { display: grid; gap: 14px; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); margin-bottom: 12px; }
+    .metric {
+      background: var(--paper); border: 1px solid var(--ink-100);
+      border-radius: var(--radius-lg); padding: 18px 20px; box-shadow: var(--shadow-card);
+    }
+    .metric .label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--ink-500); margin-bottom: 6px; }
+    .metric .value { font-size: 22px; font-weight: 800; color: var(--ink-900); letter-spacing: -0.01em; line-height: 1.1; }
+    .metric .delta { font-size: 12px; color: var(--ink-500); margin-top: 4px; }
+
+    .phase-table {
+      background: var(--paper); border: 1px solid var(--ink-100);
+      border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow-card);
+    }
+    .phase-row {
+      display: grid; grid-template-columns: 1fr 120px; gap: 16px;
+      padding: 16px 20px; border-bottom: 1px solid var(--ink-100); align-items: center;
+    }
+    .phase-row:last-child { border-bottom: none; }
+    .phase-name { font-weight: 700; color: var(--ink-900); font-size: 15px; }
+    .phase-detail { font-size: 13px; color: var(--ink-500); margin-top: 4px; }
+    .status-pill {
+      font-size: 11px; font-weight: 700; text-align: center;
+      padding: 6px 10px; border-radius: var(--radius-pill);
+    }
+    .status-pill.researching { background: var(--zb-cyan-soft); color: var(--zb-cyan-dark); }
+    .status-pill.pending { background: var(--ink-50); color: var(--ink-500); }
+    .status-pill.in-progress { background: var(--warn-bg); color: var(--warn); }
+    .status-pill.done { background: var(--success-bg); color: var(--success); }
+
+    .component-grid {
+      display: grid; gap: 14px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    }
+    .component-card {
+      background: var(--paper); border: 1px solid var(--ink-100);
+      border-radius: var(--radius-lg); padding: 18px 20px; box-shadow: var(--shadow-card);
+    }
+    .component-head { display: flex; gap: 10px; align-items: center; margin-bottom: 10px; flex-wrap: wrap; }
+    .component-title { font-weight: 800; font-size: 16px; }
+    .component-desc { font-size: 13px; color: var(--ink-500); margin-bottom: 6px; }
+    .component-body { font-size: 13px; line-height: 1.5; color: var(--ink-700); }
+    .component-foot { margin-top: 10px; font-size: 12px; color: var(--ink-500); }
+    .chip {
+      font-size: 11px; font-weight: 700; padding: 3px 10px; border-radius: var(--radius-pill);
+    }
+    .chip.urgent { background: var(--danger-bg); color: var(--danger); }
+    .chip.priority { background: var(--warn-bg); color: var(--warn); }
+    .chip.later { background: var(--ink-50); color: var(--ink-500); }
+    .chip.now { background: var(--success-bg); color: var(--success); }
+  </style>
+</head>
+<body>
+  <div class="app-shell">
+
+    <aside class="sidebar">
+      <!-- sidebar-mobile.js reescribe esto -->
+    </aside>
+
+    <main class="main">
+      <h1>🛜 Tecnología / IoT</h1>
+      <p class="subtitle">Infraestructura técnica de la finca · internet, IoT, cámaras, sensores, energía.</p>
+
+      <div class="hero">
+        <div class="hero-label">✅ Decisión tomada · 2026-06-07</div>
+        <div class="hero-text">Kit Estándar V4 en Falabella Colombia (COP $1.349.900) + Plan Residencial Estándar (COP $250K/mes · ilimitado · hasta 400 Mbps). NO comprar en USA.</div>
+      </div>
+
+      <h2>💰 Costo año 1 (decidido)</h2>
+      <div class="metrics">
+        <div class="metric">
+          <div class="label">Kit Estándar V4</div>
+          <div class="value">$1.349.900</div>
+          <div class="delta">Falabella Colombia · 16% desc desde $1.599.000</div>
+        </div>
+        <div class="metric">
+          <div class="label">Plan mensual</div>
+          <div class="value">$250.000</div>
+          <div class="delta">Residencial estándar · 400 Mbps · ilimitado</div>
+        </div>
+        <div class="metric">
+          <div class="label">Plan × 12 meses</div>
+          <div class="value">$3.000.000</div>
+          <div class="delta">~USD 745/año</div>
+        </div>
+        <div class="metric">
+          <div class="label">TOTAL año 1</div>
+          <div class="value">~$4.35M</div>
+          <div class="delta">USD ~1.080 · sin componentes extras</div>
+        </div>
+      </div>
+
+      <h2>⚠️ Bandera roja crítica · CGNAT</h2>
+      <div style="background: var(--danger-bg); color: var(--danger); padding: 18px 22px; border-radius: var(--radius-lg); margin-bottom: 16px; border-left: 4px solid var(--danger);">
+        <b>Starlink Residential usa CGNAT (IPs 100.x.x.x).</b> El add-on de IP pública fue descontinuado en mayo 2024.
+        <br><br>
+        <b>Implicación:</b> las cámaras IP del galpón NO se pueden acceder con port forwarding clásico desde Miami.
+        <br><br>
+        <b>Solución obligatoria:</b> instalar <b>Tailscale</b> (gratis) en un mini-PC/Raspberry Pi en la finca + en el celular/laptop de Juan en Miami. Las cámaras se acceden como si estuvieran en LAN local.
+      </div>
+
+      <h2>📅 Cronograma 7-12 jun</h2>
+      <div class="phase-table">
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">Sábado 7-jun (HOY)</div>
+            <div class="phase-detail">Juan · verificar cobertura starlink.com/map + pedir kit en Falabella + comprar UPS y cámara prueba</div>
+          </div>
+          <div class="status-pill in-progress">EN CURSO</div>
+        </div>
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">Lunes 9 / Martes 10</div>
+            <div class="phase-detail">Falabella entrega en Bogotá · papá recibe el kit</div>
+          </div>
+          <div class="status-pill pending">ESPERANDO</div>
+        </div>
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">Miércoles 11</div>
+            <div class="phase-detail">Juan activa cuenta starlink.com con serial del kit · instala Tailscale</div>
+          </div>
+          <div class="status-pill pending">PENDIENTE</div>
+        </div>
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">Viernes 12-jun · día clave</div>
+            <div class="phase-detail">Papá viaja a la finca · instala antena (10 min) · primera conexión · valida cámara</div>
+          </div>
+          <div class="status-pill researching">🎯 OBJETIVO</div>
+        </div>
+      </div>
+
+      <h2>Estado actual de componentes</h2>
+      <div class="phase-table">
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">🛰️ Internet base (Starlink)</div>
+            <div class="phase-detail">Investigación Residential vs Roam · Colombia vs USA · cobertura Puerto Gaitán</div>
+          </div>
+          <div class="status-pill done">✅ DECIDIDO</div>
+        </div>
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">🔌 UPS / inversor</div>
+            <div class="phase-detail">800VA mínimo · sostiene Starlink + router cuando corta la luz</div>
+          </div>
+          <div class="status-pill pending">PENDIENTE</div>
+        </div>
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">🛜 Router CGNAT bypass</div>
+            <div class="phase-detail">Ubiquiti / GL.iNet · solo si Starlink Residential usa CGNAT y queremos acceso remoto cámaras</div>
+          </div>
+          <div class="status-pill pending">DECIDIR</div>
+        </div>
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">📷 Cámara IP de prueba</div>
+            <div class="phase-detail">Reolink o TP-Link Tapo · validar setup el primer día en la finca</div>
+          </div>
+          <div class="status-pill pending">PENDIENTE</div>
+        </div>
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">📱 SIM celular backup</div>
+            <div class="phase-detail">Claro o Movistar · failover cuando Starlink se cae (lluvia fuerte, falla)</div>
+          </div>
+          <div class="status-pill pending">PENDIENTE</div>
+        </div>
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">🎥 CCTV galpón (4-6 cámaras)</div>
+            <div class="phase-detail">Post-arranque del galpón · monitoreo 24/7 producción</div>
+          </div>
+          <div class="status-pill pending">FASE B</div>
+        </div>
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">🌡️ Sensores temperatura/humedad</div>
+            <div class="phase-detail">Galpón · alertas si temperatura sale de rango · clave para producción avícola</div>
+          </div>
+          <div class="status-pill pending">FASE B</div>
+        </div>
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">⚖️ Báscula conectada</div>
+            <div class="phase-detail">Huevos o alimento · datos directos al dashboard</div>
+          </div>
+          <div class="status-pill pending">FASE B</div>
+        </div>
+        <div class="phase-row">
+          <div>
+            <div class="phase-name">☀️ Solar + baterías</div>
+            <div class="phase-detail">Autonomía energética total · Fase 2 con Finagro</div>
+          </div>
+          <div class="status-pill pending">FASE C</div>
+        </div>
+      </div>
+
+      <h2>Fase A · Conectividad básica (esta semana)</h2>
+      <p style="font-size: 14px; color: var(--ink-500); margin: 0 0 14px;">
+        Lo que tiene que estar listo para el viaje del viernes 12-jun.
+      </p>
+      <div class="component-grid">
+
+        <div class="component-card">
+          <div class="component-head">
+            <span class="chip urgent">URGENTE</span>
+            <span class="chip now">ESTA SEMANA</span>
+          </div>
+          <div class="component-title">🛰️ Kit Starlink</div>
+          <div class="component-desc">Standard o Mini · plan a definir</div>
+          <div class="component-body">
+            Investigación en curso (deep-research). Pendiente decidir: <b>comprar en Colombia</b> (papá lo recibe en Bogotá) o <b>en USA</b> (Juan lo trae).
+          </div>
+          <div class="component-foot">Budget: USD 350-800 hardware · COP 200-400K/mes</div>
+        </div>
+
+        <div class="component-card">
+          <div class="component-head">
+            <span class="chip priority">PRIORIDAD ALTA</span>
+          </div>
+          <div class="component-title">🔌 UPS 800VA+</div>
+          <div class="component-desc">Forza, APC o CDP · cualquier ferretería técnica</div>
+          <div class="component-body">
+            Mantiene Starlink (~75W) + router 30-60 minutos cuando la luz se va. Sin esto, las cámaras pierden continuidad de grabación.
+          </div>
+          <div class="component-foot">Budget: COP 250-450K</div>
+        </div>
+
+        <div class="component-card">
+          <div class="component-head">
+            <span class="chip priority">PRIORIDAD ALTA</span>
+          </div>
+          <div class="component-title">📷 Cámara IP de prueba</div>
+          <div class="component-desc">Reolink E1 Pro / TP-Link Tapo C320WS</div>
+          <div class="component-body">
+            Una cámara para validar el setup el viernes/sábado. Si funciona el acceso remoto, escalamos a 4-6 cámaras del galpón después.
+          </div>
+          <div class="component-foot">Budget: COP 180-280K</div>
+        </div>
+
+        <div class="component-card">
+          <div class="component-head">
+            <span class="chip later">SI HAY TIEMPO</span>
+          </div>
+          <div class="component-title">📱 SIM celular backup</div>
+          <div class="component-desc">Plan datos Claro / Movistar</div>
+          <div class="component-body">
+            Tarjeta SIM con plan ~5GB/mes para cuando Starlink falle. Se mete en un router 4G simple o tethering del celular de Guyo.
+          </div>
+          <div class="component-foot">Budget: COP 30-60K/mes</div>
+        </div>
+
+      </div>
+
+      <h2>Fases siguientes</h2>
+      <div class="component-grid">
+
+        <div class="component-card" style="border-left: 4px solid var(--warn);">
+          <div class="component-head">
+            <span class="chip later">FASE B</span>
+            <span style="font-size: 12px; color: var(--ink-500);">post-arranque galpón</span>
+          </div>
+          <div class="component-title">🎥 IoT operacional galpón</div>
+          <div class="component-body">
+            4-6 cámaras CCTV en puntos clave · sensores temperatura/humedad · sensor nivel pozo de agua · báscula conectada.
+            Todo se integra al mismo router Starlink.
+          </div>
+        </div>
+
+        <div class="component-card" style="border-left: 4px solid var(--ink-300);">
+          <div class="component-head">
+            <span class="chip later">FASE C</span>
+            <span style="font-size: 12px; color: var(--ink-500);">con Finagro</span>
+          </div>
+          <div class="component-title">☀️ Autonomía energética</div>
+          <div class="component-body">
+            Paneles solares + baterías. Internet 24/7 sin depender de red eléctrica rural. Inversión grande · solo cuando Fase 2 Finagro arranque.
+          </div>
+        </div>
+
+      </div>
+
+      <h2>Costos esperados año 1 (estimado)</h2>
+      <div class="metrics">
+        <div class="metric">
+          <div class="label">Hardware Fase A</div>
+          <div class="value">~$2.5M COP</div>
+          <div class="delta">Kit Starlink + UPS + 1 cámara + cables</div>
+        </div>
+        <div class="metric">
+          <div class="label">Plan Starlink × 12 meses</div>
+          <div class="value">~$2.5-4.8M COP</div>
+          <div class="delta">Según plan elegido ($210K-400K/mes)</div>
+        </div>
+        <div class="metric">
+          <div class="label">SIM backup × 12 meses</div>
+          <div class="value">~$500K COP</div>
+          <div class="delta">$40K/mes promedio</div>
+        </div>
+        <div class="metric">
+          <div class="label">TOTAL año 1 estimado</div>
+          <div class="value">~$5.5-7.8M COP</div>
+          <div class="delta">Sin Fase B y C</div>
+        </div>
+      </div>
+
+      <h2>Reporte de investigación</h2>
+      <p style="font-size: 14px; color: var(--ink-500);">
+        🔍 Deep-research en curso (lanzado 2026-06-07). Cuando termine, los hallazgos se documentan en
+        <code>07-tecnologia/starlink/</code> y se actualiza esta vista con la decisión final.
+      </p>
+
+    </main>
+  </div>
+  <script src="/sidebar-mobile.js" defer></script>
+</body>
+</html>
