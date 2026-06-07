@@ -92,7 +92,7 @@ def update():
             )
             new_id = cur.fetchone()[0]
         conn.close()
-        return jsonify({"ok": True, "id": new_id})
+        return jsonify({"ok": True, "id": new_id, "photo_path": photo_path})
     except Exception as exc:
         return jsonify({"error": "db_error", "detail": str(exc)}), 500
 
@@ -382,7 +382,7 @@ def create_idea():
             )
             new_id = cur.fetchone()[0]
         conn.close()
-        return jsonify({"ok": True, "id": new_id})
+        return jsonify({"ok": True, "id": new_id, "photo_path": photo_path})
     except Exception as exc:
         return jsonify({"error": "db_error", "detail": str(exc)}), 500
 
@@ -471,7 +471,7 @@ def add_idea_comment(idea_id):
             # Touch updated_at de la idea
             cur.execute("UPDATE ideas SET updated_at = NOW() WHERE id = %s", (idea_id,))
         conn.close()
-        return jsonify({"ok": True, "id": new_id})
+        return jsonify({"ok": True, "id": new_id, "photo_path": photo_path})
     except Exception as exc:
         return jsonify({"error": "db_error", "detail": str(exc)}), 500
 
