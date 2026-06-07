@@ -69,3 +69,19 @@ Este patrón es propio de un flujo solo/colaborativo (un dev + un revisor). Sin 
 - El bootstrap de un repo nuevo en GitHub requiere un commit inicial en `main` para que se pueda abrir PR. Una vez sembrado, todo el resto va por branch + PR.
 - El comando `/guarda-finca` se modela como `/guardar` del WMS: detectar módulo → actualizar memorias → branch + commit + push + PR. Owner mergea. Nunca push directo a main.
 - Decisión arquitectónica clave: empezar con markdown plano + HTML estático. Postgres / n8n / WhatsApp solo cuando el manual duela (Fase F4-F5 del roadmap del sistema). Replicar la evolución por dolor que funcionó en ZenderBox.
+
+## 2026-06-07 · Tareas CRM-style funcionando
+
+Después de varios bugs (refresh, "Lo hice no hace nada", conflicto de nombre fmtDate, file input invisible), el módulo Tareas quedó funcional con el modelo de Ideas:
+
+- Cards expandibles
+- Timeline de comentarios persistente
+- 2 botones claros separados:
+  - **✓ Lo hice** = cierra tarea + manda update_type=done
+  - **📨 Enviar a Juan** = comentario al hilo + tarea sigue abierta
+- Toggle 📌 Activas / ✅ Hechas (preservar histórico)
+- Foto/PDF con label dashed cyan visible
+
+Aprendizaje técnico: validar JS template literals con `node Function()` ANTES de deploy. El "se quedó cargando" fue un error de declaración duplicada (`const fmtDate` + `function fmtDate`) que rompió el script completo silenciosamente.
+
+Aprendizaje UX: papá entendió el flujo a la primera con los 2 botones explícitos. La versión anterior con "3 acciones + Enviar a Juan unificado" lo confundía.
