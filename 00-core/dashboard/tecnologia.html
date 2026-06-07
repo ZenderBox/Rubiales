@@ -152,7 +152,38 @@
 
       <div class="hero">
         <div class="hero-label">✅ Decisión tomada · 2026-06-07</div>
-        <div class="hero-text">Kit Estándar V4 en Falabella Colombia (COP $1.349.900) + Plan Residencial Estándar (COP $250K/mes · ilimitado · hasta 400 Mbps). NO comprar en USA.</div>
+        <div class="hero-text">Etapa 1 (este viernes): Starlink en CASA PRINCIPAL. Etapa 2 (cuando arranque galpón): mover al galpón + enlace Ubiquiti 500m a casa principal.</div>
+      </div>
+
+      <h2>🗺️ Arquitectura por etapas</h2>
+      <div style="background: var(--paper); border: 1px solid var(--ink-100); border-radius: var(--radius-lg); padding: 18px 22px; margin-bottom: 16px; box-shadow: var(--shadow-card);">
+        <div style="font-weight:800; font-size:15px; margin-bottom:10px;">🟢 Etapa 1 · este viernes 12-jun (lo que se trae)</div>
+        <div style="font-family:monospace; white-space:pre; font-size:12px; background:var(--ink-50); padding:14px; border-radius:8px; overflow-x:auto; line-height:1.6;">          ☁️ Internet (Starlink LEO)
+                │
+          📡 Antena Starlink (techo casa principal)
+                │
+          🔌 Router Gen 3 Starlink (WiFi 6 + Tailscale)
+                │
+                ├── 📷 1 cámara IP de prueba (Reolink/Tapo)
+                ├── 📱 Celular papá / Guyo
+                └── 🔋 UPS 800VA</div>
+      </div>
+
+      <div style="background: var(--paper); border: 1px solid var(--ink-100); border-radius: var(--radius-lg); padding: 18px 22px; margin-bottom: 16px; box-shadow: var(--shadow-card); border-left: 4px solid var(--warn);">
+        <div style="font-weight:800; font-size:15px; margin-bottom:10px;">🟡 Etapa 2 · cuando arranque el galpón (siguiente compra)</div>
+        <div style="font-family:monospace; white-space:pre; font-size:12px; background:var(--ink-50); padding:14px; border-radius:8px; overflow-x:auto; line-height:1.6;">     📡 STARLINK (mover a techo galpón · mejor sky view)
+            │
+        ┌───┴──────────────────────────────────────┐
+        │                                          │
+   📦 Galpón + casa cuidador        🔗 PtP 500m → 📦 Casa principal
+   - Router Starlink Gen 3                          - Ubiquiti LiteBeam receptor
+   - 4-6 cámaras CCTV                               - Access Point WiFi indoor
+   - Sensores temp/humedad                          - 2-3 cámaras outdoor
+   - WiFi cuidador                                  - WiFi para papá cuando va
+   - Ubiquiti LiteBeam transmisor</div>
+        <div style="font-size:13px; color:var(--ink-500); margin-top:10px;">
+          Componentes Etapa 2: 2× LiteBeam 5AC Gen2 + AP outdoor + surge protectors + postes = ~$1.6M COP. Decisión final en el viaje.
+        </div>
       </div>
 
       <h2>💰 Costo año 1 (decidido)</h2>

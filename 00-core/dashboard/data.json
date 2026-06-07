@@ -243,7 +243,7 @@
     {
       "id": "T50",
       "title": "🛜 HOY · Verificar cobertura Starlink en finca + pedir kit en Falabella",
-      "description": "1) Ir a https://starlink.com/map y poner 'Vereda Santa Helena, Puerto Gaitán, Meta' o las coordenadas GPS de la finca. Confirmar que dice 'Available'. 2) Si OK, pedir Kit Estándar V4 en https://www.falabella.com.co/falabella-co/product/73053329 (COP $1.349.900). Envío a Bogotá. Direcciones de papá. Detalle: /tecnologia.html",
+      "description": "ETAPA 1: instalación en CASA PRINCIPAL este viernes. (1) Verificar https://starlink.com/map con coordenadas de la finca → 'Available'. (2) Pedir Kit Estándar V4 en https://www.falabella.com.co/falabella-co/product/73053329 (COP $1.349.900). Envío a Bogotá direcciones de papá. Detalle: /tecnologia.html",
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
@@ -296,10 +296,19 @@
     },
     {
       "id": "T56",
-      "title": "🛠️ Viernes 12 · Instalar Starlink en la finca",
-      "description": "Día del viaje. Pasos: (1) montar antena en lugar con vista al cielo despejada (techo galpón o poste alto), (2) conectar cable al router, (3) enchufar a UPS, (4) esperar 5-10 min hasta primera conexión, (5) probar speedtest, (6) conectar cámara IP y verificar acceso remoto via Tailscale desde Miami.",
+      "title": "🛠️ Viernes 12 · Instalar Starlink en CASA PRINCIPAL",
+      "description": "Día del viaje. ETAPA 1. Pasos: (1) elegir lugar en techo casa principal con vista despejada al cielo, (2) montar antena (10 min sin perforar), (3) pasar cable al router dentro de la casa, (4) enchufar router a UPS, (5) esperar 5-10 min hasta primera conexión, (6) speedtest desde celular, (7) instalar cámara IP en sala (o donde papá quiera ver), (8) confirmar acceso remoto via Tailscale desde celular de Juan en Miami. Dejar todo documentado con fotos del setup.",
       "owner": "PA",
       "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T57",
+      "title": "📸 Viernes 12 · Documentar puntos para futuro enlace 500m (Etapa 2)",
+      "description": "Mientras papá está en la finca: tomar fotos del recorrido casa principal ↔ donde irá el galpón. Identificar: (a) línea de vista directa (sin árboles altos), (b) posibles puntos de mástil en ambos extremos, (c) ubicación del techo del futuro galpón. Esto define si compramos Ubiquiti LiteBeam estándar (5km) o necesitamos algo más potente. Fotos al dashboard via /tareas.html con esta tarea.",
+      "owner": "PA",
+      "priority": "high",
       "status": "pending",
       "module": "07-tecnologia"
     },

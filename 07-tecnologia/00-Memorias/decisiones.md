@@ -24,3 +24,13 @@
 ### D04 · UPS obligatorio para Starlink + router
 - **Decisión:** UPS de mínimo 800VA para el rack de red.
 - **Por qué:** la finca tiene cortes frecuentes de energía. Sin UPS, la conectividad se cae con cada bajón → cámaras pierden grabación, sensores desincronizan.
+
+### D05 · Etapa 1 = Starlink en casa principal · Etapa 2 = mover al galpón con enlace PtP
+- **Decisión Juan + papá:** este viernes 12-jun se instala Starlink en la **casa principal** (electricidad estable, casa ya existe).
+- **Por qué:** el galpón aún no está construido. Esperar para el Starlink retrasa todo el proyecto IoT. La casa principal funciona como base inicial mientras se levanta el galpón.
+- **Etapa 2 (cuando arranque el galpón):** se evalúa **mover el Starlink al galpón** (mejor vista al cielo, más cerca de cámaras/sensores críticos) + agregar **enlace Ubiquiti LiteBeam 5AC 500m** para que la casa principal mantenga internet.
+- **Decisión final del punto del Starlink:** se toma en sitio durante el viaje del viernes (verificar vista al cielo, obstáculos, ubicación de techos).
+
+### D06 · NO comprar Ubiquiti 500m en esta etapa
+- **Decisión:** no traer Ubiquiti LiteBeam ahora. Solo cuando arranque el galpón.
+- **Por qué:** ahorra ~\$1.6M COP de hardware que no se usaría hasta Fase B. Si en el viaje del viernes papá identifica un escenario donde ya conviene (ej. galpón arranca pronto), se compra después.
