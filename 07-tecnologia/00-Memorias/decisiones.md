@@ -35,6 +35,13 @@
 - **Decisión:** no traer Ubiquiti LiteBeam ahora. Solo cuando arranque el galpón.
 - **Por qué:** ahorra ~\$1.6M COP de hardware que no se usaría hasta Fase B. Si en el viaje del viernes papá identifica un escenario donde ya conviene (ej. galpón arranca pronto), se compra después.
 
+### D08 · Juan viaja con papá el viernes · compras divididas Colombia + Miami
+- **Decisión:** Juan viaja a Colombia esta semana y va con papá el viernes a la finca → aprovechar para traer hardware desde Miami (~USD 680 = ~$2.7M COP en mercancía).
+- **Implicación clave:** Etapa 2 (enlace 500m) se adelanta al primer viaje. La finca queda completamente IoT-ready desde el viernes 12-jun en vez de esperar meses.
+- **Miami (Juan):** Raspberry Pi 5 + 2× Ubiquiti LiteBeam + surge protectors + cámaras Reolink + cable outdoor + adaptadores. Ahorro real ~$1.2M COP vs comprar Colombia.
+- **Colombia (papá):** Kit Starlink Falabella + UPS APC + SIM backup. El kit Starlink DEBE comprarse en Colombia (cuenta atada a país).
+- **DIAN:** modalidad viajero permite USD 2.000 libre · $680 cabe sobrado.
+
 ### D07 · Plan Residencial LITE (no Standard ni Business) · comprar en Falabella
 - **Decisión:** Plan **Residencial Lite COP $160.000/mes**. Hardware comprado en **Falabella Colombia** (COP $1.349.900, vs $1.599.000 en starlink.com directo).
 - **Validación:** cobertura confirmada por starlink.com con dirección Puerto Gaitán Meta ("Fast, reliable internet available at: Puerto Gaitán, Meta, Colombia").

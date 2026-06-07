@@ -305,9 +305,27 @@
     },
     {
       "id": "T57",
-      "title": "📸 Viernes 12 · Documentar puntos para futuro enlace 500m (Etapa 2)",
-      "description": "Mientras papá está en la finca: tomar fotos del recorrido casa principal ↔ donde irá el galpón. Identificar: (a) línea de vista directa (sin árboles altos), (b) posibles puntos de mástil en ambos extremos, (c) ubicación del techo del futuro galpón. Esto define si compramos Ubiquiti LiteBeam estándar (5km) o necesitamos algo más potente. Fotos al dashboard via /tareas.html con esta tarea.",
-      "owner": "PA",
+      "title": "📸 Viernes 12 · Documentar puntos para enlace 500m (Etapa 2)",
+      "description": "En el viaje: identificar (a) línea de vista directa casa↔galpón sin árboles altos, (b) puntos de mástil en ambos extremos, (c) ubicación techo futuro galpón. Esto define cómo montar el LiteBeam que traemos de Miami. Fotos al hilo de esta tarea.",
+      "owner": "JU+PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T58",
+      "title": "🇺🇸 Comprar en Miami esta semana (Juan trae en maleta)",
+      "description": "Lista (~USD 680 · cabe en franquicia DIAN $2.000): (1) Raspberry Pi 5 8GB + microSD 128GB + case + power $130, (2) 2× Ubiquiti LiteBeam 5AC Gen2 $198, (3) 2× Ubiquiti ETH-SP-G2 surge protectors $50, (4) 30m cable CAT6 outdoor UV $45, (5) 1× Reolink Argus 4 Pro (battery+solar) $150, (6) 1× Reolink E1 Pro (cámara prueba) $45, (7) adaptadores PoE injectors + RJ45 $40. Best Buy o Amazon Prime 1-2 días entrega.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T59",
+      "title": "🛡️ Empacar hardware Miami para viaje + factura DIAN",
+      "description": "Guardar TODAS las facturas de Best Buy/Amazon (DIAN puede pedir comprobantes en el aeropuerto). Empacar en equipaje de mano si se puede (Raspberry Pi y cámaras son frágiles). Total a declarar: ~USD 680, bajo franquicia $2.000 = libre de impuestos.",
+      "owner": "JU",
       "priority": "high",
       "status": "pending",
       "module": "07-tecnologia"
