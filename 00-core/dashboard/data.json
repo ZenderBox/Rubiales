@@ -241,6 +241,78 @@
       "module": "04-regulatorio"
     },
     {
+      "id": "T50",
+      "title": "🛜 HOY · Verificar cobertura Starlink en finca + pedir kit en Falabella",
+      "description": "ETAPA 1: instalación en CASA PRINCIPAL este viernes. (1) Verificar https://starlink.com/map con coordenadas de la finca → 'Available'. (2) Pedir Kit Estándar V4 en https://www.falabella.com.co/falabella-co/product/73053329 (COP $1.349.900). Envío a Bogotá direcciones de papá. Detalle: /tecnologia.html",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T51",
+      "title": "🔌 Comprar UPS 800VA+ esta semana",
+      "description": "Forza, APC o CDP. Cualquier ferretería técnica (Ktronix, Alkosto, MercadoLibre). COP 250-450K. Sostiene Starlink (50-100W) + router durante cortes de luz (~60 min). Sin esto las cámaras pierden grabación con cada bajón eléctrico.",
+      "owner": "JU+PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T52",
+      "title": "📷 Comprar 1 cámara IP de prueba",
+      "description": "Reolink E1 Pro o TP-Link Tapo C320WS. COP 180-280K. Una sola para validar el setup el viernes. Si funciona el acceso remoto (via Tailscale), después escalamos a 4-6 cámaras del galpón.",
+      "owner": "JU+PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T53",
+      "title": "🔐 Instalar Tailscale (bypass CGNAT) en laptop y celular Juan",
+      "description": "Starlink Residential usa CGNAT, las cámaras NO se acceden con port forwarding. Tailscale es gratis y soluciona esto. Instalar: tailscale.com en laptop + app móvil. El miércoles 11-jun configurar también un mini-PC en la finca (puede ser Raspberry Pi vieja o adaptar router). 5-10 min.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T54",
+      "title": "🌐 Activar cuenta Starlink con serial del kit",
+      "description": "Cuando papá reciba el kit (lunes/martes), pasarle el serial a Juan. Juan activa en starlink.com con tarjeta de crédito Colombia. NO comprar el plan antes de tener el kit en mano. Plan elegido: Residencial Estándar COP $250K/mes.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T55",
+      "title": "📱 SIM celular backup (Claro o Movistar)",
+      "description": "Plan datos ~5GB/mes (~COP 30-60K). Para cuando Starlink falle (lluvia muy fuerte, falla del satelite). Tarjeta SIM en el celular de Guyo o un router 4G simple. NO bloqueador para el viernes pero comprar pronto.",
+      "owner": "PA",
+      "priority": "normal",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T56",
+      "title": "🛠️ Viernes 12 · Instalar Starlink en CASA PRINCIPAL",
+      "description": "Día del viaje. ETAPA 1. Pasos: (1) elegir lugar en techo casa principal con vista despejada al cielo, (2) montar antena (10 min sin perforar), (3) pasar cable al router dentro de la casa, (4) enchufar router a UPS, (5) esperar 5-10 min hasta primera conexión, (6) speedtest desde celular, (7) instalar cámara IP en sala (o donde papá quiera ver), (8) confirmar acceso remoto via Tailscale desde celular de Juan en Miami. Dejar todo documentado con fotos del setup.",
+      "owner": "PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T57",
+      "title": "📸 Viernes 12 · Documentar puntos para futuro enlace 500m (Etapa 2)",
+      "description": "Mientras papá está en la finca: tomar fotos del recorrido casa principal ↔ donde irá el galpón. Identificar: (a) línea de vista directa (sin árboles altos), (b) posibles puntos de mástil en ambos extremos, (c) ubicación del techo del futuro galpón. Esto define si compramos Ubiquiti LiteBeam estándar (5km) o necesitamos algo más potente. Fotos al dashboard via /tareas.html con esta tarea.",
+      "owner": "PA",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
       "id": "T48",
       "title": "💰 Valorar bienes y mejoras que Cesia RETUVO",
       "description": "Inventario detallado con valoración monetaria de TODO lo que Cesia se quedó al recibir las fincas: (1) BIENES MUEBLES: piscina, moto, planta eléctrica Leaster, planta eléctrica importada USA, 2 solares. (2) MEJORAS hechas por papá en 15 años: cercados perimetrales, adecuación potreros, galpón antiguo, pozo profundo + bomba, casa habitación. Buscar facturas, fotos antes/después, testimonios. Estimación inicial: $51-91M bienes + $85-135M mejoras. Esto es la CONTRACUENTA en la negociación.",

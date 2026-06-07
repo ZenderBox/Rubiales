@@ -19,6 +19,7 @@
     { href: '/documentos.html', icon: '📄', label: 'Documentos' },
     { href: '/legal.html',      icon: '⚖️', label: 'Legal' },
     { href: '/arrancar.html',   icon: '🚀', label: 'Arrancar' },
+    { href: '/tecnologia.html', icon: '🛜', label: 'Tecnología' },
   ];
   const COMING_SOON = [
     { icon: '⏳', label: 'Aprobaciones' },
