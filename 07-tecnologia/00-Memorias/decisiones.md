@@ -34,3 +34,11 @@
 ### D06 · NO comprar Ubiquiti 500m en esta etapa
 - **Decisión:** no traer Ubiquiti LiteBeam ahora. Solo cuando arranque el galpón.
 - **Por qué:** ahorra ~\$1.6M COP de hardware que no se usaría hasta Fase B. Si en el viaje del viernes papá identifica un escenario donde ya conviene (ej. galpón arranca pronto), se compra después.
+
+### D07 · Plan Residencial LITE (no Standard ni Business) · comprar en Falabella
+- **Decisión:** Plan **Residencial Lite COP $160.000/mes**. Hardware comprado en **Falabella Colombia** (COP $1.349.900, vs $1.599.000 en starlink.com directo).
+- **Validación:** cobertura confirmada por starlink.com con dirección Puerto Gaitán Meta ("Fast, reliable internet available at: Puerto Gaitán, Meta, Colombia").
+- **Por qué NO Business:** cobra por gigas (50GB/500GB/1TB) · 15 IoT no llegan a 200GB/mes · kit Performance $6.257K = overkill para finca · ahorro $5-10M COP/año yendo Personal.
+- **Por qué NO Standard:** Lite es suficiente para Etapa 1 (1 cámara + uso esporádico). Si se queda corto, se sube a Standard con un click en la app Starlink, sin penalidad ni cambio de hardware.
+- **Misterio del "$250.000 USD" resuelto:** era el Kit Performance del plan Business ($6.257K COP / $6.519K total checkout) que la UI mostraba con `$`.
+- **Total año 1:** $1.349.900 hardware + $1.920.000 (12 meses Lite) = **~$3.27M COP** (~USD 815).

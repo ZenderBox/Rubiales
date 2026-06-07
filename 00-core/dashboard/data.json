@@ -279,7 +279,7 @@
     {
       "id": "T54",
       "title": "🌐 Activar cuenta Starlink con serial del kit",
-      "description": "Cuando papá reciba el kit (lunes/martes), pasarle el serial a Juan. Juan activa en starlink.com con tarjeta de crédito Colombia. NO comprar el plan antes de tener el kit en mano. Plan elegido: Residencial Estándar COP $250K/mes.",
+      "description": "Cuando papá reciba el kit (lunes/martes), pasarle el serial a Juan. Juan activa en starlink.com con tarjeta de crédito Colombia. PLAN ELEGIDO: Residencial LITE COP $160K/mes (no Standard). Si después se queda corto, subir a Standard con un click. 30 días de prueba gratis.",
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
