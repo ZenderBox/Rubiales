@@ -436,7 +436,12 @@
       <small>Cuando termines algo o quieras dejar una nota, toca uno de los botones grandes en la tarea.</small>
     </div>
 
-    <div class="section-title">Pendientes <span class="count" id="task-count"></span></div>
+    <div class="section-title" id="section-title">Pendientes <span class="count" id="task-count"></span></div>
+
+    <div class="status-toggle" role="tablist" style="display:inline-flex; background:var(--paper); border:1px solid var(--ink-100); border-radius:var(--radius-pill); padding:4px; margin-bottom:16px; box-shadow:var(--shadow-card)">
+      <button id="tabActive" class="tab-btn active" data-status="active" style="background:var(--zb-cyan); color:var(--paper); border:none; padding:8px 16px; border-radius:var(--radius-pill); font-size:14px; font-weight:700; cursor:pointer; font-family:inherit">📌 Activas</button>
+      <button id="tabDone" class="tab-btn" data-status="done" style="background:transparent; color:var(--ink-500); border:none; padding:8px 16px; border-radius:var(--radius-pill); font-size:14px; font-weight:700; cursor:pointer; font-family:inherit">✅ Hechas</button>
+    </div>
 
     <div id="tasks-container">
       <div class="loading">Cargando tus tareas…</div>
@@ -478,8 +483,27 @@
     // ============================================================
     // Cargar tareas
     // ============================================================
-    // Cache global de updates por task_id (notes + fotos)
+    // Cache global de updates por task_id (todos: notes, fotos, dones)
     let UPDATES_BY_TASK = {};
+    let DONE_TASKS = new Set();
+    let CURRENT_FILTER = 'active';   // 'active' | 'done'
+    let ALL_TASKS = [];              // todas las tareas para papá
+
+    // Toggle handlers
+    document.querySelectorAll('.tab-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.tab-btn').forEach(b => {
+          b.classList.remove('active');
+          b.style.background = 'transparent';
+          b.style.color = 'var(--ink-500)';
+        });
+        btn.classList.add('active');
+        btn.style.background = 'var(--zb-cyan)';
+        btn.style.color = 'var(--paper)';
+        CURRENT_FILTER = btn.dataset.status;
+        renderForFilter();
+      });
+    });
 
     async function loadTasks() {
       try {
@@ -490,45 +514,50 @@
         if (!dataRes.ok) throw new Error('No se pudo cargar las tareas');
         const data = await dataRes.json();
 
-        // Procesar updates: agrupar por task_id, detectar dones
-        const doneFromAPI = new Set();
+        // Procesar updates
+        DONE_TASKS = new Set();
         UPDATES_BY_TASK = {};
         if (pendingRes && pendingRes.ok) {
           const pendingData = await pendingRes.json();
           (pendingData.updates || []).forEach(u => {
-            if (u.update_type === 'done') {
-              doneFromAPI.add(u.task_id);
-            } else {
-              // Es nota o foto · guardar como comentario
-              if (!UPDATES_BY_TASK[u.task_id]) UPDATES_BY_TASK[u.task_id] = [];
-              UPDATES_BY_TASK[u.task_id].push(u);
-            }
+            if (!UPDATES_BY_TASK[u.task_id]) UPDATES_BY_TASK[u.task_id] = [];
+            UPDATES_BY_TASK[u.task_id].push(u);
+            if (u.update_type === 'done') DONE_TASKS.add(u.task_id);
           });
-          // Ordenar cada lista cronológicamente
           Object.values(UPDATES_BY_TASK).forEach(arr =>
             arr.sort((a, b) => new Date(a.submitted_at) - new Date(b.submitted_at))
           );
         }
 
-        // Filtro: tareas para papá (PA, AM, JU+PA) · no done
-        const tasks = (data.tasks || []).filter(t => {
+        // Filtro de owners
+        ALL_TASKS = (data.tasks || []).filter(t => {
           const owner = t.owner || '';
-          const ownerMatch = owner === 'PA' || owner === 'AM' ||
-                             owner.includes('PA') || owner.includes('AM');
-          return ownerMatch && t.status !== 'done' && !doneFromAPI.has(t.id);
+          return owner === 'PA' || owner === 'AM' || owner.includes('PA') || owner.includes('AM');
         });
 
         const order = { critical: 0, high: 1, normal: 2 };
-        tasks.sort((a, b) => (order[a.priority] || 9) - (order[b.priority] || 9));
+        ALL_TASKS.sort((a, b) => (order[a.priority] || 9) - (order[b.priority] || 9));
 
-        document.getElementById('task-count').textContent = `(${tasks.length})`;
-        renderTasks(tasks);
+        renderForFilter();
       } catch (err) {
         document.getElementById('tasks-container').innerHTML = `
           <div class="error-msg" style="display:block">
             Hubo un problema cargando tus tareas. Probá refrescar la página.
           </div>`;
       }
+    }
+
+    function renderForFilter() {
+      let filtered;
+      if (CURRENT_FILTER === 'active') {
+        filtered = ALL_TASKS.filter(t => t.status !== 'done' && !DONE_TASKS.has(t.id));
+        document.getElementById('section-title').firstChild.textContent = 'Pendientes ';
+      } else {
+        filtered = ALL_TASKS.filter(t => t.status === 'done' || DONE_TASKS.has(t.id));
+        document.getElementById('section-title').firstChild.textContent = 'Hechas ';
+      }
+      document.getElementById('task-count').textContent = `(${filtered.length})`;
+      renderTasks(filtered);
     }
 
     function fmtCommentDate(iso) {
@@ -544,13 +573,22 @@
     function renderTasks(tasks) {
       const container = document.getElementById('tasks-container');
       if (tasks.length === 0) {
-        container.innerHTML = '<p style="text-align:center;color:var(--ink-500);font-size:1.2rem;padding:30px">No hay tareas pendientes ahora mismo. 🎉</p>';
+        const msg = CURRENT_FILTER === 'active'
+          ? 'No hay tareas pendientes ahora mismo. 🎉'
+          : 'Todavía no hay tareas hechas.';
+        container.innerHTML = `<p style="text-align:center;color:var(--ink-500);font-size:1.2rem;padding:30px">${msg}</p>`;
         return;
       }
+      const isDoneView = CURRENT_FILTER === 'done';
       container.innerHTML = tasks.map(t => {
-        const updates = UPDATES_BY_TASK[t.id] || [];
+        const allUpdates = UPDATES_BY_TASK[t.id] || [];
+        const updates = allUpdates.filter(u => u.update_type !== 'done');   // solo comments
+        const doneEntry = allUpdates.find(u => u.update_type === 'done');
         const cmtBadge = updates.length > 0
-          ? `<span class="task-pill" style="background:var(--ink-50); color:var(--ink-700)">💬 ${updates.length}</span>`
+          ? `<span class="task-pill cmt-count-badge" style="background:var(--ink-50); color:var(--ink-700)">💬 ${updates.length}</span>`
+          : '';
+        const doneBadge = isDoneView && doneEntry
+          ? `<span class="task-pill" style="background:var(--success-bg); color:var(--success)">✅ ${fmtCommentDate(doneEntry.submitted_at)}</span>`
           : '';
         return `
         <article class="task" data-task="${esc(t.id)}">
@@ -559,6 +597,7 @@
               <span class="task-id">${esc(t.id)}</span>
               <span class="task-pill ${esc(t.priority || 'normal')}">${priorityLabel(t.priority)}</span>
               ${cmtBadge}
+              ${doneBadge}
             </div>
             <h2 class="task-title">${esc(t.title)}</h2>
             <p class="task-desc">${esc(t.description || '')}</p>
@@ -568,22 +607,26 @@
           <div class="task-detail" style="display:none; margin-top:16px; padding-top:16px; border-top:1px solid var(--ink-100);">
 
             ${updates.length > 0 ? `
-              <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:var(--ink-500); margin-bottom:10px">📜 Comentarios anteriores</div>
-              ${updates.map(u => `
-                <div style="background:var(--ink-50); border-left:3px solid var(--zb-cyan); padding:10px 14px; border-radius:0 var(--radius-md) var(--radius-md) 0; margin-bottom:8px">
-                  <div style="font-size:11px; color:var(--ink-500); margin-bottom:4px">${esc(u.submitter || 'papá')} · ${fmtCommentDate(u.submitted_at)}</div>
-                  ${u.note ? `<div style="font-size:14px; color:var(--ink-700); white-space:pre-wrap">${esc(u.note)}</div>` : ''}
-                  ${u.photo_path ? `<img src="${u.photo_path}${TOKEN ? '?k=' + encodeURIComponent(TOKEN) : ''}" style="margin-top:8px; max-width:100%; border-radius:8px; max-height:220px; display:block" alt="foto"/>` : ''}
-                </div>
-              `).join('')}
+              <div class="comments-section">
+                <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:var(--ink-500); margin-bottom:10px">📜 Comentarios anteriores</div>
+                ${updates.map(u => `
+                  <div style="background:var(--ink-50); border-left:3px solid var(--zb-cyan); padding:10px 14px; border-radius:0 var(--radius-md) var(--radius-md) 0; margin-bottom:8px">
+                    <div style="font-size:11px; color:var(--ink-500); margin-bottom:4px">${esc(u.submitter || 'papá')} · ${fmtCommentDate(u.submitted_at)}</div>
+                    ${u.note ? `<div style="font-size:14px; color:var(--ink-700); white-space:pre-wrap">${esc(u.note)}</div>` : ''}
+                    ${u.photo_path ? `<img src="${u.photo_path}${TOKEN ? '?k=' + encodeURIComponent(TOKEN) : ''}" style="margin-top:8px; max-width:100%; border-radius:8px; max-height:220px; display:block" alt="foto"/>` : ''}
+                  </div>
+                `).join('')}
+              </div>
             ` : ''}
 
-            <div style="background:var(--ink-50); padding:14px; border-radius:var(--radius-md); margin-top:12px">
+            ${isDoneView ? '' : `<div style="background:var(--ink-50); padding:14px; border-radius:var(--radius-md); margin-top:12px">
               <div style="font-size:12px; font-weight:700; text-transform:uppercase; color:var(--ink-500); margin-bottom:8px">➕ Agregar comentario o foto</div>
               <textarea data-cmt placeholder="Escribí algo para Juan..." style="width:100%; padding:12px 14px; border:1px solid var(--ink-100); border-radius:var(--radius-md); font-size:16px; font-family:inherit; background:var(--paper); min-height:80px; resize:vertical;"></textarea>
-              <div style="margin-top:8px">
-                <input type="file" data-photo accept="image/*" capture="environment" style="width:100%; font-size:14px"/>
-              </div>
+              <label data-photo-label style="display:flex; align-items:center; gap:10px; margin-top:10px; padding:14px 18px; background:var(--paper); border:2px dashed var(--zb-cyan); border-radius:var(--radius-md); cursor:pointer; font-weight:700; color:var(--zb-cyan-dark); font-size:15px">
+                <span style="font-size:22px">📷</span>
+                <span data-photo-label-text>Adjuntar foto o documento</span>
+                <input type="file" data-photo accept="image/*,application/pdf" capture="environment" style="position:absolute; opacity:0; pointer-events:none; width:1px; height:1px"/>
+              </label>
               <img data-preview style="display:none; margin-top:8px; max-width:100%; border-radius:8px; max-height:200px"/>
             </div>
 
@@ -596,7 +639,7 @@
               </button>
             </div>
 
-            <div class="error-msg" style="margin-top:10px; color:var(--danger); font-size:14px; display:none"></div>
+            <div class="error-msg" style="margin-top:10px; color:var(--danger); font-size:14px; display:none"></div>`}
           </div>
 
           <div class="sent-banner" style="display:none; margin-top:14px; padding:14px; background:var(--success-bg); color:var(--success); border-radius:var(--radius-md); font-weight:700; text-align:center">✅ Listo · Juan lo va a ver hoy</div>
@@ -608,53 +651,62 @@
 
     function attachHandlers() {
       document.querySelectorAll('.task').forEach(card => {
-        // Toggle expand
-        card.querySelector('[data-act="toggle"]').addEventListener('click', () => {
-          const detail = card.querySelector('.task-detail');
-          const open = detail.style.display !== 'none';
-          detail.style.display = open ? 'none' : 'block';
-        });
+        const toggleBtn = card.querySelector('[data-act="toggle"]');
+        if (toggleBtn) {
+          toggleBtn.addEventListener('click', () => {
+            const detail = card.querySelector('.task-detail');
+            if (!detail) return;
+            const open = detail.style.display !== 'none';
+            detail.style.display = open ? 'none' : 'block';
+          });
+        }
 
-        // Preview foto
         const photoInput = card.querySelector('[data-photo]');
         const preview = card.querySelector('[data-preview]');
-        photoInput.addEventListener('change', () => {
-          const f = photoInput.files[0];
-          if (f) {
-            preview.src = URL.createObjectURL(f);
-            preview.style.display = 'block';
-          } else {
-            preview.style.display = 'none';
-          }
-        });
+        const photoLabelText = card.querySelector('[data-photo-label-text]');
+        if (photoInput) {
+          photoInput.addEventListener('change', () => {
+            const f = photoInput.files[0];
+            if (f) {
+              if (f.type.startsWith('image/')) {
+                preview.src = URL.createObjectURL(f);
+                preview.style.display = 'block';
+              } else {
+                preview.style.display = 'none';
+              }
+              if (photoLabelText) photoLabelText.textContent = `✓ ${f.name}`;
+            } else {
+              preview.style.display = 'none';
+              if (photoLabelText) photoLabelText.textContent = 'Adjuntar foto o documento';
+            }
+          });
+        }
 
-        // Done button
-        card.querySelector('[data-act="done"]').addEventListener('click', () =>
-          handleSubmit(card, 'done')
-        );
+        const doneBtn = card.querySelector('[data-act="done"]');
+        if (doneBtn) doneBtn.addEventListener('click', () => handleSubmit(card, 'done'));
 
-        // Note button (enviar a Juan, no cierra)
-        card.querySelector('[data-act="note"]').addEventListener('click', () =>
-          handleSubmit(card, 'note-or-photo')
-        );
+        const noteBtn = card.querySelector('[data-act="note"]');
+        if (noteBtn) noteBtn.addEventListener('click', () => handleSubmit(card, 'note-or-photo'));
       });
     }
 
     async function handleSubmit(card, action) {
       const taskId = card.dataset.task;
-      const note = card.querySelector('[data-cmt]').value.trim();
-      const photo = card.querySelector('[data-photo]').files[0];
+      const noteEl = card.querySelector('[data-cmt]');
+      const photoInput = card.querySelector('[data-photo]');
+      const note = noteEl.value.trim();
+      const photo = photoInput.files[0];
       const errorBox = card.querySelector('.error-msg');
       const btns = card.querySelectorAll('.btn-done, .btn-note');
+      const actName = action === 'done' ? 'done' : 'note';
+      const clickedBtn = card.querySelector(`[data-act="${actName}"]`);
 
       errorBox.style.display = 'none';
 
-      // Decidir update_type según action
       let updateType;
       if (action === 'done') {
         updateType = 'done';
       } else {
-        // action === 'note-or-photo'
         if (photo) updateType = 'photo';
         else if (note) updateType = 'note';
         else {
@@ -665,8 +717,8 @@
       }
 
       btns.forEach(b => b.disabled = true);
-      const origText = card.querySelector(`[data-act="${action === 'done' ? 'done' : 'note'}"]`).innerHTML;
-      card.querySelector(`[data-act="${action === 'done' ? 'done' : 'note'}"]`).innerHTML = 'Enviando…';
+      const origHTML = clickedBtn.innerHTML;
+      clickedBtn.innerHTML = 'Enviando…';
 
       try {
         const formData = new FormData();
@@ -682,26 +734,137 @@
         if (!res.ok || !data.ok) throw new Error(data.detail || data.error || 'Error');
 
         if (action === 'done') {
-          // Animar y recargar (la tarea desaparece del listado)
+          // Marca hecha · animar y recargar (sale del listado de activas)
           card.querySelector('.task-detail').style.display = 'none';
-          card.querySelector('.sent-banner').style.display = 'block';
-          card.querySelector('.sent-banner').textContent = '✅ Tarea completada · Juan ya lo recibió';
+          const banner = card.querySelector('.sent-banner');
+          banner.style.display = 'block';
+          banner.textContent = '✅ Tarea completada · Juan ya lo recibió';
           setTimeout(loadTasks, 1500);
         } else {
-          // Note: recargar la lista para mostrar el nuevo comentario
-          card.querySelector('.sent-banner').style.display = 'block';
-          card.querySelector('.sent-banner').textContent = '✅ Comentario enviado · la tarea sigue abierta';
-          setTimeout(() => {
-            card.querySelector('.sent-banner').style.display = 'none';
-            loadTasks();
-          }, 1500);
+          // Note/foto · NO recargar · agregar al hilo localmente + limpiar form
+          const newUpdate = {
+            task_id: taskId,
+            update_type: updateType,
+            note: note,
+            photo_path: data.photo_path || null,
+            submitter: 'papa',
+            submitted_at: new Date().toISOString()
+          };
+          // Si el backend no devuelve photo_path explícito, hacer mini reload del task solo
+          if (!UPDATES_BY_TASK[taskId]) UPDATES_BY_TASK[taskId] = [];
+          UPDATES_BY_TASK[taskId].push(newUpdate);
+
+          // Inyectar el comentario en el timeline del card (sin recargar)
+          appendCommentToCard(card, newUpdate);
+
+          // Limpiar form
+          noteEl.value = '';
+          photoInput.value = '';
+          const preview = card.querySelector('[data-preview]');
+          if (preview) preview.style.display = 'none';
+          const photoLabelText = card.querySelector('[data-photo-label-text]');
+          if (photoLabelText) photoLabelText.textContent = 'Adjuntar foto o documento';
+
+          // Banner de éxito breve
+          const banner = card.querySelector('.sent-banner');
+          banner.style.display = 'block';
+          banner.textContent = '✅ Enviado · la tarea sigue abierta';
+          setTimeout(() => { banner.style.display = 'none'; }, 2500);
+
+          // Si el backend devolvió photo_path, refrescamos solo silenciosamente
+          // para obtener la URL real de la foto desde server
+          if (photo) {
+            setTimeout(refreshUpdatesCacheSilent, 1500);
+          }
+
+          btns.forEach(b => b.disabled = false);
+          clickedBtn.innerHTML = origHTML;
         }
       } catch (err) {
         errorBox.textContent = `Hubo un problema: ${err.message}. Probá de nuevo.`;
         errorBox.style.display = 'block';
         btns.forEach(b => b.disabled = false);
-        card.querySelector(`[data-act="${action === 'done' ? 'done' : 'note'}"]`).innerHTML = origText;
+        clickedBtn.innerHTML = origHTML;
       }
+    }
+
+    function appendCommentToCard(card, u) {
+      const detail = card.querySelector('.task-detail');
+      if (!detail) return;
+      // Buscar o crear contenedor de comentarios
+      let cmtSection = detail.querySelector('.comments-section');
+      if (!cmtSection) {
+        // Crear sección de comentarios al tope del detail
+        cmtSection = document.createElement('div');
+        cmtSection.className = 'comments-section';
+        cmtSection.innerHTML = '<div style="font-size:12px; font-weight:700; text-transform:uppercase; color:var(--ink-500); margin-bottom:10px">📜 Comentarios anteriores</div>';
+        detail.insertBefore(cmtSection, detail.firstChild);
+      }
+      const photoSrc = u.photo_path
+        ? (TOKEN ? `${u.photo_path}?k=${encodeURIComponent(TOKEN)}` : u.photo_path)
+        : null;
+      const cmtHtml = `
+        <div style="background:var(--ink-50); border-left:3px solid var(--zb-cyan); padding:10px 14px; border-radius:0 var(--radius-md) var(--radius-md) 0; margin-bottom:8px">
+          <div style="font-size:11px; color:var(--ink-500); margin-bottom:4px">${esc(u.submitter || 'papá')} · ${fmtCommentDate(u.submitted_at)}</div>
+          ${u.note ? `<div style="font-size:14px; color:var(--ink-700); white-space:pre-wrap">${esc(u.note)}</div>` : ''}
+          ${photoSrc ? `<img src="${photoSrc}" style="margin-top:8px; max-width:100%; border-radius:8px; max-height:220px; display:block" alt="foto"/>` : ''}
+        </div>
+      `;
+      cmtSection.insertAdjacentHTML('beforeend', cmtHtml);
+      // Actualizar badge 💬
+      const head = card.querySelector('.task-head');
+      let badge = head.querySelector('.cmt-count-badge');
+      const count = UPDATES_BY_TASK[card.dataset.task].filter(x => x.update_type !== 'done').length;
+      if (!badge) {
+        badge = document.createElement('span');
+        badge.className = 'task-pill cmt-count-badge';
+        badge.style.background = 'var(--ink-50)';
+        badge.style.color = 'var(--ink-700)';
+        head.appendChild(badge);
+      }
+      badge.textContent = `💬 ${count}`;
+    }
+
+    async function refreshUpdatesCacheSilent() {
+      try {
+        const r = await fetch('/api/pending?t=' + Date.now());
+        if (!r.ok) return;
+        const d = await r.json();
+        const updated = {};
+        (d.updates || []).forEach(u => {
+          if (!updated[u.task_id]) updated[u.task_id] = [];
+          updated[u.task_id].push(u);
+        });
+        Object.values(updated).forEach(arr =>
+          arr.sort((a, b) => new Date(a.submitted_at) - new Date(b.submitted_at))
+        );
+        UPDATES_BY_TASK = updated;
+        // Re-pintar timeline de cards abiertas para que las fotos tengan URLs reales
+        document.querySelectorAll('.task').forEach(card => {
+          const detail = card.querySelector('.task-detail');
+          if (detail && detail.style.display !== 'none') {
+            // Re-render solo de la sección de comentarios
+            const taskId = card.dataset.task;
+            const updates = (UPDATES_BY_TASK[taskId] || []).filter(u => u.update_type !== 'done');
+            const cmtSection = detail.querySelector('.comments-section');
+            if (cmtSection && updates.length > 0) {
+              cmtSection.innerHTML = '<div style="font-size:12px; font-weight:700; text-transform:uppercase; color:var(--ink-500); margin-bottom:10px">📜 Comentarios anteriores</div>' +
+                updates.map(u => {
+                  const photoSrc = u.photo_path
+                    ? (TOKEN ? `${u.photo_path}?k=${encodeURIComponent(TOKEN)}` : u.photo_path)
+                    : null;
+                  return `
+                    <div style="background:var(--ink-50); border-left:3px solid var(--zb-cyan); padding:10px 14px; border-radius:0 var(--radius-md) var(--radius-md) 0; margin-bottom:8px">
+                      <div style="font-size:11px; color:var(--ink-500); margin-bottom:4px">${esc(u.submitter || 'papá')} · ${fmtCommentDate(u.submitted_at)}</div>
+                      ${u.note ? `<div style="font-size:14px; color:var(--ink-700); white-space:pre-wrap">${esc(u.note)}</div>` : ''}
+                      ${photoSrc ? `<img src="${photoSrc}" style="margin-top:8px; max-width:100%; border-radius:8px; max-height:220px; display:block" alt="foto"/>` : ''}
+                    </div>
+                  `;
+                }).join('');
+            }
+          }
+        });
+      } catch (e) { /* silencioso */ }
     }
 
     // ============================================================
