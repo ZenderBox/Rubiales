@@ -287,11 +287,11 @@
     },
     {
       "id": "T55",
-      "title": "📱 SIM celular backup (Claro o Movistar)",
-      "description": "Plan datos ~5GB/mes (~COP 30-60K). Para cuando Starlink falle (lluvia muy fuerte, falla del satelite). Tarjeta SIM en el celular de Guyo o un router 4G simple. NO bloqueador para el viernes pero comprar pronto.",
-      "owner": "PA",
+      "title": "❌ SIM celular backup · DESCARTADA (sin señal en finca)",
+      "description": "Eliminada del plan. Juan confirmó que la señal celular en la finca es prácticamente cero. Starlink queda como única conexión. Mitigación: UPS robusto + antena con vista despejada + grabación local en NVR/microSD. Plan futuro: si la operación lo justifica, segundo kit Starlink como redundancia.",
+      "owner": "JU",
       "priority": "normal",
-      "status": "pending",
+      "status": "done",
       "module": "07-tecnologia"
     },
     {

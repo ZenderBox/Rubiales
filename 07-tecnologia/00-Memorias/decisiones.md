@@ -35,6 +35,13 @@
 - **Decisión:** no traer Ubiquiti LiteBeam ahora. Solo cuando arranque el galpón.
 - **Por qué:** ahorra ~\$1.6M COP de hardware que no se usaría hasta Fase B. Si en el viaje del viernes papá identifica un escenario donde ya conviene (ej. galpón arranca pronto), se compra después.
 
+### D11 · NO SIM celular backup · sin señal en la finca
+- **Decisión:** se elimina la SIM Claro/Movistar del plan. Juan confirmó que la señal celular en la finca es **prácticamente cero**.
+- **Implicación:** Starlink es el ÚNICO acceso a internet. NO hay backup si Starlink falla (mantenimiento, lluvia muy fuerte sostenida, falla del satélite).
+- **Mitigación:** (a) UPS robusto para que el Starlink sobreviva cortes eléctricos, (b) montar la antena con vista al cielo despejada (sin árboles tapando), (c) si pasa algo, Tailscale + Reolink Cloud siguen guardando localmente en NVR/microSD hasta que vuelva la conexión.
+- **Plan futuro Fase 2:** si la criticidad aumenta, evaluar **segundo kit Starlink** como redundancia (overkill para Fase 1, justificable cuando haya 5K-10K aves productivas).
+- **Ahorro:** $40-60K COP/mes (~$500-720K COP/año).
+
 ### D10 · Comprar TODO en Amazon US con Tax Exemption · cuenta business
 - **Decisión:** todas las compras Miami se hacen en Amazon US con la cuenta business de Juan que tiene Tax Exemption activa.
 - **Por qué:** ahorra 7% de sales tax Florida sobre cada compra. Sobre el total proyecto ($2.220 USD) son ~$155 USD = ~$620K COP adicionales de ahorro.

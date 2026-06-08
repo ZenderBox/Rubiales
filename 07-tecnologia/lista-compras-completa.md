@@ -48,8 +48,8 @@
 |---|---|---|
 | Kit Estándar V4 Starlink | Falabella o Homecenter | $1.349.900 |
 | UPS APC Back-UPS Pro 1500VA | Ktronix/Alkosto | $480-600K |
-| SIM Claro o Movistar 10GB/mes | Punto Claro/Movistar | $40-60K/mes |
-| **TOTAL Colombia** | | **~$1.9M COP** |
+| ~~SIM celular backup~~ | ❌ DESCARTADO · sin señal en finca | — |
+| **TOTAL Colombia** | | **~$1.85M COP** |
 
 ---
 
