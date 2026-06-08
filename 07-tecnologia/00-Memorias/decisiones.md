@@ -35,6 +35,12 @@
 - **Decisión:** no traer Ubiquiti LiteBeam ahora. Solo cuando arranque el galpón.
 - **Por qué:** ahorra ~\$1.6M COP de hardware que no se usaría hasta Fase B. Si en el viaje del viernes papá identifica un escenario donde ya conviene (ej. galpón arranca pronto), se compra después.
 
+### D12 · Etapa 2 DIFERIDA a segunda visita · Compras Bogotá las hace Juan
+- **Decisión:** se difiere Etapa 2 (cámaras CCTV galpón + NVR + sensores) hasta una **segunda visita** a la finca. La primera visita (vie 12-jun) es exploratoria + setup mínimo: Starlink + Pi 5 + 1 cámara indoor + 1 cámara solar + LiteBeam pair.
+- **Por qué:** mejor evaluar en sitio (qué cobertura WiFi se necesita, dónde van las cámaras, distancias reales) antes de comprar $1.565 más de equipo. Evita comprar algo que después no se ajusta.
+- **Compras Colombia las hace Juan:** Juan llega a Bogotá jueves/viernes y compra Kit Starlink + UPS + cable + grounding en Falabella/Homecenter/Ktronix antes de viajar a la finca el viernes. No depender de papá.
+- **Cuándo reactivar Etapa 2:** después del primer viaje, cuando Juan confirme fecha de 2da visita. Lista completa documentada en `lista-compras-completa.md` (no se borra, queda standby).
+
 ### D11 · NO SIM celular backup · sin señal en la finca
 - **Decisión:** se elimina la SIM Claro/Movistar del plan. Juan confirmó que la señal celular en la finca es **prácticamente cero**.
 - **Implicación:** Starlink es el ÚNICO acceso a internet. NO hay backup si Starlink falla (mantenimiento, lluvia muy fuerte sostenida, falla del satélite).

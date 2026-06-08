@@ -314,11 +314,11 @@
     },
     {
       "id": "T58",
-      "title": "🇺🇸 Comprar Etapa 1 en Amazon (cuenta business · TAX EXEMPT)",
-      "description": "TODO en Amazon US con cuenta business Tax Exempt activa (-7% Florida sales tax). Lista maleta (~USD 658 · cabe en franquicia DIAN $2.000): (1) Raspberry Pi 5 8GB kit completo $130, (2) 2× Ubiquiti LiteBeam 5AC Gen2 $198, (3) 2× Ubiquiti ETH-SP-G2 $50, (4) 30m cable CAT6 outdoor $45, (5) 1× Reolink Argus 4 Pro $150, (6) 1× Reolink E1 Pro $45, (7) adaptadores $40. Verificar checkout: Tax = $0.00.",
+      "title": "✅ Etapa 1 USA pedida en Amazon ($847.95)",
+      "description": "HECHO. PO 01-rubiales. 7 items: CanaKit Pi 5 PRO 128GB $259.95, LiteBeam Bundle PRE-CONFIG 2× $227.20, Tupavco Surge 2-pack $59.98, Reolink Argus 4 Pro + Solar $152.99, Reolink E1 Pro Black $54.98, SanDisk 256GB High Endurance $59.99, Solsop Crimping Kit $32.86. Tax Exemption aplicado ($0). Cable CAT6 se compra en Colombia. Llegada: Pi 5 + Crimping lun 8, resto mar 9.",
       "owner": "JU",
       "priority": "critical",
-      "status": "pending",
+      "status": "done",
       "module": "07-tecnologia"
     },
     {
@@ -332,19 +332,37 @@
     },
     {
       "id": "T60",
-      "title": "📦 ETAPA 2 · Pedir CCTV + sensores en Amazon (cuenta business · TAX EXEMPT)",
-      "description": "TODO en Amazon US con cuenta business Tax Exempt (-7% Florida sales tax). Lista para enviar por empresa logística (~USD $1.565): 6× Reolink RLC-510A PoE ($360), 1× Argus 4 Pro ($150), 1× NVR Reolink RLN8-410 ($260), 2× TP-Link EAP outdoor ($160), 1× UPS APC 1500VA galpón ($200), switch PoE 8p ($70), sensores Shelly ($155), cables y accesorios ($210). Detalle: 07-tecnologia/lista-compras-completa.md",
+      "title": "📦 ETAPA 2 · Diferida a SEGUNDA VISITA a la finca",
+      "description": "DIFERIDA. Después del primer viaje vie 12-jun, Juan vuelve a Miami y evalúa qué se ajusta del plan según lo visto en sitio. Lista USD ~$1.565: 6× Reolink RLC-510A PoE, 1× Argus 4 Pro adicional, 1× NVR Reolink RLN8-410, 2× TP-Link EAP outdoor, 1× UPS galpón, switch PoE, sensores Shelly (H&T x3, Plug x2, Flood x1), cables. Detalle: 07-tecnologia/lista-compras-completa.md. Reactivar cuando se confirme fecha 2da visita.",
       "owner": "JU",
-      "priority": "high",
+      "priority": "normal",
       "status": "pending",
       "module": "07-tecnologia"
     },
     {
       "id": "T61",
-      "title": "🚚 Coordinar envío logística US→Colombia (Etapa 2)",
-      "description": "Con su empresa de logística, coordinar el envío del hardware Etapa 2 (~$1.565 USD) a Colombia. Destino: bodega papá en Bogotá o directo a la finca. Tiempo estimado: 5-10 días. IVA 19% + arancel 0-15% según partida (mayor parte tech ~0%). Mantener bajo retail Colombia.",
+      "title": "🚚 Envío logística US→Colombia · DIFERIDO con Etapa 2",
+      "description": "Diferido hasta que se reactive T60 (Etapa 2). El envío se coordinará con la empresa de logística de Juan cuando se decida la 2da visita a la finca.",
       "owner": "JU",
-      "priority": "high",
+      "priority": "normal",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T64",
+      "title": "🇨🇴 Comprar en Bogotá esta semana · JUAN al llegar a Colombia",
+      "description": "Lista de compras Colombia (Juan compra al llegar a Bogotá jueves/viernes antes de viajar a la finca): (1) Kit Estándar V4 Starlink en Falabella o Homecenter (~$1.349.900 COP), (2) UPS APC Back-UPS Pro 1500VA en Ktronix/Alkosto ($480-600K), (3) Cable UTP CAT6 outdoor 50m en Homecenter ($120-180K), (4) 2× Varilla copperweld 2.4m + conector + cable cobre #8 en cualquier ferretería ($100-160K), (5) Cinta vulcanizante + amarres plásticos ($20-30K). TOTAL: ~$2.1M COP.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T65",
+      "title": "🛜 Activar plan Starlink Lite con serial del kit",
+      "description": "Cuando llegue el Kit Estándar V4 (Falabella entrega Bogotá lun/mar), sacar serial de la caja. Activar cuenta starlink.com con tarjeta de crédito Colombia. Plan: Residencial LITE COP $160.000/mes. 30 días de prueba gratis.",
+      "owner": "JU",
+      "priority": "critical",
       "status": "pending",
       "module": "07-tecnologia"
     },
