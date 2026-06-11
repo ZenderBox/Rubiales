@@ -432,7 +432,7 @@
     {
       "id": "T73",
       "title": "🛠️ VIERNES PM · Instalar Starlink en techo casa principal",
-      "description": "Pasos: (1) Identificar lugar con vista al cielo despejada (sin árboles/techos altos cerca). (2) Montar antena con base incluida (no perforar techo si se puede). (3) Pasar cable hacia interior casa. (4) Conectar a router Gen 3. (5) Enchufar a UPS APC 1500VA. (6) Esperar 5-15 min hasta primera conexión (LED router se pone verde). (7) Speedtest desde celular en el WiFi nuevo. (8) Configurar nombre SSID 'Miramar-Casa' + clave fuerte.",
+      "description": "Pasos: (1) Identificar lugar con vista al cielo despejada (sin árboles/techos altos cerca). (2) Decidir montaje: A) techo plano = base incluida basta · B) inclinado o necesita altura = comprar en ferretería del pueblo tubo galvanizado 1.5pulg + abrazaderas U + base ($30-50K COP). La antena trae adaptador para tubo 1.5pulg incluido. (3) Montar antena. (4) Pasar cable hacia interior casa. (5) Conectar a router Gen 3. (6) Enchufar a UPS APC 1500VA. (7) Esperar 5-15 min hasta primera conexión. (8) Speedtest. (9) Configurar SSID 'Miramar-Casa' + clave fuerte.",
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
