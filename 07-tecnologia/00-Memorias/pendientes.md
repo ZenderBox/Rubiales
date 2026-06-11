@@ -21,7 +21,7 @@
 - [ ] **T64** · Cable UTP CAT6 outdoor 50m (Homecenter) · $120-180K
 - [ ] **T64** · 2× Varilla copperweld + conector + cable cobre #8 (ferretería) · $100-160K
 - [ ] **T64** · Cinta vulcanizante + amarres ($20-30K)
-- [ ] **T65** · Activar plan Starlink Residencial LITE ($160K/mes) con serial del kit
+- [x] **T65** ✅ Plan Starlink Residencial LITE ACTIVADO 2026-06-10 · Subscription SL-DF-13479721-91050-4 · Next billing 2026-07-10
 
 ### Viernes 12-jun · viaje a la finca
 - [ ] **T56** · Instalar Starlink en techo casa principal
