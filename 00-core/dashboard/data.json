@@ -367,6 +367,96 @@
       "module": "07-tecnologia"
     },
     {
+      "id": "T66",
+      "title": "📦 JUEVES AM · Recibir paquetes Amazon en Bogotá",
+      "description": "Recibir los paquetes que llegan desde Miami via empresa de logística. Items esperados: CanaKit Pi 5 PRO, LiteBeam Bundle, Tupavco Surge 2-pack, Reolink Argus 4 Pro + Solar, Reolink E1 Pro Black, SanDisk 256GB High Endurance, Solsop Crimping Kit. Verificar que TODAS las cajas estén selladas e intactas. Tomar foto de cada caja por si hay reclamo. Si vuelos demorados, prioridad: LiteBeam > resto. SIN bloqueadores reales para viaje viernes.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T67",
+      "title": "🔌 JUEVES · Comprar UPS APC Back-UPS Pro 1500VA",
+      "description": "Ktronix o Alkosto. Modelo: APC Back-UPS Pro BR1500MS2 o similar 1500VA. Budget: $480-600K COP. CRÍTICO para mantener Starlink + router cuando se vaya la luz en la finca. Llevar el cable de alimentación que viene incluido. NO comprar marcas chinas baratas — APC es el estándar confiable.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T68",
+      "title": "🔗 JUEVES · Comprar cable CAT6 outdoor + ferretería grounding",
+      "description": "EN HOMECENTER: Cable UTP CAT6 outdoor 50m (~$120-180K). Pedir que vengan con conectores RJ45 a medida (si Solsop crimper no llega). EN FERRETERÍA: 2× Varilla copperweld 2.4m + conector varilla-cable + cable cobre desnudo #8 AWG 5m + cinta vulcanizante + amarres plásticos. Total ferretería: ~$120-200K COP. Para hacer puesta a tierra de las antenas y surge protectors.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T69",
+      "title": "🧪 JUEVES PM · Test rápido cámara E1 Pro indoor (15 min)",
+      "description": "Antes de empacar, validar que la E1 Pro Black funciona. Pasos: (1) bajar app Reolink en celular, (2) crear cuenta Reolink, (3) escanear QR del fondo de la cámara, (4) conectarla al WiFi del celular en modo hotspot o WiFi casa Bogotá, (5) ver video en vivo y que pan/tilt responda. Si funciona, empacar. Si no funciona = reemplazo en Amazon antes del vuelo.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T70",
+      "title": "🔐 JUEVES · Instalar Tailscale en laptop + celular",
+      "description": "Sin Pi 5 (si no llega) Tailscale corre en laptop Mac directamente. Pasos: (1) tailscale.com/download · bajar para macOS · login Google/email · activar, (2) App Store celular · buscar Tailscale · instalar · login mismo cuenta. Resultado: laptop + celular en misma red privada. Cuando llegues a la finca, la cámara E1 Pro se conecta al WiFi Starlink y Tailscale en laptop te deja accederla remoto.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T71",
+      "title": "🎒 JUEVES PM · Empacar maleta para viaje + facturas DIAN",
+      "description": "Empacar TODO lo Amazon en maleta de mano (frágiles): Pi 5, cámaras Reolink, LiteBeam, Tupavco, microSD, Solsop. Kit Starlink en maleta chequeada (peso ~6kg). Imprimir/guardar PDF facturas Amazon (Order #) en celular por si DIAN pregunta. Total a declarar: USD ~$848. Bajo franquicia $2.000 = libre de impuestos.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T72",
+      "title": "✈️ VIERNES AM · Vuelo Bogotá → Puerto Gaitán + viaje finca",
+      "description": "Salir de Bogotá con todo el equipo. Coordinar con papá hora de encuentro. Confirmar transporte hasta la finca desde el aeropuerto/terminal. Hidratación + comida porque la instalación puede tomar 4-6h cuando lleguen.",
+      "owner": "JU+PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T73",
+      "title": "🛠️ VIERNES PM · Instalar Starlink en techo casa principal",
+      "description": "Pasos: (1) Identificar lugar con vista al cielo despejada (sin árboles/techos altos cerca). (2) Montar antena con base incluida (no perforar techo si se puede). (3) Pasar cable hacia interior casa. (4) Conectar a router Gen 3. (5) Enchufar a UPS APC 1500VA. (6) Esperar 5-15 min hasta primera conexión (LED router se pone verde). (7) Speedtest desde celular en el WiFi nuevo. (8) Configurar nombre SSID 'Miramar-Casa' + clave fuerte.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T74",
+      "title": "📷 VIERNES PM · Instalar cámara E1 Pro indoor + Tailscale test",
+      "description": "Después de que Starlink esté online: (1) Conectar E1 Pro a corriente. (2) Conectarla al WiFi Miramar-Casa. (3) Insertar SanDisk 256GB en la ranura microSD de la cámara. (4) Configurar grabación 24/7 en Reolink app. (5) DESDE OTRO CELULAR (no en WiFi finca): probar acceso remoto via Reolink Cloud. (6) Probar Tailscale desde laptop Miami (a futuro cuando vuelvas). Si todo funciona = setup base validado.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T75",
+      "title": "📸 VIERNES PM · Documentar puntos para Etapa 2 enlace 500m",
+      "description": "Mientras está en la finca: fotos del recorrido casa principal ↔ ubicación futuro galpón (500m). Identificar: (a) línea de vista directa SIN obstáculos altos, (b) puntos posibles de mástil/poste en cada extremo, (c) ubicación tentativa del techo del galpón futuro. Estas fotos son insumo para la 2da visita (Etapa 2 con LiteBeam + cámaras CCTV galpón).",
+      "owner": "JU",
+      "priority": "normal",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
       "id": "T62",
       "title": "🎥 Configurar NVR Reolink remoto (cuando llegue)",
       "description": "Cuando el hardware Etapa 2 llegue a Colombia, papá puede mandar fotos del kit. Juan configura NVR remoto: agregar las 6 cámaras PoE al NVR + setup grabación 24/7 + acceso remoto via Tailscale. Probar acceso desde Miami antes de mandar al galpón.",
