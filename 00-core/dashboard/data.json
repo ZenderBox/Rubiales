@@ -494,9 +494,18 @@
     },
     {
       "id": "T25",
-      "title": "💰 Pagar predial Trueno · $72.9M antes del 30/06/2026",
-      "description": "Recibo 26010310020237 (Alcaldía Puerto Gaitán) acumula deuda predial 2018-2026 por $72.909.000 COP. Plazo: 30 junio 2026. Si no se paga, riesgo de embargo municipal. Decidir: pagar completo · negociar plan pagos · pelear avalúo. Hablar con Tesorería de la Alcaldía.",
+      "title": "💰 Predial Trueno $72.9M · ANTES averiguar amnistía/desc Decreto 0243/2026",
+      "description": "Recibo 26010310020237 (Alcaldía Puerto Gaitán) acumula deuda predial 2018-2026 por $72.909.000 COP. Plazo: 30 junio 2026. ⚠️ ANTES DE PAGAR averiguar T76: Decreto Legislativo 0243 de 2026 del Gobierno Nacional otorga facultades a alcaldes para amnistías tributarias territoriales. Potencial ahorro estimado: ~$32M COP (44% menos) si hay descuento de intereses + sanciones tipo Medellín 70%.",
       "owner": "AM",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T76",
+      "title": "🔥 URGENTE · Averiguar amnistía predial Puerto Gaitán (Decreto 0243/2026)",
+      "description": "Decreto Legislativo 0243 de 2026 (Emergencia Económica) otorga facultades EXCEPCIONALES a alcaldes para adoptar medidas tributarias territoriales incluyendo amnistías/descuentos sobre prediales atrasados. AHORRO POTENCIAL: ~$32M COP sobre los $72.9M del Trueno (44% menos). PASOS: (1) Llamar Tesorería Alcaldía Puerto Gaitán (Calle 10 No.10-60 B. Centro). (2) Preguntar si han adoptado medidas bajo Decreto 0243/2026. (3) Si NO hay, solicitar formalmente acuerdo de pago con descuento intereses+sanciones citando el decreto. (4) Si SÍ hay, aplicar antes de pagar. Comparable: Medellín redujo 70% intereses por mora. CRÍTICO porque T25 vence 30-jun-2026.",
+      "owner": "JU",
       "priority": "critical",
       "status": "pending",
       "module": "04-regulatorio"
