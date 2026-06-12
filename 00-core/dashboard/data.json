@@ -503,10 +503,19 @@
     },
     {
       "id": "T76",
-      "title": "🔥 URGENTE · Averiguar amnistía predial Puerto Gaitán (Decreto 0243/2026)",
-      "description": "Decreto Legislativo 0243 de 2026 (Emergencia Económica) otorga facultades EXCEPCIONALES a alcaldes para adoptar medidas tributarias territoriales incluyendo amnistías/descuentos sobre prediales atrasados. AHORRO POTENCIAL: ~$32M COP sobre los $72.9M del Trueno (44% menos). PASOS: (1) Llamar Tesorería Alcaldía Puerto Gaitán (Calle 10 No.10-60 B. Centro). (2) Preguntar si han adoptado medidas bajo Decreto 0243/2026. (3) Si NO hay, solicitar formalmente acuerdo de pago con descuento intereses+sanciones citando el decreto. (4) Si SÍ hay, aplicar antes de pagar. Comparable: Medellín redujo 70% intereses por mora. CRÍTICO porque T25 vence 30-jun-2026.",
+      "title": "🔥 URGENTE · Visita Leonardo + Juan a Alcaldía Puerto Gaitán · amnistía predial",
+      "description": "JUAN VA CON LEONARDO. Decreto Legislativo 0243 de 2026 (Emergencia Económica) otorga facultades EXCEPCIONALES a alcaldes para adoptar medidas tributarias territoriales incluyendo amnistías/descuentos sobre prediales atrasados. AHORRO POTENCIAL: ~$32M COP sobre los $72.9M del Trueno (44% menos). Comparable: Medellín redujo 70% intereses por mora. PASOS EN SITIO: (1) Tesorería Alcaldía Calle 10 No.10-60 B. Centro · preguntar por medidas bajo Decreto 0243/2026 sobre matrícula 234-11845, (2) Solicitar acuerdo de pago vigente, (3) Si no hay decreto local, Leonardo redacta carta formal al Alcalde proponiendo acuerdo con descuento intereses+sanciones citando facultad nacional, (4) Cuantificar ahorro real con la liquidación oficial. CRÍTICO porque T25 vence 30-jun-2026.",
       "owner": "JU",
       "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T77",
+      "title": "📝 Leonardo redacta carta al Alcalde Puerto Gaitán · si no hay decreto local",
+      "description": "Si en T76 confirman que NO hay decreto local de amnistía aún vigente: Leonardo redacta carta formal al Alcalde de Puerto Gaitán solicitando acuerdo de pago con descuento de intereses y sanciones para predial Trueno (matrícula 234-11845, recibo 26010310020237, $72.9M COP). Fundamento jurídico: Decreto Legislativo 0243 de 2026 que otorga facultades excepcionales a alcaldes en marco de Emergencia Económica. Comparable: alivio Medellín 70% intereses. Plazo solicitar respuesta antes 30-jun-2026 (vencimiento predial).",
+      "owner": "JU",
+      "priority": "high",
       "status": "pending",
       "module": "04-regulatorio"
     },

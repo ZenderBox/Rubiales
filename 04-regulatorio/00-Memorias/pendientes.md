@@ -11,7 +11,9 @@
 - [ ] T47 · Confirmar con Leonardo alcance de la nulidad parcial sobre la 2da finca
 - [ ] T48 · Valorar bienes muebles + mejoras que Cesia retuvo (contracuenta)
 - [ ] T49 · Pedir al tío William recibos prediales fincas Cesia 2000-2011
-- [ ] T25 · Pagar predial Trueno $72.9M antes 30/06/2026
+- [ ] **🔥 T76 · Juan + Leonardo visitan Alcaldía Puerto Gaitán por amnistía predial Decreto 0243/2026 (ahorro potencial ~$32M)**
+- [ ] **T77 · Leonardo redacta carta al Alcalde si no hay decreto local vigente**
+- [ ] T25 · Pagar predial Trueno $72.9M antes 30/06/2026 (después de evaluar T76)
 - [ ] T26 · Reunión Leonardo · revisar paquete defensa + plan maestro
 - [ ] T27 · Verificar estado embargo Seguros Bolívar 2017
 - [ ] T24 · Discrepancia área Trueno (no urgente)

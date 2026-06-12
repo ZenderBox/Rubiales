@@ -68,3 +68,16 @@
 ### D08 · Restaurar T15 a "pending" para probar fix de bug
 - **Decisión:** T15 (Cámara) queda como pending en data.json aunque papá ya la hizo, para que pueda probarla mañana y verificar el fix del bug de refresh.
 - **Por qué:** El bug donde tareas marcadas como hechas reaparecían al refrescar fue arreglado en PR #21. Necesitamos probar el fix con una tarea real.
+
+---
+
+## 2026-06-11
+
+### D09 · Aprovechar Decreto 0243/2026 para amnistía predial Trueno
+- **Decisión:** antes de pagar T25 (predial $72.9M acumulado 2018-2026), Juan + Leonardo visitan Alcaldía Puerto Gaitán para evaluar amnistía bajo Decreto Legislativo 0243 de 2026.
+- **Por qué:**
+  - Decreto Legislativo 0243 de 2026 (Emergencia Económica) otorga facultades excepcionales a alcaldes para adoptar amnistías tributarias territoriales.
+  - Comparable: Medellín redujo 70% intereses por mora.
+  - Ahorro potencial estimado: ~$32M COP sobre los $72.9M (44% menos).
+- **Implicación:** T25 queda en espera de T76 (averiguar) y T77 (carta Leonardo si no hay decreto local).
+- **Plazo:** antes 30-jun-2026 (vencimiento original predial).
