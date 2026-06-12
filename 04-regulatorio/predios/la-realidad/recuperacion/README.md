@@ -100,8 +100,16 @@ Lo que recuperemos para La Realidad SIRVE para fortalecer Trueno:
 
 - `README.md` (este archivo) · estrategia general
 - `1-plan-investigacion.md` · plan investigación T35-T37
-- `2-escenarios-poder-y-prediales.md` · ⭐ NUEVO 2026-06-11 · qué hacer si papá no tiene el poder + estrategia de pagar prediales como acto posesorio
-- `3-borrador-accion-reivindicatoria.md` (a crear · después de Fase B1)
+- `2-escenarios-poder-y-prediales.md` · qué hacer si papá no tiene el poder + estrategia de pagar prediales como acto posesorio
+- `3-analisis-cert-tradicion-2026-06-11.md` · ⭐ análisis del cert tradición que cambió la narrativa
+- **`paquete-recuperacion/`** · ⭐ NUEVO 2026-06-11 · paquete completo espejo del paquete-defensa/ del Trueno
+  - `README.md` · índice del paquete
+  - `0-hechos-confirmados-y-supuestos.md` · qué sabemos vs hipótesis
+  - `1-causales-juridicas.md` · 9 causales con probabilidad
+  - `2-investigaciones-pendientes.md` · qué falta + cronograma
+  - `3-denuncia-penal-fiscalia.md` · borrador denuncia
+  - `4-demanda-civil.md` · borrador demanda principal
+  - `5-solicitudes-info.md` · cartas formales para conseguir data
 
 ## Documentos relacionados ya archivados
 

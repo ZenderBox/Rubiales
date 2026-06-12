@@ -17,15 +17,24 @@
 - [ ] T26 · Reunión Leonardo · revisar paquete defensa + plan maestro
 - [ ] T27 · Verificar estado embargo Seguros Bolívar 2017
 - [ ] T24 · Discrepancia área Trueno (no urgente)
-- [ ] **🔥🔥 T86 · CRÍTICO · Conversación con mamá Myriam sobre La Realidad + fecha radicación divorcio (con tacto)**
+- [x] T86 · Conversación inicial con mamá DONE 2026-06-11 (separación 2003 · divorcio 2010-2015)
+- [ ] **🔥🔥 T88 · Mamá confirma fecha EXACTA divorcio + si La Realidad apareció en inventario sociedad conyugal**
 - [ ] **🔥 T87 · Obtener escritura 2217 del 9-10-1999 en Notaría 2 Villavicencio**
 - [ ] T82 · 7 preguntas urgentes a papá sobre escritura 1999 y Dummar
 - [ ] T84 · Obtener escritura 3036 del 14-09-1998 (compra original papá)
 - [ ] T85 · Verificar identidad Myriam Consuelo Caro Suárez (CC 20408053)
+- [ ] T89 · Copia liquidación sociedad conyugal divorcio padres
+- [ ] T91 · Expediente penal Fiscalía 3 Villavicencio 2000-2015 (Leonardo)
+- [ ] T93 · ORIP Puerto López · expediente trámite registro 2016 (Leonardo)
+- [ ] T94 · Testimonios + fotos vecinos sobre posesión papá (durante viaje viernes)
+- [ ] T95 · Análisis Leonardo limitaciones INCORA Ley 160/1994
+- [ ] T92 · Avalúo retrospectivo La Realidad 1999 (perito)
+- [ ] T90 · Peritaje grafológico escritura 2217 (después de T87)
 
 (ver `00-core/Pendientes/semana-2026-06-06.md` para detalle completo)
 
 ## Historial
+- **2026-06-11 (noche)** — Mamá habló: separación 2003 + divorcio papeles 2010-2015. Análisis "qué pasa si mamá SÍ firmó" → la causal estrella pasa a ser SIMULACIÓN ABSOLUTA (precio irrisorio + papá sigue poseyendo + Dummar testaferro + escritura guardada 17 años + secuencia venta 1999/embargo Fiscalía 2000). Creado paquete-recuperacion/ con 6 docs (espejo del paquete-defensa Trueno): hechos confirmados/supuestos · 9 causales · investigaciones pendientes · borrador denuncia Fiscalía · borrador demanda civil · 10 cartas formales. Tareas T90-T96 creadas. Dashboard data.json: 25 tareas históricas etiquetadas con campo `predio` (la-realidad / el-trueno) para filtros futuros. D11 (módulo regulatorio).
 - **2026-06-11** — Análisis fecha divorcio padres como llave del Frente B · fecha crítica = 9-oct-1999 (firma escritura) · si divorcio fue posterior → mamá debía firmar → NULIDAD ABSOLUTA · tareas T86 (conv. mamá) y T87 (escritura 2217) creadas.
 - **2026-06-06** — Sesión grande · plan maestro Trueno (póliza ANTES de carta) · monto real Cesia ~$100M (no $300M) · paquete defensa con 5 borradores + visor · paquete póliza con 6 docs + visor · T48/T49 contracuenta agregadas. PRs #18, #19, #20, #25.
 - 2026-06-05 — Análisis 5 PDFs tutela Cesia · módulo Legal creado · estrategia denuncia penal + Defensoría + Corte Constitucional. PRs #13, #14, #15, #16.

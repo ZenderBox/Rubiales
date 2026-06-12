@@ -97,3 +97,9 @@
   - 🟡 Divorcio pre 9-oct-1999 → cambiar a falsedad/simulación/prescripción (50-65%)
 - **Implicaciones:** T86 (conversación con mamá · NO arrancar con "vamos a demandar") + T87 (escritura 2217 Notaría 2 Villavicencio).
 - **Riesgo:** padres en proceso de divorcio · si mamá ve oportunidad puede complicar liquidación de sociedad conyugal en curso.
+
+### D12 · Construir paquete-recuperación La Realidad espejo del paquete-defensa Trueno · 2026-06-11
+- **Decisión:** crear `04-regulatorio/predios/la-realidad/recuperacion/paquete-recuperacion/` con 6 docs estructurados igual que el `paquete-defensa/` del Trueno: hechos+supuestos, causales jurídicas, investigaciones pendientes, borrador denuncia Fiscalía, borrador demanda civil, solicitudes formales de info.
+- **Por qué:** la conversación con mamá (divorcio 2010-2015) abrió múltiples ángulos legales · necesitamos un único paquete consolidado que Leonardo y Juan puedan revisar igual al del Trueno.
+- **Implicaciones:** 9 causales jurídicas catalogadas con probabilidad. Causal estrella pasa a ser SIMULACIÓN ABSOLUTA (Art. 1766 CC) en lugar de nulidad por firma esposa. 8 indicios convergentes ya probados. Red de seguridad: prescripción adquisitiva extraordinaria (28 años de posesión). Hipótesis penal: la "venta" 1999 + embargo Fiscalía 2000 podría configurar alzamiento de bienes / fraude procesal (Art. 453 CP, pena 6-12 años).
+- **Implicación dashboard:** 25 tareas etiquetadas con campo `predio` (la-realidad / el-trueno). Permite filtros futuros. T90-T96 nuevas tareas para investigaciones del paquete.

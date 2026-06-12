@@ -1,7 +1,11 @@
 {
   "meta": {
     "project": "Miramar",
-    "brand": { "prefix": "Mira", "accent": "mar", "separator": "" },
+    "brand": {
+      "prefix": "Mira",
+      "accent": "mar",
+      "separator": ""
+    },
     "subtitle": "Proyecto Avícola Rubiales · Puerto Gaitán, Meta",
     "lastUpdate": "2026-05-28",
     "currentPhase": "F0 · Pre-arranque",
@@ -70,13 +74,48 @@
     }
   ],
   "phases": [
-    { "id": "F0", "label": "Pre-arranque",     "status": "in-progress", "weight": 1 },
-    { "id": "F1", "label": "Permisos",         "status": "pending",     "weight": 1 },
-    { "id": "F2", "label": "Capital",          "status": "pending",     "weight": 1 },
-    { "id": "F3", "label": "Construcción",     "status": "pending",     "weight": 1 },
-    { "id": "F4", "label": "Llegada aves",     "status": "pending",     "weight": 1 },
-    { "id": "F5", "label": "Primera postura",  "status": "pending",     "weight": 1 },
-    { "id": "F6", "label": "Venta Duflo",      "status": "pending",     "weight": 1 }
+    {
+      "id": "F0",
+      "label": "Pre-arranque",
+      "status": "in-progress",
+      "weight": 1
+    },
+    {
+      "id": "F1",
+      "label": "Permisos",
+      "status": "pending",
+      "weight": 1
+    },
+    {
+      "id": "F2",
+      "label": "Capital",
+      "status": "pending",
+      "weight": 1
+    },
+    {
+      "id": "F3",
+      "label": "Construcción",
+      "status": "pending",
+      "weight": 1
+    },
+    {
+      "id": "F4",
+      "label": "Llegada aves",
+      "status": "pending",
+      "weight": 1
+    },
+    {
+      "id": "F5",
+      "label": "Primera postura",
+      "status": "pending",
+      "weight": 1
+    },
+    {
+      "id": "F6",
+      "label": "Venta Duflo",
+      "status": "pending",
+      "weight": 1
+    }
   ],
   "modules": [
     {
@@ -130,48 +169,352 @@
     }
   ],
   "timeline": [
-    { "id": "M01", "date": "2026-04-30", "label": "Visita presencial a Duflo (Cumaral)",                     "status": "done",        "owner": "JU + PA",  "note": "José Munera, Gerente Operaciones. Pitch: ¿podemos ser proveedores?" },
-    { "id": "M02", "date": "2026-05-25", "label": "Setup MiramarBox + memorias + dashboard v1",              "status": "done",        "owner": "JU",       "note": "Repo, módulos, decisiones documentadas." },
-    { "id": "M03", "date": "2026-05-26", "label": "Correo formal a Duflo enviado",                           "status": "done",        "owner": "JU",       "note": "Solicitud de reunión formal." },
-    { "id": "M04", "date": "2026-05-26", "label": "Correo formal a ICA Mosquera enviado",                    "status": "done",        "owner": "JU",       "note": "Consulta exploratoria sobre territorialidad + Resolución 16409." },
-    { "id": "M05", "date": "2026-05-26", "label": "Banco Agrario · primer envío de documentos",              "status": "done",        "owner": "JU",       "note": "Declaraciones 2018-2020 + EEFF. Esperando respuesta del banco." },
-    { "id": "M06", "date": "2026-05-27", "label": "Decisión raza Babcock Brown + proveedor San Marino",      "status": "done",        "owner": "AM",       "note": "Lote target: 15 de septiembre 2026 (Cumaral, Meta)." },
-    { "id": "M07", "date": "2026-06-15", "label": "Renovar matrícula mercantil Cámara de Comercio",          "status": "pending",     "owner": "PA",       "note": "Bloqueador crítico para Banco Agrario, Finagro y trámites formales ICA." },
-    { "id": "M08", "date": "2026-06-15", "label": "Viaje papá a Cormacarena · iniciar trámite permiso agua", "status": "pending",     "owner": "PA",       "note": "Sin agua no hay ICA. Sin ICA no hay proyecto." },
-    { "id": "M09", "date": "2026-06-30", "label": "Cotizaciones galpón recibidas (3 capacidades: 2K/3K/5K)", "status": "pending",     "owner": "PA",       "note": "Ingenieros locales. Decidir capacidad Fase 1 con cifras reales." },
-    { "id": "M10", "date": "2026-06-30", "label": "Decisión final · cantidad de aves Fase 1",                "status": "pending",     "owner": "JU + PA",  "note": "Entre 2.000 y 5.000 según cotización galpón." },
-    { "id": "M11", "date": "2026-07-05", "label": "Reservar lote 15-sep con San Marino",                     "status": "pending",     "owner": "PA",       "note": "Confirmar cantidad y abonar señal si aplica." },
-    { "id": "M12", "date": "2026-07-10", "label": "Iniciar construcción del galpón",                         "status": "pending",     "owner": "PA",       "note": "Maestro de obra + materiales. ~6-8 semanas de obra." },
-    { "id": "M13", "date": "2026-07-15", "label": "Validar Italcol Cáqueza · crédito 30 días confirmado",    "status": "pending",     "owner": "PA",       "note": "Distribuidor oficial o intermediario. Precio, entrega, condiciones." },
-    { "id": "M14", "date": "2026-07-20", "label": "Cotización plántulas Agrosavia · Rodrigo Martínez",       "status": "pending",     "owner": "JU",       "note": "8.888 unidades por tandas para producción constante." },
-    { "id": "M15", "date": "2026-08-15", "label": "ICA · registro sanitario predio avícola iniciado",        "status": "pending",     "owner": "JU + PA",  "note": "Depende de respuesta del correo de mayo y avance Cormacarena." },
-    { "id": "M16", "date": "2026-08-31", "label": "Galpón terminado · pruebas sistemas (agua, luz)",         "status": "pending",     "owner": "PA",       "note": "Cama puesta, bebederos nipple, comederos, sanitización." },
-    { "id": "M17", "date": "2026-09-01", "label": "Contratar veterinario · plan vacunal post-sem-16",        "status": "pending",     "owner": "AM",       "note": "Recomendación San Marino + Tío William Acuña — tener 2 opciones." },
-    { "id": "M18", "date": "2026-09-15", "label": "🐔 Llegada pollas Babcock 16 semanas (Cumaral → predio)", "status": "pending",     "owner": "PA",       "note": "Camión especializado coordinado con San Marino." },
-    { "id": "M19", "date": "2026-10-01", "label": "Pollas en adaptación · ajuste alimentación + iluminación","status": "pending",     "owner": "PA",       "note": "Semanas 17-20 transición a postura." },
-    { "id": "M20", "date": "2027-01-15", "label": "🥚 Primera postura comercial · arranque ventas a Duflo",  "status": "pending",     "owner": "AM",       "note": "Pico de postura 96% esperado para semana 30-35." },
-    { "id": "P01", "date": "2026-06-09", "label": "🍌 Muestras plátano y patilla recibidas",                  "status": "pending",     "owner": "PA",       "note": "Papá confirma fecha exacta. Validación del producto antes de pedir tandas grandes." },
-    { "id": "P02", "date": "2026-08-15", "label": "Pedido primera tanda plántulas (Agrosavia)",               "status": "pending",     "owner": "JU",       "note": "~2.222 plántulas (8.888 ÷ 4 tandas). Validar precio in vitro vs colino." },
-    { "id": "P03", "date": "2026-09-15", "label": "🌱 Siembra primera tanda · 2 ha (potrero 1)",              "status": "pending",     "owner": "PA",       "note": "Marco siembra Dominico Hartón. Coincide con llegada de aves." },
-    { "id": "P04", "date": "2026-10-15", "label": "🌱 Siembra segunda tanda · 2 ha (potrero 2)",              "status": "pending",     "owner": "PA",       "note": "Tanda escalonada para producción constante." },
-    { "id": "P05", "date": "2026-11-15", "label": "🌱 Siembra tercera tanda · 2 ha (potrero 3)",              "status": "pending",     "owner": "PA",       "note": "Tercera tanda escalonada." },
-    { "id": "P06", "date": "2026-12-15", "label": "🌱 Siembra cuarta tanda · 2 ha (potrero 4)",               "status": "pending",     "owner": "PA",       "note": "Cuatro potreros completos · ciclo de rotación armado con aves." },
-    { "id": "P07", "date": "2027-09-15", "label": "🍌 Primera cosecha plátano · primer racimo del lote 1",    "status": "pending",     "owner": "PA",       "note": "~12 meses post-siembra. Validación de productividad real del lote." },
-    { "id": "P08", "date": "2028-06-15", "label": "🍌 Producción constante plátano · 9 ton/mes",              "status": "pending",     "owner": "PA",       "note": "Las 4 tandas en cosecha rotativa cubren producción mensual continua." }
+    {
+      "id": "M01",
+      "date": "2026-04-30",
+      "label": "Visita presencial a Duflo (Cumaral)",
+      "status": "done",
+      "owner": "JU + PA",
+      "note": "José Munera, Gerente Operaciones. Pitch: ¿podemos ser proveedores?"
+    },
+    {
+      "id": "M02",
+      "date": "2026-05-25",
+      "label": "Setup MiramarBox + memorias + dashboard v1",
+      "status": "done",
+      "owner": "JU",
+      "note": "Repo, módulos, decisiones documentadas."
+    },
+    {
+      "id": "M03",
+      "date": "2026-05-26",
+      "label": "Correo formal a Duflo enviado",
+      "status": "done",
+      "owner": "JU",
+      "note": "Solicitud de reunión formal."
+    },
+    {
+      "id": "M04",
+      "date": "2026-05-26",
+      "label": "Correo formal a ICA Mosquera enviado",
+      "status": "done",
+      "owner": "JU",
+      "note": "Consulta exploratoria sobre territorialidad + Resolución 16409."
+    },
+    {
+      "id": "M05",
+      "date": "2026-05-26",
+      "label": "Banco Agrario · primer envío de documentos",
+      "status": "done",
+      "owner": "JU",
+      "note": "Declaraciones 2018-2020 + EEFF. Esperando respuesta del banco."
+    },
+    {
+      "id": "M06",
+      "date": "2026-05-27",
+      "label": "Decisión raza Babcock Brown + proveedor San Marino",
+      "status": "done",
+      "owner": "AM",
+      "note": "Lote target: 15 de septiembre 2026 (Cumaral, Meta)."
+    },
+    {
+      "id": "M07",
+      "date": "2026-06-15",
+      "label": "Renovar matrícula mercantil Cámara de Comercio",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Bloqueador crítico para Banco Agrario, Finagro y trámites formales ICA."
+    },
+    {
+      "id": "M08",
+      "date": "2026-06-15",
+      "label": "Viaje papá a Cormacarena · iniciar trámite permiso agua",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Sin agua no hay ICA. Sin ICA no hay proyecto."
+    },
+    {
+      "id": "M09",
+      "date": "2026-06-30",
+      "label": "Cotizaciones galpón recibidas (3 capacidades: 2K/3K/5K)",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Ingenieros locales. Decidir capacidad Fase 1 con cifras reales."
+    },
+    {
+      "id": "M10",
+      "date": "2026-06-30",
+      "label": "Decisión final · cantidad de aves Fase 1",
+      "status": "pending",
+      "owner": "JU + PA",
+      "note": "Entre 2.000 y 5.000 según cotización galpón."
+    },
+    {
+      "id": "M11",
+      "date": "2026-07-05",
+      "label": "Reservar lote 15-sep con San Marino",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Confirmar cantidad y abonar señal si aplica."
+    },
+    {
+      "id": "M12",
+      "date": "2026-07-10",
+      "label": "Iniciar construcción del galpón",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Maestro de obra + materiales. ~6-8 semanas de obra."
+    },
+    {
+      "id": "M13",
+      "date": "2026-07-15",
+      "label": "Validar Italcol Cáqueza · crédito 30 días confirmado",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Distribuidor oficial o intermediario. Precio, entrega, condiciones."
+    },
+    {
+      "id": "M14",
+      "date": "2026-07-20",
+      "label": "Cotización plántulas Agrosavia · Rodrigo Martínez",
+      "status": "pending",
+      "owner": "JU",
+      "note": "8.888 unidades por tandas para producción constante."
+    },
+    {
+      "id": "M15",
+      "date": "2026-08-15",
+      "label": "ICA · registro sanitario predio avícola iniciado",
+      "status": "pending",
+      "owner": "JU + PA",
+      "note": "Depende de respuesta del correo de mayo y avance Cormacarena."
+    },
+    {
+      "id": "M16",
+      "date": "2026-08-31",
+      "label": "Galpón terminado · pruebas sistemas (agua, luz)",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Cama puesta, bebederos nipple, comederos, sanitización."
+    },
+    {
+      "id": "M17",
+      "date": "2026-09-01",
+      "label": "Contratar veterinario · plan vacunal post-sem-16",
+      "status": "pending",
+      "owner": "AM",
+      "note": "Recomendación San Marino + Tío William Acuña — tener 2 opciones."
+    },
+    {
+      "id": "M18",
+      "date": "2026-09-15",
+      "label": "🐔 Llegada pollas Babcock 16 semanas (Cumaral → predio)",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Camión especializado coordinado con San Marino."
+    },
+    {
+      "id": "M19",
+      "date": "2026-10-01",
+      "label": "Pollas en adaptación · ajuste alimentación + iluminación",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Semanas 17-20 transición a postura."
+    },
+    {
+      "id": "M20",
+      "date": "2027-01-15",
+      "label": "🥚 Primera postura comercial · arranque ventas a Duflo",
+      "status": "pending",
+      "owner": "AM",
+      "note": "Pico de postura 96% esperado para semana 30-35."
+    },
+    {
+      "id": "P01",
+      "date": "2026-06-09",
+      "label": "🍌 Muestras plátano y patilla recibidas",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Papá confirma fecha exacta. Validación del producto antes de pedir tandas grandes."
+    },
+    {
+      "id": "P02",
+      "date": "2026-08-15",
+      "label": "Pedido primera tanda plántulas (Agrosavia)",
+      "status": "pending",
+      "owner": "JU",
+      "note": "~2.222 plántulas (8.888 ÷ 4 tandas). Validar precio in vitro vs colino."
+    },
+    {
+      "id": "P03",
+      "date": "2026-09-15",
+      "label": "🌱 Siembra primera tanda · 2 ha (potrero 1)",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Marco siembra Dominico Hartón. Coincide con llegada de aves."
+    },
+    {
+      "id": "P04",
+      "date": "2026-10-15",
+      "label": "🌱 Siembra segunda tanda · 2 ha (potrero 2)",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Tanda escalonada para producción constante."
+    },
+    {
+      "id": "P05",
+      "date": "2026-11-15",
+      "label": "🌱 Siembra tercera tanda · 2 ha (potrero 3)",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Tercera tanda escalonada."
+    },
+    {
+      "id": "P06",
+      "date": "2026-12-15",
+      "label": "🌱 Siembra cuarta tanda · 2 ha (potrero 4)",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Cuatro potreros completos · ciclo de rotación armado con aves."
+    },
+    {
+      "id": "P07",
+      "date": "2027-09-15",
+      "label": "🍌 Primera cosecha plátano · primer racimo del lote 1",
+      "status": "pending",
+      "owner": "PA",
+      "note": "~12 meses post-siembra. Validación de productividad real del lote."
+    },
+    {
+      "id": "P08",
+      "date": "2028-06-15",
+      "label": "🍌 Producción constante plátano · 9 ton/mes",
+      "status": "pending",
+      "owner": "PA",
+      "note": "Las 4 tandas en cosecha rotativa cubren producción mensual continua."
+    }
   ],
   "quotes": [
-    { "id": "Q01", "category": "Galpón",      "item": "Construcción galpón capacidad 2.000 aves",  "vendor": "Ingenieros locales (papá cotizando)", "status": "requested",  "value": null, "currency": "COP", "note": "Esperando respuesta. Ver T20." },
-    { "id": "Q02", "category": "Galpón",      "item": "Construcción galpón capacidad 3.000 aves",  "vendor": "Ingenieros locales (papá cotizando)", "status": "requested",  "value": null, "currency": "COP", "note": "Esperando respuesta. Ver T20." },
-    { "id": "Q03", "category": "Galpón",      "item": "Construcción galpón capacidad 5.000 aves",  "vendor": "Ingenieros locales (papá cotizando)", "status": "requested",  "value": null, "currency": "COP", "note": "Esperando respuesta. Ver T20." },
-    { "id": "Q04", "category": "Aves",        "item": "Pollas Babcock Brown 16 semanas",           "vendor": "San Marino (Cumaral)",                 "status": "received",   "value": 26500, "currency": "COP", "note": "Precio por unidad. Negociable según volumen. Lote 15-sep 2026." },
-    { "id": "Q05", "category": "Alimento",    "item": "Concentrado postura Italcol",               "vendor": "Bodega Italcol Cáqueza",               "status": "to-request", "value": null, "currency": "COP", "note": "Crédito 30 días reportado. Validar oficial vs intermediario." },
-    { "id": "Q06", "category": "Plántulas",   "item": "Plátano Dominico Hartón · plántulas in vitro o colinos", "vendor": "Agrosavia · Rodrigo Martínez",  "status": "to-request", "value": null, "currency": "COP", "note": "8.888 unidades por tandas. Email: ramartinez@agrosavia.co" },
-    { "id": "Q07", "category": "Veterinario", "item": "Plan vacunal post-sem-16 + visitas regulares","vendor": "Por definir (San Marino + Tío William)", "status": "to-request", "value": null, "currency": "COP", "note": "2 opciones a comparar." },
-    { "id": "Q08", "category": "Transporte",  "item": "Camión especializado pollas Cumaral → predio","vendor": "Coordinado por San Marino",            "status": "included",   "value": null, "currency": "COP", "note": "San Marino lo coordina + canastas plásticas." },
-    { "id": "Q09", "category": "Plátano",     "item": "Transporte plántulas Dominico Hartón al predio","vendor": "Por definir",                          "status": "to-request", "value": null, "currency": "COP", "note": "Coordinación con Agrosavia. Cuatro tandas escalonadas." },
-    { "id": "Q10", "category": "Plátano",     "item": "Mano de obra siembra 8 ha (4 potreros)",     "vendor": "Por definir (zona Puerto Gaitán)",     "status": "to-request", "value": null, "currency": "COP", "note": "Marco siembra Dominico Hartón. Posible cuadrilla local." },
-    { "id": "Q11", "category": "Plátano",     "item": "Sistema de riego complementario (época seca)","vendor": "Por definir",                          "status": "to-request", "value": null, "currency": "COP", "note": "Llano tiene 4 meses secos. Validar necesidad real con agrónomo." },
-    { "id": "Q12", "category": "Contadora",   "item": "Declaraciones renta faltantes 2021-2025",     "vendor": "Contadora (papá pregunta viernes)",    "status": "to-request", "value": null, "currency": "COP", "note": "Estimado: $1.5M-$4M COP en honorarios + posibles sanciones DIAN. Ver B4." }
+    {
+      "id": "Q01",
+      "category": "Galpón",
+      "item": "Construcción galpón capacidad 2.000 aves",
+      "vendor": "Ingenieros locales (papá cotizando)",
+      "status": "requested",
+      "value": null,
+      "currency": "COP",
+      "note": "Esperando respuesta. Ver T20."
+    },
+    {
+      "id": "Q02",
+      "category": "Galpón",
+      "item": "Construcción galpón capacidad 3.000 aves",
+      "vendor": "Ingenieros locales (papá cotizando)",
+      "status": "requested",
+      "value": null,
+      "currency": "COP",
+      "note": "Esperando respuesta. Ver T20."
+    },
+    {
+      "id": "Q03",
+      "category": "Galpón",
+      "item": "Construcción galpón capacidad 5.000 aves",
+      "vendor": "Ingenieros locales (papá cotizando)",
+      "status": "requested",
+      "value": null,
+      "currency": "COP",
+      "note": "Esperando respuesta. Ver T20."
+    },
+    {
+      "id": "Q04",
+      "category": "Aves",
+      "item": "Pollas Babcock Brown 16 semanas",
+      "vendor": "San Marino (Cumaral)",
+      "status": "received",
+      "value": 26500,
+      "currency": "COP",
+      "note": "Precio por unidad. Negociable según volumen. Lote 15-sep 2026."
+    },
+    {
+      "id": "Q05",
+      "category": "Alimento",
+      "item": "Concentrado postura Italcol",
+      "vendor": "Bodega Italcol Cáqueza",
+      "status": "to-request",
+      "value": null,
+      "currency": "COP",
+      "note": "Crédito 30 días reportado. Validar oficial vs intermediario."
+    },
+    {
+      "id": "Q06",
+      "category": "Plántulas",
+      "item": "Plátano Dominico Hartón · plántulas in vitro o colinos",
+      "vendor": "Agrosavia · Rodrigo Martínez",
+      "status": "to-request",
+      "value": null,
+      "currency": "COP",
+      "note": "8.888 unidades por tandas. Email: ramartinez@agrosavia.co"
+    },
+    {
+      "id": "Q07",
+      "category": "Veterinario",
+      "item": "Plan vacunal post-sem-16 + visitas regulares",
+      "vendor": "Por definir (San Marino + Tío William)",
+      "status": "to-request",
+      "value": null,
+      "currency": "COP",
+      "note": "2 opciones a comparar."
+    },
+    {
+      "id": "Q08",
+      "category": "Transporte",
+      "item": "Camión especializado pollas Cumaral → predio",
+      "vendor": "Coordinado por San Marino",
+      "status": "included",
+      "value": null,
+      "currency": "COP",
+      "note": "San Marino lo coordina + canastas plásticas."
+    },
+    {
+      "id": "Q09",
+      "category": "Plátano",
+      "item": "Transporte plántulas Dominico Hartón al predio",
+      "vendor": "Por definir",
+      "status": "to-request",
+      "value": null,
+      "currency": "COP",
+      "note": "Coordinación con Agrosavia. Cuatro tandas escalonadas."
+    },
+    {
+      "id": "Q10",
+      "category": "Plátano",
+      "item": "Mano de obra siembra 8 ha (4 potreros)",
+      "vendor": "Por definir (zona Puerto Gaitán)",
+      "status": "to-request",
+      "value": null,
+      "currency": "COP",
+      "note": "Marco siembra Dominico Hartón. Posible cuadrilla local."
+    },
+    {
+      "id": "Q11",
+      "category": "Plátano",
+      "item": "Sistema de riego complementario (época seca)",
+      "vendor": "Por definir",
+      "status": "to-request",
+      "value": null,
+      "currency": "COP",
+      "note": "Llano tiene 4 meses secos. Validar necesidad real con agrónomo."
+    },
+    {
+      "id": "Q12",
+      "category": "Contadora",
+      "item": "Declaraciones renta faltantes 2021-2025",
+      "vendor": "Contadora (papá pregunta viernes)",
+      "status": "to-request",
+      "value": null,
+      "currency": "COP",
+      "note": "Estimado: $1.5M-$4M COP en honorarios + posibles sanciones DIAN. Ver B4."
+    }
   ],
   "kpis": {
     "production": {
@@ -179,10 +522,30 @@
       "note": "Los KPIs de producción se activan cuando llegue el primer lote de aves."
     },
     "items": [
-      { "label": "Postura / día",     "value": "—", "unit": "huevos",  "status": "pending" },
-      { "label": "Mortalidad semanal","value": "—", "unit": "%",       "status": "pending" },
-      { "label": "Stock vivo",        "value": "—", "unit": "gallinas","status": "pending" },
-      { "label": "Ventas Duflo / mes","value": "—", "unit": "COP",     "status": "pending" }
+      {
+        "label": "Postura / día",
+        "value": "—",
+        "unit": "huevos",
+        "status": "pending"
+      },
+      {
+        "label": "Mortalidad semanal",
+        "value": "—",
+        "unit": "%",
+        "status": "pending"
+      },
+      {
+        "label": "Stock vivo",
+        "value": "—",
+        "unit": "gallinas",
+        "status": "pending"
+      },
+      {
+        "label": "Ventas Duflo / mes",
+        "value": "—",
+        "unit": "COP",
+        "status": "pending"
+      }
     ]
   },
   "tasks": [
@@ -193,7 +556,8 @@
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T42",
@@ -202,7 +566,8 @@
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T44",
@@ -211,7 +576,8 @@
       "owner": "JU+PA",
       "priority": "critical",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T43",
@@ -220,7 +586,8 @@
       "owner": "JU",
       "priority": "high",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T45",
@@ -229,7 +596,8 @@
       "owner": "PA",
       "priority": "critical",
       "status": "pending",
-      "module": "03-finanzas"
+      "module": "03-finanzas",
+      "predio": "el-trueno"
     },
     {
       "id": "T47",
@@ -238,7 +606,8 @@
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T50",
@@ -481,7 +850,8 @@
       "owner": "PA",
       "priority": "high",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T49",
@@ -490,7 +860,8 @@
       "owner": "JU",
       "priority": "high",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T25",
@@ -499,7 +870,8 @@
       "owner": "AM",
       "priority": "critical",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T76",
@@ -508,7 +880,8 @@
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T77",
@@ -517,7 +890,8 @@
       "owner": "JU",
       "priority": "high",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T78",
@@ -526,7 +900,8 @@
       "owner": "JU",
       "priority": "critical",
       "status": "done",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
     },
     {
       "id": "T82",
@@ -535,7 +910,8 @@
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
     },
     {
       "id": "T83",
@@ -544,7 +920,8 @@
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
     },
     {
       "id": "T84",
@@ -553,7 +930,8 @@
       "owner": "JU",
       "priority": "high",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
     },
     {
       "id": "T85",
@@ -562,16 +940,108 @@
       "owner": "JU",
       "priority": "high",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
     },
     {
       "id": "T86",
-      "title": "🔥🔥 CRÍTICO · Conversación con mamá Myriam sobre La Realidad y divorcio",
-      "description": "Padres en proceso de divorcio reciente. La fecha del divorcio define todo: si estaban casados en 1999 (firma escritura 2217) y en 2016 (registro) = mamá DEBÍA firmar = NULIDAD ABSOLUTA si no firmó. ABORDAR CON TACTO. Preguntas: (1) Fecha radicación divorcio. (2) En 1999 casados con sociedad conyugal? (3) Conoce La Realidad? (4) ¿Firmó escritura vendiéndola a Dummar Perez en 1999? (5) ¿Sabía que en 2016 se transfirió? (6) ¿En la liquidación de sociedad conyugal hablaron de La Realidad? Si mamá dice 'NO firmé' + 'no sabía' = BOMBA ATÓMICA · caso ganado. Mamá podría ser codemandante. CUIDADO sensibilidad: tema delicado por proceso de divorcio en curso.",
+      "title": "🟢 Conversación inicial con mamá Myriam · DONE 2026-06-11",
+      "description": "RESULTADO conversación 11-jun-2026: separación física 2003 (legalmente irrelevante) · divorcio en papeles 2010-2015 más hacia 2015 · mamá va a confirmar fecha exacta hoy en oficina con el registro. CONCLUSIÓN: en 1999 al firmar escritura 2217 estaban CASADOS con sociedad conyugal vigente → firma de mamá ERA OBLIGATORIA (Ley 258/1996 Art. 5). Si mamá no firmó esa escritura del 99 = NULIDAD ABSOLUTA. NUEVO ÁNGULO BOMBA: la liquidación de sociedad conyugal (2010-2015) ocurrió cuando La Realidad SEGUÍA REGISTRADA a nombre de papá (el registro a Dummar fue en 2016). Pregunta crítica próxima a mamá: ¿La Realidad apareció en el inventario de bienes de la liquidación? ¿A quién la adjudicaron? Esto define si mamá es codemandante directa o si reivindica como propietaria.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "done",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T88",
+      "title": "🔥🔥 CRÍTICO · Confirmar con mamá fecha EXACTA divorcio + inventario sociedad conyugal",
+      "description": "Mamá va a revisar HOY en oficina el registro del divorcio. Confirmar 2 cosas: (1) FECHA EXACTA radicación divorcio + fecha sentencia + juzgado. (2) ¿La Realidad apareció en el inventario de bienes de la liquidación de sociedad conyugal? ¿A quién se la adjudicaron? Las 3 respuestas posibles a (2) definen estrategia: (a) adjudicada a papá → nulidad por causa 1999 · (b) adjudicada a mamá → mamá reivindica como propietaria · (c) no apareció → sociedad conyugal no liquidada sobre ese bien → mamá codemandante natural con 50% de derecho. En CUALQUIER caso ganamos.",
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T89",
+      "title": "📜 Solicitar copia de la liquidación de sociedad conyugal del divorcio padres",
+      "description": "Pedir copia del acta/escritura de liquidación de sociedad conyugal del divorcio Jaime-Myriam (2010-2015). Documento CRÍTICO para Frente B porque revela si La Realidad fue inventariada y cómo se adjudicó. En la fecha de la liquidación La Realidad seguía registrada a nombre de papá (el registro a Dummar fue posterior, 2016) · debió aparecer en el inventario. Si NO aparece = sociedad conyugal no liquidada sobre ese bien = mamá conserva 50%.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T90",
+      "title": "🔬 Peritaje grafológico firma escritura 2217 (después de T87)",
+      "description": "Después de tener la copia de la escritura 2217 (T87), encargar peritaje grafológico de las firmas de papá y de Dummar. Si firma de papá es falsa → falsedad material (Art. 289 CP) + nulidad. Costo $1-2M · 2-4 semanas. Perito a definir con Leonardo.",
+      "owner": "JU",
+      "priority": "normal",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T91",
+      "title": "🏛️ Solicitar expediente penal Fiscalía 3 Villavicencio 2000-2015",
+      "description": "Pedir información formal a la Fiscalía 3 Seccional Villavicencio sobre el proceso penal que originó el embargo del 17-oct-2000 sobre la matrícula 234-11846 (cancelado por Fiscalía 9 en 2015). Datos a obtener: (a) número noticia criminal, (b) imputado(s), (c) tipo penal, (d) decisión final. Crítico para confirmar hipótesis de alzamiento de bienes (la 'venta' de 1999 habría sido para evadir este proceso). Plantilla en paquete-recuperacion/5-solicitudes-info.md punto 4. Plazo respuesta: 15-30 días.",
+      "owner": "LE",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T92",
+      "title": "💰 Avalúo retrospectivo La Realidad 1999 (perito agropecuario)",
+      "description": "Encargar avalúo retrospectivo del predio mat. 234-11846 al 9-oct-1999 para demostrar que los $12.200.000 declarados en la escritura 2217 son irrisorios vs valor real de mercado (estimado >$1.000M). Prueba clave para simulación absoluta (Causal 2). Costo $500K-1.5M · 2-3 semanas. Perito agropecuario certificado en Lonja Inmobiliaria o similar.",
+      "owner": "LE",
+      "priority": "normal",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T93",
+      "title": "🏛️ ORIP Puerto López · copia expediente trámite registro 2016",
+      "description": "Solicitar a la ORIP Puerto López copia íntegra del expediente administrativo (carpeta de trámite) correspondiente al registro del 9-feb-2016 (anotaciones 7-8 mat. 234-11846). Datos clave: (a) quién radicó el trámite, (b) documentación aportada, (c) soportes de identidad, (d) constancias administrativas. Permite identificar al orquestador del registro 17 años después de la firma. Plantilla en paquete-recuperacion/5-solicitudes-info.md punto 3.",
+      "owner": "LE",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T94",
+      "title": "📸 Testimonios + fotos vecinos La Realidad sobre posesión papá",
+      "description": "Durante el viaje a Puerto Gaitán: recabar testimonios y fotos de vecinos de La Realidad que confirmen: (a) papá ha vivido y trabajado el predio desde 1998, (b) ha hecho mejoras, casa, cercas, (c) Dummar nunca apareció, (d) papá pagó prediales. Mínimo 3 vecinos. Sirven para Causal 3 (prescripción adquisitiva) y para denuncia penal. Si es posible, formalizar como declaraciones extra-juicio en notaría Puerto Gaitán.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T95",
+      "title": "⚖️ Análisis Leonardo · limitaciones INCORA Ley 160/1994 sobre La Realidad",
+      "description": "Leonardo analiza la cláusula original de adjudicación INCORA Resolución 0410 de 1997 (limitación 5 años no gravable salvo crédito de fomento, según cert tradición anotación 1) y verifica si seguía vigente al 9-oct-1999 (fecha 'venta' a Dummar). Si la limitación estaba vigente → nulidad de pleno derecho por violación de norma de orden público (Causal 7).",
+      "owner": "LE",
+      "priority": "normal",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T96",
+      "title": "📦 Paquete-recuperación La Realidad documentado (Frente B espejo del A)",
+      "description": "DONE 2026-06-11. Creado paquete-recuperacion/ con 6 docs (README + hechos confirmados + causales jurídicas + investigaciones pendientes + borrador denuncia Fiscalía + borrador demanda civil + solicitudes info). Estructura espejo del paquete-defensa/ del Trueno. Ubicación: 04-regulatorio/predios/la-realidad/recuperacion/paquete-recuperacion/.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "done",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
     },
     {
       "id": "T87",
@@ -580,7 +1050,8 @@
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
     },
     {
       "id": "T79",
@@ -589,7 +1060,8 @@
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
     },
     {
       "id": "T80",
@@ -598,7 +1070,8 @@
       "owner": "JU",
       "priority": "high",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
     },
     {
       "id": "T81",
@@ -607,7 +1080,8 @@
       "owner": "JU",
       "priority": "high",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
     },
     {
       "id": "T26",
@@ -616,7 +1090,8 @@
       "owner": "JU",
       "priority": "high",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T27",
@@ -625,7 +1100,8 @@
       "owner": "JU",
       "priority": "normal",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T24",
@@ -634,7 +1110,8 @@
       "owner": "PA",
       "priority": "normal",
       "status": "pending",
-      "module": "04-regulatorio"
+      "module": "04-regulatorio",
+      "predio": "el-trueno"
     },
     {
       "id": "T15",
