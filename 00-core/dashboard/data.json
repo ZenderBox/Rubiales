@@ -368,8 +368,8 @@
     },
     {
       "id": "T66",
-      "title": "📦 PARCIAL · Recibir paquetes Amazon · 4 de 7 confirmados",
-      "description": "RECIBIDOS 2026-06-11 PM: (1) LiteBeam 5AC Ubiquiti, (2) Tupavco TP302 Surge 2-Pack, (3) Reolink Argus 4 Pro + Solar Panel 2 (S/N BTP00C80XMQP92), (4) Reolink E1 Pro Black E330 (S/N BHBE020A003856). FALTAN: Pi 5 CanaKit, SanDisk 256GB, Solsop Crimping Kit. NINGUNO es bloqueador real para viaje viernes (Pi 5 sustituido por Tailscale en laptop; cable a medida en Homecenter; sin SD la cámara graba en Reolink Cloud). VERIFICAR: LiteBeam bundle era 2 unidades · confirmar si vino 1 caja grande con 2 antenas o falta la 2da caja.",
+      "title": "📦 PARCIAL · Recibir paquetes Amazon · 4 de 7 confirmados (LiteBeam bundle COMPLETO)",
+      "description": "RECIBIDOS 2026-06-11 PM: (1) LiteBeam 5AC Bundle PRE-CONFIG · 2 antenas en 2 cajas unidas CONFIRMADO COMPLETO, (2) Tupavco TP302 Surge 2-Pack, (3) Reolink Argus 4 Pro + Solar Panel 2 (S/N BTP00C80XMQP92), (4) Reolink E1 Pro Black E330 (S/N BHBE020A003856). FALTAN: Pi 5 CanaKit, SanDisk 256GB, Solsop Crimping Kit. NINGUNO es bloqueador real para viaje viernes (Pi 5 sustituido por Tailscale en laptop; cable a medida en Homecenter; sin SD la cámara graba en Reolink Cloud temporalmente).",
       "owner": "JU",
       "priority": "high",
       "status": "in_progress",
