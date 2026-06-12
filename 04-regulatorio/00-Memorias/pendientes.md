@@ -5,6 +5,7 @@
 ## En curso
 - **PÓLIZA DE CAUCIÓN del Trueno (Art. 590 CGP)** · semana 8-12 jun · cotizar 3 corredores → reunión decisión viernes.
 - Borrador correo ICA Mosquera (stand-by hasta renovar matrícula).
+- **🔧 Server config pendiente:** agregar alias nginx `/recuperacion-docs/` → `04-regulatorio/predios/la-realidad/recuperacion/paquete-recuperacion/` (espejo del existente `/legal-docs/` para paquete-defensa). Sin eso las tarjetas del Frente B en legal.html muestran "No se pudo cargar el documento".
 
 ## Próximos pasos
 - [ ] T41-T45 · Póliza · lunes Leonardo · martes cotizaciones · viernes decisión
