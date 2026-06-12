@@ -143,6 +143,37 @@ Esto significa que para vender en 1999 papá necesitaba la firma de su esposa (L
 
 → Hasta que papá responda estas 7 preguntas, **no se puede armar la demanda final.**
 
+## 🎯 Preguntas URGENTES para MAMÁ (Myriam) · INFO NUEVA 2026-06-11
+
+Padres en proceso de divorcio reciente. Myriam Consuelo Caro Suárez (CC 20408053) probablemente = MAMÁ de Juan.
+
+**La fecha del divorcio define todo:**
+- Si estaban casados en 1999 (firma) y 2016 (registro) → mamá DEBÍA firmar
+- Si NO firmó → NULIDAD ABSOLUTA (Ley 258/1996 Art. 5)
+- Mamá podría ser CODEMANDANTE
+
+**Preguntas (con tacto):**
+
+1. **¿Cuándo radicó el divorcio?** (juzgado · fecha de radicación)
+2. **¿En 1999 estaban casados con sociedad conyugal vigente?**
+3. **¿Conoce La Realidad?** (la finca de Rubiales)
+4. **¿Firmó alguna escritura en octubre de 1999 vendiendo La Realidad a Dummar Perez Hernandez?**
+5. **¿Sabía que en 2016 esa finca se transfirió a Dummar?**
+6. **¿En la separación / divorcio ha discutido La Realidad como bien de la sociedad conyugal?**
+
+### Si mamá dice "NO firmé" + "no sabía" = 🔥🔥🔥 BOMBA ATÓMICA
+
+- Caso ganado por nulidad absoluta
+- Mamá codemandante junto con papá
+- Probable denuncia penal a Dummar y al notario por falsedad
+
+### ⚠️ CUIDADO con sensibilidad familiar
+
+- Padres en conflicto por divorcio
+- No abordar como "vamos a demandar"
+- Abordar como "necesito tu memoria sobre algo del registro"
+- Si mamá ve oportunidad, puede complicar la liquidación del divorcio
+
 ---
 
 ## 📋 Tareas actualizadas

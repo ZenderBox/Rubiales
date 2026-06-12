@@ -558,9 +558,27 @@
     {
       "id": "T85",
       "title": "🔍 Verificar identidad Myriam Consuelo Caro Suárez (CC 20408053)",
-      "description": "Aparece en anotación 4 (1999) como persona en afectación a vivienda familiar con papá. ¿Era esposa formal? ¿Mamá de Juan? ¿Está viva? Si fue esposa y NO firmó la escritura 2217 de 1999 = NULIDAD ABSOLUTA del acto (Ley 258/1996 Art. 5). Esta persona puede ser TESTIGO CLAVE o codemandante. Preguntar a papá + verificar con Registraduría su estado civil.",
+      "description": "Aparece en anotación 4 (1999) como persona en afectación a vivienda familiar con papá. CONFIRMADO probablemente = MAMÁ de Juan. Si fue esposa y NO firmó la escritura 2217 de 1999 = NULIDAD ABSOLUTA del acto (Ley 258/1996 Art. 5). Esta persona es ALIADA CLAVE potencial · puede ser CODEMANDANTE en la nulidad.",
       "owner": "JU",
       "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T86",
+      "title": "🔥🔥 CRÍTICO · Conversación con mamá Myriam sobre La Realidad y divorcio",
+      "description": "Padres en proceso de divorcio reciente. La fecha del divorcio define todo: si estaban casados en 1999 (firma escritura 2217) y en 2016 (registro) = mamá DEBÍA firmar = NULIDAD ABSOLUTA si no firmó. ABORDAR CON TACTO. Preguntas: (1) Fecha radicación divorcio. (2) En 1999 casados con sociedad conyugal? (3) Conoce La Realidad? (4) ¿Firmó escritura vendiéndola a Dummar Perez en 1999? (5) ¿Sabía que en 2016 se transfirió? (6) ¿En la liquidación de sociedad conyugal hablaron de La Realidad? Si mamá dice 'NO firmé' + 'no sabía' = BOMBA ATÓMICA · caso ganado. Mamá podría ser codemandante. CUIDADO sensibilidad: tema delicado por proceso de divorcio en curso.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T87",
+      "title": "📜 Obtener copia escritura 2217 del 9-10-1999 (Notaría 2 Villavicencio)",
+      "description": "PIEZA REINA del Frente B. Pedir copia auténtica de la Escritura Pública No. 2217 del 9-10-1999 otorgada en Notaría Segunda de Villavicencio (papá vendedor + Dummar Perez Hernandez comprador). Costo $30-80K · 1-3 días. 4 caminos en paralelo: (1) Leonardo la pide con tarjeta profesional, (2) Juan en persona viernes pasando por Villavicencio, (3) Llamada + envío email/courier, (4) Papá como otorgante. Verificar en escritura: firmas papá + esposa Myriam, forma de pago real, identificación Dummar, cláusulas raras.",
+      "owner": "JU",
+      "priority": "critical",
       "status": "pending",
       "module": "04-regulatorio"
     },

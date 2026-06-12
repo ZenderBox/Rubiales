@@ -88,3 +88,12 @@
 - **Pre-condición:** declaración juramentada PREVIA de papá en notaría declarándose poseedor con ánimo de dueño (T80).
 - **Reglas críticas para que sirva positivamente:** recibo a nombre de papá (no Omar) · concepto "pago como POSEEDOR" · NO firmar reconocimiento alguno de propiedad ajena.
 - **Conexión:** aprovechar viaje viernes a Alcaldía Puerto Gaitán (T76 amnistía Trueno) para averiguar también predial La Realidad (T79) en mismo viaje.
+
+### D11 · Fecha radicación divorcio padres como llave del Frente B · 2026-06-11
+- **Decisión:** prioridad #1 en La Realidad pasa a ser confirmar fecha exacta del divorcio Jaime ↔ Myriam Consuelo Caro Suárez (CC 20408053).
+- **Por qué:** la causal de nulidad por falta de firma de esposa (Ley 258/1996 Art. 5) depende del estatus civil el 9-oct-1999 (fecha firma escritura 2217). 3 escenarios:
+  - 🟢 Divorcio post 9-feb-2016 → NULIDAD blindada (90-95%)
+  - 🟢 Divorcio entre 1999-2016 → NULIDAD por causa 1999 (80-90%)
+  - 🟡 Divorcio pre 9-oct-1999 → cambiar a falsedad/simulación/prescripción (50-65%)
+- **Implicaciones:** T86 (conversación con mamá · NO arrancar con "vamos a demandar") + T87 (escritura 2217 Notaría 2 Villavicencio).
+- **Riesgo:** padres en proceso de divorcio · si mamá ve oportunidad puede complicar liquidación de sociedad conyugal en curso.
