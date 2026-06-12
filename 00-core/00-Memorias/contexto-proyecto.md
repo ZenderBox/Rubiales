@@ -2,7 +2,26 @@
 
 Registro de contexto, decisiones y aprendizajes. Útil para retomar el proyecto después de pausas o para ponerlo en contexto a alguien nuevo (papá, banco, contratista, asesor).
 
-Última actualización: 2026-05-03
+Última actualización: 2026-06-07
+
+---
+
+## 🚚 Recurso logístico clave
+
+**Juan tiene empresa de logística propia en Colombia** que opera envíos US ↔ Colombia (ambas direcciones).
+
+- **Permite traer hardware tecnológico con costo de envío bajo** vs courier comercial (DHL/FedEx).
+- Útil para **superar el límite DIAN de USD 2.000 viajero** — envíos comerciales pagan IVA 19% + arancel (0-15% según partida), pero el ahorro vs retail Colombia sigue siendo significativo (Colombia tiene markup 50-100% en tech).
+- **Usar para:** todo hardware tech del proyecto (cámaras, switches, sensores, Raspberry Pi, Ubiquiti, etc.).
+- **NO usar para:** Starlink (debe comprarse en Colombia por tema de cuenta atada a país).
+- **Tiempos típicos:** 5-10 días.
+- **Aplicable a futuras compras del proyecto** sin restricción de viajes personales.
+
+**Bonus · Amazon Tax Exemption:**
+- Juan tiene **Amazon Tax Exemption** vinculado a su empresa (sales tax exempt en Florida).
+- Ahorra ~7% en todas las compras de Amazon US (FL state sales tax).
+- Para el proyecto IoT: ahorro ~$155 USD adicionales (~$620K COP) sobre el total ~$2.220 USD.
+- **Regla:** comprar SIEMPRE con la cuenta business de Amazon que tiene la exención activa, no con cuenta personal.
 
 ---
 

@@ -68,3 +68,32 @@
 ### D08 · Restaurar T15 a "pending" para probar fix de bug
 - **Decisión:** T15 (Cámara) queda como pending en data.json aunque papá ya la hizo, para que pueda probarla mañana y verificar el fix del bug de refresh.
 - **Por qué:** El bug donde tareas marcadas como hechas reaparecían al refrescar fue arreglado en PR #21. Necesitamos probar el fix con una tarea real.
+
+---
+
+## 2026-06-11
+
+### D09 · Aprovechar Decreto 0243/2026 para amnistía predial Trueno
+- **Decisión:** antes de pagar T25 (predial $72.9M acumulado 2018-2026), Juan + Leonardo visitan Alcaldía Puerto Gaitán para evaluar amnistía bajo Decreto Legislativo 0243 de 2026.
+- **Por qué:**
+  - Decreto Legislativo 0243 de 2026 (Emergencia Económica) otorga facultades excepcionales a alcaldes para adoptar amnistías tributarias territoriales.
+  - Comparable: Medellín redujo 70% intereses por mora.
+  - Ahorro potencial estimado: ~$32M COP sobre los $72.9M (44% menos).
+- **Implicación:** T25 queda en espera de T76 (averiguar) y T77 (carta Leonardo si no hay decreto local).
+- **Plazo:** antes 30-jun-2026 (vencimiento original predial).
+
+### D10 · Pagar prediales La Realidad a nombre de papá como acto posesorio
+- **Decisión:** averiguar saldo predial La Realidad y, si conviene, pagarlo a nombre de Jaime Humberto Acuña Ocampo (papá) como acto posesorio que refuerza Causal 6 (prescripción adquisitiva).
+- **Por qué:** jurisprudencia constante (CSJ SC4936-2019, SC3201-2018) reconoce el pago de impuestos prediales como acto posesorio clásico que evidencia ánimo de dominio.
+- **Pre-condición:** declaración juramentada PREVIA de papá en notaría declarándose poseedor con ánimo de dueño (T80).
+- **Reglas críticas para que sirva positivamente:** recibo a nombre de papá (no Omar) · concepto "pago como POSEEDOR" · NO firmar reconocimiento alguno de propiedad ajena.
+- **Conexión:** aprovechar viaje viernes a Alcaldía Puerto Gaitán (T76 amnistía Trueno) para averiguar también predial La Realidad (T79) en mismo viaje.
+
+### D11 · Fecha radicación divorcio padres como llave del Frente B · 2026-06-11
+- **Decisión:** prioridad #1 en La Realidad pasa a ser confirmar fecha exacta del divorcio Jaime ↔ Myriam Consuelo Caro Suárez (CC 20408053).
+- **Por qué:** la causal de nulidad por falta de firma de esposa (Ley 258/1996 Art. 5) depende del estatus civil el 9-oct-1999 (fecha firma escritura 2217). 3 escenarios:
+  - 🟢 Divorcio post 9-feb-2016 → NULIDAD blindada (90-95%)
+  - 🟢 Divorcio entre 1999-2016 → NULIDAD por causa 1999 (80-90%)
+  - 🟡 Divorcio pre 9-oct-1999 → cambiar a falsedad/simulación/prescripción (50-65%)
+- **Implicaciones:** T86 (conversación con mamá · NO arrancar con "vamos a demandar") + T87 (escritura 2217 Notaría 2 Villavicencio).
+- **Riesgo:** padres en proceso de divorcio · si mamá ve oportunidad puede complicar liquidación de sociedad conyugal en curso.

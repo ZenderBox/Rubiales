@@ -279,7 +279,7 @@
     {
       "id": "T54",
       "title": "🌐 Activar cuenta Starlink con serial del kit",
-      "description": "Cuando papá reciba el kit (lunes/martes), pasarle el serial a Juan. Juan activa en starlink.com con tarjeta de crédito Colombia. NO comprar el plan antes de tener el kit en mano. Plan elegido: Residencial Estándar COP $250K/mes.",
+      "description": "Cuando papá reciba el kit (lunes/martes), pasarle el serial a Juan. Juan activa en starlink.com con tarjeta de crédito Colombia. PLAN ELEGIDO: Residencial LITE COP $160K/mes (no Standard). Si después se queda corto, subir a Standard con un click. 30 días de prueba gratis.",
       "owner": "JU",
       "priority": "critical",
       "status": "pending",
@@ -287,11 +287,11 @@
     },
     {
       "id": "T55",
-      "title": "📱 SIM celular backup (Claro o Movistar)",
-      "description": "Plan datos ~5GB/mes (~COP 30-60K). Para cuando Starlink falle (lluvia muy fuerte, falla del satelite). Tarjeta SIM en el celular de Guyo o un router 4G simple. NO bloqueador para el viernes pero comprar pronto.",
-      "owner": "PA",
+      "title": "❌ SIM celular backup · DESCARTADA (sin señal en finca)",
+      "description": "Eliminada del plan. Juan confirmó que la señal celular en la finca es prácticamente cero. Starlink queda como única conexión. Mitigación: UPS robusto + antena con vista despejada + grabación local en NVR/microSD. Plan futuro: si la operación lo justifica, segundo kit Starlink como redundancia.",
+      "owner": "JU",
       "priority": "normal",
-      "status": "pending",
+      "status": "done",
       "module": "07-tecnologia"
     },
     {
@@ -305,10 +305,172 @@
     },
     {
       "id": "T57",
-      "title": "📸 Viernes 12 · Documentar puntos para futuro enlace 500m (Etapa 2)",
-      "description": "Mientras papá está en la finca: tomar fotos del recorrido casa principal ↔ donde irá el galpón. Identificar: (a) línea de vista directa (sin árboles altos), (b) posibles puntos de mástil en ambos extremos, (c) ubicación del techo del futuro galpón. Esto define si compramos Ubiquiti LiteBeam estándar (5km) o necesitamos algo más potente. Fotos al dashboard via /tareas.html con esta tarea.",
-      "owner": "PA",
+      "title": "📸 Viernes 12 · Documentar puntos para enlace 500m (Etapa 2)",
+      "description": "En el viaje: identificar (a) línea de vista directa casa↔galpón sin árboles altos, (b) puntos de mástil en ambos extremos, (c) ubicación techo futuro galpón. Esto define cómo montar el LiteBeam que traemos de Miami. Fotos al hilo de esta tarea.",
+      "owner": "JU+PA",
       "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T58",
+      "title": "✅ Etapa 1 USA pedida en Amazon ($847.95)",
+      "description": "HECHO. PO 01-rubiales. 7 items: CanaKit Pi 5 PRO 128GB $259.95, LiteBeam Bundle PRE-CONFIG 2× $227.20, Tupavco Surge 2-pack $59.98, Reolink Argus 4 Pro + Solar $152.99, Reolink E1 Pro Black $54.98, SanDisk 256GB High Endurance $59.99, Solsop Crimping Kit $32.86. Tax Exemption aplicado ($0). Cable CAT6 se compra en Colombia. Llegada: Pi 5 + Crimping lun 8, resto mar 9.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "done",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T59",
+      "title": "🛡️ Empacar hardware Miami para viaje + factura DIAN",
+      "description": "Guardar TODAS las facturas de Best Buy/Amazon (DIAN puede pedir comprobantes en el aeropuerto). Empacar en equipaje de mano si se puede (Raspberry Pi y cámaras son frágiles). Total a declarar: ~USD 680, bajo franquicia $2.000 = libre de impuestos.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T60",
+      "title": "📦 ETAPA 2 · Diferida a SEGUNDA VISITA a la finca",
+      "description": "DIFERIDA. Después del primer viaje vie 12-jun, Juan vuelve a Miami y evalúa qué se ajusta del plan según lo visto en sitio. Lista USD ~$1.565: 6× Reolink RLC-510A PoE, 1× Argus 4 Pro adicional, 1× NVR Reolink RLN8-410, 2× TP-Link EAP outdoor, 1× UPS galpón, switch PoE, sensores Shelly (H&T x3, Plug x2, Flood x1), cables. Detalle: 07-tecnologia/lista-compras-completa.md. Reactivar cuando se confirme fecha 2da visita.",
+      "owner": "JU",
+      "priority": "normal",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T61",
+      "title": "🚚 Envío logística US→Colombia · DIFERIDO con Etapa 2",
+      "description": "Diferido hasta que se reactive T60 (Etapa 2). El envío se coordinará con la empresa de logística de Juan cuando se decida la 2da visita a la finca.",
+      "owner": "JU",
+      "priority": "normal",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T64",
+      "title": "🇨🇴 Comprar en Bogotá esta semana · JUAN al llegar a Colombia",
+      "description": "Lista de compras Colombia (Juan compra al llegar a Bogotá jueves/viernes antes de viajar a la finca): (1) Kit Estándar V4 Starlink en Falabella o Homecenter (~$1.349.900 COP), (2) UPS APC Back-UPS Pro 1500VA en Ktronix/Alkosto ($480-600K), (3) Cable UTP CAT6 outdoor 50m en Homecenter ($120-180K), (4) 2× Varilla copperweld 2.4m + conector + cable cobre #8 en cualquier ferretería ($100-160K), (5) Cinta vulcanizante + amarres plásticos ($20-30K). TOTAL: ~$2.1M COP.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T65",
+      "title": "✅ Plan Starlink Residencial Lite ACTIVADO · 2026-06-10",
+      "description": "ACTIVADO con éxito. Plan Residencial Lite COP $159,999/mes (134,453 + IVA 25,544). Subscription ID: SL-DF-13479721-91050-4. Address servicio: Cra. 10 #12-63, Puerto Gaitán, Meta 502041. Next billing: 2026-07-10 (30 días de prueba activa). Pagado con tarjeta. Servicio comienza en 15 min post-checkout.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "done",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T66",
+      "title": "📦 PARCIAL · Recibir paquetes Amazon · 4 de 7 confirmados (LiteBeam bundle COMPLETO)",
+      "description": "RECIBIDOS 2026-06-11 PM: (1) LiteBeam 5AC Bundle PRE-CONFIG · 2 antenas en 2 cajas unidas CONFIRMADO COMPLETO, (2) Tupavco TP302 Surge 2-Pack, (3) Reolink Argus 4 Pro + Solar Panel 2 (S/N BTP00C80XMQP92), (4) Reolink E1 Pro Black E330 (S/N BHBE020A003856). FALTAN: Pi 5 CanaKit, SanDisk 256GB, Solsop Crimping Kit. NINGUNO es bloqueador real para viaje viernes (Pi 5 sustituido por Tailscale en laptop; cable a medida en Homecenter; sin SD la cámara graba en Reolink Cloud temporalmente).",
+      "owner": "JU",
+      "priority": "high",
+      "status": "in_progress",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T67",
+      "title": "🔌 JUEVES · Comprar UPS APC Back-UPS Pro 1500VA",
+      "description": "Ktronix o Alkosto. Modelo: APC Back-UPS Pro BR1500MS2 o similar 1500VA. Budget: $480-600K COP. CRÍTICO para mantener Starlink + router cuando se vaya la luz en la finca. Llevar el cable de alimentación que viene incluido. NO comprar marcas chinas baratas — APC es el estándar confiable.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T68",
+      "title": "🔗 JUEVES · Comprar cable CAT6 outdoor + ferretería grounding",
+      "description": "EN HOMECENTER: Cable UTP CAT6 outdoor 50m (~$120-180K). Pedir que vengan con conectores RJ45 a medida (si Solsop crimper no llega). EN FERRETERÍA: 2× Varilla copperweld 2.4m + conector varilla-cable + cable cobre desnudo #8 AWG 5m + cinta vulcanizante + amarres plásticos. Total ferretería: ~$120-200K COP. Para hacer puesta a tierra de las antenas y surge protectors.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T69",
+      "title": "🧪 JUEVES PM · Test rápido cámara E1 Pro indoor (15 min)",
+      "description": "Antes de empacar, validar que la E1 Pro Black funciona. Pasos: (1) bajar app Reolink en celular, (2) crear cuenta Reolink, (3) escanear QR del fondo de la cámara, (4) conectarla al WiFi del celular en modo hotspot o WiFi casa Bogotá, (5) ver video en vivo y que pan/tilt responda. Si funciona, empacar. Si no funciona = reemplazo en Amazon antes del vuelo.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T70",
+      "title": "🔐 JUEVES · Instalar Tailscale en laptop + celular",
+      "description": "Sin Pi 5 (si no llega) Tailscale corre en laptop Mac directamente. Pasos: (1) tailscale.com/download · bajar para macOS · login Google/email · activar, (2) App Store celular · buscar Tailscale · instalar · login mismo cuenta. Resultado: laptop + celular en misma red privada. Cuando llegues a la finca, la cámara E1 Pro se conecta al WiFi Starlink y Tailscale en laptop te deja accederla remoto.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T71",
+      "title": "🎒 JUEVES PM · Empacar maleta para viaje + facturas DIAN",
+      "description": "Empacar TODO lo Amazon en maleta de mano (frágiles): Pi 5, cámaras Reolink, LiteBeam, Tupavco, microSD, Solsop. Kit Starlink en maleta chequeada (peso ~6kg). Imprimir/guardar PDF facturas Amazon (Order #) en celular por si DIAN pregunta. Total a declarar: USD ~$848. Bajo franquicia $2.000 = libre de impuestos.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T72",
+      "title": "✈️ VIERNES AM · Vuelo Bogotá → Puerto Gaitán + viaje finca",
+      "description": "Salir de Bogotá con todo el equipo. Coordinar con papá hora de encuentro. Confirmar transporte hasta la finca desde el aeropuerto/terminal. Hidratación + comida porque la instalación puede tomar 4-6h cuando lleguen.",
+      "owner": "JU+PA",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T73",
+      "title": "🛠️ VIERNES PM · Instalar Starlink en techo casa principal",
+      "description": "Pasos: (1) Identificar lugar con vista al cielo despejada (sin árboles/techos altos cerca). (2) Decidir montaje: A) techo plano = base incluida basta · B) inclinado o necesita altura = comprar en ferretería del pueblo tubo galvanizado 1.5pulg + abrazaderas U + base ($30-50K COP). La antena trae adaptador para tubo 1.5pulg incluido. (3) Montar antena. (4) Pasar cable hacia interior casa. (5) Conectar a router Gen 3. (6) Enchufar a UPS APC 1500VA. (7) Esperar 5-15 min hasta primera conexión. (8) Speedtest. (9) Configurar SSID 'Miramar-Casa' + clave fuerte.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T74",
+      "title": "📷 VIERNES PM · Instalar cámara E1 Pro indoor + Tailscale test",
+      "description": "Después de que Starlink esté online: (1) Conectar E1 Pro a corriente. (2) Conectarla al WiFi Miramar-Casa. (3) Insertar SanDisk 256GB en la ranura microSD de la cámara. (4) Configurar grabación 24/7 en Reolink app. (5) DESDE OTRO CELULAR (no en WiFi finca): probar acceso remoto via Reolink Cloud. (6) Probar Tailscale desde laptop Miami (a futuro cuando vuelvas). Si todo funciona = setup base validado.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T75",
+      "title": "📸 VIERNES PM · Documentar puntos para Etapa 2 enlace 500m",
+      "description": "Mientras está en la finca: fotos del recorrido casa principal ↔ ubicación futuro galpón (500m). Identificar: (a) línea de vista directa SIN obstáculos altos, (b) puntos posibles de mástil/poste en cada extremo, (c) ubicación tentativa del techo del galpón futuro. Estas fotos son insumo para la 2da visita (Etapa 2 con LiteBeam + cámaras CCTV galpón).",
+      "owner": "JU",
+      "priority": "normal",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T62",
+      "title": "🎥 Configurar NVR Reolink remoto (cuando llegue)",
+      "description": "Cuando el hardware Etapa 2 llegue a Colombia, papá puede mandar fotos del kit. Juan configura NVR remoto: agregar las 6 cámaras PoE al NVR + setup grabación 24/7 + acceso remoto via Tailscale. Probar acceso desde Miami antes de mandar al galpón.",
+      "owner": "JU",
+      "priority": "normal",
+      "status": "pending",
+      "module": "07-tecnologia"
+    },
+    {
+      "id": "T63",
+      "title": "📋 Documentar instalación galpón (para el encargado de obra)",
+      "description": "Crear instructivo paso-a-paso con FOTOS para que el encargado de la obra del galpón instale las cámaras + sensores + LiteBeam cuando esté la estructura. Incluye: dónde va cada cámara, ruta de cableado PoE al rack del NVR, montaje LiteBeam, conexión eléctrica al UPS. Subir a 07-tecnologia/manual-instalacion-galpon.md cuando esté.",
+      "owner": "JU",
+      "priority": "normal",
       "status": "pending",
       "module": "07-tecnologia"
     },
@@ -332,10 +494,118 @@
     },
     {
       "id": "T25",
-      "title": "💰 Pagar predial Trueno · $72.9M antes del 30/06/2026",
-      "description": "Recibo 26010310020237 (Alcaldía Puerto Gaitán) acumula deuda predial 2018-2026 por $72.909.000 COP. Plazo: 30 junio 2026. Si no se paga, riesgo de embargo municipal. Decidir: pagar completo · negociar plan pagos · pelear avalúo. Hablar con Tesorería de la Alcaldía.",
+      "title": "💰 Predial Trueno $72.9M · ANTES averiguar amnistía/desc Decreto 0243/2026",
+      "description": "Recibo 26010310020237 (Alcaldía Puerto Gaitán) acumula deuda predial 2018-2026 por $72.909.000 COP. Plazo: 30 junio 2026. ⚠️ ANTES DE PAGAR averiguar T76: Decreto Legislativo 0243 de 2026 del Gobierno Nacional otorga facultades a alcaldes para amnistías tributarias territoriales. Potencial ahorro estimado: ~$32M COP (44% menos) si hay descuento de intereses + sanciones tipo Medellín 70%.",
       "owner": "AM",
       "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T76",
+      "title": "🔥 URGENTE · Visita Leonardo + Juan a Alcaldía Puerto Gaitán · amnistía predial",
+      "description": "JUAN VA CON LEONARDO. Decreto Legislativo 0243 de 2026 (Emergencia Económica) otorga facultades EXCEPCIONALES a alcaldes para adoptar medidas tributarias territoriales incluyendo amnistías/descuentos sobre prediales atrasados. AHORRO POTENCIAL: ~$32M COP sobre los $72.9M del Trueno (44% menos). Comparable: Medellín redujo 70% intereses por mora. PASOS EN SITIO: (1) Tesorería Alcaldía Calle 10 No.10-60 B. Centro · preguntar por medidas bajo Decreto 0243/2026 sobre matrícula 234-11845, (2) Solicitar acuerdo de pago vigente, (3) Si no hay decreto local, Leonardo redacta carta formal al Alcalde proponiendo acuerdo con descuento intereses+sanciones citando facultad nacional, (4) Cuantificar ahorro real con la liquidación oficial. CRÍTICO porque T25 vence 30-jun-2026.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T77",
+      "title": "📝 Leonardo redacta carta al Alcalde Puerto Gaitán · si no hay decreto local",
+      "description": "Si en T76 confirman que NO hay decreto local de amnistía aún vigente: Leonardo redacta carta formal al Alcalde de Puerto Gaitán solicitando acuerdo de pago con descuento de intereses y sanciones para predial Trueno (matrícula 234-11845, recibo 26010310020237, $72.9M COP). Fundamento jurídico: Decreto Legislativo 0243 de 2026 que otorga facultades excepcionales a alcaldes en marco de Emergencia Económica. Comparable: alivio Medellín 70% intereses. Plazo solicitar respuesta antes 30-jun-2026 (vencimiento predial).",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T78",
+      "title": "✅ Cert tradición La Realidad descargado · análisis revela cambio radical",
+      "description": "DESCARGADO 2026-06-11. Hallazgos críticos: (1) NO es 'Omar Perez' sino DUMMAR PEREZ HERNANDEZ CC 11800352, (2) Papá firmó DIRECTO sin poder (Cesia no aparece en registro), (3) Escritura 2217 del 9-10-1999 Notaría 2 Villavicencio registrada 17 años después en 2016, (4) Valor irrisorio $12.2M por 1.043 ha, (5) Embargo Fiscalía 2000-2015 explica delay, (6) Embargo Alcaldía 2019 contra Dummar por predial sin pagar, (7) Posible falta firma esposa Myriam Consuelo Caro Suárez. Análisis completo en 04-regulatorio/predios/la-realidad/recuperacion/3-analisis-cert-tradicion-2026-06-11.md",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "done",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T82",
+      "title": "🔥🔥🔥 CRÍTICO · Conversación con papá · 7 preguntas urgentes sobre La Realidad",
+      "description": "ANTES del viaje del viernes. Cert tradición La Realidad reveló datos que NO coinciden con la narrativa que teníamos. Preguntar a papá: (1) ¿Conoce a Dummar Perez Hernandez CC 11800352? (2) ¿Recuerda firmar escritura de venta a Dummar en oct 1999 (Escritura 2217 Notaría 2 Villavicencio)? (3) ¿Quién es Myriam Consuelo Caro Suárez CC 20408053? ¿Era su esposa formal? (4) Si fue esposa, ¿firmó esa escritura? (5) ¿Recibió los $12.200.000 mencionados? (6) ¿Qué pasó en 2000 que la Fiscalía 3 embargó el predio? (7) ¿Cómo llega Cesia a la historia? ¿Dónde aparece el 'poder'? BOMBA POTENCIAL: si papá no firmó la escritura 2217 = falsedad documental + nulidad absoluta = recuperación inmediata del predio.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T83",
+      "title": "📜 Pedir copia escritura 2217 del 9-10-1999 (Notaría 2 Villavicencio)",
+      "description": "Pieza CLAVE del Frente B. La escritura de venta papá → Dummar Perez Hernandez. Necesaria para: (1) Verificar si la firma de papá es real o falsificada, (2) Ver si firmó la esposa Myriam Consuelo (validez Ley 258/1996), (3) Ver términos del pago. Notaría Segunda de Villavicencio · costo $30-80K · 1-3 días. Coordinar con Leonardo para que la pida formalmente.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T84",
+      "title": "📜 Pedir copia escritura 3036 del 14-09-1998 (compra original papá)",
+      "description": "Para reconstruir historia completa. Escritura por la que papá compró La Realidad a Hely Martínez Rodríguez + Luz Amanda Romero Silva por $11.5M en 1998. Útil para: (1) Demostrar título legítimo de papá, (2) Comparar el valor de compra ($11.5M) vs venta ($12.2M) = solo 6% en 1 año = sospechoso para venta real. Notaría Segunda de Villavicencio · costo $30-80K.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T85",
+      "title": "🔍 Verificar identidad Myriam Consuelo Caro Suárez (CC 20408053)",
+      "description": "Aparece en anotación 4 (1999) como persona en afectación a vivienda familiar con papá. CONFIRMADO probablemente = MAMÁ de Juan. Si fue esposa y NO firmó la escritura 2217 de 1999 = NULIDAD ABSOLUTA del acto (Ley 258/1996 Art. 5). Esta persona es ALIADA CLAVE potencial · puede ser CODEMANDANTE en la nulidad.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T86",
+      "title": "🔥🔥 CRÍTICO · Conversación con mamá Myriam sobre La Realidad y divorcio",
+      "description": "Padres en proceso de divorcio reciente. La fecha del divorcio define todo: si estaban casados en 1999 (firma escritura 2217) y en 2016 (registro) = mamá DEBÍA firmar = NULIDAD ABSOLUTA si no firmó. ABORDAR CON TACTO. Preguntas: (1) Fecha radicación divorcio. (2) En 1999 casados con sociedad conyugal? (3) Conoce La Realidad? (4) ¿Firmó escritura vendiéndola a Dummar Perez en 1999? (5) ¿Sabía que en 2016 se transfirió? (6) ¿En la liquidación de sociedad conyugal hablaron de La Realidad? Si mamá dice 'NO firmé' + 'no sabía' = BOMBA ATÓMICA · caso ganado. Mamá podría ser codemandante. CUIDADO sensibilidad: tema delicado por proceso de divorcio en curso.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T87",
+      "title": "📜 Obtener copia escritura 2217 del 9-10-1999 (Notaría 2 Villavicencio)",
+      "description": "PIEZA REINA del Frente B. Pedir copia auténtica de la Escritura Pública No. 2217 del 9-10-1999 otorgada en Notaría Segunda de Villavicencio (papá vendedor + Dummar Perez Hernandez comprador). Costo $30-80K · 1-3 días. 4 caminos en paralelo: (1) Leonardo la pide con tarjeta profesional, (2) Juan en persona viernes pasando por Villavicencio, (3) Llamada + envío email/courier, (4) Papá como otorgante. Verificar en escritura: firmas papá + esposa Myriam, forma de pago real, identificación Dummar, cláusulas raras.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T79",
+      "title": "🏛️ Estado predial La Realidad · aprovechar visita Alcaldía Puerto Gaitán",
+      "description": "En el mismo viaje Alcaldía Puerto Gaitán por T76 (amnistía Trueno): preguntar TAMBIÉN por La Realidad mat. 234-11846. Datos a obtener: (1) Saldo predial pendiente, (2) Quién ha pagado los últimos años (papá/Omar/nadie), (3) Si Decreto 0243/2026 aplica también, (4) Si papá puede pagar el predial a nombre suyo aunque registralmente esté en Omar Perez. Este pago refuerza Causal 6 (prescripción adquisitiva por posesión).",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T80",
+      "title": "⚖️ Declaración juramentada papá como poseedor La Realidad (notaría Puerto Gaitán)",
+      "description": "ANTES de pagar cualquier predial de La Realidad: declaración juramentada de papá en notaría local Puerto Gaitán. Texto base: 'Soy poseedor material del predio matrícula 234-11846 desde XXXX. Procedo a pagar los impuestos prediales correspondientes en mi calidad de poseedor con ánimo de dueño, sin reconocer dominio ajeno alguno.' Leonardo redacta el texto definitivo. Costo $30-50K · 1 día. Efecto: convierte cada pago de predial en prueba reina para prescripción adquisitiva (Causal 6).",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T81",
+      "title": "💰 Pagar prediales La Realidad a nombre de papá (acto posesorio)",
+      "description": "DESPUÉS de T80 (declaración juramentada). Pagar prediales vencidos de La Realidad mat. 234-11846 con recibo a nombre de Jaime Humberto Acuña Ocampo (cédula). Reglas: (1) Recibo a nombre de papá, no Omar Perez. (2) Concepto: 'pago como POSEEDOR'. (3) Guardar fotos del recibo + comprobante transferencia. (4) NO firmar reconocimiento alguno de propiedad de Omar. Cada recibo es prueba para Causal 6 (prescripción adquisitiva). Base jurisprudencial: CSJ SC4936-2019, SC3201-2018.",
+      "owner": "JU",
+      "priority": "high",
       "status": "pending",
       "module": "04-regulatorio"
     },
