@@ -99,8 +99,9 @@ Lo que recuperemos para La Realidad SIRVE para fortalecer Trueno:
 ## Documentos en este paquete
 
 - `README.md` (este archivo) · estrategia general
-- `1-investigacion-omar-perez.md` (a crear) · plan de investigación sobre Omar Perez
-- `2-borrador-accion-reivindicatoria.md` (a crear · después de Fase B1)
+- `1-plan-investigacion.md` · plan investigación T35-T37
+- `2-escenarios-poder-y-prediales.md` · ⭐ NUEVO 2026-06-11 · qué hacer si papá no tiene el poder + estrategia de pagar prediales como acto posesorio
+- `3-borrador-accion-reivindicatoria.md` (a crear · después de Fase B1)
 
 ## Documentos relacionados ya archivados
 

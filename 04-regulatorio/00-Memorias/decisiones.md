@@ -81,3 +81,10 @@
   - Ahorro potencial estimado: ~$32M COP sobre los $72.9M (44% menos).
 - **Implicación:** T25 queda en espera de T76 (averiguar) y T77 (carta Leonardo si no hay decreto local).
 - **Plazo:** antes 30-jun-2026 (vencimiento original predial).
+
+### D10 · Pagar prediales La Realidad a nombre de papá como acto posesorio
+- **Decisión:** averiguar saldo predial La Realidad y, si conviene, pagarlo a nombre de Jaime Humberto Acuña Ocampo (papá) como acto posesorio que refuerza Causal 6 (prescripción adquisitiva).
+- **Por qué:** jurisprudencia constante (CSJ SC4936-2019, SC3201-2018) reconoce el pago de impuestos prediales como acto posesorio clásico que evidencia ánimo de dominio.
+- **Pre-condición:** declaración juramentada PREVIA de papá en notaría declarándose poseedor con ánimo de dueño (T80).
+- **Reglas críticas para que sirva positivamente:** recibo a nombre de papá (no Omar) · concepto "pago como POSEEDOR" · NO firmar reconocimiento alguno de propiedad ajena.
+- **Conexión:** aprovechar viaje viernes a Alcaldía Puerto Gaitán (T76 amnistía Trueno) para averiguar también predial La Realidad (T79) en mismo viaje.

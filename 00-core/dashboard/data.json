@@ -520,6 +520,42 @@
       "module": "04-regulatorio"
     },
     {
+      "id": "T78",
+      "title": "🔥🔥 SUPER URGENTE · Cert tradición ACTUALIZADO La Realidad (mat. 234-11846)",
+      "description": "BLOQUEADOR del Frente B. Sin este documento NO se puede ubicar la notaría de la transferencia Cesia → Omar Perez, NO se puede buscar el poder original, NO se puede demandar. APROVECHAR el viaje del viernes a Puerto Gaitán: pasar por ORIP Puerto López (más rápido que online supernotariado). Costo ~$15-20K. Datos a extraer: notaría + escritura + fecha de transferencia + actual propietario + embargos. Detalle escenarios A/B/C y plan táctico en 04-regulatorio/predios/la-realidad/recuperacion/2-escenarios-poder-y-prediales.md",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T79",
+      "title": "🏛️ Estado predial La Realidad · aprovechar visita Alcaldía Puerto Gaitán",
+      "description": "En el mismo viaje Alcaldía Puerto Gaitán por T76 (amnistía Trueno): preguntar TAMBIÉN por La Realidad mat. 234-11846. Datos a obtener: (1) Saldo predial pendiente, (2) Quién ha pagado los últimos años (papá/Omar/nadie), (3) Si Decreto 0243/2026 aplica también, (4) Si papá puede pagar el predial a nombre suyo aunque registralmente esté en Omar Perez. Este pago refuerza Causal 6 (prescripción adquisitiva por posesión).",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T80",
+      "title": "⚖️ Declaración juramentada papá como poseedor La Realidad (notaría Puerto Gaitán)",
+      "description": "ANTES de pagar cualquier predial de La Realidad: declaración juramentada de papá en notaría local Puerto Gaitán. Texto base: 'Soy poseedor material del predio matrícula 234-11846 desde XXXX. Procedo a pagar los impuestos prediales correspondientes en mi calidad de poseedor con ánimo de dueño, sin reconocer dominio ajeno alguno.' Leonardo redacta el texto definitivo. Costo $30-50K · 1 día. Efecto: convierte cada pago de predial en prueba reina para prescripción adquisitiva (Causal 6).",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
+      "id": "T81",
+      "title": "💰 Pagar prediales La Realidad a nombre de papá (acto posesorio)",
+      "description": "DESPUÉS de T80 (declaración juramentada). Pagar prediales vencidos de La Realidad mat. 234-11846 con recibo a nombre de Jaime Humberto Acuña Ocampo (cédula). Reglas: (1) Recibo a nombre de papá, no Omar Perez. (2) Concepto: 'pago como POSEEDOR'. (3) Guardar fotos del recibo + comprobante transferencia. (4) NO firmar reconocimiento alguno de propiedad de Omar. Cada recibo es prueba para Causal 6 (prescripción adquisitiva). Base jurisprudencial: CSJ SC4936-2019, SC3201-2018.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio"
+    },
+    {
       "id": "T26",
       "title": "Reunión Leonardo · revisar paquete defensa completo",
       "description": "Despues de tener las 3 cotizaciones de póliza, revisar con Leonardo: (1) borradores del paquete defensa (carta, denuncia penal, queja Defensoría, memorial Corte Const.), (2) estado expediente Corte Constitucional, (3) orden táctico definitivo. Ver borradores en /paquete-defensa.html",
