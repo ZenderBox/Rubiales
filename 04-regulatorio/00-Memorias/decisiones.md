@@ -103,3 +103,18 @@
 - **Por qué:** la conversación con mamá (divorcio 2010-2015) abrió múltiples ángulos legales · necesitamos un único paquete consolidado que Leonardo y Juan puedan revisar igual al del Trueno.
 - **Implicaciones:** 9 causales jurídicas catalogadas con probabilidad. Causal estrella pasa a ser SIMULACIÓN ABSOLUTA (Art. 1766 CC) en lugar de nulidad por firma esposa. 8 indicios convergentes ya probados. Red de seguridad: prescripción adquisitiva extraordinaria (28 años de posesión). Hipótesis penal: la "venta" 1999 + embargo Fiscalía 2000 podría configurar alzamiento de bienes / fraude procesal (Art. 453 CP, pena 6-12 años).
 - **Implicación dashboard:** 25 tareas etiquetadas con campo `predio` (la-realidad / el-trueno). Permite filtros futuros. T90-T96 nuevas tareas para investigaciones del paquete.
+
+### D13 · Explorar sustitución del embargo Trueno con finca del Tolima (Art. 596/597 CGP) · 2026-06-12
+- **Decisión:** evaluar si una de las fincas familiares del Tolima puede ofrecerse al juez como **caución real sustituta** del embargo del Trueno, en lugar de pagar póliza de caución ($4-8M/año + estructuración).
+- **Por qué:**
+  - El abogado mencionó esta estrategia · Art. 597 CGP permite caución real (otro inmueble).
+  - Si una finca Tolima está libre de gravámenes y vale ≥ $200M → puede sustituir el embargo.
+  - Ahorro vs póliza: **$6-13M total** (estructuración + prima año 1).
+  - Tiempo similar (4-8 semanas vs 3-6 semanas póliza).
+- **Implicaciones:**
+  - Creado `04-regulatorio/predios/otros-bienes/` con README + 3 subcarpetas (escrituras / certificados-tradicion / avaluos).
+  - Juan empieza a subir escrituras del Tolima.
+  - Leonardo evalúa cuál finca tiene mejor perfil.
+  - Si funciona, se PAUSA todo el trabajo de póliza (T41-T45).
+  - ⚠️ NO usar La Realidad (en disputa Frente B) ni fincas en sociedad conyugal pendiente con mamá.
+- **Plan B:** si el juez rechaza, volvemos a la póliza (no perdimos nada serio).

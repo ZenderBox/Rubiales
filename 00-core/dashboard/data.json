@@ -1044,6 +1044,46 @@
       "predio": "la-realidad"
     },
     {
+      "id": "T97",
+      "title": "🔥🔥 Inventario fincas Tolima · estrategia caución real Art. 597 CGP",
+      "description": "Juan + papá: listar TODAS las fincas y bienes que papá tiene en Tolima. Por cada una: matrícula inmobiliaria, municipio + vereda, área, año de adquisición, si está en sociedad conyugal pendiente con mamá. Subir escrituras a 04-regulatorio/predios/otros-bienes/escrituras/. Objetivo: encontrar UNA finca libre de gravámenes que valga ≥$200M para ofrecerla al juez como sustituto del embargo del Trueno (Art. 596/597 CGP) en lugar de pagar póliza ($4-8M/año). Ahorro potencial: $6-13M.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "otros-bienes"
+    },
+    {
+      "id": "T98",
+      "title": "📕 Pedir cert. tradición actualizados de cada finca Tolima",
+      "description": "Por cada finca del Tolima identificada en T97, pedir certificado de tradición actualizado en la ORIP correspondiente. Verificar: gravámenes, embargos, hipotecas, afectación familiar, limitaciones INCORA. Costo ~$15-20K por cert vía supernotariado.gov.co. Datos van a 04-regulatorio/predios/otros-bienes/certificados-tradicion/.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "otros-bienes"
+    },
+    {
+      "id": "T99",
+      "title": "⚖️ Leonardo · análisis cuál finca Tolima sirve para caución real",
+      "description": "Con escrituras + certs de tradición de T97/T98, Leonardo evalúa: (1) cuál finca está libre de gravámenes, (2) cuál vale ≥$200M (avalúo catastral), (3) cuál NO es vivienda familiar ni crítica para el proyecto Miramar, (4) cuál tiene sociedad conyugal liquidada (NO en disputa con mamá). Si hay candidata: prepara memorial Art. 597 CGP. Si no hay: confirmamos seguir con póliza.",
+      "owner": "LE",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "otros-bienes"
+    },
+    {
+      "id": "T100",
+      "title": "📜 Memorial al juez · sustitución embargo Trueno por finca Tolima (Art. 597 CGP)",
+      "description": "Si T99 identifica candidata viable: Leonardo redacta memorial solicitando al juez del proceso Cesia sustituir el embargo del Trueno (mat. 234-11845) por embargo de la finca Tolima seleccionada como caución real. Acompañar: cert. tradición de la finca ofrecida, avalúo, declaración juramentada de papá ofreciendo el bien. Si juez acepta → Trueno LIBRE sin gasto recurrente. Si rechaza → plan B póliza.",
+      "owner": "LE",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "otros-bienes"
+    },
+    {
       "id": "T87",
       "title": "📜 Obtener copia escritura 2217 del 9-10-1999 (Notaría 2 Villavicencio)",
       "description": "PIEZA REINA del Frente B. Pedir copia auténtica de la Escritura Pública No. 2217 del 9-10-1999 otorgada en Notaría Segunda de Villavicencio (papá vendedor + Dummar Perez Hernandez comprador). Costo $30-80K · 1-3 días. 4 caminos en paralelo: (1) Leonardo la pide con tarjeta profesional, (2) Juan en persona viernes pasando por Villavicencio, (3) Llamada + envío email/courier, (4) Papá como otorgante. Verificar en escritura: firmas papá + esposa Myriam, forma de pago real, identificación Dummar, cláusulas raras.",
