@@ -31,10 +31,20 @@
 - [ ] T95 · Análisis Leonardo limitaciones INCORA Ley 160/1994
 - [ ] T92 · Avalúo retrospectivo La Realidad 1999 (perito)
 - [ ] T90 · Peritaje grafológico escritura 2217 (después de T87)
+- [ ] **🔥🔥 T103 · Pregunta a mamá: ¿sabías que con tu firma se cancelaba la afectación familiar?**
+- [ ] **🔥🔥 T104 · Pregunta a papá: ¿realmente recibiste los $12.200.000 de Dummar?**
+- [ ] T101 · Investigar otros casos del Notario CANDAMOZA POLO
+- [ ] T102 · Declaración extra-juicio mamá (si confirma vicio)
+- [ ] T105 · Investigación bancaria papá 1999-2000 (rastro $12.2M)
+- [ ] T106 · Localizar 5 vecinos colindantes La Realidad 1999
+- [ ] T87b · Copia auténtica escritura 2217 (con sello + firma original)
+- [ ] T97-T100 · Estrategia caución real con finca Tolima (Art. 597 CGP) — sustituir póliza
+- [ ] T87 DONE · Escritura 2217 analizada · estrategia legal reordenada
 
 (ver `00-core/Pendientes/semana-2026-06-06.md` para detalle completo)
 
 ## Historial
+- **2026-06-13** — Análisis ESCRITURA 2217 completa. Hallazgo crítico: mamá SÍ firmó pero solo el Acto 1 (cancelación afectación familiar), NO el Acto 2 (venta). Estructura jurídica sofisticada de 2 actos. Notario CANDAMOZA POLO Notaría 2 Villavicencio. Dummar CC Quibdó. Sin comprobante de pago real. Reordenamiento causales: Simulación absoluta + Prescripción adquisitiva + Vicio consentimiento mamá como las 3 estrellas (Ley 258/1996 descartada). Estrategia caución real con finca Tolima documentada (otros-bienes/). Doc 6 nuevo: estrategia probatoria cuando memoria falla (caso gana incluso sin memoria de papá/mamá). T101-T106 nuevas. Server deploy con `/recuperacion-docs/` activo. D13 (caución Tolima) + D14 (escritura 2217). Server SSH IP whitelist actualizado en SG launch-wizard-3.
 - **2026-06-11 (noche)** — Mamá habló: separación 2003 + divorcio papeles 2010-2015. Análisis "qué pasa si mamá SÍ firmó" → la causal estrella pasa a ser SIMULACIÓN ABSOLUTA (precio irrisorio + papá sigue poseyendo + Dummar testaferro + escritura guardada 17 años + secuencia venta 1999/embargo Fiscalía 2000). Creado paquete-recuperacion/ con 6 docs (espejo del paquete-defensa Trueno): hechos confirmados/supuestos · 9 causales · investigaciones pendientes · borrador denuncia Fiscalía · borrador demanda civil · 10 cartas formales. Tareas T90-T96 creadas. Dashboard data.json: 25 tareas históricas etiquetadas con campo `predio` (la-realidad / el-trueno) para filtros futuros. D11 (módulo regulatorio).
 - **2026-06-11** — Análisis fecha divorcio padres como llave del Frente B · fecha crítica = 9-oct-1999 (firma escritura) · si divorcio fue posterior → mamá debía firmar → NULIDAD ABSOLUTA · tareas T86 (conv. mamá) y T87 (escritura 2217) creadas.
 - **2026-06-06** — Sesión grande · plan maestro Trueno (póliza ANTES de carta) · monto real Cesia ~$100M (no $300M) · paquete defensa con 5 borradores + visor · paquete póliza con 6 docs + visor · T48/T49 contracuenta agregadas. PRs #18, #19, #20, #25.
