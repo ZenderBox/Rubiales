@@ -33,6 +33,7 @@ Ambos frentes refuerzan al otro: el penal genera presión y prueba documental pa
 | 3 | [Borrador denuncia penal Fiscalía](./3-denuncia-penal-fiscalia.md) | 🟡 esqueleto · pendiente Leonardo |
 | 4 | [Borrador demanda civil simulación + reivindicatoria](./4-demanda-civil.md) | 🟡 esqueleto · pendiente Leonardo |
 | 5 | [Solicitudes de información (cartas formales)](./5-solicitudes-info.md) | ✅ borrador inicial |
+| 6 | [Estrategia probatoria · cuando la memoria falla](./6-estrategia-probatoria-sin-memoria.md) | ✅ 2026-06-13 |
 
 ## Cómo conecta con el resto del repo
 
