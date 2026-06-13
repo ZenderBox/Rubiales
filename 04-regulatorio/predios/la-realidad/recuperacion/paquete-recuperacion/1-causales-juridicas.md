@@ -2,44 +2,50 @@
 
 > Catálogo de TODAS las vías legales que tenemos. Algunas son independientes, otras se acumulan. La demanda final combinará 2-3 como acciones principales y el resto como subsidiarias.
 
-## Resumen
+## Resumen (actualizado 2026-06-13 tras lectura escritura 2217)
 
 | # | Causal | Tipo | Base | Probabilidad | Estado |
 |---|---|---|---|---|---|
-| 1 | Nulidad por falta de firma esposa | Civil | Ley 258/1996 Art. 5 | 90-95% si mamá no firmó | Pendiente verificar |
-| 2 | Simulación absoluta | Civil | Art. 1766 CC | 75-85% | Fuerte indicios |
-| 3 | Prescripción adquisitiva extraordinaria | Civil | Art. 2532 CC + Ley 791/2002 | 80-90% | Independiente de todo |
-| 4 | Vicio del consentimiento (error/dolo) | Civil | Art. 1508-1516 CC | 60-70% | Depende de mamá/papá |
-| 5 | Falsedad documental | Penal + Civil | Arts. 286-291 CP | Depende grafología | Requiere peritaje |
-| 6 | Sociedad conyugal mal liquidada | Civil | Art. 1820 CC | 70-80% | Pendiente liquidación |
-| 7 | Restricciones INCORA (Ley 160/1994) | Civil | Ley 160/1994 | Depende fecha venta | Verificar |
-| 8 | Alzamiento de bienes / fraude procesal | Penal | Arts. 253, 453 CP | Si era para evadir embargo | Penal, no recupera per se |
-| 9 | Acción Pauliana | Civil | Art. 2491 CC | Si hay acreedores defraudados | Probable secundaria |
+| ⭐ 1 | **Simulación absoluta** | Civil | Art. 1766 CC | **75-85%** | Indicios confirmados documentalmente |
+| ⭐ 2 | **Prescripción adquisitiva extraordinaria** | Civil | Art. 2532 CC + Ley 791/2002 | **85-95%** | Red de seguridad · 28 años posesión |
+| ⭐ 3 | **Vicio del consentimiento de mamá** | Civil | Art. 1508-1516 CC | **60-75%** | Depende conversación con mamá |
+| 4 | **Alzamiento de bienes + fraude procesal** | Penal | Arts. 253, 453 CP | **70%** | Timing 1999→2000 muy fuerte |
+| 5 | Acción Pauliana | Civil | Art. 2491 CC | 60% | Si Fiscalía/otros acreedores demuestran perjuicio |
+| 6 | Sociedad conyugal mal liquidada | Civil | Art. 1820 CC | 65-75% | Pendiente confirmar inventario divorcio |
+| 7 | Restricciones INCORA (Ley 160/1994) | Civil | Ley 160/1994 | A verificar | Verificar limitación al 9-oct-1999 |
+| 8 | Falsedad material (firmas) | Penal + Civil | Arts. 286-291 CP | Solo si peritaje grafológico falla | Bajo |
+| ❌ 9 | ~~Nulidad por falta de firma esposa~~ | ~~Civil~~ | ~~Ley 258/1996 Art. 5~~ | **DESCARTADA** — mamá firmó la cancelación | No aplica directamente |
+
+### 🔥 Hallazgo clave que reordenó todo
+
+La escritura 2217 es una **estructura jurídica sofisticada de DOS ACTOS**:
+
+1. **Acto 1** (papá + mamá): cancelar afectación a vivienda familiar (Ley 258/1996)
+2. **Acto 2** (solo papá): vender el bien ya liberado
+
+→ Esto NO fue improvisado. Alguien con conocimiento jurídico armó la maniobra. La firma de mamá liberó el bien pero **no autorizó la venta directamente**. Si demostramos que mamá fue engañada sobre el alcance de su firma → atacamos el Acto 1 → cae el Acto 2 por accesoriedad.
 
 ---
 
-## 1. Nulidad por falta de firma esposa (Ley 258/1996 Art. 5)
+## ❌ Antes Causal 1 · Nulidad por falta de firma esposa (Ley 258/1996 Art. 5) · **DESCARTADA 2026-06-13**
 
-### Base legal
-> *"Cuando un bien inmueble esté afectado a vivienda familiar, ningún cónyuge podrá disponer de él sin consentimiento expreso del otro."*
+### Lo que sabíamos
+La Realidad estaba afectada a vivienda familiar en 1999. La sociedad conyugal estaba vigente. La hipótesis era que la venta a Dummar se hizo sin firma de mamá → nulidad absoluta.
 
-### Hechos relevantes
-- La Realidad fue afectada a vivienda familiar en 1999 (anotación 4 del cert tradición) con SUAREZ MYRIAM CONSUELO (CC 20408053).
-- La sociedad conyugal entre Jaime y Myriam estuvo vigente desde antes de 1999 hasta el divorcio (2010-2015).
-- En la escritura 2217 del 9-10-1999 papá supuestamente vendió a Dummar.
+### Lo que dice la escritura 2217 (revisada 2026-06-13)
+- **Acto 1:** Papá + mamá comparecen juntos a **cancelar la afectación a vivienda familiar**.
+- **Acto 2:** Papá comparece SOLO a vender el bien (ya liberado de afectación).
 
-### Argumento
-Para que la venta fuera válida, mamá debía firmar como esposa con consentimiento expreso. Si no firmó → **NULIDAD ABSOLUTA**.
+### Por qué cae esta causal en su forma original
+Una vez cancelada la afectación familiar (Acto 1), papá podía vender sin firma de mamá porque el bien no era social sino propio (Art. 1781 CC) — quedó adquirido en cabeza suya únicamente con la escritura 3036/1998. La maquinaria notarial fue legalmente impecable en la forma.
 
-### Riesgo
-Si mamá firmó, esta causal cae. Pero queda Causal 2 (simulación).
-
-### Próxima diligencia
-**T87** · obtener copia escritura 2217 e inspeccionar firma de mamá.
+### Lo que sobrevive de esta línea
+- La causal **NO desaparece, se transforma** → ahora se ataca **el Acto 1** (cancelación de afectación) por VICIO del consentimiento de mamá → ver Causal 3 abajo.
+- Si la cancelación cae, cae la venta posterior por carecer de la liberación necesaria.
 
 ---
 
-## 2. Simulación absoluta (Art. 1766 CC) · **CAUSAL ESTRELLA**
+## 1. Simulación absoluta (Art. 1766 CC) · **CAUSAL ESTRELLA** ⭐
 
 ### Base legal
 > *"Las escrituras privadas hechas por los contratantes para alterar lo pactado en escritura pública no producen efecto contra terceros."* + jurisprudencia constante (CSJ SC4936-2019).
@@ -55,11 +61,15 @@ La simulación absoluta es aquella en la que las partes **fingen un contrato que
 | Vendedor pagó prediales 2000-2011 | ⭐⭐⭐⭐ | ✅ probado |
 | Vendedor hizo mejoras, casa, cercas | ⭐⭐⭐⭐ | ✅ probado |
 | Comprador no posee · embargo predial 2019 | ⭐⭐⭐⭐ | ✅ probado |
-| Comprador desconocido · sin vínculos con el predio | ⭐⭐⭐ | Pendiente verificar |
+| Comprador desconocido · sin vínculos con el predio | ⭐⭐⭐ | 🟡 fortalecido (CC Quibdó) |
 | Escritura "guardada" 17 años sin registrar | ⭐⭐⭐⭐ | ✅ probado |
 | Timing sospechoso: venta 1999 + embargo penal 2000 | ⭐⭐⭐⭐⭐ | ✅ probado |
+| 🆕 Precio compra $11.5M (1998) → venta $12.2M (1999) = +$700K en 13 meses | ⭐⭐⭐⭐ | ✅ probado en escritura 2217 |
+| 🆕 Precio justo al avalúo catastral ($12.197.000) = pretextado | ⭐⭐⭐ | ✅ probado en escritura |
+| 🆕 NO hay comprobante de pago en la escritura · solo declaración del vendedor | ⭐⭐⭐⭐ | ✅ probado |
+| 🆕 Comprador cedulado en QUIBDÓ (Chocó), comprando en Meta = atípico | ⭐⭐⭐ | ✅ probado |
 
-→ **8 indicios convergentes = causa fuerte**. Jurisprudencia constante (SC4936-2019, SC3201-2018, SC100-2018) reconoce simulación con menos.
+→ **12 indicios convergentes = causa MUY fuerte**. Jurisprudencia constante (SC4936-2019, SC3201-2018, SC100-2018) reconoce simulación con muchos menos.
 
 ### Argumento
 La compraventa Acuña → Dummar nunca existió como negocio real. Fue una fachada para sacar el predio del patrimonio de papá antes del embargo penal de octubre de 2000. Dummar es testaferro.
@@ -97,16 +107,43 @@ Aunque pierda en simulación y nulidad, gana por prescripción.
 
 ---
 
-## 4. Vicio del consentimiento (Art. 1508-1516 CC)
+## 3. Vicio del consentimiento de mamá (Art. 1508-1516 CC) · **CAUSAL ESTRELLA #3** ⭐
 
-### Hipótesis
-Si mamá firmó pero fue engañada ("firmen esto que es solo para protegernos del embargo, después lo arreglamos"), hubo **dolo de tercero** o **error sustancial**.
+### Por qué subió de relevancia
 
-### Plazo
-4 años desde que se descubre el vicio. Mamá lo está descubriendo ahora (2026) → todavía en plazo.
+La escritura 2217 revela que mamá firmó **únicamente la cancelación de afectación a vivienda familiar** (Acto 1), no la venta. Pero la cancelación fue el paso jurídico que permitió la venta posterior. Si la cancelación se vicia, cae la venta.
 
-### Próxima diligencia
-- **T86** ya hecha (mamá habló) · **T88** (preguntas profundas a mamá)
+### Hipótesis específicas
+
+| # | Versión del engaño | Configura |
+|---|---|---|
+| A | Le dijeron "firma esto solo para corregir tu nombre" sin explicar que también cancelaba la afectación | **Error sustancial** (Art. 1511 CC) · nulidad relativa |
+| B | Le dijeron "firma esto que es para protegernos del embargo" sin explicar que con eso se podía vender | **Dolo** (Art. 1515 CC) · nulidad relativa |
+| C | No le explicaron nada · firmó por confianza en papá / notario | **Error** + **dolo notarial** posible |
+| D | Sí le explicaron todo y firmó conscientemente | Causal cae · seguimos con Causal 1 (simulación) y 2 (prescripción) |
+
+### Por qué hay indicios fuertes
+
+1. **Mamá vino a "corregir su nombre"** (CC le faltaba el CARO en la escritura 1998). Eso es lo que ella creyó que iba a hacer. Pero de paso le pusieron a firmar la cancelación + la venta.
+2. **Separación física 2003 (4 años después)**: papá y mamá no se llevaban bien · es plausible que mamá NO supiera del contexto comercial completo.
+3. **Notario Candamoza Polo** redactó dos actos en una misma escritura · técnica de "trampa procesal" típica.
+
+### Plazo de la acción
+- Nulidad relativa por vicio: **4 años desde que cesa el vicio** (Art. 1750 CC).
+- Mamá descubrió el vicio en junio 2026 → tiene hasta junio 2030 para demandar.
+
+### Pregunta CRÍTICA a mamá (T88-bis)
+
+> **"Cuando firmaste el 9-octubre-1999, ¿te explicaron que con tu firma se estaba cancelando la protección de vivienda familiar para que después papá pudiera vender la finca? ¿O te dijeron que era solo para corregir tu nombre?"**
+
+Respuestas posibles:
+- 🟢 "No, me dijeron que era solo para corregir mi nombre" → BOMBA · vicio confirmado
+- 🟡 "No me acuerdo bien" → utilizable como base testimonial
+- 🔴 "Sí, sabía que con eso podía vender" → causal cae
+
+### Próximas diligencias
+- **T88-bis** · pregunta específica a mamá sobre lo que entendió al firmar
+- **T102** (nueva) · declaración extra-juicio de mamá sobre el vicio (si confirma)
 
 ---
 

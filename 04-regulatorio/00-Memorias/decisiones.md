@@ -118,3 +118,21 @@
   - Si funciona, se PAUSA todo el trabajo de póliza (T41-T45).
   - ⚠️ NO usar La Realidad (en disputa Frente B) ni fincas en sociedad conyugal pendiente con mamá.
 - **Plan B:** si el juez rechaza, volvemos a la póliza (no perdimos nada serio).
+
+### D14 · Escritura 2217 analizada · reordenamiento estratégico Frente B · 2026-06-13
+- **Decisión:** descartar como causal principal la Nulidad por falta firma esposa (Ley 258/1996). Promover Simulación absoluta + Prescripción adquisitiva + Vicio del consentimiento de mamá como causales estrella.
+- **Por qué:** la escritura 2217 revela DOS ACTOS distintos: (Acto 1) cancelación afectación familiar con mamá+papá firmando · (Acto 2) venta solo papá. Mamá firmó la cancelación pero no la venta. La maniobra fue legalmente sofisticada · no improvisada.
+- **Causales reordenadas:**
+  1. ⭐ Simulación absoluta (12 indicios convergentes confirmados documentalmente)
+  2. ⭐ Prescripción adquisitiva extraordinaria (28 años posesión)
+  3. ⭐ Vicio del consentimiento de mamá (atacar el Acto 1 → cae el Acto 2)
+  4. Alzamiento de bienes + fraude procesal (timing 1999→2000)
+- **Hallazgos clave en la escritura 2217:**
+  - Notario: HUMBERTO CANDAMOZA POLO (Notaría 2 Villavicencio)
+  - Dummar CC 11.800.352 expedida en QUIBDÓ (atípico)
+  - Valor declarado $12.2M coincidente con avalúo catastral $12.197.000 (pretextado)
+  - Sin comprobante de pago real
+  - Colindantes identificados como potenciales testigos (T106)
+  - Mamá vino a "corregir su nombre" (faltaba CARO en escritura 1998)
+- **Tareas nuevas críticas:** T103 (qué creía mamá al firmar) · T104 (papá recibió dinero?) · T105 (investigación bancaria) · T106 (vecinos colindantes) · T101 (notario Candamoza) · T102 (declaración mamá si vicio confirmado)
+- **PDFs archivados en:** `04-regulatorio/predios/la-realidad/escrituras/escritura-2217-1999-venta-dummar.pdf` y `escritura-3036-1998-compra-papa.pdf`

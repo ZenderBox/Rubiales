@@ -17,6 +17,22 @@
 | H7 | El 9-feb-2016 se registró: (a) cancelación afectación familiar y (b) venta a DUMMAR PEREZ HERNANDEZ (CC 11800352) según Escritura 2217 del 9-10-1999 Notaría 2 Villavicencio, valor declarado $12.200.000 | Cert tradición anotaciones 7-8 |
 | H8 | En 2019 el municipio de Puerto Gaitán embargó por jurisdicción coactiva (predial impago de Dummar) | Cert tradición anotación 9 |
 
+### 🆕 Hechos confirmados por lectura de Escritura 2217 (2026-06-13)
+
+| # | Hecho | Detalle |
+|---|---|---|
+| H15 | **La escritura 2217 contiene DOS ACTOS distintos** | Acto 1: cancelación afectación vivienda familiar (papá + mamá) · Acto 2: venta a Dummar (solo papá) |
+| H16 | **Mamá SÍ firmó · pero NO la venta** | Mamá firmó solamente la cancelación de afectación. En el segundo comparecimiento (la venta) solo aparece papá |
+| H17 | **Estrategia legal sofisticada** | Cancelar afectación → liberar el bien de Ley 258/1996 → permitir venta sin firma de la esposa. NO es casual · alguien lo armó |
+| H18 | **Notario:** HUMBERTO CANDAMOZA POLO, Notario Segundo de Villavicencio | Identificable para investigación / denuncia |
+| H19 | **Dummar Perez Hernandez expedición CC: QUIBDÓ, Chocó** | CC 11.800.352 · declara ser soltero · sin vivienda familiar |
+| H20 | **Valor declarado $12.200.000** | Aproxima al avalúo catastral de 1999 ($12.197.000) → buscaron justificar el precio frente al notario |
+| H21 | **Papá declaró haber recibido el dinero "a entera satisfacción"** | Declaración unilateral del vendedor · NO hay comprobante de pago, cheque, transferencia, recibo bancario |
+| H22 | **Mamá compareció a corregir su nombre** | En la escritura 3036 de 1998 figuró como "MYRIAM CONSUELO SUAREZ" (sin CARO). En 1999 viene a corregir a "MYRIAM CONSUELO CARO SUAREZ" |
+| H23 | **Lindero del predio según escritura** | Vecinos colindantes: WILSON M RODRIGUEZ · ALFONSO MORENO · ALFONSO VILLAVECES · EDUARDO DE JESÚS VEGA · ERNESTO PINEDA (potenciales testigos T94) |
+| H24 | **Compra original: Heli Martínez Rodríguez + Luz Amanda Romero Silva** | Por escritura 3036 del 14-09-1998, Notaría 2 Villavicencio, valor $11.500.000 |
+| H25 | **Diferencia precio compra-venta: solo $700.000 en 13 meses** | Compra Sep-1998 $11.5M → venta Oct-1999 $12.2M = absurdo económicamente |
+
 ### Sobre la familia
 
 | # | Hecho | Fuente |
@@ -37,15 +53,18 @@
 
 ### Sobre los protagonistas
 
-| # | Supuesto | Cómo verificar |
-|---|---|---|
-| S1 | Dummar Perez Hernandez es testaferro (no posee, no paga, no aparece) | Registraduría + RUES + redes sociales + visita a Puerto Gaitán |
-| S2 | Cesia Martínez está conectada con Dummar (familia, vecindad, sociedad) | Cruzar cédulas + investigar entorno |
-| S3 | El proceso penal de 2000 (Fiscalía 3 Villavicencio) era contra papá por algún tema económico | Pedir copia del expediente penal a la Fiscalía |
-| S4 | Mamá NO firmó la escritura 2217 de 1999 | Inspeccionar copia auténtica de la escritura |
-| S5 | Si mamá firmó, fue engañada ("firma esto que es para protegernos") | Conversación con mamá |
-| S6 | El "vendedor" papá nunca recibió los $12.200.000 declarados | Conversación con papá · ausencia de prueba de pago |
-| S7 | Mamá no fue informada del registro en 2016 | Conversación con mamá |
+| # | Supuesto | Cómo verificar | Estado |
+|---|---|---|---|
+| S1 | Dummar Perez Hernandez es testaferro (no posee, no paga, no aparece) | Registraduría + RUES + redes sociales + visita a Puerto Gaitán | 🟡 fortalecido · cedulado en Quibdó |
+| S2 | Cesia Martínez está conectada con Dummar (familia, vecindad, sociedad) | Cruzar cédulas + investigar entorno | Pendiente T36 |
+| S3 | El proceso penal de 2000 (Fiscalía 3 Villavicencio) era contra papá por algún tema económico | Pedir copia del expediente penal a la Fiscalía | Pendiente T91 |
+| ~~S4~~ | ~~Mamá NO firmó la escritura 2217 de 1999~~ | **DESCARTADO** — mamá firmó la cancelación de afectación (Acto 1) pero NO la venta (Acto 2) | ❌ no aplica |
+| S5 | **Mamá fue engañada sobre el efecto de su firma** ("firma esto para corregir tu nombre / proteger la casa") sin explicarle que con eso autorizaba la venta posterior | Conversación con mamá · pregunta clave T88-bis | 🟢 PUERTA ABIERTA |
+| S6 | El "vendedor" papá nunca recibió los $12.200.000 declarados | Conversación con papá · ausencia de prueba de pago | Pendiente T82-bis |
+| S7 | Mamá no fue informada del registro en 2016 | Conversación con mamá | Pendiente |
+| 🆕 S15 | El notario Humberto Candamoza Polo participó conscientemente en la maniobra | Investigar protocolo notaría + otros casos del mismo notario | Pendiente T101 |
+| 🆕 S16 | Dummar es testaferro de Cesia / otra persona conectada al entorno chocoano | Cruzar redes Dummar (CC Quibdó) ↔ Cesia | Pendiente T36 |
+| 🆕 S17 | La estrategia "cancelar afectación + vender" fue idea de un asesor jurídico de Dummar/Cesia | Investigar quién pagó la escritura · quién hizo la liquidación de impuestos | Pendiente |
 
 ### Sobre las maniobras
 

@@ -1085,10 +1085,81 @@
     },
     {
       "id": "T87",
-      "title": "📜 Obtener copia escritura 2217 del 9-10-1999 (Notaría 2 Villavicencio)",
-      "description": "PIEZA REINA del Frente B. Pedir copia auténtica de la Escritura Pública No. 2217 del 9-10-1999 otorgada en Notaría Segunda de Villavicencio (papá vendedor + Dummar Perez Hernandez comprador). Costo $30-80K · 1-3 días. 4 caminos en paralelo: (1) Leonardo la pide con tarjeta profesional, (2) Juan en persona viernes pasando por Villavicencio, (3) Llamada + envío email/courier, (4) Papá como otorgante. Verificar en escritura: firmas papá + esposa Myriam, forma de pago real, identificación Dummar, cláusulas raras.",
+      "title": "✅ Escritura 2217 obtenida y analizada (2026-06-13)",
+      "description": "DONE. Escritura 2217 del 9-10-1999 leída y analizada. HALLAZGOS CRÍTICOS: (1) Mamá SÍ firmó pero solo el Acto 1 (cancelación afectación familiar), NO el Acto 2 (venta a Dummar). (2) Estructura jurídica sofisticada de 2 actos: cancelar afectación + vender sin firma esposa. (3) Notario: HUMBERTO CANDAMOZA POLO Notaría 2 Villavicencio. (4) Dummar CC 11.800.352 expedida en QUIBDÓ Chocó. (5) Valor declarado $12.200.000 (justo al avalúo catastral $12.197.000). (6) Papá declaró haber recibido el dinero pero NO hay comprobante. (7) Mamá vino a 'corregir su nombre' (faltaba CARO en escritura 1998). PDF en 04-regulatorio/predios/la-realidad/escrituras/escritura-2217-1999-venta-dummar.pdf",
       "owner": "JU",
       "priority": "critical",
+      "status": "done",
+      "module": "04-regulatorio",
+      "predio": "la-realidad",
+      "_replaces": "T87 original"
+    },
+    {
+      "id": "T101",
+      "title": "🔬 Investigar Notario HUMBERTO CANDAMOZA POLO (Notaría 2 Villavicencio 1999)",
+      "description": "Identificado en la escritura 2217 como notario que autorizó el acto. Investigar: (1) sigue activo en 2026, (2) otros casos similares de cancelación-afectación-y-venta-en-mismo-acto, (3) demandas o quejas previas, (4) vínculos con Cesia/Dummar. Si hay patrón → posible coautoría en fraude procesal Art. 453 CP. Solicitud info al Consejo Notariado.",
+      "owner": "LE",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T102",
+      "title": "📝 Declaración extra-juicio de mamá sobre vicio del consentimiento",
+      "description": "DEPENDE de T88-bis. Si mamá confirma que NO le explicaron que con su firma se cancelaba la afectación familiar para permitir la venta posterior: formalizar declaración extra-juicio en notaría. Texto: 'Yo, MYRIAM CONSUELO CARO SUAREZ, declaro bajo gravedad de juramento que el 9-10-1999 firmé la escritura 2217 Notaría 2 Villavicencio creyendo que era solo para [corregir mi nombre / proteger la casa]. NO se me explicó que con esa firma se cancelaba la protección de vivienda familiar ni que se permitía la venta posterior del bien a un tercero. De haberlo sabido NO habría firmado.' Esta declaración es PRUEBA REINA para Causal 3 (vicio del consentimiento).",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T103",
+      "title": "🔥🔥 Pregunta crítica a mamá · qué creía estar firmando el 9-10-1999",
+      "description": "Pregunta específica: '¿Te explicaron que con tu firma se cancelaba la protección de vivienda familiar para que después papá pudiera vender la finca? ¿O te dijeron que era solo para corregir tu nombre (CARO)?' Respuestas posibles: (A) 'Me dijeron solo para corregir nombre' = BOMBA · vicio confirmado · activa T102. (B) 'No me acuerdo' = utilizable como base testimonial. (C) 'Sí sabía' = causal de vicio cae · seguimos con Causales 1 y 2 (simulación + prescripción). Esta pregunta DEFINE la fortaleza de la Causal 3 (vicio del consentimiento).",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T104",
+      "title": "🔥 Pregunta crítica a papá · ¿realmente recibió los $12.200.000 de Dummar?",
+      "description": "La escritura 2217 dice 'el vendedor declara haber recibido el dinero a entera satisfacción' pero NO hay comprobante de pago. Preguntar a papá: (1) ¿Recibió efectivamente los $12.200.000? (2) ¿En qué forma (efectivo, cheque, transferencia)? (3) ¿Quién se los entregó físicamente? (4) ¿En qué fecha exacta? Si dice 'NO los recibí' = SIMULACIÓN ABSOLUTA confirmada documentalmente · activa Causal 1 con probabilidad 90%+.",
+      "owner": "JU",
+      "priority": "critical",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T105",
+      "title": "🔍 Investigación bancaria papá 1999-2000 · rastro de los $12.2M",
+      "description": "DEPENDE T104. Si papá afirma que recibió el dinero pero no recuerda detalles: investigar movimientos bancarios de papá entre Oct 1999 y Dic 2000. Si NO hay entrada de $12.2M en sus cuentas en esa fecha → simulación absoluta blindada. Solicitar a través de Leonardo (Art. 67 CGP) extractos bancarios históricos.",
+      "owner": "LE",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T106",
+      "title": "📞 Localizar vecinos colindantes La Realidad 1999 (identificados en escritura)",
+      "description": "La escritura 2217 identifica como colindantes (potenciales testigos): WILSON M RODRIGUEZ · ALFONSO MORENO · ALFONSO VILLAVECES · EDUARDO DE JESÚS VEGA · ERNESTO PINEDA. Buscarlos en Puerto Gaitán durante el viaje. Testimonios sobre: (a) quién poseyó el predio desde 1999, (b) si vieron a Dummar Perez Hernandez alguna vez, (c) si saben de la venta de 1999. Estos vecinos son la columna vertebral de la prueba de simulación + prescripción adquisitiva.",
+      "owner": "JU",
+      "priority": "high",
+      "status": "pending",
+      "module": "04-regulatorio",
+      "predio": "la-realidad"
+    },
+    {
+      "id": "T87b",
+      "title": "📜 Solicitar copia AUTÉNTICA de escritura 2217 (con sello + firma original)",
+      "description": "Tenemos copia escaneada (T87 done) pero para demanda formal necesitamos copia auténtica con sello original. Pedir a Notaría 2 Villavicencio. Costo $30-80K · 1-3 días. También pedir copia auténtica de escritura 3036 (T84). En la misma visita pedir copia del PROTOCOLO completo de ambas escrituras (libro original) por si hubo modificaciones posteriores.",
+      "owner": "LE",
+      "priority": "high",
       "status": "pending",
       "module": "04-regulatorio",
       "predio": "la-realidad"
